@@ -1,0 +1,157 @@
+\documentclass[10pt]{report}
+\usepackage{epsf}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{palatino}
+\usepackage[pdftex]{graphics}
+\usepackage{fancyhdr}
+\usepackage{epsfig}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{cancel}
+\usepackage{hyperref}
+\usepackage{longtable}
+\usepackage{ulem}
+\usepackage{draftwatermark}
+\usepackage{termcal}
+\usepackage{etoolbox}
+\patchcmd{\endcalendar}{[l]}{[c]}{}{}
+
+\parindent 0in
+\parskip 1ex
+\oddsidemargin  0in
+\evensidemargin 0in
+\textheight 8.5in
+\textwidth 6.5in
+\topmargin -0.25in
+
+\pagestyle{fancy}
+\newcommand{\leftheader}{MedTech Prototyping Skills (BME290L)}
+\newcommand{\rightheader}{Palmeri (Spring 2023)}
+\lhead{\textbf{\leftheader}}
+\rhead{\textbf{\rightheader}}
+\lfoot{Compilation Date: \today}
+\cfoot{}
+\rfoot{\thepage}
+
+\newcommand{\Holiday}[2]{%
+    \options{#1}{\noclassday}
+    \caltext{#1}{#2 (No Class)}
+}
+
+\begin{document}
+
+\section*{Class Syllabus}
+
+\subsection*{Personnel}
+\begin{itemize}
+    \item[] \textbf{Instructor:} Dr. Mark Palmeri
+    \begin{itemize}
+        \item While you are welcome to email me
+        (\href{mailto:mark.palmeri@duke.edu}{mark.palmeri@duke.edu}), my response times will be way
+        faster via Teams.
+        \item Office Hours: \url{http://meet.palmeri.io}
+        \begin{itemize}
+            \item 258 Hudson Hall Annex
+            \item \url{https://duke.zoom.us/my/mark.palmeri}
+        \end{itemize}
+    \end{itemize}
+    \item[] \textbf{Lab Master:} Matt Brown \href{mailto:matt.brown@duke.edu}{(matt.brown@duke.edu)}
+    \item[] \textbf{Teaching Assistants:} 
+    \begin{itemize}
+        \item Rebecca Hogewood \href{mailto:rebecca.hogewood@duke.edu}{(rebecca.hogewood@duke.edu)}
+        \item Nikhita Gopisetty \href{mailto:nikhita.gopisetty@duke.edu}{(nikhita.gopisetty@duke.edu)}  
+        \item Nikhil Gadiraju \href{mailto:nikhil.gadiraju@duke.edu}{(nikhil.gadiraju@duke.edu)}
+    \end{itemize}
+\end{itemize}
+
+\subsection*{Course Times \& Locations}
+\begin{itemize}
+    \item[] \textbf{Lecture:} Tues \& Thurs from 12:00--13:15 in Wilkinson 126
+
+    \item[] \textbf{Lab:} Thurs from 13:45--16:45 in the POD or Fri from 08:30--11:30 in Chesterfield 5704
+    \footnote{A campus shuttle runs to/from the E-quad; details can be found here:
+\url{https://parking.duke.edu/buses/downtown-shuttle}.}
+\end{itemize}
+
+\subsection*{Course Objectives}
+This course focuses on developing medical device prototyping skills that will be
+used in future project and design courses, with a focus on preparing our
+students for positions in the medtech industry.  Students will work individually
+to complete design tasks that will be tested to quantitative specifications.
+Students will gain hands-on experience with device fabrication, debugging,
+testing and failure analysis.
+
+Upon completion of this course, students should be able to:
+
+\begin{itemize}
+    \item Perform functional decomposition and develop user action flow chart
+    \item Utilize ECAD (KiCad) for:
+    \begin{itemize}
+        \item Electronic schematic capture
+        \item Printed circuit board (PCB) layout
+        \item SPICE circuit simulation
+    \end{itemize}
+    \item Modular breadboarding of circuits to translation to testable PCBs
+    \item Design a battery-powered device that:
+    \begin{itemize}
+        \item Accepts analog and digital user input
+        \item Outputs analog and digital outputs
+        \item Performs logic using discrete electronics (e.g., logic gates, 555 timers)
+        \item Passes testable specifications to 95% CI
+    \end{itemize}
+    \item Implement electronic logic on microcontroller (ESP32 or equivalent platform)
+    \begin{itemize}
+        \item Modular / testable code development in C
+        \item Software version control (\texttt{git})
+        \item Interupt Service Routines
+        \item Pulse Width Modulation
+    \end{itemize}
+    \item Utilize CAD (Onshape) for:
+    \begin{itemize}
+        \item Device enclosure design with UI/UX considerations
+        \item Input / Output considerations
+        \item Size / weight constraints
+        \item Preparation of mechanical drawings
+    \end{itemize}
+    \item 3D printing of designs
+    \begin{itemize}
+        \item Assembly of discrete enclosure pieces
+        \item Use of mechanical fasteners
+    \end{itemize}
+    \item Write technical analysis documents / reports
+\end{itemize}
+
+
+\subsection*{Prerequisites}
+\begin{itemize}
+    \item Introduction to Design (EGR101)
+    \item Introductory Circuit Analysis (ECE110 or equivalent, corequisite)
+\end{itemize}
+
+\input{texts-n-resources}
+
+\input{participation}
+
+\subsection*{Class Schedule} 
+The following table is an overview of activities this semester (always use
+Gradescope for the latest information on assignment due dates).
+
+\input{calendar}
+
+\subsection*{Grading} 
+The following grading scheme will be used for this course:
+
+\begin{center}
+\begin{tabular}{ll}
+Participation                     & 15\% \\
+Midterm Projects \& Deliverables  & 50\% \\
+Final Project Report              & 35\% \\
+\end{tabular}
+\end{center}
+
+\input{grading_policies}
+
+\input{DukeCommunityStandard}
+
+\end{document}

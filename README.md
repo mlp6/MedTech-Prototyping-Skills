@@ -3,16 +3,16 @@ This repository serves as the default collection for all resources associated
 with the Duke BME MedTech Prototyping Skills (BME290L) course.
 
 ## Tasks at the Start of Each Semester
-* [ ] Update syllabus & schedule
+* [X] Update syllabus & schedule
 * [ ] Setup Sakai (https://kits.duke.edu)
-    - [ ] Setup new site
-    - [ ] Upload resources
-    - [ ] add TAs
+    - [X] Setup new site
+    - [X] Upload resources
+    - [X] add TAs
 * [ ] Setup Teams (https://kits.duke.edu)
-* [ ] Setup Gradescope
-* [ ] Setup Onshape
-* [ ] Chesterfield access
-* [ ] Panopto (lecture recording)
+* [X] Setup Gradescope
+* [X] Setup Onshape
+* [X] Chesterfield \& POD access
+* [X] Panopto (lecture recording)
 
 ## TA Responsibilities
 * Preview all assignments (collectively) to find errors / confusion

@@ -1,0 +1,181 @@
+\documentclass[aspectratio=169]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage{bookman}
+\usetheme{Dresden}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+\title[02-CAD]{Introduction to Computer Aided Design\\(3D Modeling)}
+\author{Prototyping Skills (BME290L)}
+\institute[Palmeri]{Mark L. Palmeri, M.D., Ph.D.}
+\date{January 17, 2023}
+\logo{\includegraphics[width=0.1\textwidth]{BME-HorizontalLogo-Web-Blue.png}}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\frame{
+    \frametitle{Outline}
+    \tableofcontents
+}
+
+\frame{
+    \frametitle{OnShape}
+
+    \begin{center}
+        \includegraphics[width=0.33\textwidth]{logo-onshape-gray-green.png}
+    \end{center}
+
+    \begin{itemize}
+        \item We will be using OnShape, a cloud-based CAD package with a similar workflow to SolidWorks.
+        \item You will be automatically registered to join Duke's OnShape team (\url{https://duke.onshape.com}).
+        \item Tutorials are available through \url{https:learn.onshape.com} (will be explicitly assigned).
+    \end{itemize}
+}
+
+\section{General Workflow}
+
+\frame{
+
+    \frametitle{General Workflow}
+
+    \begin{enumerate}
+        \item Sketch 2D profiles (dimensioned).
+        \item Use constraints to align sketch features to one another.
+        \item Extend 2D profiles to 3D \underline{parts}.
+        \begin{itemize}
+            \item Extrude (new, add, subtract, intersection)
+            \item Revolve
+        \end{itemize}
+        \item Utilize part symmetry and patterns to reduce manual effort.
+        \item Define new sketch planes on part references that ``make sense''.
+        \item Assemble multiple parts.
+    \end{enumerate}
+}
+
+\frame{
+
+    \frametitle{Practice Makes Perfect}
+
+    \begin{itemize}
+        \item There are many ways to create the same parts.  Some are more amenable to future modification than others; those aren't always the fastest to create from scratch.  
+    
+        \item Experience is highly valuable!
+    \end{itemize}
+}
+
+\section{Modifying Edges}
+\subsection{Common Types}
+
+\frame{
+
+    \frametitle{Modifying Edges}
+
+    \begin{itemize}
+        \item \underline{Fillet}: rounded corner / edge
+        \item \underline{Chamfer}: sloped / angled corner / edge
+    \end{itemize}
+
+    \centerline{\includegraphics[width=0.5\textwidth]{edge_chamfer_fillet.jpg}}
+    \centerline{\includegraphics[width=0.5\textwidth]{chamfering_beveling.jpg}}
+
+}
+
+\subsection{Why?}
+\frame{
+    \frametitle{Why modify edges?}
+
+    \begin{itemize}
+        \item Reduce stress concentrations (fillet $>$ chamfer).
+        \item Reduce sharp edges.
+        \item Ease assembly (potentialy at cost to manufacturing).
+    \end{itemize}
+
+    \centerline{\includegraphics[width=0.5\textwidth]{stress_concentration.png}}
+}
+
+% TODO: Add picture of Hole tool in OnShape
+\section{Holes}
+\frame{
+
+    \frametitle{Types of Holes}
+    \centerline{\includegraphics[width=1.0\textwidth]{holes.jpg}}
+
+CAD software has a specific \texttt{Hole} tool that can be very handy.  You can
+specify some of these specific types of holes, saving a great deal of time over
+manually extruding and chamfering some of them, and you can specify diameters
+and threading based on ANSI and ISO standards (e.g., ANSI \#10-32 bolt or ISO
+M5-0.8).  Additionally, using the \texttt{Hole} tool allows a table of holes to
+be generated on mechanical drawings.
+
+}
+
+\subsection{Screws}
+\frame{
+
+    \frametitle{Types of Screws}
+
+    \centerline{\includegraphics[width=0.5\textwidth]{screws.jpg}}
+
+}
+
+\section{Mechanical Drawings}
+
+\frame{
+    \frametitle{Mechanical Drawings}
+
+    \centerline{\includegraphics[width=0.7\textwidth]{flange_mech_drawing.png}}
+}
+
+\section{Mechanical Design Considerations}
+\frame{
+
+    \frametitle{Mechanical Design Considerations}
+    \begin{itemize}
+        \item Purpose
+        \begin{itemize}
+            \item Protection (water, debris?)
+            \item Holding components in relation to each other
+            \item Mounting
+        \end{itemize}
+        \item Loading
+        \begin{itemize}
+            \item Shipping
+            \item Gravity / Momentum
+            \item Falls (especially corners)
+            \item Buttons
+        \end{itemize}
+        \item Interfaces
+        \begin{itemize}
+            \item Cables
+            \item Displays
+            \item Buttons
+        \end{itemize}
+        \item Minimize all else!
+    \end{itemize}
+}
+
+\section{Tutorials}
+
+\frame{
+
+    \frametitle{Tutorials}
+
+    \begin{itemize}
+        \item \href{https://learn.onshape.com/courses/fundamentals-sketching}{Introduction to Sketching}
+        \item \href{https://learn.onshape.com/courses/introduction-to-part-design}{Introduction to Part Design}
+        \item \href{https://learn.onshape.com/courses/introduction-to-2d-drawings}{Introduction to 2D Drawings}
+        \item \href{https://www.3dhubs.com/knowledge-base/enclosure-design-3d-printing-step-step-guide/}{Enclosure Design for 3D Printing}
+        \item \href{https://www.3dhubs.com/knowledge-base/how-assemble-3d-printed-parts-threaded-fasteners/}{How to assemble 3D printed parts with threaded fasteners}
+        \item \href{https://www.3dhubs.com/knowledge-base/how-design-snap-fit-joints-3d-printing/}{How to design snap-fit joints for 3D printing}
+    \end{itemize}
+}
+
+\section{Lab}
+\frame{
+    \frametitle{Lab This Week}
+
+}
+
+\end{document}

@@ -1,0 +1,42 @@
+---
+variables:
+  PATHS: >
+    syllabus/Prototyping-S23-Syllabus-Palmeri
+    lectures/01-FDOC/Prototyping-S23-01-FDOC
+    lectures/02-CAD/Prototyping-S23-02-CAD
+    labs/01-SoftwareInstall/Prototyping-S23-01-Lab
+    labs/02-Flange-Bushing-CAD/Prototyping-S23-02-Lab
+    labs/03-Hybrid-III-6yo/03-Hybrid-III-6yo
+
+compile_pdf:
+  stage: build
+  image: texlive/texlive
+  script:
+    - |
+      for DOC in $PATHS
+        do
+          latexmk -pdf -cd $DOC.tex
+        done
+    - ls -R
+  artifacts:
+    paths:
+      - syllabus/Prototyping-S23-Syllabus-Palmeri.pdf
+      - lectures/01-FDOC/Prototyping-S23-01-FDOC.pdf
+      - lectures/02-CAD/Prototyping-S23-02-CAD.pdf
+      - labs/01-SoftwareInstall/Prototyping-S23-01-Lab.pdf
+      - labs/02-Flange-Bushing-CAD/Prototyping-S23-02-Lab.pdf
+      - labs/03-Hybrid-III-6yo/03-Hybrid-III-6yo.pdf
+pages:
+  stage: deploy
+  script:
+    - mkdir public
+    - |
+      for DOC in $PATHS
+        do
+          cp $DOC.pdf public/
+        done
+  artifacts:
+    paths:
+      - public
+  only:
+    - main

@@ -17,7 +17,6 @@ compile_pdf:
         do
           latexmk -pdf -cd $DOC.tex
         done
-    - ls -R
   artifacts:
     paths:
       - syllabus/Prototyping-S23-Syllabus-Palmeri.pdf

@@ -19,6 +19,9 @@ with the Duke BME MedTech Prototyping Skills (BME290L) course.
 * Help grade via Gradescope
 * Attend lab period to help students or hold office hours (3 hours total)
 
+## GitLab CI -> Pages
+Rot URL: https://mlp6.pages.oit.duke.edu/MedTech-Prototyping-Skills
+
 ## Contributors
 * Mark Palmeri
 

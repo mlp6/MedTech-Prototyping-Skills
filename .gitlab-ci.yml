@@ -11,7 +11,7 @@ pages:
   stage: deploy
   script:
     - mkdir public
-    - cp "**/*.pdf" public/
+    - find . -name '*.pdf' -exec cp {} public/ \;
   artifacts:
     paths:
       - public

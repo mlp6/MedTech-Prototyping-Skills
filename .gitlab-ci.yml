@@ -4,9 +4,11 @@ compile_pdf:
   image: texlive/texlive
   script:
     - python compile.py
+    - python generate_index_html.py
   artifacts:
     paths:
       - "**/*.pdf"
+      - index.html
 pages:
   stage: deploy
   script:

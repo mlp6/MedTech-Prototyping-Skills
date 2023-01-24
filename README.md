@@ -1,18 +1,21 @@
 # MedTech Prototyping Skills (BME290L)
+<a href="https://gitlab.oit.duke.edu/mlp6/MedTech-Prototyping-Skills/-/commits/main"><img alt="pipeline status" src="https://gitlab.oit.duke.edu/mlp6/MedTech-Prototyping-Skills/badges/main/pipeline.svg" /></a>
+
 This repository serves as the default collection for all resources associated
 with the Duke BME MedTech Prototyping Skills (BME290L) course.
 
 ## Tasks at the Start of Each Semester
 * [X] Update syllabus & schedule
-* [ ] Setup Sakai (https://kits.duke.edu)
+* [X] Setup Sakai (https://kits.duke.edu)
     - [X] Setup new site
     - [X] Upload resources
     - [X] add TAs
-* [ ] Setup Teams (https://kits.duke.edu)
+* [X] Setup Teams (https://kits.duke.edu)
 * [X] Setup Gradescope
 * [X] Setup Onshape
 * [X] Chesterfield \& POD access
 * [X] Panopto (lecture recording)
+* [ ] Add students to 3DPrinterOS
 
 ## TA Responsibilities
 * Preview all assignments (collectively) to find errors / confusion

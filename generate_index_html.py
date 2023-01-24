@@ -33,7 +33,7 @@ with open('index.html', 'w') as f:
 
     f.write('<h2>Labs</h2>\n')
     f.write('<ul>\n')
-    for lab in Path('labs').rglob('*.pdf'):
+    for lab in Path('labs').rglob('Prototyping-*.pdf'):
         f.write(f'<li><a href="{lab.name}">{lab.name}</a></li>\n')
     f.write('</ul>\n')
 

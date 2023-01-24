@@ -26,22 +26,22 @@ with open('index.html', 'w') as f:
     f.write(f'<a href="{syllabus}">{syllabus}</a>\n')
 
     f.write('<h2>Lectures</h2>\n')
-    f.write('<ul>\n')
-    for lecture in Path('lectures').rglob('*.pdf'):
+    f.write('<ol>\n')
+    for lecture in sorted(list(Path('lectures').rglob('*.pdf'))):
         f.write(f'<li><a href="{lecture.name}">{lecture.name}</a></li>\n')
-    f.write('</ul>\n')
+    f.write('</ol>\n')
 
     f.write('<h2>Labs</h2>\n')
-    f.write('<ul>\n')
-    for lab in Path('labs').rglob('Prototyping-*.pdf'):
+    f.write('<ol>\n')
+    for lab in sorted(list(Path('labs').rglob('Prototyping-*.pdf'))):
         f.write(f'<li><a href="{lab.name}">{lab.name}</a></li>\n')
-    f.write('</ul>\n')
+    f.write('</ol>\n')
 
     f.write('<h2>Resources</h2>\n')
-    f.write('<ul>\n')
-    for r in Path('resources').rglob('*.pdf'):
+    f.write('<ol>\n')
+    for r in sorted(list(Path('resources').rglob('*.pdf'))):
         f.write(f'<li><a href="{r.name}">{r.name}</a></li>\n')
-    f.write('</ul>\n')
+    f.write('</ol>\n')
     f.write('</body>\n')
 
     f.write('<footer>\n')

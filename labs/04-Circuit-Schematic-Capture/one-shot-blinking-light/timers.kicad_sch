@@ -692,7 +692,7 @@
   )
 
   (text "f = 1/(0.693*2*R204*C205) @ 50% DC" (at 148.59 149.86 180)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (effects (font (size 1.27 1.27) (thickness 0.254) bold italic) (justify right bottom))
     (uuid 03f21c20-7fe5-4a36-8fdc-4d6a24826d6d)
   )
   (text "Monostable One-Shot" (at 171.45 33.02 180)
@@ -705,21 +705,21 @@
   )
   (text "Decoupling Cap\nPower & Inductance\n100 nF\nCeramic\n(Physically place next to IC voltage pin.)"
     (at 60.96 105.41 180)
-    (effects (font (size 1.27 1.27) italic) (justify right bottom))
+    (effects (font (size 1.27 1.27) (thickness 0.254) bold italic) (justify right bottom))
     (uuid 63d8a263-6b63-4c53-95be-6de87dacf3fa)
   )
   (text "T(s) = 1.1*(R200+R201)*C204" (at 139.7 39.37 180)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (effects (font (size 1.27 1.27) (thickness 0.254) bold italic) (justify right bottom))
     (uuid bbe3c720-503b-48c3-964c-a0a993685f70)
   )
   (text "Make sure your Page Settings data\nis exported to all sheets."
     (at 280.67 163.83 180)
-    (effects (font (size 1.27 1.27) italic) (justify right bottom))
+    (effects (font (size 1.27 1.27) (thickness 0.254) bold italic) (justify right bottom))
     (uuid d6f5d8c0-2fc0-483c-8b17-ccc4079084df)
   )
   (text "Note that all of the part annotations on this sheet are 2xx."
     (at 73.66 194.31 180)
-    (effects (font (size 1.27 1.27) italic) (justify right bottom))
+    (effects (font (size 1.27 1.27) (thickness 0.254) bold italic) (justify right bottom))
     (uuid f9a8d683-d676-4ead-b6b2-d50f0d510498)
   )
 

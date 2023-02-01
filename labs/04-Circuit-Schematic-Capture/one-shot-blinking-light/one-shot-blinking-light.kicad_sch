@@ -7,7 +7,7 @@
   (title_block
     (title "One-Shot Blinking Light")
     (date "2023-02-01")
-    (rev "v1.0.0")
+    (rev "v1.0.1")
     (company "Mark Palmeri")
   )
 
@@ -1082,7 +1082,7 @@
     (uuid f9d01e80-283c-41fa-a692-1151182bec2d)
   )
 
-  (image (at 255.27 173.99) (scale 0.857497)
+  (image (at 255.27 173.99) (scale 0.729221)
     (uuid 1d2f7a56-e21a-47e2-bf44-976630235bd1)
     (data
       iVBORw0KGgoAAAANSUhEUgAAAyAAAADTCAMAAABOQIdwAAAAA3NCSVQICAjb4U/gAAAAM1BMVEX/

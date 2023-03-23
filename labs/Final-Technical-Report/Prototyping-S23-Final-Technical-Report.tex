@@ -15,6 +15,7 @@
 \usepackage[yyyymmdd]{datetime}
 \renewcommand{\dateseparator}{-}
 \usepackage{listings}
+\usepackage{draftwatermark}
 
 \parindent 0in
 \parskip 1ex
@@ -52,11 +53,11 @@ The following sections should be included in your report\dots
 Summarize the stated user needs and associated specifications for the electronics and the enclosure.
 \subsection{Enclosure}
 \begin{itemize}
-    \item Ergonically held in one hand
+    \item Ergonomically held in one hand
     \item Ability to “easily” push the button to turn on the blinking lights with the hand holding the device
     \item Can be stable placed on a flat surface and operated without picking it up from that flat surface.
     \item Batteries can be “easily” replaced.
-    \item Power switch will not be inadvertantly switched ”off” during operation.
+    \item Power switch will not be inadvertently switched ”off” during operation.
     \item Potentiometer knobs are accessible, but can use a second hand to adjust them.
     \item Board is securely mounted using your 4 mounting holes.
     \item Test pads will be accessible for testing the electronics when the board is mounted inside (assuming
@@ -69,7 +70,7 @@ Summarize the stated user needs and associated specifications for the electronic
     \item Size (smaller is better)
     \item Weight (again, smaller is better)
     \item Weight balance (”hand feel”)
-    \item Ergonomics / aesthetics. Try to avoid corners and straigh edges. Curves are good (and not sharp).
+    \item Ergonomics / aesthetics. Try to avoid corners and straight edges. Curves are good (and not sharp).
     \item Stress concentrations if your device fell from 6 ft.
 \end{itemize}
 
@@ -117,6 +118,9 @@ CIs are within $\pm$10\% of the nominal specifications.  For measurable
 quantities with inherent variability, this means that you need to have replicate
 measurements of these values!
 
+Oscilloscope output can be captured using cellphone screenshots with
+measurements being displayed on the scope.
+
 For any tests that do not pass, please provide an explanation for why the test
 didn't pass and what you might change in your design to increase the likelihood
 of passing if your design was revised.  For example:
@@ -140,7 +144,7 @@ You will want to indirectly estimate this battery life, and not try to test this
 by simply running your device with batteries until they fully discharge.
 
 \subsection{Optimizations}
-For the specifcations that could be optimized (e.g., size, weight, etc.) comment
+For the specifications that could be optimized (e.g., size, weight, etc.) comment
 on how your design optimized these quantities, and given your current insights,
 how your design could be revised to improve upon these criteria.
 

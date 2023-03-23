@@ -1,0 +1,157 @@
+\documentclass[10pt]{article}
+\usepackage{epsf}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{palatino}
+\usepackage[pdftex]{graphics}
+\usepackage{fancyhdr}
+\usepackage{epsfig}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{cancel}
+\usepackage{hyperref}
+\usepackage{longtable}
+\usepackage{ulem}
+\usepackage[yyyymmdd]{datetime}
+\renewcommand{\dateseparator}{-}
+\usepackage{listings}
+
+\parindent 0in
+\parskip 1ex
+\oddsidemargin  0in
+\evensidemargin 0in
+\textheight 8.5in
+\textwidth 6.5in
+\topmargin -0.25in
+
+\pagestyle{fancy}
+\lhead{\textbf{\leftheader}}
+\rhead{\textbf{\rightheader}}
+\lfoot{Compiled: \today\ \currenttime}
+\cfoot{}
+\rfoot{\thepage}
+
+\newcommand{\leftheader}{BME290L: MedTech Prototyping Skills}
+\newcommand{\rightheader}{Palmeri (Spring 2023)}
+
+\begin{document}
+
+\title{Final Technical Report} 
+\author{MedTech Prototyping Skills (BME290L)}
+\maketitle
+
+This final technical report is the culmination of almost all of the skills that
+you have developed in this course.  Technical documentation is just as important
+in engineering as being savvy at CAD/ECAD.  This report will be a single PDF
+file that you will upload to the associated Gradescope assignment, due the last
+week of classes.
+
+The following sections should be included in your report\dots
+
+\section{Needs / Specifications}
+Summarize the stated user needs and associated specifications for the electronics and the enclosure.
+\subsection{Enclosure}
+\begin{itemize}
+    \item Ergonically held in one hand
+    \item Ability to “easily” push the button to turn on the blinking lights with the hand holding the device
+    \item Can be stable placed on a flat surface and operated without picking it up from that flat surface.
+    \item Batteries can be “easily” replaced.
+    \item Power switch will not be inadvertantly switched ”off” during operation.
+    \item Potentiometer knobs are accessible, but can use a second hand to adjust them.
+    \item Board is securely mounted using your 4 mounting holes.
+    \item Test pads will be accessible for testing the electronics when the board is mounted inside (assuming
+    a cover of some sort can be removed to access the board). In other words, the entire board does not
+    need to be removed for any debugging / testing.
+    \item Wires between the PCB connectors and the peripheral components are purposely routed / secured
+    internally.
+    \item All peripheral components securely mounted in outer shell of the enclosure.
+    \item Batteries securely mounted using 2x2 or 1x4 AA battery holders.
+    \item Size (smaller is better)
+    \item Weight (again, smaller is better)
+    \item Weight balance (”hand feel”)
+    \item Ergonomics / aesthetics. Try to avoid corners and straigh edges. Curves are good (and not sharp).
+    \item Stress concentrations if your device fell from 6 ft.
+\end{itemize}
+
+\subsection{Electronics}
+\begin{itemize}
+    \item Specify nominal function of all external items the user interacts with
+    (switches, buttons, knobs, LEDs, etc.)
+    \item Assign specifications (testable target values) for the LED functions
+    (e.g., astable frequency, monostable period).  We will assume that "passing"
+    is having a 95\% confidence interval\footnote{For normally-distributed data,
+    95\% CI $\approx$ 2 SD.} that falls within $\pm$10\% of these nominal
+    values.
+\end{itemize}
+
+
+\section{Design Documents}
+
+\subsection{ECAD}
+\subsubsection{Schematic Capture}
+Be sure to include all sheets.  Demonstrate all best practices in your
+schematics.
+
+\subsubsection{PCB Layout}
+Show the front and back layers, separately.  Instead of "plotting" the layers,
+you can take screenshots that best show each layer, with the other layer
+"hidden".
+
+\subsubsection{Bill of Materials}
+This should be generated using KiCad's tool, including footprints and items
+excluded from the PCB.  Consider using the
+\href{https://github.com/openscopeproject/InteractiveHtmlBom}{Interactive HTML
+BOM} extension.
+
+\subsection{CAD}
+\begin{itemize}
+    \item Orthographic mechanical drawings of all parts.
+    \item 3D renderings of the exploded assembly.
+\end{itemize}
+
+\section{Testing \& Analysis}
+\subsection{Testing to Specification}
+For each user need / specification outlined in the first section, test how well
+you met each need / specification, assuming that your test passes if your 95\%
+CIs are within $\pm$10\% of the nominal specifications.  For measurable
+quantities with inherent variability, this means that you need to have replicate
+measurements of these values!
+
+For any tests that do not pass, please provide an explanation for why the test
+didn't pass and what you might change in your design to increase the likelihood
+of passing if your design was revised.  For example:
+
+\begin{quote}
+    The nominal astable frequency was 10$\pm$1 Hz, but my astable output was
+    9.1$\pm$0.5 Hz.  This performance fails at 95\% CI.  One reason for this
+    failure was associated with the 15\% tolerance on the resistors and
+    capacitors used to configure this astable oscillator.  As shown in the table
+    below, Rx and Ry varied by over 10\% from the nominal values, leading to a
+    negative bias in the output frequency.
+\end{quote}
+
+\subsection{Test Power Consumption}
+In addition to the specifications that you designed your device around, please
+provide an analysis of the battery life of your device.  This can be estimated
+by measuring the current demands of your circuit when "idle" and when blinking
+the LED.
+
+You will want to indirectly estimate this battery life, and not try to test this
+by simply running your device with batteries until they fully discharge.
+
+\subsection{Optimizations}
+For the specifcations that could be optimized (e.g., size, weight, etc.) comment
+on how your design optimized these quantities, and given your current insights,
+how your design could be revised to improve upon these criteria.
+
+\section{Microcontroller}
+You will be uploading your microcontroller firmware as a zip archive to a
+separate Gradescope assignment.
+
+In this report, include testing data of the same LED outputs as your did for the
+discrete electronics version of your device.
+
+Please include a discussion of the "pros" and "cons" of implementing the desired
+LED functions using discrete electronics versus a microcontroller.
+
+\end{document}

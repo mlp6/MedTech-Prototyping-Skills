@@ -22,7 +22,7 @@ with open('index.html', 'w') as f:
             'from the GitLab CI runner associated with this repository.</p>\n')
 
     f.write('<h2>Syllabus</h2>\n')
-    syllabus = 'Prototyping-S23-Syllabus-Palmeri.pdf'
+    syllabus = 'Prototyping-Syllabus-Palmeri.pdf'
     f.write(f'<a href="{syllabus}">{syllabus}</a>\n')
 
     f.write('<h2>Lectures</h2>\n')

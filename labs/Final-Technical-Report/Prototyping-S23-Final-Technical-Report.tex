@@ -15,7 +15,6 @@
 \usepackage[yyyymmdd]{datetime}
 \renewcommand{\dateseparator}{-}
 \usepackage{listings}
-\usepackage{draftwatermark}
 
 \parindent 0in
 \parskip 1ex
@@ -88,6 +87,8 @@ Summarize the stated user needs and associated specifications for the electronic
 
 \section{Design Documents}
 
+\subsection{Functional Decomposition}
+Please include a complete functional decomposition of your device.
 \subsection{ECAD}
 \subsubsection{Schematic Capture}
 Be sure to include all sheets.  Demonstrate all best practices in your
@@ -111,6 +112,9 @@ BOM} extension.
 \end{itemize}
 
 \section{Testing \& Analysis}
+
+\textbf{Note: If your PCB is not working in a reasonable timeframe, we will find
+another PCB for you to perform all of your testing on.}
 \subsection{Testing to Specification}
 For each user need / specification outlined in the first section, test how well
 you met each need / specification, assuming that your test passes if your 95\%
@@ -150,12 +154,23 @@ how your design could be revised to improve upon these criteria.
 
 \section{Microcontroller}
 You will be uploading your microcontroller firmware as a zip archive to a
-separate Gradescope assignment.
+separate Gradescope assignment, using all of the best practices discussed in
+lecture.  These include:
+\begin{itemize}
+    \item Organized inclusion of libraries
+    \item Definition of preprocessor macros
+    \item Consolidated initialization of global variables
+    \item Source code without "hard-coded" functional values
+    \item Logical, "action-based" main loop
+\end{itemize}
 
-In this report, include testing data of the same LED outputs as your did for the
-discrete electronics version of your device.
-
-Please include a discussion of the "pros" and "cons" of implementing the desired
-LED functions using discrete electronics versus a microcontroller.
+In this report, include:
+\begin{enumerate}
+    \item Testing data of the same LED outputs as your did for the discrete
+    electronics version of your device.
+    \item Please include a discussion of the "pros" and "cons" of implementing
+    the desired LED functions using discrete electronics versus a
+    microcontroller.
+\end{enumerate} 
 
 \end{document}

@@ -113,7 +113,7 @@
 
 \end{frame}
 
-\section{How do they work?}
+\section{Why Arduino?}
 
 \begin{frame}{How do microcontrollers work?}
     Executes a program that is stored (embedded) on the microcontrollers memory.
@@ -125,6 +125,39 @@
         \item Bootloader begins execution of the code when the device is powered
         \item Software interacts with the hardware in the ways your code has specified
     \end{enumerate}
+
+\end{frame}
+
+\begin{frame}{Why Arduino?}
+\begin{itemize}
+    \item Great starting point
+    \item Wiring (C/C++) programming interface
+    \item Open-source software and hardware
+    \item Standardized IO pin layout
+    \item Lots of peripherals ("shields")
+    \item Rapid prototyping
+\end{itemize}
+\end{frame}
+
+\begin{frame}{IDE}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{itemize}
+                \item Simple IDE
+                \item Integrated compiler ("build")
+                \item Integrated firmware flashing ("upload")
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \centerline{\includegraphics[width=1.0\textwidth]{ide.png}}
+        \end{column}
+    \end{columns}
+
+\end{frame}
+
+\begin{frame}{Shields}
+
+    \centerline{\includegraphics[width=1.0\textwidth]{shields.png}}
 
 \end{frame}
 
@@ -142,9 +175,39 @@
 \end{frame}
 
 \begin{frame}{Development Kit}
-\centerline{\includegraphics[width=0.6\textwidth]{arduino.png}}
+\begin{columns}
+    \begin{column}{0.5\textwidth}
+        \begin{itemize}
+            \item GPIO pins mapped to female headers
+            \item USB $\rightarrow$ power \& flash
+            \item DC barrel jack (5 V, regulated)
+            \item Integrated button and LED
+            \item The microcontroller is the IC; everything else is to
+            facilitate connectivity and testing!
+        \end{itemize} 
+    \end{column}
+    \begin{column}{0.5\textwidth}
+        \centerline{\includegraphics[width=1.0\textwidth]{arduino.png}}
+    \end{column}
+\end{columns}
 \end{frame}
 
+\begin{frame}{Why not Arduino?}
+\begin{itemize}
+    \item Actually, expensive for what it is... especially peripherals
+    \item High-level abstraction of hardware control (limiting low-level control)
+    \item Wiring is a non-standard language
+    \item No default hardware debugger (JTAG)
+    \item No unit test framework
+    \item Default IDE very limiting (PlatformIO a step in the right direction)
+    \item Not a Realtime Operating System (RTOS) (multithreaded), making
+    timing-/priority-sensitive operations tricky.
+    \item No one is getting a job based on "knowing Arduino"
+\end{itemize}
+
+\end{frame}
+
+\section{Programming}
 \begin{frame}{Types of Memory}
 
 \begin{itemize}
@@ -167,7 +230,6 @@
 \end{itemize}
 \end{frame}
 
-\section{Programming}
 
 \begin{frame}{Programming a Microcontroller}
     Convert logic, algorithms, data manipulation to a form that digital hardware
@@ -201,31 +263,6 @@
     \centerline{\includegraphics[width=0.7\textwidth]{hardware-language.png}}
 \end{frame}
 
-\section{Why Arduino?}
-
-\begin{frame}{Why Arduino?}
-\begin{itemize}
-    \item Great starting point
-    \item Wiring (C/C++) programming interface
-    \item Open-source software and hardware
-    \item Standardized IO pin layout
-    \item Lots of peripherals ("shields")
-\end{itemize}
-
-\end{frame}
-
-\begin{frame}{IDE}
-
-    \centerline{\includegraphics[width=0.6\textwidth]{ide.png}}
-
-\end{frame}
-
-\begin{frame}{Shields}
-
-    \centerline{\includegraphics[width=1.0\textwidth]{shields.png}}
-
-\end{frame}
-
 \section{Examples}
 
 \begin{frame}{ECG}
@@ -245,14 +282,15 @@
     \begin{itemize}
         \item \href{http://vimeo.com/53476316}{Pinokio}
         \item \href{https://www.youtube.com/watch?v=Yta0aJrbOxU}{Laser Harp}
-        \item \href{https://www.youtube.com/watch?v=BNBIdVR95V0}{Beer Launcher Fridge}
+        \item \href{https://www.youtube.com/watch?v=BNBIdVR95V0}{Drink Launcher Fridge}
     \end{itemize}
 
 \end{frame}
 
-\begin{frame}{In-Class Exercise}
+\begin{frame}{Function Decomposition / Block Diagram}
 
-    Create block diagram of the light enclosure device for a microcontroller.
+    Create a functional decomposition of the light enclosure device using a
+    microcontroller instead of timers and logic gates.
 
 \end{frame}
 

@@ -12,10 +12,10 @@
 \usepackage{hyperref}
 \usepackage{longtable}
 \usepackage{ulem}
-%\usepackage{draftwatermark}
-\usepackage{termcal}
+\usepackage{draftwatermark}
 \usepackage{etoolbox}
-\patchcmd{\endcalendar}{[l]}{[c]}{}{}
+\usepackage{enumitem}
+\setlist[description]{leftmargin=10pt,labelindent=10pt}
 
 \parindent 0in
 \parskip 1ex
@@ -27,7 +27,7 @@
 
 \pagestyle{fancy}
 \newcommand{\leftheader}{MedTech Prototyping Skills (BME290L)}
-\newcommand{\rightheader}{Palmeri (Spring 2023)}
+\newcommand{\rightheader}{Palmeri (Fall 2023)}
 \lhead{\textbf{\leftheader}}
 \rhead{\textbf{\rightheader}}
 \lfoot{Compiled: \today}
@@ -58,19 +58,17 @@
     \item[] \textbf{Lab Master:} Matt Brown \href{mailto:matt.brown@duke.edu}{(matt.brown@duke.edu)}
     \item[] \textbf{Teaching Assistants:} 
     \begin{itemize}
-        \item Rebecca Hogewood \href{mailto:rebecca.hogewood@duke.edu}{(rebecca.hogewood@duke.edu)}
-        \item Nikhita Gopisetty \href{mailto:nikhita.gopisetty@duke.edu}{(nikhita.gopisetty@duke.edu)}  
-        \item Nikhil Gadiraju \href{mailto:nikhil.gadiraju@duke.edu}{(nikhil.gadiraju@duke.edu)}
+        \item Katy Price \href{mailto:catherine.price@duke.edu}{(catherine.price@duke.edu)}
     \end{itemize}
 \end{itemize}
 
 \subsection*{Course Times \& Locations}
 \begin{itemize}
-    \item[] \textbf{Lecture:} Tues \& Thurs from 12:00--13:15 in Wilkinson 126
+    \item[] \textbf{Lecture:} Mon \& Wed from 10:05--11:20 in Wilkinson 136
 
-    \item[] \textbf{Lab:} Thurs from 13:45--16:45 in the POD or Fri from 08:30--11:30 in Chesterfield 5704
-    \footnote{A campus shuttle runs to/from the E-quad; details can be found here:
-\url{https://parking.duke.edu/buses/downtown-shuttle}.}
+    \item[] \textbf{Lab:} Fri from 08:30--11:30 in Wilkinson 126 /
+    Teer212\footnote{This lab is available 24/7 to you, expect when other
+    classes have the lab reserved.} (Door Code: 5-34-1)
 \end{itemize}
 
 \subsection*{Course Objectives}
@@ -99,7 +97,7 @@ Upon completion of this course, students should be able to:
         \item Performs logic using discrete electronics (e.g., logic gates, 555 timers)
         \item Passes testable specifications to 95\% CI
     \end{itemize}
-    \item Implement electronic logic on microcontroller (ESP32 or equivalent platform)
+    \item Implement electronic logic on microcontroller (Arduino framework)
     \begin{itemize}
         \item Modular / testable code development in C
         \item Software version control (\texttt{git})
@@ -118,7 +116,7 @@ Upon completion of this course, students should be able to:
         \item Assembly of discrete enclosure pieces
         \item Use of mechanical fasteners
     \end{itemize}
-    \item Write technical analysis documents / reports
+    \item Write technical analysis documents / reports (Jupyter notebooks)
 \end{itemize}
 
 
@@ -127,6 +125,30 @@ Upon completion of this course, students should be able to:
     \item Introduction to Design (EGR101)
     \item Introductory Circuit Analysis (ECE110 or equivalent, corequisite)
 \end{itemize}
+
+\subsection*{Learning Management System}
+We will be using \href{https://canvas.duke.edu/}{Canvas}--not Sakai--this
+semester, and it will be homebase for all things course related, including:
+\begin{itemize}
+    \item Ed Discussion - the fastest way to get questions answered (including
+    anonymously) from Dr. Palmeri and the teaching assistants
+    \item Resources, including:
+    \begin{itemize}
+        \item Electronics Textbooks
+        \item Lab Equipment Manuals \& Training Tutorials
+        \item Online Software \& Tools
+        \item Required Hardware to Purchase
+    \end{itemize}
+    \item All course content modules, assignments, quizzes, and lab exercises.
+    \item Due dates for everything.
+    \item Grades
+\end{itemize}
+
+Some assignments / quizzes / labs will be submitted via
+\href{https://www.gradescope.com/}{Gradescope}, which is integrated into Canvas.
+When applicable, \textbf{you must associate the pages of your submission with
+the grading rubric criteria during the submission process.}  Failure to do so
+will result in lost assignment credit.
 
 \subsection*{Resources}
 \subsection*{Hardware}
@@ -145,9 +167,6 @@ then it may be worth having one of these as a reference.
 
 \begin{itemize}
     \item \href{https://find.library.duke.edu/catalog/DUKE009381868}{Practical Electronics for Inventors (Scherz \& Monk) [Fourth Edition]}\footnote{This is available online through the Duke Library.}
-    \item The Art of Electronics (Horowitz \& Hill) [Third Edition]
-    \item \href{http://www.ulrich-eppinger.net/}{Product Design and Development (Ulrich, Eppinger)}
-    \item \href{https://www.crcpress.com/Design-of-Biomedical-Devices-and-Systems/King-Fries-Johnson/p/book/9781466569133}{Design of Biomedical Devices and Systems, King, Fries \& Johnson}
 \end{itemize}
 
 \subsubsection*{Online Resources}
@@ -181,95 +200,61 @@ These are cloud tools or cross-platform for installation on your personal comput
 \end{itemize}
 
 \subsection*{Attendance \& Participation}
-Class participation, including lecture attendance, team meetings, and scheduled
-lab time, contributes to your class grade. Not being able to participate in
-class activities due to
- illness should be reported using the
-\href{http://www.pratt.duke.edu/undergrad/policies/3531}{Short Term Illness
-Form (STIF)} \textbf{before} the missed class activity.
+Class participation, including lecture attendance and scheduled lab time,
+contributes to your class grade.   Not being able to participate in class
+activities due to illness should be reported using the
+\href{http://www.pratt.duke.edu/undergrad/policies/3531}{Short Term Illness Form
+(STIF)} \textbf{before} the missed class activity.
 
-\textbf{If you have a non-illness-related reason for not being able participate
-in a class activity or meet an assignment submission deadline, please reach out
-to Dr.\ Palmeri as soon as possible to discuss the situation.}
+\textbf{If you have a non-illness-related reason (e.g., a job interview) for not
+being able participate in a class activity or meet an assignment submission
+deadline, please reach out to Dr.\ Palmeri as soon as possible to discuss the
+situation.}
 
 Students are responsible for obtaining missed lecture content from other
 students in the class.  Lectures will be recorded via Panopto and available via
-Sakai.
+Canvas.
 
 \subsection*{Class Schedule} 
-The following table is an overview of activities this semester (always use
-Gradescope for the latest information on assignment due dates).
+The class is organized in a sequence of modules.  Specific details surrounding
+dates for assignments, quizzes, labs, etc. will be detailed on
+Canvas/Gradescope.
 
-\begin{calendar}{1/09/2023}{16} 
-    \setlength{\calboxdepth}{.5in}
-    \setlength{\calwidth}{1.0\textwidth} 
-    \skipday % Monday (no class)
-    \calday[Tuesday]{\classday}
-    \skipday % Wednesday (no class)
-    \calday[Thursday]{\classday}
-    \skipday % Friday (no class)
-    \skipday\skipday % weekend (no class)
+This course uses a version of
+\href{https://en.wikipedia.org/wiki/Mastery_learning}{mastery learning}, where
+``mastery'' of a given module is necessary to progress onto the subsequent
+module.  In this course, the assignments/quizzes/labs of one module must be
+completed before moving onto the next module.
 
-    \Holiday{1/16/2023}{MLK Holiday}
-    \Holiday{3/13/2023}{Spring Break}
-    \Holiday{3/14/2023}{Spring Break}
-    \Holiday{3/16/2023}{Spring Break}
+\subsubsection*{Modules}
+\begin{enumerate}
+    \item Fundamentals \& Engineering Tools
+    \item Computer Aided Design (CAD) [OnShape]
+    \item ECAD: Schematic Capture (KiCad)
+    \item ECAD: PCB Layout [KiCad]
+    \item Version Control [Git]
+    \item Firmware Development (Arduino Framework / PlatformIO)
+    \item Breadboard Testing / Electronics Bench Equipment
+    \item PCB Fabrication
+    \item Enclosure Design
+    \item Integration \& Testing
+\end{enumerate}
 
-    \caltexton{2}{Syllabus Review, Functional Decomposition \& User Action Flowcharts}
-    \caltexton{2}{\textbf{Lab:} Software Installations}
-	\caltexton{3}{CAD: Intro to Workflows}
-	\caltexton{4}{CAD: Assemblies \& Mechanical Drawings}
-	\caltexton{4}{\textbf{Lab:} CAD (Flange \& Bushing)}
-	\caltexton{5}{CAD: Tips on more complicated parts}
-	\caltexton{6}{CAD: Hybrid III in-class work time}
-	\caltexton{6}{\textbf{Lab:} CAD (Hybrid III 6 y/o)}
-	\caltexton{7}{ECAD: Introduction to KiCad Schematic Capture}
-	\caltexton{8}{ECAD: Timer Circuit Schematic Capture}
-	\caltexton{8}{\textbf{Lab:} Timer Circuit Schematic Capture}
-	\caltexton{9}{Timer Circuit Schematic Revision: Footprints, PCB Exclude, BOM}
-	\caltexton{10}{Timer Circuit Augmentation (Functional Decomposition)}
-	\caltexton{10}{\textbf{Lab:} Timer Circuit Augmentation}
-	\caltexton{11}{ECAD: KiCad PCB Layout}
-	\caltexton{12}{ECAD: Timer Circuit PCB Layout}
-	\caltexton{12}{\textbf{Lab:} Timer Circuit PCB Layout}
-	\caltexton{13}{Enclosure Design}
-	\caltexton{14}{Enclosure Design}
-	\caltexton{14}{\textbf{Lab:} Enclosure Design / 3D Printing}
-	\caltexton{15}{Finalize PCBs / Submit for Fabrication}
-	\caltexton{16}{Time Circuit Testing}
-	\caltexton{16}{\textbf{Lab:} Timer Circuit Testing}
-	\caltexton{17}{Project Integration}
-	\caltexton{18}{Project Integration}
-	\caltexton{18}{\textbf{Lab:} Project Integration, 3D Printing, PCB Fabrication}
-	\caltexton{19}{PCB Testing}
-	\caltexton{20}{PCB Testing}
-	\caltexton{20}{\textbf{Lab:} PCB Testing}
-	\caltexton{21}{Introduction to Microcontrollers}
-	\caltexton{22}{Microcontrollers: ISR, PWM, Timers}
-	\caltexton{22}{\textbf{Lab:} Project Integration \& Testing}
-	\caltexton{23}{PCB Testing \& Debugging}
-	\caltexton{24}{PCB Testing}
-	\caltexton{24}{\textbf{Lab:} PCB Testing}
-    \caltexton{25}{Microcontroller Overview \& Functional Decomposition} 
-    \caltexton{26}{Introduction to Firmware Development (PlatformIO)}
-	\caltexton{26}{\textbf{Lab:} Project Time}
-	\caltexton{27}{Version Control Overview (\texttt{git})}
-	\caltexton{28}{Firmware Development}
-	\caltexton{28}{\textbf{Lab:} Project Time}
-	\caltexton{29}{LDOC: TBD}
-
-\end{calendar}
-
-Final Project Due: May 01, 2023 at 09:00
+\subsubsection*{Special Dates of Note}
+\begin{description}
+    \item[October 16, 2023] No Class (Fall Break)
+    \item[November 22, 2023] No Class (Thanksgiving)
+    \item[December 08, 2023 at 17:00] Final Project Due (absolutely no late submissions accepted)
+\end{description}
 
 \subsection*{Grading} 
 The following grading scheme will be used for this course:
 
 \begin{center}
 \begin{tabular}{ll}
-Participation                     & 15\% \\
-Midterm Projects \& Deliverables  & 50\% \\
-Final Project Report              & 35\% \\
+Participation \& Quizzes             & 25\% \\
+Assignments \& Lab Technical Reports & 50\% \\
+Final Project Report                 & 25\% \\
 \end{tabular}
 \end{center}
 
@@ -279,56 +264,62 @@ enforced), and a traditional grading scheme will be used (e.g., 90-93 = A-,
 94-97 = A, 97-100 = A+).
 
 Failing the course can happen with a cummulative score $<$ 65 or not completing
-all of the assignments.
+all of the assignments.  \textbf{All assignments must be satisfactorily
+completed by each student to pass the class, even if no credit will be awarded
+based on the late policy.}
 
-All grades will be posted to Gradescope throughout the semester to track your performance.
+All grades will be posted to Gradescope/Canvas throughout the semester to
+track your performance.
 
-\subsubsection{Gradescope}
-All graded assignments, associated due dates (usually Fridays at 17:00), and
-grades/feedback will be posted on Gradescope.  Regrades must be submitted via
-Gradescope. \textbf{You must associate the pages of your submission with the
-grading rubric criteria during the submission process.}  Failure to do so will
-result in lost assignment credit.
 
 \subsubsection*{Late Policy}
-Permission to submit an assignment late should be sought from Dr. Palmeri as
-far in advance as reasonably possible, but no less than 48 hours in advance,
-except in cases of illness.
+Permission to submit an assignment late should be sought from Dr. Palmeri as far
+in advance as reasonably possible, but no less than 48 hours in advance, except
+in cases of acute illness.
 
-Assignments submitted within the late window on Gradescope will be penalized
-5\%. Unexcused late assignments outside of the Gradescope late submission
-window will lose 25\% of their potential point value for each 24 hour period
-beyond the due date (i.e., 100\% \textrightarrow 75\% → 50\%\ldots).
+Unexcused late assignments will lose 50\% of their potential point value for
+each 24 hour period beyond the due date (i.e., 100\% \textrightarrow 50\% →
+25\%\ldots), but remember that all assignments must be completed at a
+satisfatory level to pass the course, even if no grade credit is assigned.
 
-\textbf{All assignments must be satisfactorily completed by each student to pass
-the class, even if no credit will be awarded based on the late policy.}
+\textbf{No late final projects will be accepted!  Not submitting a final project
+on time will prevent passing the class.}
 
 \subsubsection*{Regrades}
-Any regrading requests need to be made via Gradescope within one week of grades for a given
-assignment being returned using Gradescope. You
- must provide a description of
-why you feel a regrade is appropriate. Requesting a
- regrade could lead to
-additional loss of credit when an assignment is re-evaluated.
+Any regrading requests need to be made via Gradescope within one week of grades
+for a given assignment being returned using Gradescope. You must provide a
+description of why you feel a regrade is appropriate. Requesting a regrade could
+lead to additional loss of credit when an assignment is re-evaluated.
 
-There will be a combination of individual and team-graded assignments. Some assignments will have an opportunity to be
-resubmitted based on grading feedback at the discretion of Dr. Palmeri.
+Some assignments will have an opportunity to be resubmitted based on grading
+feedback at the discretion of Dr. Palmeri.
 
-\subsection*{Duke Community Standard \& Academic Honor}
-Engineering is inherently a collaborative field, and in this class, you are
-encouraged to work collaboratively on your projects. The
- work that you submit
-must be the product of your and your group’s effort and understanding. All
-resources developed by another person or company, and used in your project,
-must be properly acknowledged.
+\subsection*{Collaboration, Citing Sources, Duke Community Standard \& Academic Honor}
+\subsubsection*{Collaboration} Engineering is inherently a collaborative field,
+and in this class, you are encouraged to work collaboratively on your projects.
+That being said, all of the work that you submit must be generated by you and
+reflect your understanding of the material. All resources developed by another
+person or company, and used in your project, must be properly acknowledged.
 
+\subsubsection{Duke Community Standard}
 All students are expected to adhere to all principles of the
 \href{https://trinity.duke.edu/undergraduate/academic-policies/community-standard-student-conduct}{Duke
-Community Standard}. Violations of the Duke Community
- Standard will be referred
+Community Standard}. Violations of the Duke Community Standard will be referred
 immediately to the Office of Student Conduct. Please do not hesitate to talk
-with Dr. Palmeri about any
- situations involving academic honor, especially if
-it is ambiguous what should be done.
+with Dr. Palmeri about any situations involving academic honor, especially if it
+is ambiguous what should be done.
+
+\subsubsection*{Can I use AI?}
+The use of artificial intelligence is a rapidly developing resource / tool in
+engineering.  In software development, there are many levels of AI-assitance
+available.  Such form of assistance include the
+\href{https://visualstudio.microsoft.com/services/intellicode/}{IntelliCode}
+tools, \href{https://github.com/features/copilot}{GitHub CoPilot}, and Large
+Language Models (LLMs).  Similar to using ``traditional'' resources like
+\href{https://stackoverflow.com/}{Stack Overflow} for programming guidance,
+these tools can be leveraged to help with syntax.  You are, however, strongly
+cautioned to not rely on these tools for logical implementation.  \textbf{Any
+use of AI-assisted tools should be acknowledged in your submission through
+comments in your code.}
 
 \end{document}

@@ -92,7 +92,6 @@
    \end{columns}
 \end{frame}
 
-\section{Power}
 \begin{frame}
   \frametitle{Power Ports}
 
@@ -111,7 +110,6 @@
 \end{columns}
 \end{frame}
 
-\section{ERC}
 \begin{frame}
   \frametitle{Electrical Rules Check (ERC)}
   \begin{columns}
@@ -133,7 +131,6 @@
   \end{columns}
 \end{frame}
 
-\section{Best Practices}
 \frame{
    \frametitle{Best Practices}
    \begin{itemize}
@@ -148,9 +145,18 @@
       \end{itemize}
       \item Use \texttt{No-Connection} flags for pins that are intentionally
        not connected to other components.
-      \item You can create a Bill of Materials (BOM) based on your schematic.
    \end{itemize}
  }
+
+ \begin{frame}
+  \centerline{\includegraphics[width=0.7\textwidth]{schematic_annotated.png}}
+ \end{frame}
+
+ \subsection{In-Class Exercise}
+
+ \begin{frame}{In-Class Exercise: Part I}
+Create a simple LED powered by a battery.
+ \end{frame}
 
  \begin{frame}
     \frametitle{Schematic Components Not on the PCB}
@@ -166,10 +172,27 @@
     \end{itemize}
  \end{frame}
 
- \begin{frame}
-  \centerline{\includegraphics[width=0.7\textwidth]{schematic_annotated.png}}
- \end{frame}
+ \begin{frame}{In-Class Exercise: Part II}
+ 
+    Modify your circuit to:
+    \begin{itemize}
+        \item Specify using a CR2032 coin cell battery that will be mounted on the PCB.
+        \item Connect the LED off the PCB using a connector.
+    \end{itemize}
+\end{frame}
+ 
+\begin{frame}{Heirarchecal Sheets}
 
+    \begin{itemize}
+        \item Circuits can get very complicated very quickly; quickly divorced
+        from functional signal flow.
+        \item Can organize functional sub-circuits into ``sheets'' (similar to
+        writing functions in software development).
+        \item Sheets require explicit types of ``pins'' to allow signals to communicate between sheets.
+        \item Power ports are ``global'' and do not need to be explicitly connects.
+    \end{itemize}
+
+\end{frame}
 \section{Example}
 
 \begin{frame}
@@ -196,6 +219,14 @@
   \centerline{\includegraphics[width=0.6\textwidth]{065-0100_Main_Board-3.png}}
 \end{frame}
 
+ \begin{frame}{Bill of Materials (BOM)}
+    \begin{itemize}
+        \item All of the components in the schematic can be populated into a Bill of Materials.
+        \item Industry-standard ECAD packages will be automatically linked to online part catalogs to order.
+        \item Specific components can be excluded from the BOM (\texttt{Properties}).
+    \end{itemize}
+\end{frame}
+ 
 \section{PCB Layout}
 
 \begin{frame}
@@ -265,7 +296,6 @@
     \end{columns}
   \end{frame}
   
-  \section{Workflow}
   
   \begin{frame}
     \frametitle{PCB Editor}
@@ -308,7 +338,6 @@
   \end{frame}
   
   
-  \section{Power / Ground}
   
   \begin{frame}
     \frametitle{Power Traces / Layers}
@@ -369,7 +398,6 @@
   \end{frame}
   
   
-  \section{Tips}
   
   \frame{
     \frametitle{Kinds of Grounds}

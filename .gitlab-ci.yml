@@ -3,6 +3,7 @@ compile_pdf:
   stage: build
   image: texlive/texlive
   script:
+    - git submodule update --remote --merge
     - python compile.py
     - python generate_index_html.py
   artifacts:

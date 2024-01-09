@@ -7,3 +7,6 @@
 [submodule "modules/medtech-skill-overview"]
 	path = modules/medtech-skill-overview
 	url = git@gitlab.oit.duke.edu:MedTechPrototyping/medtech-skill-overview.git
+[submodule "modules/cad-onshape"]
+	path = modules/cad-onshape
+	url = git@gitlab.oit.duke.edu:MedTechPrototyping/cad-onshape.git

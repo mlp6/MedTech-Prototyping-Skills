@@ -4,3 +4,6 @@
 [submodule "syllabus"]
 	path = syllabus
 	url = git@gitlab.oit.duke.edu:MedTechPrototyping/medtech-prototyping-skills-syllabus.git
+[submodule "modules/medtech-skill-overview"]
+	path = modules/medtech-skill-overview
+	url = git@gitlab.oit.duke.edu:MedTechPrototyping/medtech-skill-overview.git

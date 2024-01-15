@@ -10,3 +10,6 @@
 [submodule "modules/cad-onshape"]
 	path = modules/cad-onshape
 	url = git@gitlab.oit.duke.edu:MedTechPrototyping/cad-onshape.git
+[submodule "modules/git-fundamentals"]
+	path = modules/git-fundamentals
+	url = git@gitlab.oit.duke.edu:EmbeddedMedicalDevices/git-fundamentals.git

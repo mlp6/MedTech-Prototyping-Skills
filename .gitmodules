@@ -13,3 +13,6 @@
 [submodule "modules/git-fundamentals"]
 	path = modules/git-fundamentals
 	url = git@gitlab.oit.duke.edu:EmbeddedMedicalDevices/git-fundamentals.git
+[submodule "modules/arduino_timing_gpio"]
+	path = modules/arduino_timing_gpio
+	url = git@gitlab.oit.duke.edu:MedTechPrototyping/arduino_timing_gpio.git

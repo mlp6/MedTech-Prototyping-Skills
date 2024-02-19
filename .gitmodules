@@ -16,3 +16,6 @@
 [submodule "modules/arduino_timing_gpio"]
 	path = modules/arduino_timing_gpio
 	url = git@gitlab.oit.duke.edu:MedTechPrototyping/arduino_timing_gpio.git
+[submodule "modules/arduino_isr_adc"]
+	path = modules/arduino_isr_adc
+	url = git@gitlab.oit.duke.edu:MedTechPrototyping/arduino_isr_adc.git

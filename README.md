@@ -7,11 +7,14 @@ with the Duke BME MedTech Prototyping Skills (BME290L) course.
 ## Tasks at the Start of Each Semester
 * [ ] Update syllabus & schedule
 * [ ] Setup Canvas
-    - [ ] Upload resources
+    - [ ] link syllabus
     - [ ] add TAs
 * [ ] Setup Gradescope
-* [ ] Setup Onshape
+* [ ] Setup OnShape
 * [ ] Add students to 3DPrinterOS
+
+## Fall 2024 Planning
+* [ ] Convert individual git repos to Jupyter book.
 
 ## TA Responsibilities
 * Preview all assignments (collectively) to find errors / confusion

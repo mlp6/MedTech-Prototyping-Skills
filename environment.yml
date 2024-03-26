@@ -1,0 +1,12 @@
+name: medtech-prototyping-skills
+dependencies:
+  - python=3.11
+  - jupyter
+  - pandas
+  - numpy
+  - pytest
+  - scipy
+  - matplotlib
+  - ipython
+  - pip
+  - seaborn

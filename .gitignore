@@ -34,3 +34,4 @@
 *.tdo
 fp-info-cache
 *-backups/
+.conda/

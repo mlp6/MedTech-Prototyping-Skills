@@ -2,19 +2,7 @@
 <a href="https://gitlab.oit.duke.edu/mlp6/MedTech-Prototyping-Skills/-/commits/main"><img alt="pipeline status" src="https://gitlab.oit.duke.edu/mlp6/MedTech-Prototyping-Skills/badges/main/pipeline.svg" /></a>
 
 This repository serves as the default collection for all resources associated
-with the Duke BME MedTech Prototyping Skills (BME290L) course.
-
-## Tasks at the Start of Each Semester
-* [ ] Update syllabus & schedule
-* [ ] Setup Canvas
-    - [ ] link syllabus
-    - [ ] add TAs
-* [ ] Setup Gradescope
-* [ ] Setup OnShape
-* [ ] Add students to 3DPrinterOS
-
-## Fall 2024 Planning
-* [ ] Convert individual git repos to Jupyter book.
+with the Duke BME MedTech Prototyping Skills (BME254L) course.
 
 ## TA Responsibilities
 * Preview all assignments (collectively) to find errors / confusion

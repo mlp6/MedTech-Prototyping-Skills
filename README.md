@@ -4,6 +4,18 @@
 This repository serves as the default collection for all resources associated
 with the Duke BME MedTech Prototyping Skills (BME254L) course.
 
+## New Semester Tasks
+[ ] Update schedule & syllabus
+[ ] Setup Canvas
+    [ ] Add TAs
+    [ ] Link syllabus
+[ ] Setup Gradescope
+[ ] Setup 3DPrinterOS
+[ ] Setup Onshape
+[ ] Setup GitLab group for class
+[ ] Setup Box upload folder for PCBs
+[ ] Order project parts
+
 ## TA Responsibilities
 * Preview all assignments (collectively) to find errors / confusion
 * Help grade via Gradescope

@@ -11,23 +11,19 @@ with the Duke BME MedTech Prototyping Skills (BME254L) course.
     [ ] Link syllabus
 [ ] Setup 3DPrinterOS
 [ ] Setup Onshape
-[ ] Setup GitLab group for class
-[ ] Setup Box upload folder for PCBs
 [ ] Order project parts
 [ ] Setup Pratt AV Panopto recording (https://it.pratt.duke.edu/av)
+- [ ] Setup Kits services (https://kits.duke.edu)
+  - [ ] Box
+  - [ ] Teams
+  - [ ] GitLab
 
 ## Fall 2024 TODOs
-* TAs: Brandon, Harvey & Ceci
-* Complete BLE DevAcademy course
-* Complete Intermediate DevAcademy course
-* Rethink all labs in the context of a final biomedical project (ECG, temp, pressure, etc.)
-  * Change up all grading to adding functionality for final.project demo at end of semester.
-  * ![block diagram](image.png)
-* add thread example with a `k_event_wait()` and a sequence diagram
+* Make final project more biomedical in nature; change grading to be hitting functional milestones along the way.
 
 ## TA Responsibilities
-* Preview all assignments (collectively) to find errors / confusion
-* Help grade via Gradescope
+* Preview all assignments to find errors / ambiguity
+* Help grade (Canvas and GitLab Merge Requests) 
 * Attend lab period to help students and hold office hours 
 * Respond to Gitlab Issues
 

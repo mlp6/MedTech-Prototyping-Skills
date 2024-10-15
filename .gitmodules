@@ -19,3 +19,6 @@
 [submodule "modules/arduino_isr_adc"]
 	path = modules/arduino_isr_adc
 	url = git@gitlab.oit.duke.edu:MedTechPrototyping/arduino_isr_adc.git
+[submodule "modules/lightbox"]
+	path = modules/lightbox
+	url = git@gitlab.oit.duke.edu:MedTechPrototyping/arduino_isr_adc.git

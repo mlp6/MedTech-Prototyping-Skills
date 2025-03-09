@@ -6,20 +6,21 @@ with the Duke BME MedTech Prototyping Skills (BME254L) course.
 
 ## New Semester Tasks
 [ ] Update schedule & syllabus
-[ ] Setup Canvas
-    [ ] Add TAs
+[ ] Publish Canvas
+    [ ] Add TAs and lab staff
     [ ] Link syllabus
 [ ] Setup 3DPrinterOS
-[ ] Setup Onshape
+[ ] Add students to Duke's Onshape
 [ ] Order project parts
 [ ] Setup Pratt AV Panopto recording (https://it.pratt.duke.edu/av)
-- [ ] Setup Kits services (https://kits.duke.edu)
-  - [ ] Box
-  - [ ] Teams
-  - [ ] GitLab
-
-## Fall 2024 TODOs
-* Make final project more biomedical in nature; change grading to be hitting functional milestones along the way.
+- [ ] Setup GitLab Group
+  - [ ] Members
+  - [ ] Labels
+  - [ ] Projects
+- [ ] Setup Ed Discussion
+  - [ ] Link to Syllabus
+  - [ ] Discussion Categories
+- [ ] Setup Gradescope
 
 ## TA Responsibilities
 * Preview all assignments to find errors / ambiguity

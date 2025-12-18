@@ -1,4 +1,7 @@
 # MedTech Prototyping Skills (BME290L)
+
+**THIS REPOSITORY IS ACTIVELY BEING MIGRATED FROM DUKE'S GITLAB SERVER**
+
 <a href="https://gitlab.oit.duke.edu/mlp6/MedTech-Prototyping-Skills/-/commits/main"><img alt="pipeline status" src="https://gitlab.oit.duke.edu/mlp6/MedTech-Prototyping-Skills/badges/main/pipeline.svg" /></a>
 
 This repository serves as the default collection for all resources associated

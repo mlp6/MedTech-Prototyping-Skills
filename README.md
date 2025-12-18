@@ -2,37 +2,18 @@
 
 **THIS REPOSITORY IS ACTIVELY BEING MIGRATED FROM DUKE'S GITLAB SERVER**
 
-<a href="https://gitlab.oit.duke.edu/mlp6/MedTech-Prototyping-Skills/-/commits/main"><img alt="pipeline status" src="https://gitlab.oit.duke.edu/mlp6/MedTech-Prototyping-Skills/badges/main/pipeline.svg" /></a>
+[![Build Site](https://github.com/mlp6/MedTech-Prototyping-Skills/actions/workflows/publish.yml/badge.svg)](https://github.com/mlp6/MedTech-Prototyping-Skills/actions/workflows/publish.yml)
 
 This repository serves as the default collection for all resources associated
 with the Duke BME MedTech Prototyping Skills (BME254L) course.
 
-## New Semester Tasks
-[ ] Update schedule & syllabus
-[ ] Publish Canvas
-    [ ] Add TAs and lab staff
-    [ ] Link syllabus
-[ ] Setup 3DPrinterOS
-[ ] Add students to Duke's Onshape
-[ ] Order project parts
-[ ] Setup Pratt AV Panopto recording (https://it.pratt.duke.edu/av)
-- [ ] Setup GitLab Group
-  - [ ] Members
-  - [ ] Labels
-  - [ ] Projects
-- [ ] Setup Ed Discussion
-  - [ ] Link to Syllabus
-  - [ ] Discussion Categories
-- [ ] Setup Gradescope
+[Course Website](https://mlp6.github.io/MedTech-Prototyping-Skills/)
 
-## TA Responsibilities
-* Preview all assignments to find errors / ambiguity
-* Help grade (Canvas and GitLab Merge Requests) 
-* Attend lab period to help students and hold office hours 
-* Respond to Gitlab Issues
+[Canvas](https://canvas.duke.edu/courses/XXXX)
 
-## Contributors
-* Mark Palmeri
+[Ed Discussion](https://edstem.org/us/courses/XXXX/)
+
+[Gradescope](https://www.gradescope.com/courses/XXXX)
 
 ## Licensing
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Medical Electrical Equipment</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/mlp6/" property="cc:attributionName" rel="cc:attributionURL">Mark L. Palmeri</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.<br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="https://gitlab.oit.duke.edu/mlp6/Medical-Electrical-Equipment" rel="dct:source">https://gitlab.oit.duke.edu/mlp6/Medical-Electrical-Equipment</a>.
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">MedTech Prototyping Skills</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/mlp6/" property="cc:attributionName" rel="cc:attributionURL">Mark L. Palmeri</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.<br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/mlp6/MedTech-Prototyping-Skills" rel="dct:source">https://github.com/mlp6/MedTech-Prototyping-Skills</a>.

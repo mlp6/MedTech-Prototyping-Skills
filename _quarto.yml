@@ -1,0 +1,58 @@
+project:
+  type: website
+
+website:
+  title: "MedTech Prototyping Skills"
+  description: "Duke BME 254L - Spring 2026"
+  site-url: "https://mlp6.github.io/MedTech-Prototyping-Skills/"
+ 
+  repo-url: "https://github.com/mlp6/MedTech-Prototyping-Skills/"
+  repo-actions: [issue]
+
+  sidebar:
+    background: "#2d63ba"
+    pinned: true
+    align: center
+    style: docked
+    search: false
+    collapse-level: 2
+    contents:
+      - section: "Course Information"
+        contents:
+        - href: course-syllabus.qmd
+          text: Course Syllabus
+        - href: bme-lab-policies.qmd
+          text: "BME Lab Policies"
+        - href: https://canvas.duke.edu/courses/XXXX
+          text: Canvas
+        - href: https://edstem.org/us/courses/XXXX/
+          text: Ed Discussion
+        - href: https://canvas.duke.edu/courses/XXXX
+          text: Gradescope
+        - href: software-install-tutorials.qmd
+          text: "Software Installation & Tutorials"
+        - href: faq.qmd
+          text: FAQ
+      - section: "Learning Modules"
+      - section: Labs
+      - section: Resources
+
+    page-footer:
+      right: 'This page is built with [Quarto](https://quarto.org/).'
+      left: "&copy; Copyright 2026, Mark Palmeri"
+
+format:
+  html:
+    mainfont: Atkinson Hyperlegible
+    highlight-style: a11y-light
+    theme:
+      - cosmo
+      - brand
+    css: styles.css
+    toc: true
+
+linkcolor: "#5D737E"
+toc: true
+code-copy: hover
+code-link: true
+code-overflow: wrap

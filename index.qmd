@@ -1,0 +1,9 @@
+---
+title: "MedTech Prototyping Skills"
+subtitle: "BME254L (Spring 2026)"
+format:
+  html: default
+  pdf: default
+---
+
+Please use the links in the sidebar to navigate through the course materials.

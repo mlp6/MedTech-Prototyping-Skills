@@ -1,0 +1,162 @@
+[
+  {
+    "objectID": "TODO.html",
+    "href": "TODO.html",
+    "title": "TODOs",
+    "section": "",
+    "text": "[ ] Update schedule & syllabus [ ] Publish Canvas [ ] Add TAs and lab staff [ ] Link syllabus [ ] Setup 3DPrinterOS [ ] Add students to Duke’s Onshape [ ] Order project parts [ ] Setup Pratt AV Panopto recording (https://it.pratt.duke.edu/av) - [ ] Setup GitLab Group - [ ] Members - [ ] Labels - [ ] Projects - [ ] Setup Ed Discussion - [ ] Link to Syllabus - [ ] Discussion Categories - [ ] Setup Gradescope"
+  },
+  {
+    "objectID": "TODO.html#new-semester-tasks",
+    "href": "TODO.html#new-semester-tasks",
+    "title": "TODOs",
+    "section": "",
+    "text": "[ ] Update schedule & syllabus [ ] Publish Canvas [ ] Add TAs and lab staff [ ] Link syllabus [ ] Setup 3DPrinterOS [ ] Add students to Duke’s Onshape [ ] Order project parts [ ] Setup Pratt AV Panopto recording (https://it.pratt.duke.edu/av) - [ ] Setup GitLab Group - [ ] Members - [ ] Labels - [ ] Projects - [ ] Setup Ed Discussion - [ ] Link to Syllabus - [ ] Discussion Categories - [ ] Setup Gradescope"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "MedTech Prototyping Skills",
+    "section": "",
+    "text": "Please use the links in the sidebar to navigate through the course materials."
+  },
+  {
+    "objectID": "bme-lab-policies.html",
+    "href": "bme-lab-policies.html",
+    "title": "BME Lab Procedures and Safety Expectations",
+    "section": "",
+    "text": "Important\n\n\n\nSafety is Always First, Cleanliness a close second\n\n\nSafety always comes first in lab. To that end, you are expected to follow the rules in this document. Failure to do so may result in revocation of laboratory privileges, reduction of your course grade, and possible withdrawal from your course. Understanding risks and learning to work safely in the laboratory are an important part of your education.\nBefore entering lab, your safety training must be current. You need Duke’s Occupational and Environmental Safety Office’s:\n\nFire/Life Safety, and\nLaboratory Safety-General\n\ntraining modules. We know that you may have done this training before, but it expires in one year, and you must be current through the end of the semester.\nMost accidents are the result of a series of failures. That said, most accidents are preventable. You are responsible for your safety and the safety of those around you. The vast majority of accidents involve some combination of inattention, carelessness, horseplay, impairment, broken tools, and lack of knowledge. All of these factors can be mitigated and it’s your job to do so.\nYou are responsible for keeping the lab clean.\n\n\n\n\n\n\nWarning\n\n\n\nFailure to keep a clean workspace can result in a lower grade for you and your team.\n\n\n\n\n\n\n\n\nImportant\n\n\n\nIf you or someone else in lab needs immediate medical attention, call 911.\n\n\nIn case you need to report your location, you are in CIEMAS B209. Non-emergent problems, call 681-WELL (681-9355). If you are injured in lab, you must let an instructor/TA/lab staff member know as soon as possible. Lab staff after-hours phone number is on the contact cards posted outside every lab door.\n\n\n\n\n\n\nNote\n\n\n\nKeep these points in mind… - In an emergency, call 911. Location: CIEMAS B209\n\nIn the event of a non-emergent injury, seek medical attention and let an instructor/TA/lab staff know within 12 hours.\nFind the emergency exits.\nNever work alone. Two or more people must be present and able to see and hear each other.\nInspect every tool before use. Remove broken tools from service, place them on the broken tools shelf at the back of the room, and notify lab staff.\nWear safety glasses when appropriate. This includes, but is not limited to, activities such as soldering, sanding, filing, hammering, cutting, and drilling.\nWear hearing protection when using noisy tools such as drills and the Dremel tool. Ear buds or music headphones are not sufficient hearing protection.\nNever work impaired. If you are tired, stressed, in a rush, or impaired in any other way then do not work in lab. Go home and recuperate.\nTie back long hair to keep it away from tools.\nClosed-toe shoes must be worn in the lab. Long trousers are preferred.\nProperly secure materials. Clamps, vises and portable worktables are available.\nDon’t force anything. If the job requires significant force, you’re doing it wrong.\nKeep food and drink out of the lab!\nPower down equipment when finished with it.\nA fire extinguisher is outside the door.\nWash your hands before leaving lab.\nBits of unused solder, wire and lead trimmings all go in a “Solder Scrap” container.\nAnything contaminated with solder paste (wipes, boards, applicators) goes in a “Solder Scrap” container.\nOther hazardous waste dealt with on a case by case basis; ask lab staff for help.\nPut tools away, in the right place. Tool drawers are labeled, but if you’re unsure where to put a tool, ask your TA/lab staff.\nDo not hoard parts or tools.\nThis bears repeating: Take the parts you need, but only the parts you need. Do not hoard parts. If you see a part becoming scarce, let lab staff know so they can re-order.\nBenches are for temporary use only. Leave no trace that you were at the bench when you leave for the day. Rarely, with approval, a bench can be claimed for the semester.\nAny and all paint must be pre-approved by an instructor/TA/lab staff. Unapproved paint on projects will result in a lower grade. (Spray paint indoors is never approved.)\nA representative from your group is expected to participate in weekly cleaning. Your instructor will give you the schedule.\nPlace a cover on the bench for messy work. Chucks and Ram Board are available for this.\nLab staff have a collection of good soldering tips and fine tools (e.g. tweezers). If you have need for something better than you can find in lab, ask lab staff.",
+    "crumbs": [
+      "Course Information",
+      "BME Lab Policies"
+    ]
+  },
+  {
+    "objectID": "course-syllabus.html",
+    "href": "course-syllabus.html",
+    "title": "MedTech Prototyping Skills (BME254L) Syllabus",
+    "section": "",
+    "text": "Dr. Mark Palmeri\n\nTeams chat is the best way to reach me\nEmail (slower): mark.palmeri@duke.edu\nDuke GitLab username: mlp6\nOffice: 258 Hudson Hall Annex\nOffice Hours: https://calendly.com/mark-palmeri\n\n\n\n\n\nDarcy Ayers (dra39)\nCarson Pazdan (cbp31)\nLauren Kenselaar (lbk18)\n\nQuestions that can be answered by Dr. Palmeri or a teaching assistant should be posted on Ed Discussion.\n\n\n\n\nLecture: Tuesday & Thursday, 11:45-13:00, Hudson Hall 208 (Panopto recorded)\nLab: Thursday, 13:25-16:25; Fitzpatrick B209 (Door Code: 4-1-5-2)\n⚠️ No food or drink is allowed in the lab! ⚠️ Failure to adhere to this policy will have consequences on your lab participation.\n\n\n\nThis course focuses on developing medical device prototyping skills that will be used in future project and design courses, with a focus on preparing our students for positions in the medtech industry. Students will work individually to complete design tasks that will be tested to quantitative specifications. Students will gain hands-on experience with device fabrication, debugging, testing and failure analysis.\nUpon completion of this course, students should be able to:\n\nSoftware version control (git)\nPerform functional decomposition and express as a stage diagram (UML)\nUtilize ECAD (KiCad) for:\n\nElectronic schematic capture\nPrinted circuit board (PCB) layout\n\nModular breadboarding of circuits to translation to testable PCBs\nDesign a battery-powered device that:\n\nAccepts analog and digital user input\nOutputs analog and digital outputs\nPasses testable specifications to 95% CI\n\nImplement electronic logic on microcontroller (Arduino framework)\n\nModular / testable code development in C\nInterupt Service Routines\nPulse Width Modulation\nState Machine\n\nUtilize CAD (Onshape) for:\n\nDevice enclosure design with UI/UX considerations\nInput / Output considerations\nSize / weight constraints\nPreparation of mechanical drawings\n\n3D printing of designs\n\nAssembly of discrete enclosure pieces\nUse of mechanical fasteners\n\nWrite technical analysis reports\n\n\n\n\n\n\n\nComputational Methods in Engineering (EGR103) or equivalent\nFundamentals of Electrical and Computer Engineering (ECE110L)\n\n\n\n\n\nIntroduction to Electricity, Magnetism and Optics (PHY152L)\n\n\n\n\n\nWe will be using Canvas as the learning management system for this course. It will host the syllabus, which will have hyperlinks to all lecture content and lab assignments.\nDuke’s GitLab server will be used for most course lab exercises, and code-related questions will be submitted to Dr. Palmeri / TAs using GitLab Issues.\nEd Discussion will be used for general course questions and discussion.\n\n\n\nThis class is organized in a sequence of modules. Specific details surrounding dates for assignments associated with each module will be posted to Gradescope.\nThis course uses a version of Mastery Learning, where “mastery” of a given module is necessary to progress onto the subsequent module. Quizzes are used to evaluate “knowledge”; lab exercises are used to demonstrate application of skills. In this course, assignments of later modules depends on the successful completion of earlier modules.\n\n\n\n\n\nModule\nGradescope\nLab\n\n\n\n\nFDOC: Who am I? / Skill Overview\nCompletion Survey\nSoftware Installation & Tutorials\n\n\nEvent-Driven State Machines\nWireless HRM State Diagram\nWireless HRM State Diagram\n\n\nVersion Control (git)\nGit Fundamentals Quiz\nGit Lab Exercise\n\n\nComputer Aided Design (CAD) (Onshape)\nHybrid III Drawings & Screenshots\nHybrid III 6 y/o\n\n\nECAD (KiCad): Schematic Capture\nNone\nSchematic Capture: Voltage Dividers and LED Output\n\n\nECAD (KiCad): SPICE Modeling\nNone\nSPICE Modeling Lab\n\n\nECAD (KiCad): PCB Layout\nNone\nPCB Layout Lab: Microcontroller Peripherals\n\n\nFirmware Development: C Programming Overview\nNone\nPlatformIO / Arduino Framework: Timing & GPIO (Paired Coding)\n\n\nFirmware Development: Button Event ISRs, ADC & State Machines\nNone\nButton Event ISR & ADC (Paired Coding)\n\n\nLightbox Project (Kanban Board)\nNone\nLightbox Project Repository\n\n\n\n\n\n\n\nMLK Holiday (Jan 20, 2025)\nSpring Break (Mar 10-14, 2025)\nLDOC (Apr 23, 2025)\nFinal Project Repository & Report Duke (April 29 @ 17:00) :warning: NO LATE SUBMISSIONS ACCEPTED\n\n\n\n\n\nClass participation in both lecture and lab time is strongly encouraged. Lecture will be used to provide skill overview and live demonstrations, many of while will kickstart your efforts for your project. Lab time will provide you access to equipment and the TAs for assistance.\nStudents are responsible for obtaining missed lecture content from other students in the class. All lecture slides/presented content will be made availabe online (Canvas/Gitlab), and lectures will be recorded via Panopto and posted to Canvas.\nParticipation on Ed Discussion is also encouraged, in the form of:\n\nAsking questions about the course material (ideally, publicly, so that others * can benefit (Anonymous okay))\nAnswering questions from other students\nSharing interesting articles or resources related to the course material\n\n\n\n\n\n\nThere will be quizzes, lab exercises, and completion surveys associated with some of the learning modules (25%), all of which will be submitted through Gradescope. All of the learning modules will contribute to the final project and the associated technical report (75%).\nAll assignment grades will be posted to Gradescope (and linked to the Canvas gradebook) throughout the semester to track your performance.\n\n\n\nThis course is not “curved” (i.e., a distribution of grades will not be enforced), and a traditional grading scheme will be used (e.g., 90-93 = A-, 94-97 = A, 97-100 = A+). Participation throughout the semester will influence rounding up/down for fractional grades.\nFailing the course can happen with a cummulative score &lt; 65 (D) or not completing all of the assignments.\n\n\n\nAny regrading requests need to be made within one week of grades for a given assignment being released. You must make the request via Gradescope and provide a description of why you feel a regrade is appropriate. Requesting a regrade could lead to additional loss of credit when an assignment is re-evaluated.\nSome assignments will have an opportunity to be resubmitted based on grading feedback at the discretion of Dr. Palmeri.\n\n\n\nLate submission windows will be available for all assignments, minus the final project, and should be used to accomodate acute illness, travel, high workload from other classes and other unforeseen circumstances. This late submission window can be utilized without penalty and without prior approval.\nStudents with SDAO accomodations for extended time on assignments can use this extended late submission window for all assignments.\nAny assignments submitted after the late submission window will only be accepted for partial credit at the discretion of Dr. Palmeri or if prior approval was sought before the original due date.\n\n\n\n\nAll students are expected to adhere to all principles of the Duke Community Standard. Violations of the Duke Community Standard will be referred immediately to the Office of Student Conduct. Please do not hesitate to talk with Dr. Palmeri about any situations involving academic honor, especially if it is ambiguous what should be done.\n\n\n\n\n\nEngineering is inherently a collaborative field, and in this class, you are encouraged to work collaboratively on your projects. That being said, all of the work that you submit must be generated by you and reflect your understanding of the material. All resources used in your projects that were developed by another person or company must be properly acknowledged using comments in your code / reports.\n\n\n\nThe use of artificial intelligence is a rapidly developing resource / tool in engineering. In software development, there are many levels of AI-assitance available. Such form of assistance include the IntelliCode tools and GitHub CoPilot (free to students through the GitHub Education program). These tools can be leveraged to help with syntax. You are, however, strongly cautioned to not rely on these tools for logical implementation.\n\nMedTech Prototyping Skills by Mark L. Palmeri is licensed under CC BY-SA 4.0",
+    "crumbs": [
+      "Course Information",
+      "Course Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-syllabus.html#personnel",
+    "href": "course-syllabus.html#personnel",
+    "title": "MedTech Prototyping Skills (BME254L) Syllabus",
+    "section": "",
+    "text": "Dr. Mark Palmeri\n\nTeams chat is the best way to reach me\nEmail (slower): mark.palmeri@duke.edu\nDuke GitLab username: mlp6\nOffice: 258 Hudson Hall Annex\nOffice Hours: https://calendly.com/mark-palmeri\n\n\n\n\n\nDarcy Ayers (dra39)\nCarson Pazdan (cbp31)\nLauren Kenselaar (lbk18)\n\nQuestions that can be answered by Dr. Palmeri or a teaching assistant should be posted on Ed Discussion.",
+    "crumbs": [
+      "Course Information",
+      "Course Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-syllabus.html#course-times-locations",
+    "href": "course-syllabus.html#course-times-locations",
+    "title": "MedTech Prototyping Skills (BME254L) Syllabus",
+    "section": "",
+    "text": "Lecture: Tuesday & Thursday, 11:45-13:00, Hudson Hall 208 (Panopto recorded)\nLab: Thursday, 13:25-16:25; Fitzpatrick B209 (Door Code: 4-1-5-2)\n⚠️ No food or drink is allowed in the lab! ⚠️ Failure to adhere to this policy will have consequences on your lab participation.",
+    "crumbs": [
+      "Course Information",
+      "Course Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-syllabus.html#course-objectives",
+    "href": "course-syllabus.html#course-objectives",
+    "title": "MedTech Prototyping Skills (BME254L) Syllabus",
+    "section": "",
+    "text": "This course focuses on developing medical device prototyping skills that will be used in future project and design courses, with a focus on preparing our students for positions in the medtech industry. Students will work individually to complete design tasks that will be tested to quantitative specifications. Students will gain hands-on experience with device fabrication, debugging, testing and failure analysis.\nUpon completion of this course, students should be able to:\n\nSoftware version control (git)\nPerform functional decomposition and express as a stage diagram (UML)\nUtilize ECAD (KiCad) for:\n\nElectronic schematic capture\nPrinted circuit board (PCB) layout\n\nModular breadboarding of circuits to translation to testable PCBs\nDesign a battery-powered device that:\n\nAccepts analog and digital user input\nOutputs analog and digital outputs\nPasses testable specifications to 95% CI\n\nImplement electronic logic on microcontroller (Arduino framework)\n\nModular / testable code development in C\nInterupt Service Routines\nPulse Width Modulation\nState Machine\n\nUtilize CAD (Onshape) for:\n\nDevice enclosure design with UI/UX considerations\nInput / Output considerations\nSize / weight constraints\nPreparation of mechanical drawings\n\n3D printing of designs\n\nAssembly of discrete enclosure pieces\nUse of mechanical fasteners\n\nWrite technical analysis reports",
+    "crumbs": [
+      "Course Information",
+      "Course Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-syllabus.html#prerequisites",
+    "href": "course-syllabus.html#prerequisites",
+    "title": "MedTech Prototyping Skills (BME254L) Syllabus",
+    "section": "",
+    "text": "Computational Methods in Engineering (EGR103) or equivalent\nFundamentals of Electrical and Computer Engineering (ECE110L)\n\n\n\n\n\nIntroduction to Electricity, Magnetism and Optics (PHY152L)",
+    "crumbs": [
+      "Course Information",
+      "Course Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-syllabus.html#learning-management-system",
+    "href": "course-syllabus.html#learning-management-system",
+    "title": "MedTech Prototyping Skills (BME254L) Syllabus",
+    "section": "",
+    "text": "We will be using Canvas as the learning management system for this course. It will host the syllabus, which will have hyperlinks to all lecture content and lab assignments.\nDuke’s GitLab server will be used for most course lab exercises, and code-related questions will be submitted to Dr. Palmeri / TAs using GitLab Issues.\nEd Discussion will be used for general course questions and discussion.",
+    "crumbs": [
+      "Course Information",
+      "Course Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-syllabus.html#class-schedule",
+    "href": "course-syllabus.html#class-schedule",
+    "title": "MedTech Prototyping Skills (BME254L) Syllabus",
+    "section": "",
+    "text": "This class is organized in a sequence of modules. Specific details surrounding dates for assignments associated with each module will be posted to Gradescope.\nThis course uses a version of Mastery Learning, where “mastery” of a given module is necessary to progress onto the subsequent module. Quizzes are used to evaluate “knowledge”; lab exercises are used to demonstrate application of skills. In this course, assignments of later modules depends on the successful completion of earlier modules.\n\n\n\n\n\nModule\nGradescope\nLab\n\n\n\n\nFDOC: Who am I? / Skill Overview\nCompletion Survey\nSoftware Installation & Tutorials\n\n\nEvent-Driven State Machines\nWireless HRM State Diagram\nWireless HRM State Diagram\n\n\nVersion Control (git)\nGit Fundamentals Quiz\nGit Lab Exercise\n\n\nComputer Aided Design (CAD) (Onshape)\nHybrid III Drawings & Screenshots\nHybrid III 6 y/o\n\n\nECAD (KiCad): Schematic Capture\nNone\nSchematic Capture: Voltage Dividers and LED Output\n\n\nECAD (KiCad): SPICE Modeling\nNone\nSPICE Modeling Lab\n\n\nECAD (KiCad): PCB Layout\nNone\nPCB Layout Lab: Microcontroller Peripherals\n\n\nFirmware Development: C Programming Overview\nNone\nPlatformIO / Arduino Framework: Timing & GPIO (Paired Coding)\n\n\nFirmware Development: Button Event ISRs, ADC & State Machines\nNone\nButton Event ISR & ADC (Paired Coding)\n\n\nLightbox Project (Kanban Board)\nNone\nLightbox Project Repository\n\n\n\n\n\n\n\nMLK Holiday (Jan 20, 2025)\nSpring Break (Mar 10-14, 2025)\nLDOC (Apr 23, 2025)\nFinal Project Repository & Report Duke (April 29 @ 17:00) :warning: NO LATE SUBMISSIONS ACCEPTED",
+    "crumbs": [
+      "Course Information",
+      "Course Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-syllabus.html#attendance-participation",
+    "href": "course-syllabus.html#attendance-participation",
+    "title": "MedTech Prototyping Skills (BME254L) Syllabus",
+    "section": "",
+    "text": "Class participation in both lecture and lab time is strongly encouraged. Lecture will be used to provide skill overview and live demonstrations, many of while will kickstart your efforts for your project. Lab time will provide you access to equipment and the TAs for assistance.\nStudents are responsible for obtaining missed lecture content from other students in the class. All lecture slides/presented content will be made availabe online (Canvas/Gitlab), and lectures will be recorded via Panopto and posted to Canvas.\nParticipation on Ed Discussion is also encouraged, in the form of:\n\nAsking questions about the course material (ideally, publicly, so that others * can benefit (Anonymous okay))\nAnswering questions from other students\nSharing interesting articles or resources related to the course material",
+    "crumbs": [
+      "Course Information",
+      "Course Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-syllabus.html#assignments-grading",
+    "href": "course-syllabus.html#assignments-grading",
+    "title": "MedTech Prototyping Skills (BME254L) Syllabus",
+    "section": "",
+    "text": "There will be quizzes, lab exercises, and completion surveys associated with some of the learning modules (25%), all of which will be submitted through Gradescope. All of the learning modules will contribute to the final project and the associated technical report (75%).\nAll assignment grades will be posted to Gradescope (and linked to the Canvas gradebook) throughout the semester to track your performance.\n\n\n\nThis course is not “curved” (i.e., a distribution of grades will not be enforced), and a traditional grading scheme will be used (e.g., 90-93 = A-, 94-97 = A, 97-100 = A+). Participation throughout the semester will influence rounding up/down for fractional grades.\nFailing the course can happen with a cummulative score &lt; 65 (D) or not completing all of the assignments.\n\n\n\nAny regrading requests need to be made within one week of grades for a given assignment being released. You must make the request via Gradescope and provide a description of why you feel a regrade is appropriate. Requesting a regrade could lead to additional loss of credit when an assignment is re-evaluated.\nSome assignments will have an opportunity to be resubmitted based on grading feedback at the discretion of Dr. Palmeri.\n\n\n\nLate submission windows will be available for all assignments, minus the final project, and should be used to accomodate acute illness, travel, high workload from other classes and other unforeseen circumstances. This late submission window can be utilized without penalty and without prior approval.\nStudents with SDAO accomodations for extended time on assignments can use this extended late submission window for all assignments.\nAny assignments submitted after the late submission window will only be accepted for partial credit at the discretion of Dr. Palmeri or if prior approval was sought before the original due date.",
+    "crumbs": [
+      "Course Information",
+      "Course Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-syllabus.html#duke-community-standard",
+    "href": "course-syllabus.html#duke-community-standard",
+    "title": "MedTech Prototyping Skills (BME254L) Syllabus",
+    "section": "",
+    "text": "All students are expected to adhere to all principles of the Duke Community Standard. Violations of the Duke Community Standard will be referred immediately to the Office of Student Conduct. Please do not hesitate to talk with Dr. Palmeri about any situations involving academic honor, especially if it is ambiguous what should be done.",
+    "crumbs": [
+      "Course Information",
+      "Course Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-syllabus.html#faq",
+    "href": "course-syllabus.html#faq",
+    "title": "MedTech Prototyping Skills (BME254L) Syllabus",
+    "section": "",
+    "text": "Engineering is inherently a collaborative field, and in this class, you are encouraged to work collaboratively on your projects. That being said, all of the work that you submit must be generated by you and reflect your understanding of the material. All resources used in your projects that were developed by another person or company must be properly acknowledged using comments in your code / reports.\n\n\n\nThe use of artificial intelligence is a rapidly developing resource / tool in engineering. In software development, there are many levels of AI-assitance available. Such form of assistance include the IntelliCode tools and GitHub CoPilot (free to students through the GitHub Education program). These tools can be leveraged to help with syntax. You are, however, strongly cautioned to not rely on these tools for logical implementation.\n\nMedTech Prototyping Skills by Mark L. Palmeri is licensed under CC BY-SA 4.0",
+    "crumbs": [
+      "Course Information",
+      "Course Syllabus"
+    ]
+  },
+  {
+    "objectID": "3D_printing.html",
+    "href": "3D_printing.html",
+    "title": "3D Printing",
+    "section": "",
+    "text": "3D Printing\n\nLog into your account on https://duke.3dprinteros.com/\nYou can use the Co-Lab printers, or add the BME class-specific printers in Teer 212 and CIEMAS B209.\n\nUnder the Printers tab, choose Add Workgroup Printers\nB209 access code: TheDungeon209"
+  }
+]

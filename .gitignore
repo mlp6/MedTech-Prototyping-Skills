@@ -38,3 +38,5 @@ fp-info-cache
 
 /.quarto/
 **/*.quarto_ipynb
+
+_site/

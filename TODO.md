@@ -2,19 +2,13 @@
 
 ## New Semester Tasks
 
-- [ ] Update schedule & syllabus
-- [ ] Publish Canvas
-  - [ ] Add TAs and lab staff
-  - [ ] Link syllabus
-- [ ] Setup Ed Discussion
-  - [ ] Link to Syllabus
-  - [ ] Discussion Categories
-- [ ] Setup Gradescope
+- [WIP] Update schedule & syllabus
+- [X] Publish Canvas
+  - [X] Add TAs and lab staff
+  - [X] Link syllabus
+- [X] Setup Ed Discussion
+- [X] Setup Gradescope
 - [ ] Setup 3DPrinterOS
 - [ ] Add students to Duke's Onshape
 - [ ] Order project parts
-- [ ] Setup Pratt AV Panopto recording (https://it.pratt.duke.edu/av)
-- [ ] Setup GitLab Group (switch to GitHub Classroom)
-  - [ ] Members
-  - [ ] Labels
-  - [ ] Projects
+- [WIP] Setup Pratt AV Panopto recording (https://it.pratt.duke.edu/av)

@@ -1,12 +1,15 @@
 # MedTech Prototyping Skills (BME254L) Syllabus
 
+::: callout-caution
+This syllabus is actively being updated and is not yet final for Spring 2026!
+:::
+
 ## Personnel
 
 ### Instructor
 
 Dr. Mark Palmeri 
 
-* [Teams](https://teams.microsoft.com) chat is the best way to reach me
 * Email (slower): mark.palmeri@duke.edu
 * Duke GitLab username: [mlp6](https://gitlab.oit.duke.edu/mlp6)
 * Office: 258 Hudson Hall Annex
@@ -14,24 +17,34 @@ Dr. Mark Palmeri
 
 ### Teaching Assistants
 
-* Darcy Ayers (`dra39`)
 * Carson Pazdan (`cbp31`)
 * Lauren Kenselaar (`lbk18`)
+* Emily Song (`ecs94`)
 
-*Questions that can be answered by Dr. Palmeri or a teaching assistant should be
-posted on Ed Discussion.*
+::: callout-tip
+Questions that can be answered by Dr. Palmeri or a teaching assistant should be
+posted on Ed Discussion.
+:::
 
 ## Course Times & Locations
 
-**Lecture:** Tuesday & Thursday, 11:45-13:00, Hudson Hall 208 (Panopto recorded)
+**Lecture:** Tuesday & Thursday, 11:45-13:00, Hudson Hall 212 (Panopto recorded)
 
-**Lab:** Thursday, 13:25-16:25; Fitzpatrick B209 (Door Code: 4-1-5-2)
+**Lab:** As needed, Fitzpatrick B209 (Door Code: 4-1-5-2)
 
-⚠️ No food or drink is allowed in the lab! ⚠️  Failure to adhere to this policy will have consequences on your lab participation.
+::: callout-warning
+No food or drink is allowed in the lab!  Failure to adhere to this policy will
+have consequences on your course grade.
+:::
 
 ## Course Objectives
 
-This course focuses on developing medical device prototyping skills that will be used in future project and design courses, with a focus on preparing our students for positions in the medtech industry.  Students will work individually to complete design tasks that will be tested to quantitative specifications.  Students will gain hands-on experience with device fabrication, debugging, testing and failure analysis.
+This course focuses on developing medical device prototyping skills that will be
+used in future project and design courses, with a focus on preparing our
+students for positions in the medtech industry.  Students will work individually
+to complete design tasks that will be tested to quantitative specifications.
+Students will gain hands-on experience with device fabrication, debugging,
+testing and failure analysis.
 
 Upon completion of this course, students should be able to:
 
@@ -88,9 +101,7 @@ Ed Discussion will be used for general course questions and discussion.
 This class is organized in a sequence of modules.  Specific details surrounding
 dates for assignments associated with each module will be posted to Gradescope.
 
-This course uses a version of [Mastery
-Learning](https://en.wikipedia.org/wiki/Mastery_learning), where "mastery" of a
-given module is necessary to progress onto the subsequent module.  Quizzes are
+This course uses a version of [Mastery Learning](https://en.wikipedia.org/wiki/Mastery_learning), where "mastery" of a given module is necessary to progress onto the subsequent module.  Quizzes are
 used to evaluate "knowledge"; lab exercises are used to demonstrate application
 of skills.  In this course, assignments of later modules depends on the
 successful completion of earlier modules.
@@ -119,29 +130,45 @@ successful completion of earlier modules.
 
 ## Attendance & Participation
 
-Class participation in both lecture and lab time is strongly encouraged.  Lecture will be used to provide skill overview and live demonstrations, many of while will kickstart your efforts for your project.  Lab time will provide you access to equipment and the TAs for assistance.
+Class participation in both lecture and lab time is strongly encouraged.
+Lecture will be used to provide skill overview and live demonstrations, many of
+while will kickstart your efforts for your project.  Lab time will provide you
+access to equipment and the TAs for assistance.
 
-Students are responsible for obtaining missed lecture content from other students in the class.  All lecture slides/presented content will be made availabe online (Canvas/Gitlab), and lectures will be recorded via Panopto and posted to Canvas.
+Students are responsible for obtaining missed lecture content from other
+students in the class.  All lecture slides/presented content will be made
+availabe online (Canvas/Gitlab), and lectures will be recorded via Panopto and
+posted to Canvas.
 
 Participation on Ed Discussion is also encouraged, in the form of:
 
-* Asking questions about the course material (ideally, publicly, so that others * can benefit (Anonymous okay))
-* Answering questions from other students
-* Sharing interesting articles or resources related to the course material
+- Asking questions about the course material (ideally, publicly, so that others * can benefit (Anonymous okay))
+
+- Answering questions from other students
+
+- Sharing interesting articles or resources related to the course material
 
 ## Assignments & Grading
 
 ### Grading
 
-There will be quizzes, lab exercises, and completion surveys associated with some of the learning modules (25%), all of which will be submitted through Gradescope.  All of the learning modules will contribute to the final project and the associated technical report (75%).
+There will be quizzes, lab exercises, and completion surveys associated with
+some of the learning modules (25%), all of which will be submitted through
+Gradescope.  All of the learning modules will contribute to the final project
+and the associated technical report (75%).
 
-All assignment grades will be posted to Gradescope (and linked to the Canvas gradebook) throughout the semester to track your performance.
+All assignment grades will be posted to Gradescope (and linked to the Canvas
+gradebook) throughout the semester to track your performance.
 
 ### Course Grade
 
-This course is not "curved" (i.e., a distribution of grades will not be enforced), and a traditional grading scheme will be used (e.g., 90-93 = A-, 94-97 = A, 97-100 = A+).  Participation throughout the semester will influence rounding up/down for fractional grades.
+This course is not "curved" (i.e., a distribution of grades will not be
+enforced), and a traditional grading scheme will be used (e.g., 90-93 = A-,
+94-97 = A, 97-100 = A+).  Participation throughout the semester will influence
+rounding up/down for fractional grades.
 
-Failing the course can happen with a cummulative score < 65 (D) or not completing all of the assignments.  
+Failing the course can happen with a cummulative score < 60 (D-) or not
+completing all of the assignments.  
 
 ### Regrades
 
@@ -156,11 +183,17 @@ feedback at the discretion of Dr. Palmeri.
 
 ### Late Policy / SDAO Accomodations
 
-Late submission windows will be available for all assignments, minus the final project, and should be used to accomodate acute illness, travel, high workload from other classes and other unforeseen circumstances.  This late submission window can be utilized without penalty and without prior approval.
+Late submission windows will be available for all assignments, minus the final
+project, and should be used to accomodate acute illness, travel, high workload
+from other classes and other unforeseen circumstances.  This late submission
+window can be utilized without penalty and without prior approval.
 
-Students with SDAO accomodations for extended time on assignments can use this extended late submission window for all assignments.
+Students with SDAO accomodations for extended time on assignments can use this
+extended late submission window for all assignments.
 
-Any assignments submitted after the late submission window will only be accepted for partial credit at the discretion of Dr. Palmeri or if prior approval was sought **before the original due date**.
+Any assignments submitted after the late submission window will only be accepted
+for partial credit at the discretion of Dr. Palmeri or if prior approval was
+sought **before the original due date**.
 
 ## Duke Community Standard
 
@@ -170,10 +203,14 @@ All students are expected to adhere to all principles of the [Duke Community Sta
 
 ### Can I collaborate with other students?
 
-Engineering is inherently a collaborative field, and in this class, you are encouraged to work collaboratively on your projects.  That being said, all of the work that you submit must be generated by you and reflect your understanding of the material. **All resources used in your projects that were developed by another person or company must be properly acknowledged using comments in your code / reports.**
+Engineering is inherently a collaborative field, and in this class, you are encouraged to work collaboratively on your projects.  That being said, all of the work that you submit must be generated by you and reflect your understanding of the material. 
+
+::: callout-note
+All resources used in your projects that were developed by another person or company must be properly acknowledged using comments in your code / reports.
+:::
 
 ### Can I use AI?
 
 The use of artificial intelligence is a rapidly developing resource / tool in engineering.  In software development, there are many levels of AI-assitance available.  Such form of assistance include the [IntelliCode](https://visualstudio.microsoft.com/services/intellicode/) tools and [GitHub CoPilot](https://github.com/features/copilot) (free to students through the [GitHub Education](https://github.com/education/students) program).  These tools can be leveraged to help with syntax.  **You are, however, strongly cautioned to not rely on these tools for logical implementation.**
 
-<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://gitlab.oit.duke.edu/mlp6/MedTech-Prototyping-Skills/">MedTech Prototyping Skills</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://bme.duke.edu/faculty/mark-palmeri">Mark L. Palmeri</a> is licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p>
+<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/mlp6/MedTech-Prototyping-Skills/">MedTech Prototyping Skills</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://bme.duke.edu/faculty/mark-palmeri">Mark L. Palmeri</a> is licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p>

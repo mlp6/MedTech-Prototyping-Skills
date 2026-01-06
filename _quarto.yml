@@ -21,8 +21,6 @@ website:
         contents:
         - href: course-syllabus.qmd
           text: Course Syllabus
-        - href: bme-lab-policies.qmd
-          text: "BME Lab Policies"
         - href: https://canvas.duke.edu/courses/73999
           text: Canvas
         - href: https://edstem.org/us/courses/91011
@@ -49,10 +47,10 @@ website:
           text: "Git Fundamentals Lab"
       - section: Resources
         contents:
-        - href: resources/bme-lab-policies.qmd
-          text: BME Lab Policies
         - href: resources/state_diagram.qmd
           text: "State Diagrams"
+        - href: resources/bme-lab-policies.qmd
+          text: "BME Lab Policies"
 
     page-footer:
       right: 'This page is built with [Quarto](https://quarto.org/).'

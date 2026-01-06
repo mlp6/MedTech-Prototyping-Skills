@@ -105,4 +105,4 @@ Error -> [*]
 
 ## In-Class / Lab Exercise
 
-[Event-Driven State Machine Lab Exercise (Kitchen Timer)](../lab/event-driven-state-machine-lab.md)
+[Event-Driven State Machine Lab Exercise (Kitchen Timer)](../labs/event-driven-state-machine-lab.qmd)

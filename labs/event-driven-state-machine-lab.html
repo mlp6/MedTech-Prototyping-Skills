@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Dr.&nbsp;Mark Palmeri, M.D., Ph.D.">
+<meta name="dcterms.date" content="2026-01-06">
 
-<title>d_printing – MedTech Prototyping Skills</title>
+<title>Event Driven State Machine Lab – MedTech Prototyping Skills</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,22 +25,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-fced259a1985fd972ecb57c7cd45153f.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-13f007c1943c6d3711256cc1d3aa22a2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-fced259a1985fd972ecb57c7cd45153f.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-13f007c1943c6d3711256cc1d3aa22a2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -68,7 +70,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-sidebar docked quarto-light">
@@ -80,9 +82,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
-      MedTech Prototyping Skills
-      </li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../labs/software-install_tutorials.html">Labs</a></li><li class="breadcrumb-item"><a href="../labs/event-driven-state-machine-lab.html">Event-Driven State Machine (Kitchen Timer)</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -94,7 +94,7 @@ ul.task-list li input[type="checkbox"] {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-center sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">MedTech Prototyping Skills</a> 
+      <a href="../">MedTech Prototyping Skills</a> 
     </div>
       </div>
     <div class="sidebar-menu-container"> 
@@ -110,13 +110,13 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./course-syllabus.html" class="sidebar-item-text sidebar-link">
+  <a href="../course-syllabus.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Course Syllabus</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./bme-lab-policies.html" class="sidebar-item-text sidebar-link">
+  <a href="../bme-lab-policies.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">BME Lab Policies</span></a>
   </div>
 </li>
@@ -157,13 +157,13 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./lectures/medtech-skills-overview-notes.html" class="sidebar-item-text sidebar-link">
+  <a href="../lectures/medtech-skills-overview-notes.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">MedTech Prototyping Skills Overview</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./lectures/event-driven-state-machine-notes.html" class="sidebar-item-text sidebar-link">
+  <a href="../lectures/event-driven-state-machine-notes.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Event-Driven State Machines</span></a>
   </div>
 </li>
@@ -180,13 +180,13 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./labs/software-install_tutorials.html" class="sidebar-item-text sidebar-link">
+  <a href="../labs/software-install_tutorials.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Software Installation Tutorials</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./labs/event-driven-state-machine-lab.html" class="sidebar-item-text sidebar-link">
+  <a href="../labs/event-driven-state-machine-lab.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Event-Driven State Machine (Kitchen Timer)</span></a>
   </div>
 </li>
@@ -203,13 +203,13 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./resources/bme-lab-policies.html" class="sidebar-item-text sidebar-link">
+  <a href="../resources/bme-lab-policies.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">BME Lab Policies</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./resources/state_diagram.html" class="sidebar-item-text sidebar-link">
+  <a href="../resources/state_diagram.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">State Diagrams</span></a>
   </div>
 </li>
@@ -225,26 +225,132 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#d-printing" id="toc-d-printing" class="nav-link active" data-scroll-target="#d-printing">3D Printing</a></li>
+  <li><a href="#digital-kitchen-timer" id="toc-digital-kitchen-timer" class="nav-link active" data-scroll-target="#digital-kitchen-timer">Digital Kitchen Timer</a></li>
+  <li><a href="#functional-states" id="toc-functional-states" class="nav-link" data-scroll-target="#functional-states">Functional States</a></li>
+  <li><a href="#generate-the-state-diagram" id="toc-generate-the-state-diagram" class="nav-link" data-scroll-target="#generate-the-state-diagram">Generate the State Diagram</a></li>
+  <li><a href="#gradescope" id="toc-gradescope" class="nav-link" data-scroll-target="#gradescope">Gradescope</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/mlp6/MedTech-Prototyping-Skills/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/mlp6/MedTech-Prototyping-Skills/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div><div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="event-driven-state-machine-lab.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../labs/software-install_tutorials.html">Labs</a></li><li class="breadcrumb-item"><a href="../labs/event-driven-state-machine-lab.html">Event-Driven State Machine (Kitchen Timer)</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Event Driven State Machine Lab</h1>
+<p class="subtitle lead">BME554L - Spring 2026 - Palmeri</p>
+  <div class="quarto-categories">
+    <div class="quarto-category">Lab</div>
+  </div>
+  </div>
 
 
 
+<div class="quarto-title-meta">
 
-<section id="d-printing" class="level1">
-<h1>3D Printing</h1>
-<ol type="1">
-<li>Log into your account on https://duke.3dprinteros.com/</li>
-<li>You can use the Co-Lab printers, or add the BME class-specific printers in Teer 212 and CIEMAS B209.
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Dr.&nbsp;Mark Palmeri, M.D., Ph.D. </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">January 6, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>I would recommend doing this with pencil and paper first, not immediately jumping into a tool. Err on the side of more detail than not.</p>
+</div>
+</div>
+<section id="digital-kitchen-timer" class="level2">
+<h2 class="anchored" data-anchor-id="digital-kitchen-timer">Digital Kitchen Timer</h2>
+<p>Generate a state diagram for a simple digital kitchen timer that has the following buttons:</p>
 <ul>
-<li>Under the <code>Printers</code> tab, choose <code>Add Workgroup Printers</code></li>
-<li><code>B209</code> access code: <code>TheDungeon209</code></li>
+<li><p><code>Start/Stop</code> Button</p></li>
+<li><p><code>Reset</code> Button</p></li>
+<li><p><code>Pause</code> Button</p></li>
+<li><p><code>Up</code>/<code>Down</code>/<code>Left</code>/<code>Right</code> Arrow Buttons (4)</p></li>
+</ul>
+<p>The timer outputs time intervals in the format: <code>HH:MM:SS</code></p>
+</section>
+<section id="functional-states" class="level2">
+<h2 class="anchored" data-anchor-id="functional-states">Functional States</h2>
+<ul>
+<li><p>The kitchen timer has an “Idle” state when it isn’t actively counting down time. In this state:</p>
+<ul>
+<li><p>The <code>Up</code>/<code>Down</code> buttons increment the time for the <code>HH</code>, <code>MM</code> or <code>SS</code> values.</p></li>
+<li><p>The <code>Left</code>/<code>Right</code> buttons let you move between <code>HH</code>, <code>MM</code> and <code>SS</code>.</p></li>
+<li><p>Time intervals will wrap around to <code>00</code> when a reasonable max value is exceeded.</p></li>
+<li><p>The <code>Reset</code> button sets all of the time values to <code>00</code>.</p></li>
+<li><p>The <code>Pause</code> button is inactive.</p></li>
 </ul></li>
-</ol>
+<li><p><code>Start/Stop</code> will start the timer countdown when in <code>Idle</code>.</p></li>
+<li><p>In the <code>Countdown</code> state:</p>
+<ul>
+<li><p>The <code>Start/Stop</code> button will stop and reset the countdown interval.</p></li>
+<li><p>The <code>Pause</code> button will pause, but not reset, the countdown time.</p></li>
+</ul></li>
+<li><p>When the countdown is done, the timer enters an <code>Alarm</code> state, where:</p>
+<ul>
+<li><p>The <code>Up</code>/<code>Down</code>/<code>Right</code>/<code>Left</code> arrow buttons, <code>Reset</code> and <code>Pause</code> buttons are inactive.</p></li>
+<li><p><code>Start/Stop</code> will stop the alarm and return the timer to <code>Idle</code> with the previously set countdown time.</p></li>
+</ul></li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If any functional state expectation isn’t explicitly described above, please implement something reasonable.</p>
+</div>
+</div>
+<p>Make sure that your state diagram:</p>
+<ul>
+<li><p>Has initialization (i.e., batteries put in) and termination (i.e., completely powered off) dots.</p></li>
+<li><p>Includes all functional states, including (but not limited to):</p>
+<ul>
+<li><p><code>Idle</code></p></li>
+<li><p><code>Countdown</code></p></li>
+<li><p><code>Paused</code></p></li>
+<li><p><code>Alarm</code></p></li>
+</ul></li>
+<li><p>Consider if states should have entry and exit actions.</p></li>
+<li><p>Make sure all transitions between states are annotated with associated triggering events.</p></li>
+</ul>
+</section>
+<section id="generate-the-state-diagram" class="level2">
+<h2 class="anchored" data-anchor-id="generate-the-state-diagram">Generate the State Diagram</h2>
+<p>Formally render your state diagram using one of the tools outlined on the <a href="../resources/state_diagram.html">State Diagram Tools</a> page.</p>
+</section>
+<section id="gradescope" class="level2">
+<h2 class="anchored" data-anchor-id="gradescope">Gradescope</h2>
+<p>Upload your rendered state diagram to the associated Gradescope assignment.</p>
 
 
 </section>

@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Dr.&nbsp;Mark Palmeri, M.D., Ph.D.">
+<meta name="dcterms.date" content="2026-01-06">
 
-<title>d_printing – MedTech Prototyping Skills</title>
+<title>Event-Driven State Machine – MedTech Prototyping Skills</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,22 +25,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-fced259a1985fd972ecb57c7cd45153f.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-13f007c1943c6d3711256cc1d3aa22a2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-fced259a1985fd972ecb57c7cd45153f.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-89abcb12e8852b82dab2915b19c79ac0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-contrib/live-runtime/live-runtime.js" type="module"></script>
+<link href="../site_libs/quarto-contrib/live-runtime/live-runtime.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -66,6 +70,8 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script type="module" src="../site_libs/quarto-ojs/quarto-ojs-runtime.js"></script>
+<link href="../site_libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
 
 
 <link rel="stylesheet" href="styles.css">
@@ -80,9 +86,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
-      MedTech Prototyping Skills
-      </li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lectures/medtech-skills-overview-notes.html">Learning Modules</a></li><li class="breadcrumb-item"><a href="../lectures/event-driven-state-machine-notes.html">Event-Driven State Machines</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -94,7 +98,7 @@ ul.task-list li input[type="checkbox"] {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-center sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">MedTech Prototyping Skills</a> 
+      <a href="../">MedTech Prototyping Skills</a> 
     </div>
       </div>
     <div class="sidebar-menu-container"> 
@@ -110,13 +114,13 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./course-syllabus.html" class="sidebar-item-text sidebar-link">
+  <a href="../course-syllabus.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Course Syllabus</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./bme-lab-policies.html" class="sidebar-item-text sidebar-link">
+  <a href="../bme-lab-policies.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">BME Lab Policies</span></a>
   </div>
 </li>
@@ -157,13 +161,13 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./lectures/medtech-skills-overview-notes.html" class="sidebar-item-text sidebar-link">
+  <a href="../lectures/medtech-skills-overview-notes.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">MedTech Prototyping Skills Overview</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./lectures/event-driven-state-machine-notes.html" class="sidebar-item-text sidebar-link">
+  <a href="../lectures/event-driven-state-machine-notes.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Event-Driven State Machines</span></a>
   </div>
 </li>
@@ -180,13 +184,13 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./labs/software-install_tutorials.html" class="sidebar-item-text sidebar-link">
+  <a href="../labs/software-install_tutorials.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Software Installation Tutorials</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./labs/event-driven-state-machine-lab.html" class="sidebar-item-text sidebar-link">
+  <a href="../labs/event-driven-state-machine-lab.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Event-Driven State Machine (Kitchen Timer)</span></a>
   </div>
 </li>
@@ -203,13 +207,13 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./resources/bme-lab-policies.html" class="sidebar-item-text sidebar-link">
+  <a href="../resources/bme-lab-policies.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">BME Lab Policies</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./resources/state_diagram.html" class="sidebar-item-text sidebar-link">
+  <a href="../resources/state_diagram.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">State Diagrams</span></a>
   </div>
 </li>
@@ -225,31 +229,187 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#d-printing" id="toc-d-printing" class="nav-link active" data-scroll-target="#d-printing">3D Printing</a></li>
+  <li><a href="#event-driven-state-machine" id="toc-event-driven-state-machine" class="nav-link active" data-scroll-target="#event-driven-state-machine">Event-Driven State Machine</a>
+  <ul class="collapse">
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#in-class-demo" id="toc-in-class-demo" class="nav-link" data-scroll-target="#in-class-demo">In-Class Demo</a></li>
+  <li><a href="#implementation" id="toc-implementation" class="nav-link" data-scroll-target="#implementation">Implementation</a>
+  <ul class="collapse">
+  <li><a href="#state-diagram" id="toc-state-diagram" class="nav-link" data-scroll-target="#state-diagram">State Diagram</a></li>
+  </ul></li>
+  <li><a href="#in-class-lab-exercise" id="toc-in-class-lab-exercise" class="nav-link" data-scroll-target="#in-class-lab-exercise">In-Class / Lab Exercise</a></li>
+  </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/mlp6/MedTech-Prototyping-Skills/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/mlp6/MedTech-Prototyping-Skills/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div><div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="event-driven-state-machine-slides.html"><i class="bi bi-file-slides"></i>RevealJS (live)</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lectures/medtech-skills-overview-notes.html">Learning Modules</a></li><li class="breadcrumb-item"><a href="../lectures/event-driven-state-machine-notes.html">Event-Driven State Machines</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Event-Driven State Machine</h1>
+<p class="subtitle lead">BME254L - Spring 2026</p>
+</div>
 
 
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Dr.&nbsp;Mark Palmeri, M.D., Ph.D. </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Duke University
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">January 6, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
 
 
-<section id="d-printing" class="level1">
-<h1>3D Printing</h1>
-<ol type="1">
-<li>Log into your account on https://duke.3dprinteros.com/</li>
-<li>You can use the Co-Lab printers, or add the BME class-specific printers in Teer 212 and CIEMAS B209.
+</header>
+
+
+<section id="event-driven-state-machine" class="level1">
+<h1>Event-Driven State Machine</h1>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
 <ul>
-<li>Under the <code>Printers</code> tab, choose <code>Add Workgroup Printers</code></li>
-<li><code>B209</code> access code: <code>TheDungeon209</code></li>
+<li><p>Nested conditional logic main loops are hard to read and maintain.</p></li>
+<li><p>State machines are a common way to implement complex logic.</p></li>
+<li><p>States have transitions that are triggered by <strong>events</strong> or conditions.</p>
+<ul>
+<li><p>States can have entry / exit routines that are executed when the state is entered / exited.</p></li>
+<li><p>The “run” status of a state is commonly referred to as the “state machine tick” and recurrently loops.</p></li>
 </ul></li>
-</ol>
+<li><p>State diagrams are used to visualize state machines.</p></li>
+<li><p>State structures are used to capture variables associated with describing the state.</p></li>
+</ul>
+</section>
+<section id="in-class-demo" class="level2">
+<h2 class="anchored" data-anchor-id="in-class-demo">In-Class Demo</h2>
+<ul>
+<li>You (and your daily routine)
+<ul>
+<li>What are your “states”?</li>
+<li>What are your “events”?</li>
+</ul></li>
+<li>ICD</li>
+</ul>
+<p><img src="images/icd_state_diagram.png" class="img-fluid"></p>
+</section>
+<section id="implementation" class="level2">
+<h2 class="anchored" data-anchor-id="implementation">Implementation</h2>
+<section id="state-diagram" class="level3">
+<h3 class="anchored" data-anchor-id="state-diagram">State Diagram</h3>
+<ul>
+<li><p>Generating the state diagram is the first step in implementing a state machine.</p></li>
+<li><p>Usually start with “pencil and paper” to sketch out the states and transitions.</p></li>
+<li><p>Consider the following:</p>
+<ul>
+<li><p>What are the states?</p></li>
+<li><p>What are the transitions?</p></li>
+<li><p>What are the events that trigger transitions?</p></li>
+<li><p>What are the entry / exit routines for each state?</p></li>
+</ul></li>
+<li><p>UML (Universal Modeling Language) is a common way to represent state diagrams.</p></li>
+</ul>
+<section id="plantuml-example" class="level4">
+<h4 class="anchored" data-anchor-id="plantuml-example">PlantUML Example</h4>
+<pre class="plantuml"><code>@startuml
+
+[*] -&gt; Init
+
+state Init {
+    init_run: Do Stuff
+}
+
+state RhythmDetect {
+    rhythm_detect_run: Detect Rhythm
+}
+
+state Sleep {
+    sleep_run: Save Power
+}
+
+state Pace {
+    pace_run: Pace
+}
+
+state OTA {
+    ota_init: Download Update
+    ota_init -&gt; ota_run
+    ota_run: Over The Air Update
+    ota_run -&gt; ota_exit
+    ota_exit: Post Successful OTA
+}
+
+state Error {
+    error_run: Put device into safe mode
+}
+
+Init -&gt; RhythmDetect : Successful Init
+Init -d-&gt; Error : Init Fault Error Code
+RhythmDetect -&gt; Pace : Arrhythmia Detected
+Pace -&gt; RhythmDetect : Pacing Timer Expired
+RhythmDetect -d-&gt; Sleep : NSR
+Sleep -&gt; RhythmDetect: Sleep Timer Expired
+Sleep -&gt; OTA : OTA Button Pressed
+OTA -&gt; RhythmDetect : OTA Success Kernel Event Posted
+Error -&gt; [*]
+
+@enduml</code></pre>
+</section>
+</section>
+</section>
+<section id="in-class-lab-exercise" class="level2">
+<h2 class="anchored" data-anchor-id="in-class-lab-exercise">In-Class / Lab Exercise</h2>
+<p><a href="../lab/event-driven-state-machine-lab.md">Event-Driven State Machine Lab Exercise (Kitchen Timer)</a></p>
 
 
+<script type="ojs-module-contents">
+eyJjb250ZW50cyI6W119
+</script>
+<div id="exercise-loading-indicator" class="exercise-loading-indicator d-none d-flex align-items-center gap-2">
+<div id="exercise-loading-status" class="d-flex gap-2">
+
+</div>
+<div class="spinner-grow spinner-grow-sm">
+
+</div>
+</div>
+<script type="vfs-file">
+W10=
+</script>
+</section>
 </section>
 
 </main> <!-- /main -->
+<script type="ojs-module-contents">
+eyJjb250ZW50cyI6W119
+</script>
+<script type="module">
+if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
+window._ojs.paths.runtimeToDoc = "../../lectures";
+window._ojs.paths.runtimeToRoot = "../..";
+window._ojs.paths.docToRoot = "..";
+window._ojs.selfContained = false;
+window._ojs.runtime.interpretFromScriptTags();
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

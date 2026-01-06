@@ -14,22 +14,101 @@
     "text": "[WIP] Update schedule & syllabus\nPublish Canvas\n\nAdd TAs and lab staff\nLink syllabus\n\nSetup Ed Discussion\nSetup Gradescope\nSetup 3DPrinterOS\nAdd students to Duke’s Onshape\nOrder project parts\nSetup Pratt AV Panopto recording (https://it.pratt.duke.edu/av)"
   },
   {
-    "objectID": "resources/bme-lab-policies.html",
-    "href": "resources/bme-lab-policies.html",
-    "title": "BME Lab Procedures and Safety Expectations",
+    "objectID": "resources/git.html",
+    "href": "resources/git.html",
+    "title": "Git: Getting Started",
     "section": "",
-    "text": "Important\n\n\n\nSafety is Always First, Cleanliness a close second\n\n\nSafety always comes first in lab. To that end, you are expected to follow the rules in this document. Failure to do so may result in revocation of laboratory privileges, reduction of your course grade, and possible withdrawal from your course. Understanding risks and learning to work safely in the laboratory are an important part of your education.\nBefore entering lab, your safety training must be current. You need Duke’s Occupational and Environmental Safety Office’s:\n\nFire/Life Safety, and\nLaboratory Safety-General\n\ntraining modules. We know that you may have done this training before, but it expires in one year, and you must be current through the end of the semester.\nMost accidents are the result of a series of failures. That said, most accidents are preventable. You are responsible for your safety and the safety of those around you. The vast majority of accidents involve some combination of inattention, carelessness, horseplay, impairment, broken tools, and lack of knowledge. All of these factors can be mitigated and it’s your job to do so.\nYou are responsible for keeping the lab clean.\n\n\n\n\n\n\nWarning\n\n\n\nFailure to keep a clean workspace can result in a lower grade for you and your team.\n\n\n\n\n\n\n\n\nImportant\n\n\n\nIf you or someone else in lab needs immediate medical attention, call 911.\n\n\nIn case you need to report your location, you are in CIEMAS B209. Non-emergent problems, call 681-WELL (681-9355).\n\n\n\n\n\n\nImportant\n\n\n\nIn the event of a non-emergent injury, seek medical attention and let an instructor/TA/lab staff know immediately (absolutely within 12 hours). Lab staff after-hours phone number is on the contact cards posted outside every lab door.\n\n\n\n\n\n\n\n\nNote\n\n\n\nKeep these points in mind…\n\nFind the emergency exits.\nNever work alone. Two or more people must be present and able to see and hear each other.\nInspect every tool before use. Remove broken tools from service, place them on the broken tools shelf at the back of the room, and notify lab staff.\nWear safety glasses when appropriate. This includes, but is not limited to, activities such as soldering, sanding, filing, hammering, cutting wood/plastic/wire, stripping wire and drilling.\nWear hearing protection when using noisy tools such as drills and the Dremel tool. Ear buds or music headphones are not sufficient hearing protection.\nNever work impaired. If you are tired, stressed, in a rush, or impaired in any other way then do not work in lab. Go home and recuperate.\nTie back long hair to keep it away from tools.\nClosed-toe shoes must be worn in the lab. Long trousers are preferred.\nProperly secure materials. Clamps, vises and portable worktables are available.\nDon’t force anything. If the job requires significant force, you’re doing it wrong.\nKeep food and drink out of the lab!\nPower down equipment when finished with it.\nA fire extinguisher is outside the door.\nWash your hands before leaving lab.\nBits of unused solder, wire and lead trimmings all go in a “Solder Scrap” container.\nAnything contaminated with solder paste (wipes, boards, applicators) goes in a “Solder Scrap” container.\nOther hazardous waste dealt with on a case by case basis; ask lab staff for help.\nPut tools away, in the right place. Tool drawers are labeled, but if you’re unsure where to put a tool, ask your TA/lab staff.\nDo not hoard parts or tools.\nThis bears repeating: Take the parts you need, but only the parts you need. Do not hoard parts. If you see a part becoming scarce, let lab staff know so they can re-order.\nBenches are for temporary use only. Leave no trace that you were at the bench when you leave for the day. Rarely, with approval, a bench can be claimed for the semester.\nAny and all paint must be pre-approved by an instructor/TA/lab staff. Unapproved paint on projects will result in a lower grade. (Spray paint indoors is never approved.)\nA representative from your group is expected to participate in weekly cleaning. Your instructor will give you the schedule.\nPlace a cover on the bench for messy work. Chucks and Ram Board are available for this.\nLab staff have a collection of good soldering tips and fine tools (e.g. tweezers). If you have need for something better than you can find in lab, ask lab staff.",
+    "text": "Git - version control software\n\n\n\n\n\n\n\nNote\n\n\n\nMacOS usually comes with git pre-installed, so there is no need to install anything else.\n\n\n\nAfter installing git, please configure it: Getting Started - First-Time Git Setup\nThe setup steps above should create a ~/.gitconfig file that has some barebones configuration options. We can expand that a bit by manually editing it with the following content:\n\n[user]\n    name = your first and last name\n    email = yournetid@duke.edu\n[alias]\n    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset' --abbrev-commit --date=relative\n[core]\n    editor = nano\n    autocrlf = input\n    preloadindex = true\n    fileMode = false\n[color]\n    status = auto\n    branch = auto\n    interactive = auto\n    diff = auto\n    ui = auto\n[push]\n    default = current\n    autoSetupRemote = true\n[pull]\n    rebase = false\n[merge]\n    ff = no\n[init]\n    defaultBranch = main\n\nThe above configuration will:\n\nSet your name and email address for commits\nSet up a git lg alias that will show a nice graph of the commit history\nChange the default editor for making commit messages from vi to nano.\n\n\n\n\n\n\n\n\nTip\n\n\n\nYou can change this to something else, like VS Code!\n\n\n\nThis is a good tutorial on using git within VS Code: Using Git source control in VS Code"
+  },
+  {
+    "objectID": "resources/git.html#installation-configuration",
+    "href": "resources/git.html#installation-configuration",
+    "title": "Git: Getting Started",
+    "section": "",
+    "text": "Git - version control software\n\n\n\n\n\n\n\nNote\n\n\n\nMacOS usually comes with git pre-installed, so there is no need to install anything else.\n\n\n\nAfter installing git, please configure it: Getting Started - First-Time Git Setup\nThe setup steps above should create a ~/.gitconfig file that has some barebones configuration options. We can expand that a bit by manually editing it with the following content:\n\n[user]\n    name = your first and last name\n    email = yournetid@duke.edu\n[alias]\n    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset' --abbrev-commit --date=relative\n[core]\n    editor = nano\n    autocrlf = input\n    preloadindex = true\n    fileMode = false\n[color]\n    status = auto\n    branch = auto\n    interactive = auto\n    diff = auto\n    ui = auto\n[push]\n    default = current\n    autoSetupRemote = true\n[pull]\n    rebase = false\n[merge]\n    ff = no\n[init]\n    defaultBranch = main\n\nThe above configuration will:\n\nSet your name and email address for commits\nSet up a git lg alias that will show a nice graph of the commit history\nChange the default editor for making commit messages from vi to nano.\n\n\n\n\n\n\n\n\nTip\n\n\n\nYou can change this to something else, like VS Code!\n\n\n\nThis is a good tutorial on using git within VS Code: Using Git source control in VS Code"
+  },
+  {
+    "objectID": "resources/git.html#setup-duke-gitlab-account",
+    "href": "resources/git.html#setup-duke-gitlab-account",
+    "title": "Git: Getting Started",
+    "section": "Setup Duke GitLab Account",
+    "text": "Setup Duke GitLab Account\nWhile GitHub is a very popular public git repository hosting site, we will be using Duke’s GitLab server. Please make sure you can log into https://gitlab.oit.duke.edu using your Oath2 NetID authentication.\n\n\n\n\n\n\nWarning\n\n\n\nThis is not gitlab.com!\n\n\n\n\n\n\n\n\nCaution\n\n\n\nDo not edit files in remote git repositories using the GitLab web interface!! Only work with your repository files using your local clone of the repository."
+  },
+  {
+    "objectID": "resources/git.html#ssh-key-authentication",
+    "href": "resources/git.html#ssh-key-authentication",
+    "title": "Git: Getting Started",
+    "section": "SSH Key Authentication",
+    "text": "SSH Key Authentication\nWe will use SSH keys to authenticate us on GitLab to be able to clone/push/pull from GitLab without needing to always enter your username and password.\nTo setup an SSH key and add it to your GitLab profile:\n\n\n\n\n\n\nWarning\n\n\n\nThe guide below will reference github.com; you want to substitute gitlab.oit.duke.edu.\n\n\n\nGenerate a New SSH Key\n\nWhile your private key is most secure by encrypting it with a passphrase, you will need to either enter that passphrase everytime the key is used, or you will need to add it to your local credential manager (i.e., keychain) or ssh-agent to keep it unlocked.\nIf you are just using this SSH key for this class, you can use an empty passphrase and not need to worry about needing to deal with the password management.\n\nAdd your SSH key to your GitLab Profile\n\n\n\n\n\n\n\nWarning\n\n\n\nThe guide above will reference gitlab.com; you want to substitute gitlab.oit.duke.edu."
+  },
+  {
+    "objectID": "resources/git.html#git-tutorials",
+    "href": "resources/git.html#git-tutorials",
+    "title": "Git: Getting Started",
+    "section": "Git Tutorials",
+    "text": "Git Tutorials\nWe are going to cover git extensively in class, but it can really help to review some tutorials ahead of time to get familiar with the nomenclature and high-level overview of the workflow. If you have never used git before, I would recommend reviewing the following tutorials:\n\nGit Immersion\nLearn Git Branching\nThink Like (a) Git\nGit Tutorial for Beginners: Learn Git in 1 Hour\n\nMore comprehensive git documentation can be found at https://git-scm.com/doc."
+  },
+  {
+    "objectID": "3D_printing.html",
+    "href": "3D_printing.html",
+    "title": "3D Printing",
+    "section": "",
+    "text": "3D Printing\n\nLog into your account on https://duke.3dprinteros.com/\nYou can use the Co-Lab printers, or add the BME class-specific printers in Teer 212 and CIEMAS B209.\n\nUnder the Printers tab, choose Add Workgroup Printers\nB209 access code: TheDungeon209"
+  },
+  {
+    "objectID": "labs/event-driven-state-machine-lab.html",
+    "href": "labs/event-driven-state-machine-lab.html",
+    "title": "Event Driven State Machine Lab",
+    "section": "",
+    "text": "Tip\n\n\n\nI would recommend doing this with pencil and paper first, not immediately jumping into a tool. Err on the side of more detail than not.",
     "crumbs": [
-      "Resources",
-      "BME Lab Policies"
+      "Labs",
+      "Event-Driven State Machine (Kitchen Timer)"
     ]
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "MedTech Prototyping Skills",
-    "section": "",
-    "text": "Please use the links in the sidebar to navigate through the course materials."
+    "objectID": "labs/event-driven-state-machine-lab.html#digital-kitchen-timer",
+    "href": "labs/event-driven-state-machine-lab.html#digital-kitchen-timer",
+    "title": "Event Driven State Machine Lab",
+    "section": "Digital Kitchen Timer",
+    "text": "Digital Kitchen Timer\nGenerate a state diagram for a simple digital kitchen timer that has the following buttons:\n\nStart/Stop Button\nReset Button\nPause Button\nUp/Down/Left/Right Arrow Buttons (4)\n\nThe timer outputs time intervals in the format: HH:MM:SS",
+    "crumbs": [
+      "Labs",
+      "Event-Driven State Machine (Kitchen Timer)"
+    ]
+  },
+  {
+    "objectID": "labs/event-driven-state-machine-lab.html#functional-states",
+    "href": "labs/event-driven-state-machine-lab.html#functional-states",
+    "title": "Event Driven State Machine Lab",
+    "section": "Functional States",
+    "text": "Functional States\n\nThe kitchen timer has an “Idle” state when it isn’t actively counting down time. In this state:\n\nThe Up/Down buttons increment the time for the HH, MM or SS values.\nThe Left/Right buttons let you move between HH, MM and SS.\nTime intervals will wrap around to 00 when a reasonable max value is exceeded.\nThe Reset button sets all of the time values to 00.\nThe Pause button is inactive.\n\nStart/Stop will start the timer countdown when in Idle.\nIn the Countdown state:\n\nThe Start/Stop button will stop and reset the countdown interval.\nThe Pause button will pause, but not reset, the countdown time.\n\nWhen the countdown is done, the timer enters an Alarm state, where:\n\nThe Up/Down/Right/Left arrow buttons, Reset and Pause buttons are inactive.\nStart/Stop will stop the alarm and return the timer to Idle with the previously set countdown time.\n\n\n\n\n\n\n\n\nTip\n\n\n\nIf any functional state expectation isn’t explicitly described above, please implement something reasonable.\n\n\nMake sure that your state diagram:\n\nHas initialization (i.e., batteries put in) and termination (i.e., completely powered off) dots.\nIncludes all functional states, including (but not limited to):\n\nIdle\nCountdown\nPaused\nAlarm\n\nConsider if states should have entry and exit actions.\nMake sure all transitions between states are annotated with associated triggering events.",
+    "crumbs": [
+      "Labs",
+      "Event-Driven State Machine (Kitchen Timer)"
+    ]
+  },
+  {
+    "objectID": "labs/event-driven-state-machine-lab.html#generate-the-state-diagram",
+    "href": "labs/event-driven-state-machine-lab.html#generate-the-state-diagram",
+    "title": "Event Driven State Machine Lab",
+    "section": "Generate the State Diagram",
+    "text": "Generate the State Diagram\nFormally render your state diagram using one of the tools outlined on the State Diagram Tools page.",
+    "crumbs": [
+      "Labs",
+      "Event-Driven State Machine (Kitchen Timer)"
+    ]
+  },
+  {
+    "objectID": "labs/event-driven-state-machine-lab.html#gradescope",
+    "href": "labs/event-driven-state-machine-lab.html#gradescope",
+    "title": "Event Driven State Machine Lab",
+    "section": "Gradescope",
+    "text": "Gradescope\nUpload your rendered state diagram to the associated Gradescope assignment.",
+    "crumbs": [
+      "Labs",
+      "Event-Driven State Machine (Kitchen Timer)"
+    ]
   },
   {
     "objectID": "course-syllabus.html",
@@ -153,6 +232,27 @@
     ]
   },
   {
+    "objectID": "lectures/arduino-state-machine-notes.html",
+    "href": "lectures/arduino-state-machine-notes.html",
+    "title": "Firmware: Event-Driven State Machines",
+    "section": "",
+    "text": "What is a “kernel”?\n\nThe part of the RTOS that interacts with hardware.\n\nKernel events can be used to indicate that “something” has happened, which may dictate the function of the state machine.\n\nButton press\nSensor crossing a threshold\nTimer expiring\n\nWhen an event occurs, it triggers an Interupt Service Routine (ISR), which calls a callback function.\n\n\n\n\nThe simplest implementation of a state machine is a switch-case statement.\nThe switch statement is used to select the current state.\nThe case statements are used to implement the logic for each state.\n\nCases can be nested to implement sub-states.\nEnumerations can be used to give states verbose names instead of numbers.\n\nThe break statement is used to exit the switch statement.\nThe default statement is used to handle unexpected states.\n\n\n\n\nenum device_states { init, run, sleep };\n\nint device_state = init; // initialize state\n\n/* structure to bookkeep state variables */\nstruct device_state_vars {\n    int var1;\n    int var2;\n};\n\nwhile (1) {\n    switch (device_state) {\n        case init:\n            /* do stuff to initialize device */\n            device_state = run; // change the state\n            break;  // exit the switch statement\n        case run:\n            /* run device */\n            if (condition) {\n                device_state = sleep;\n            }\n            break;\n        case sleep:\n            /* sleep device */\n            if (condition) {\n                device_state = run;\n            }\n            break;\n        default:\n            /* handle unexpected state */\n            break;\n    }\n}\nThe switch-case approach loses some of its elegance when there are many states and many transitions and states have entry / exit routines.\n\n\n\n\nhttps://www.digikey.com/en/maker/tutorials/2023/how-to-program-an-arduino-finite-state-machine\nhttps://www.instructables.com/Finite-State-Machine-on-an-Arduino/"
+  },
+  {
+    "objectID": "lectures/arduino-state-machine-notes.html#kernel-events",
+    "href": "lectures/arduino-state-machine-notes.html#kernel-events",
+    "title": "Firmware: Event-Driven State Machines",
+    "section": "",
+    "text": "What is a “kernel”?\n\nThe part of the RTOS that interacts with hardware.\n\nKernel events can be used to indicate that “something” has happened, which may dictate the function of the state machine.\n\nButton press\nSensor crossing a threshold\nTimer expiring\n\nWhen an event occurs, it triggers an Interupt Service Routine (ISR), which calls a callback function.\n\n\n\n\nThe simplest implementation of a state machine is a switch-case statement.\nThe switch statement is used to select the current state.\nThe case statements are used to implement the logic for each state.\n\nCases can be nested to implement sub-states.\nEnumerations can be used to give states verbose names instead of numbers.\n\nThe break statement is used to exit the switch statement.\nThe default statement is used to handle unexpected states.\n\n\n\n\nenum device_states { init, run, sleep };\n\nint device_state = init; // initialize state\n\n/* structure to bookkeep state variables */\nstruct device_state_vars {\n    int var1;\n    int var2;\n};\n\nwhile (1) {\n    switch (device_state) {\n        case init:\n            /* do stuff to initialize device */\n            device_state = run; // change the state\n            break;  // exit the switch statement\n        case run:\n            /* run device */\n            if (condition) {\n                device_state = sleep;\n            }\n            break;\n        case sleep:\n            /* sleep device */\n            if (condition) {\n                device_state = run;\n            }\n            break;\n        default:\n            /* handle unexpected state */\n            break;\n    }\n}\nThe switch-case approach loses some of its elegance when there are many states and many transitions and states have entry / exit routines.\n\n\n\n\nhttps://www.digikey.com/en/maker/tutorials/2023/how-to-program-an-arduino-finite-state-machine\nhttps://www.instructables.com/Finite-State-Machine-on-an-Arduino/"
+  },
+  {
+    "objectID": "lectures/arduino-state-machine-slides.html#kernel-events",
+    "href": "lectures/arduino-state-machine-slides.html#kernel-events",
+    "title": "Firmware: Event-Driven State Machines",
+    "section": "Kernel Events",
+    "text": "Kernel Events\n\nWhat is a “kernel”?\n\nThe part of the RTOS that interacts with hardware.\n\nKernel events can be used to indicate that “something” has happened, which may dictate the function of the state machine.\n\nButton press\nSensor crossing a threshold\nTimer expiring\n\nWhen an event occurs, it triggers an Interupt Service Routine (ISR), which calls a callback function.\n\nCode: Switch-Case\n\nThe simplest implementation of a state machine is a switch-case statement.\nThe switch statement is used to select the current state.\nThe case statements are used to implement the logic for each state.\n\nCases can be nested to implement sub-states.\nEnumerations can be used to give states verbose names instead of numbers.\n\nThe break statement is used to exit the switch statement.\nThe default statement is used to handle unexpected states.\n\nPseudo-Code\nenum device_states { init, run, sleep };\n\nint device_state = init; // initialize state\n\n/* structure to bookkeep state variables */\nstruct device_state_vars {\n    int var1;\n    int var2;\n};\n\nwhile (1) {\n    switch (device_state) {\n        case init:\n            /* do stuff to initialize device */\n            device_state = run; // change the state\n            break;  // exit the switch statement\n        case run:\n            /* run device */\n            if (condition) {\n                device_state = sleep;\n            }\n            break;\n        case sleep:\n            /* sleep device */\n            if (condition) {\n                device_state = run;\n            }\n            break;\n        default:\n            /* handle unexpected state */\n            break;\n    }\n}\nThe switch-case approach loses some of its elegance when there are many states and many transitions and states have entry / exit routines.\nResources / Examples\n\nhttps://www.digikey.com/en/maker/tutorials/2023/how-to-program-an-arduino-finite-state-machine\nhttps://www.instructables.com/Finite-State-Machine-on-an-Arduino/"
+  },
+  {
     "objectID": "bme-lab-policies.html",
     "href": "bme-lab-policies.html",
     "title": "BME Lab Procedures and Safety Expectations",
@@ -161,6 +261,89 @@
     "crumbs": [
       "Course Information",
       "BME Lab Policies"
+    ]
+  },
+  {
+    "objectID": "lectures/event-driven-state-machine-slides.html#introduction",
+    "href": "lectures/event-driven-state-machine-slides.html#introduction",
+    "title": "Event-Driven State Machine",
+    "section": "Introduction",
+    "text": "Introduction\n\nNested conditional logic main loops are hard to read and maintain.\nState machines are a common way to implement complex logic.\nStates have transitions that are triggered by events or conditions.\n\nStates can have entry / exit routines that are executed when the state is entered / exited.\nThe “run” status of a state is commonly referred to as the “state machine tick” and recurrently loops.\n\nState diagrams are used to visualize state machines.\nState structures are used to capture variables associated with describing the state."
+  },
+  {
+    "objectID": "lectures/event-driven-state-machine-slides.html#in-class-demo",
+    "href": "lectures/event-driven-state-machine-slides.html#in-class-demo",
+    "title": "Event-Driven State Machine",
+    "section": "In-Class Demo",
+    "text": "In-Class Demo\n\nYou (and your daily routine)\n\nWhat are your “states”?\nWhat are your “events”?\n\nICD"
+  },
+  {
+    "objectID": "lectures/event-driven-state-machine-slides.html#implementation",
+    "href": "lectures/event-driven-state-machine-slides.html#implementation",
+    "title": "Event-Driven State Machine",
+    "section": "Implementation",
+    "text": "Implementation\nState Diagram\n\nGenerating the state diagram is the first step in implementing a state machine.\nUsually start with “pencil and paper” to sketch out the states and transitions.\nConsider the following:\n\nWhat are the states?\nWhat are the transitions?\nWhat are the events that trigger transitions?\nWhat are the entry / exit routines for each state?\n\nUML (Universal Modeling Language) is a common way to represent state diagrams.\n\nPlantUML Example\n@startuml\n\n[*] -&gt; Init\n\nstate Init {\n    init_run: Do Stuff\n}\n\nstate RhythmDetect {\n    rhythm_detect_run: Detect Rhythm\n}\n\nstate Sleep {\n    sleep_run: Save Power\n}\n\nstate Pace {\n    pace_run: Pace\n}\n\nstate OTA {\n    ota_init: Download Update\n    ota_init -&gt; ota_run\n    ota_run: Over The Air Update\n    ota_run -&gt; ota_exit\n    ota_exit: Post Successful OTA\n}\n\nstate Error {\n    error_run: Put device into safe mode\n}\n\nInit -&gt; RhythmDetect : Successful Init\nInit -d-&gt; Error : Init Fault Error Code\nRhythmDetect -&gt; Pace : Arrhythmia Detected\nPace -&gt; RhythmDetect : Pacing Timer Expired\nRhythmDetect -d-&gt; Sleep : NSR\nSleep -&gt; RhythmDetect: Sleep Timer Expired\nSleep -&gt; OTA : OTA Button Pressed\nOTA -&gt; RhythmDetect : OTA Success Kernel Event Posted\nError -&gt; [*]\n\n@enduml"
+  },
+  {
+    "objectID": "lectures/event-driven-state-machine-slides.html#in-class-lab-exercise",
+    "href": "lectures/event-driven-state-machine-slides.html#in-class-lab-exercise",
+    "title": "Event-Driven State Machine",
+    "section": "In-Class / Lab Exercise",
+    "text": "In-Class / Lab Exercise\nEvent-Driven State Machine Lab Exercise (Kitchen Timer)"
+  },
+  {
+    "objectID": "lectures/event-driven-state-machine-notes.html",
+    "href": "lectures/event-driven-state-machine-notes.html",
+    "title": "Event-Driven State Machine",
+    "section": "",
+    "text": "Nested conditional logic main loops are hard to read and maintain.\nState machines are a common way to implement complex logic.\nStates have transitions that are triggered by events or conditions.\n\nStates can have entry / exit routines that are executed when the state is entered / exited.\nThe “run” status of a state is commonly referred to as the “state machine tick” and recurrently loops.\n\nState diagrams are used to visualize state machines.\nState structures are used to capture variables associated with describing the state.\n\n\n\n\n\nYou (and your daily routine)\n\nWhat are your “states”?\nWhat are your “events”?\n\nICD\n\n\n\n\n\n\n\n\nGenerating the state diagram is the first step in implementing a state machine.\nUsually start with “pencil and paper” to sketch out the states and transitions.\nConsider the following:\n\nWhat are the states?\nWhat are the transitions?\nWhat are the events that trigger transitions?\nWhat are the entry / exit routines for each state?\n\nUML (Universal Modeling Language) is a common way to represent state diagrams.\n\n\n\n@startuml\n\n[*] -&gt; Init\n\nstate Init {\n    init_run: Do Stuff\n}\n\nstate RhythmDetect {\n    rhythm_detect_run: Detect Rhythm\n}\n\nstate Sleep {\n    sleep_run: Save Power\n}\n\nstate Pace {\n    pace_run: Pace\n}\n\nstate OTA {\n    ota_init: Download Update\n    ota_init -&gt; ota_run\n    ota_run: Over The Air Update\n    ota_run -&gt; ota_exit\n    ota_exit: Post Successful OTA\n}\n\nstate Error {\n    error_run: Put device into safe mode\n}\n\nInit -&gt; RhythmDetect : Successful Init\nInit -d-&gt; Error : Init Fault Error Code\nRhythmDetect -&gt; Pace : Arrhythmia Detected\nPace -&gt; RhythmDetect : Pacing Timer Expired\nRhythmDetect -d-&gt; Sleep : NSR\nSleep -&gt; RhythmDetect: Sleep Timer Expired\nSleep -&gt; OTA : OTA Button Pressed\nOTA -&gt; RhythmDetect : OTA Success Kernel Event Posted\nError -&gt; [*]\n\n@enduml\n\n\n\n\n\nEvent-Driven State Machine Lab Exercise (Kitchen Timer)",
+    "crumbs": [
+      "Learning Modules",
+      "Event-Driven State Machines"
+    ]
+  },
+  {
+    "objectID": "lectures/event-driven-state-machine-notes.html#introduction",
+    "href": "lectures/event-driven-state-machine-notes.html#introduction",
+    "title": "Event-Driven State Machine",
+    "section": "",
+    "text": "Nested conditional logic main loops are hard to read and maintain.\nState machines are a common way to implement complex logic.\nStates have transitions that are triggered by events or conditions.\n\nStates can have entry / exit routines that are executed when the state is entered / exited.\nThe “run” status of a state is commonly referred to as the “state machine tick” and recurrently loops.\n\nState diagrams are used to visualize state machines.\nState structures are used to capture variables associated with describing the state.",
+    "crumbs": [
+      "Learning Modules",
+      "Event-Driven State Machines"
+    ]
+  },
+  {
+    "objectID": "lectures/event-driven-state-machine-notes.html#in-class-demo",
+    "href": "lectures/event-driven-state-machine-notes.html#in-class-demo",
+    "title": "Event-Driven State Machine",
+    "section": "",
+    "text": "You (and your daily routine)\n\nWhat are your “states”?\nWhat are your “events”?\n\nICD",
+    "crumbs": [
+      "Learning Modules",
+      "Event-Driven State Machines"
+    ]
+  },
+  {
+    "objectID": "lectures/event-driven-state-machine-notes.html#implementation",
+    "href": "lectures/event-driven-state-machine-notes.html#implementation",
+    "title": "Event-Driven State Machine",
+    "section": "",
+    "text": "Generating the state diagram is the first step in implementing a state machine.\nUsually start with “pencil and paper” to sketch out the states and transitions.\nConsider the following:\n\nWhat are the states?\nWhat are the transitions?\nWhat are the events that trigger transitions?\nWhat are the entry / exit routines for each state?\n\nUML (Universal Modeling Language) is a common way to represent state diagrams.\n\n\n\n@startuml\n\n[*] -&gt; Init\n\nstate Init {\n    init_run: Do Stuff\n}\n\nstate RhythmDetect {\n    rhythm_detect_run: Detect Rhythm\n}\n\nstate Sleep {\n    sleep_run: Save Power\n}\n\nstate Pace {\n    pace_run: Pace\n}\n\nstate OTA {\n    ota_init: Download Update\n    ota_init -&gt; ota_run\n    ota_run: Over The Air Update\n    ota_run -&gt; ota_exit\n    ota_exit: Post Successful OTA\n}\n\nstate Error {\n    error_run: Put device into safe mode\n}\n\nInit -&gt; RhythmDetect : Successful Init\nInit -d-&gt; Error : Init Fault Error Code\nRhythmDetect -&gt; Pace : Arrhythmia Detected\nPace -&gt; RhythmDetect : Pacing Timer Expired\nRhythmDetect -d-&gt; Sleep : NSR\nSleep -&gt; RhythmDetect: Sleep Timer Expired\nSleep -&gt; OTA : OTA Button Pressed\nOTA -&gt; RhythmDetect : OTA Success Kernel Event Posted\nError -&gt; [*]\n\n@enduml",
+    "crumbs": [
+      "Learning Modules",
+      "Event-Driven State Machines"
+    ]
+  },
+  {
+    "objectID": "lectures/event-driven-state-machine-notes.html#in-class-lab-exercise",
+    "href": "lectures/event-driven-state-machine-notes.html#in-class-lab-exercise",
+    "title": "Event-Driven State Machine",
+    "section": "",
+    "text": "Event-Driven State Machine Lab Exercise (Kitchen Timer)",
+    "crumbs": [
+      "Learning Modules",
+      "Event-Driven State Machines"
     ]
   },
   {
@@ -562,45 +745,43 @@
     ]
   },
   {
-    "objectID": "3D_printing.html",
-    "href": "3D_printing.html",
-    "title": "3D Printing",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "MedTech Prototyping Skills",
     "section": "",
-    "text": "3D Printing\n\nLog into your account on https://duke.3dprinteros.com/\nYou can use the Co-Lab printers, or add the BME class-specific printers in Teer 212 and CIEMAS B209.\n\nUnder the Printers tab, choose Add Workgroup Printers\nB209 access code: TheDungeon209"
+    "text": "Please use the links in the sidebar to navigate through the course materials."
   },
   {
-    "objectID": "resources/git.html",
-    "href": "resources/git.html",
-    "title": "Git: Getting Started",
+    "objectID": "resources/bme-lab-policies.html",
+    "href": "resources/bme-lab-policies.html",
+    "title": "BME Lab Procedures and Safety Expectations",
     "section": "",
-    "text": "Git - version control software\n\n\n\n\n\n\n\nNote\n\n\n\nMacOS usually comes with git pre-installed, so there is no need to install anything else.\n\n\n\nAfter installing git, please configure it: Getting Started - First-Time Git Setup\nThe setup steps above should create a ~/.gitconfig file that has some barebones configuration options. We can expand that a bit by manually editing it with the following content:\n\n[user]\n    name = your first and last name\n    email = yournetid@duke.edu\n[alias]\n    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset' --abbrev-commit --date=relative\n[core]\n    editor = nano\n    autocrlf = input\n    preloadindex = true\n    fileMode = false\n[color]\n    status = auto\n    branch = auto\n    interactive = auto\n    diff = auto\n    ui = auto\n[push]\n    default = current\n    autoSetupRemote = true\n[pull]\n    rebase = false\n[merge]\n    ff = no\n[init]\n    defaultBranch = main\n\nThe above configuration will:\n\nSet your name and email address for commits\nSet up a git lg alias that will show a nice graph of the commit history\nChange the default editor for making commit messages from vi to nano.\n\n\n\n\n\n\n\n\nTip\n\n\n\nYou can change this to something else, like VS Code!\n\n\n\nThis is a good tutorial on using git within VS Code: Using Git source control in VS Code"
+    "text": "Important\n\n\n\nSafety is Always First, Cleanliness a close second\n\n\nSafety always comes first in lab. To that end, you are expected to follow the rules in this document. Failure to do so may result in revocation of laboratory privileges, reduction of your course grade, and possible withdrawal from your course. Understanding risks and learning to work safely in the laboratory are an important part of your education.\nBefore entering lab, your safety training must be current. You need Duke’s Occupational and Environmental Safety Office’s:\n\nFire/Life Safety, and\nLaboratory Safety-General\n\ntraining modules. We know that you may have done this training before, but it expires in one year, and you must be current through the end of the semester.\nMost accidents are the result of a series of failures. That said, most accidents are preventable. You are responsible for your safety and the safety of those around you. The vast majority of accidents involve some combination of inattention, carelessness, horseplay, impairment, broken tools, and lack of knowledge. All of these factors can be mitigated and it’s your job to do so.\nYou are responsible for keeping the lab clean.\n\n\n\n\n\n\nWarning\n\n\n\nFailure to keep a clean workspace can result in a lower grade for you and your team.\n\n\n\n\n\n\n\n\nImportant\n\n\n\nIf you or someone else in lab needs immediate medical attention, call 911.\n\n\nIn case you need to report your location, you are in CIEMAS B209. Non-emergent problems, call 681-WELL (681-9355).\n\n\n\n\n\n\nImportant\n\n\n\nIn the event of a non-emergent injury, seek medical attention and let an instructor/TA/lab staff know immediately (absolutely within 12 hours). Lab staff after-hours phone number is on the contact cards posted outside every lab door.\n\n\n\n\n\n\n\n\nNote\n\n\n\nKeep these points in mind…\n\nFind the emergency exits.\nNever work alone. Two or more people must be present and able to see and hear each other.\nInspect every tool before use. Remove broken tools from service, place them on the broken tools shelf at the back of the room, and notify lab staff.\nWear safety glasses when appropriate. This includes, but is not limited to, activities such as soldering, sanding, filing, hammering, cutting wood/plastic/wire, stripping wire and drilling.\nWear hearing protection when using noisy tools such as drills and the Dremel tool. Ear buds or music headphones are not sufficient hearing protection.\nNever work impaired. If you are tired, stressed, in a rush, or impaired in any other way then do not work in lab. Go home and recuperate.\nTie back long hair to keep it away from tools.\nClosed-toe shoes must be worn in the lab. Long trousers are preferred.\nProperly secure materials. Clamps, vises and portable worktables are available.\nDon’t force anything. If the job requires significant force, you’re doing it wrong.\nKeep food and drink out of the lab!\nPower down equipment when finished with it.\nA fire extinguisher is outside the door.\nWash your hands before leaving lab.\nBits of unused solder, wire and lead trimmings all go in a “Solder Scrap” container.\nAnything contaminated with solder paste (wipes, boards, applicators) goes in a “Solder Scrap” container.\nOther hazardous waste dealt with on a case by case basis; ask lab staff for help.\nPut tools away, in the right place. Tool drawers are labeled, but if you’re unsure where to put a tool, ask your TA/lab staff.\nDo not hoard parts or tools.\nThis bears repeating: Take the parts you need, but only the parts you need. Do not hoard parts. If you see a part becoming scarce, let lab staff know so they can re-order.\nBenches are for temporary use only. Leave no trace that you were at the bench when you leave for the day. Rarely, with approval, a bench can be claimed for the semester.\nAny and all paint must be pre-approved by an instructor/TA/lab staff. Unapproved paint on projects will result in a lower grade. (Spray paint indoors is never approved.)\nA representative from your group is expected to participate in weekly cleaning. Your instructor will give you the schedule.\nPlace a cover on the bench for messy work. Chucks and Ram Board are available for this.\nLab staff have a collection of good soldering tips and fine tools (e.g. tweezers). If you have need for something better than you can find in lab, ask lab staff.",
+    "crumbs": [
+      "Resources",
+      "BME Lab Policies"
+    ]
   },
   {
-    "objectID": "resources/git.html#installation-configuration",
-    "href": "resources/git.html#installation-configuration",
-    "title": "Git: Getting Started",
+    "objectID": "resources/state_diagram.html",
+    "href": "resources/state_diagram.html",
+    "title": "State Diagrams",
     "section": "",
-    "text": "Git - version control software\n\n\n\n\n\n\n\nNote\n\n\n\nMacOS usually comes with git pre-installed, so there is no need to install anything else.\n\n\n\nAfter installing git, please configure it: Getting Started - First-Time Git Setup\nThe setup steps above should create a ~/.gitconfig file that has some barebones configuration options. We can expand that a bit by manually editing it with the following content:\n\n[user]\n    name = your first and last name\n    email = yournetid@duke.edu\n[alias]\n    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset' --abbrev-commit --date=relative\n[core]\n    editor = nano\n    autocrlf = input\n    preloadindex = true\n    fileMode = false\n[color]\n    status = auto\n    branch = auto\n    interactive = auto\n    diff = auto\n    ui = auto\n[push]\n    default = current\n    autoSetupRemote = true\n[pull]\n    rebase = false\n[merge]\n    ff = no\n[init]\n    defaultBranch = main\n\nThe above configuration will:\n\nSet your name and email address for commits\nSet up a git lg alias that will show a nice graph of the commit history\nChange the default editor for making commit messages from vi to nano.\n\n\n\n\n\n\n\n\nTip\n\n\n\nYou can change this to something else, like VS Code!\n\n\n\nThis is a good tutorial on using git within VS Code: Using Git source control in VS Code"
+    "text": "We will be generating state diagrams all semester, which can be done with a variety of different software packages:\n\nPlantUML\n\nText-based diagramming tool that can be integrated into VS Code\nA bit outdated, and a tad clunky in default layouts without some “nudging”\nWhat will be used in lecture and lab assignments\n\n\n\n\n\n\n\n\nTip\n\n\n\nPlantUML uses Java, which may require you to install a Java Runtime Environment (JRE) on your laptop if you do not already have one. If you would like to avoid installing that, you can use the PlantUML Server option in the PlantUML VS Code extension settings.\n\n\n\nMermaid Markdown\n\nMarkdown-based diagramming tool that can be integrated into VS Code\nMore modern and easier to use than PlantUML\nNot as feature-rich as PlantUML\n\ndraw.io\n\nWeb-based diagramming tool that can be integrated into VS Code (Draw.io Integration)\nVery feature-rich and easy to use\nNot text-based\n\nLucidchart\n\nWeb-based diagramming tool\nVery feature-rich and easy to use\nNot text-based (less VCS friendly)\n\n\nYou can use whatever software package you prefer for this class this semester, though PlantUML will be the only software supported by Dr. Palmeri and the teaching team.",
+    "crumbs": [
+      "Resources",
+      "State Diagrams"
+    ]
   },
   {
-    "objectID": "resources/git.html#setup-duke-gitlab-account",
-    "href": "resources/git.html#setup-duke-gitlab-account",
-    "title": "Git: Getting Started",
-    "section": "Setup Duke GitLab Account",
-    "text": "Setup Duke GitLab Account\nWhile GitHub is a very popular public git repository hosting site, we will be using Duke’s GitLab server. Please make sure you can log into https://gitlab.oit.duke.edu using your Oath2 NetID authentication.\n\n\n\n\n\n\nWarning\n\n\n\nThis is not gitlab.com!\n\n\n\n\n\n\n\n\nCaution\n\n\n\nDo not edit files in remote git repositories using the GitLab web interface!! Only work with your repository files using your local clone of the repository."
-  },
-  {
-    "objectID": "resources/git.html#ssh-key-authentication",
-    "href": "resources/git.html#ssh-key-authentication",
-    "title": "Git: Getting Started",
-    "section": "SSH Key Authentication",
-    "text": "SSH Key Authentication\nWe will use SSH keys to authenticate us on GitLab to be able to clone/push/pull from GitLab without needing to always enter your username and password.\nTo setup an SSH key and add it to your GitLab profile:\n\n\n\n\n\n\nWarning\n\n\n\nThe guide below will reference github.com; you want to substitute gitlab.oit.duke.edu.\n\n\n\nGenerate a New SSH Key\n\nWhile your private key is most secure by encrypting it with a passphrase, you will need to either enter that passphrase everytime the key is used, or you will need to add it to your local credential manager (i.e., keychain) or ssh-agent to keep it unlocked.\nIf you are just using this SSH key for this class, you can use an empty passphrase and not need to worry about needing to deal with the password management.\n\nAdd your SSH key to your GitLab Profile\n\n\n\n\n\n\n\nWarning\n\n\n\nThe guide above will reference gitlab.com; you want to substitute gitlab.oit.duke.edu."
-  },
-  {
-    "objectID": "resources/git.html#git-tutorials",
-    "href": "resources/git.html#git-tutorials",
-    "title": "Git: Getting Started",
-    "section": "Git Tutorials",
-    "text": "Git Tutorials\nWe are going to cover git extensively in class, but it can really help to review some tutorials ahead of time to get familiar with the nomenclature and high-level overview of the workflow. If you have never used git before, I would recommend reviewing the following tutorials:\n\nGit Immersion\nLearn Git Branching\nThink Like (a) Git\nGit Tutorial for Beginners: Learn Git in 1 Hour\n\nMore comprehensive git documentation can be found at https://git-scm.com/doc."
+    "objectID": "resources/state_diagram.html#state-diagram-software",
+    "href": "resources/state_diagram.html#state-diagram-software",
+    "title": "State Diagrams",
+    "section": "",
+    "text": "We will be generating state diagrams all semester, which can be done with a variety of different software packages:\n\nPlantUML\n\nText-based diagramming tool that can be integrated into VS Code\nA bit outdated, and a tad clunky in default layouts without some “nudging”\nWhat will be used in lecture and lab assignments\n\n\n\n\n\n\n\n\nTip\n\n\n\nPlantUML uses Java, which may require you to install a Java Runtime Environment (JRE) on your laptop if you do not already have one. If you would like to avoid installing that, you can use the PlantUML Server option in the PlantUML VS Code extension settings.\n\n\n\nMermaid Markdown\n\nMarkdown-based diagramming tool that can be integrated into VS Code\nMore modern and easier to use than PlantUML\nNot as feature-rich as PlantUML\n\ndraw.io\n\nWeb-based diagramming tool that can be integrated into VS Code (Draw.io Integration)\nVery feature-rich and easy to use\nNot text-based\n\nLucidchart\n\nWeb-based diagramming tool\nVery feature-rich and easy to use\nNot text-based (less VCS friendly)\n\n\nYou can use whatever software package you prefer for this class this semester, though PlantUML will be the only software supported by Dr. Palmeri and the teaching team.",
+    "crumbs": [
+      "Resources",
+      "State Diagrams"
+    ]
   }
 ]

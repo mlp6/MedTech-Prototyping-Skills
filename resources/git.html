@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2026-01-05">
 
-<title>BME Lab Procedures and Safety Expectations – MedTech Prototyping Skills</title>
+<title>Git: Getting Started – MedTech Prototyping Skills</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,25 +21,60 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-fced259a1985fd972ecb57c7cd45153f.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-13f007c1943c6d3711256cc1d3aa22a2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-fced259a1985fd972ecb57c7cd45153f.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-13f007c1943c6d3711256cc1d3aa22a2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -68,7 +104,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-sidebar docked quarto-light">
@@ -80,7 +116,9 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./course-syllabus.html">Course Information</a></li><li class="breadcrumb-item"><a href="./bme-lab-policies.html">BME Lab Policies</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
+      MedTech Prototyping Skills
+      </li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -92,7 +130,7 @@ ul.task-list li input[type="checkbox"] {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-center sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">MedTech Prototyping Skills</a> 
+      <a href="../">MedTech Prototyping Skills</a> 
     </div>
       </div>
     <div class="sidebar-menu-container"> 
@@ -108,13 +146,13 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./course-syllabus.html" class="sidebar-item-text sidebar-link">
+  <a href="../course-syllabus.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Course Syllabus</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./bme-lab-policies.html" class="sidebar-item-text sidebar-link active">
+  <a href="../bme-lab-policies.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">BME Lab Policies</span></a>
   </div>
 </li>
@@ -155,7 +193,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./lectures/medtech-skills-overview-notes.html" class="sidebar-item-text sidebar-link">
+  <a href="../lectures/medtech-skills-overview-notes.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">MedTech Prototyping Skills Overview</span></a>
   </div>
 </li>
@@ -172,7 +210,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./labs/software-install_tutorials.html" class="sidebar-item-text sidebar-link">
+  <a href="../labs/software-install_tutorials.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Software Installation Tutorials</span></a>
   </div>
 </li>
@@ -189,7 +227,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./resources/bme-lab-policies.html" class="sidebar-item-text sidebar-link">
+  <a href="../resources/bme-lab-policies.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">BME Lab Policies</span></a>
   </div>
 </li>
@@ -201,15 +239,23 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="bme-lab-policies.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#installation-configuration" id="toc-installation-configuration" class="nav-link active" data-scroll-target="#installation-configuration">Installation &amp; Configuration</a></li>
+  <li><a href="#setup-duke-gitlab-account" id="toc-setup-duke-gitlab-account" class="nav-link" data-scroll-target="#setup-duke-gitlab-account">Setup Duke GitLab Account</a></li>
+  <li><a href="#ssh-key-authentication" id="toc-ssh-key-authentication" class="nav-link" data-scroll-target="#ssh-key-authentication">SSH Key Authentication</a></li>
+  <li><a href="#git-tutorials" id="toc-git-tutorials" class="nav-link" data-scroll-target="#git-tutorials">Git Tutorials</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/mlp6/MedTech-Prototyping-Skills/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div><div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="git.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./course-syllabus.html">Course Information</a></li><li class="breadcrumb-item"><a href="./bme-lab-policies.html">BME Lab Policies</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">BME Lab Procedures and Safety Expectations</h1>
-<p class="subtitle lead">BME554L (Fall 2025)</p>
+<h1 class="title">Git: Getting Started</h1>
 </div>
 
 
@@ -217,6 +263,12 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">January 5, 2026</p>
+    </div>
+  </div>
   
     
   </div>
@@ -226,55 +278,11 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Important
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Safety is Always First, Cleanliness a close second</p>
-</div>
-</div>
-<p>Safety always comes first in lab. To that end, you are expected to follow the rules in this document. Failure to do so may result in revocation of laboratory privileges, reduction of your course grade, and possible withdrawal from your course. Understanding risks and learning to work safely in the laboratory are an important part of your education.</p>
-<p>Before entering lab, your safety training must be current. You need Duke’s Occupational and Environmental Safety Office’s:</p>
+<section id="installation-configuration" class="level2">
+<h2 class="anchored" data-anchor-id="installation-configuration">Installation &amp; Configuration</h2>
 <ul>
-<li><a href="https://sms.duhs.duke.edu/OnlineTraining/FS200W/">Fire/Life Safety</a>, and</li>
-<li><a href="https://sms.duhs.duke.edu/OnlineTraining/LABS/">Laboratory Safety-General</a></li>
+<li><a href="https://git-scm.com/">Git</a> - version control software</li>
 </ul>
-<p>training modules. We know that you may have done this training before, but it expires in one year, and you must be current through the end of the semester.</p>
-<p>Most accidents are the result of a series of failures. That said, most accidents are preventable. You are responsible for your safety and the safety of those around you. The vast majority of accidents involve some combination of inattention, carelessness, horseplay, impairment, broken tools, and lack of knowledge. All of these factors can be mitigated and it’s your job to do so.</p>
-<p>You are responsible for keeping the lab clean.</p>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Warning
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Failure to keep a clean workspace can result in a lower grade for you and your team.</p>
-</div>
-</div>
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Important
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>If you or someone else in lab needs immediate medical attention, call 911.</p>
-</div>
-</div>
-<p>In case you need to report your location, you are in CIEMAS B209. Non-emergent problems, call 681-WELL (681-9355). If you are injured in lab, you must let an instructor/TA/lab staff member know as soon as possible. Lab staff after-hours phone number is on the contact cards posted outside every lab door.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -285,39 +293,145 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Keep these points in mind… - In an emergency, call 911. Location: CIEMAS B209</p>
+<p>MacOS usually comes with <code>git</code> pre-installed, so there is no need to install anything else.</p>
+</div>
+</div>
 <ul>
-<li><p>In the event of a non-emergent injury, seek medical attention and let an instructor/TA/lab staff know within 12 hours.</p></li>
-<li><p>Find the emergency exits.</p></li>
-<li><p>Never work alone. Two or more people must be present and able to see and hear each other.</p></li>
-<li><p>Inspect every tool before use. Remove broken tools from service, place them on the broken tools shelf at the back of the room, and notify lab staff.</p></li>
-<li><p>Wear safety glasses when appropriate. This includes, but is not limited to, activities such as soldering, sanding, filing, hammering, cutting, and drilling.</p></li>
-<li><p>Wear hearing protection when using noisy tools such as drills and the Dremel tool. Ear buds or music headphones are not sufficient hearing protection.</p></li>
-<li><p>Never work impaired. If you are tired, stressed, in a rush, or impaired in any other way then do not work in lab. Go home and recuperate.</p></li>
-<li><p>Tie back long hair to keep it away from tools.</p></li>
-<li><p>Closed-toe shoes must be worn in the lab. Long trousers are preferred.</p></li>
-<li><p>Properly secure materials. Clamps, vises and portable worktables are available.</p></li>
-<li><p>Don’t force anything. If the job requires significant force, you’re doing it wrong.</p></li>
-<li><p>Keep food and drink out of the lab!</p></li>
-<li><p>Power down equipment when finished with it.</p></li>
-<li><p>A fire extinguisher is outside the door.</p></li>
-<li><p>Wash your hands before leaving lab.</p></li>
-<li><p>Bits of unused solder, wire and lead trimmings all go in a “Solder Scrap” container.</p></li>
-<li><p>Anything contaminated with solder paste (wipes, boards, applicators) goes in a “Solder Scrap” container.</p></li>
-<li><p>Other hazardous waste dealt with on a case by case basis; ask lab staff for help.</p></li>
-<li><p>Put tools away, in the right place. Tool drawers are labeled, but if you’re unsure where to put a tool, ask your TA/lab staff.</p></li>
-<li><p>Do not hoard parts or tools.</p></li>
-<li><p>This bears repeating: Take the parts you need, but only the parts you need. Do not hoard parts. If you see a part becoming scarce, let lab staff know so they can re-order.</p></li>
-<li><p>Benches are for temporary use only. Leave no trace that you were at the bench when you leave for the day. Rarely, with approval, a bench can be claimed for the semester.</p></li>
-<li><p>Any and all paint must be pre-approved by an instructor/TA/lab staff. Unapproved paint on projects will result in a lower grade. (Spray paint indoors is never approved.)</p></li>
-<li><p>A representative from your group is expected to participate in weekly cleaning. Your instructor will give you the schedule.</p></li>
-<li><p>Place a cover on the bench for messy work. Chucks and Ram Board are available for this.</p></li>
-<li><p>Lab staff have a collection of good soldering tips and fine tools (e.g. tweezers). If you have need for something better than you can find in lab, ask lab staff.</p></li>
+<li><p>After installing <code>git</code>, please configure it: <a href="https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup">Getting Started - First-Time Git Setup</a></p></li>
+<li><p>The setup steps above should create a <code>~/.gitconfig</code> file that has some barebones configuration options. We can expand that a bit by manually editing it with the following content:</p></li>
 </ul>
+<div class="sourceCode" id="cb1"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">[user]</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="ex">name</span> = your first and last name</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="ex">email</span> = yournetid@duke.edu</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="ex">[alias]</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="ex">lg</span> = log <span class="at">--graph</span> <span class="at">--pretty</span><span class="op">=</span>format:<span class="st">'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset'</span> <span class="at">--abbrev-commit</span> <span class="at">--date</span><span class="op">=</span>relative</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="ex">[core]</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    <span class="ex">editor</span> = nano</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    <span class="ex">autocrlf</span> = input</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    <span class="ex">preloadindex</span> = true</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    <span class="ex">fileMode</span> = false</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="ex">[color]</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    <span class="ex">status</span> = auto</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    <span class="ex">branch</span> = auto</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    <span class="ex">interactive</span> = auto</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    <span class="fu">diff</span> = auto</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    <span class="ex">ui</span> = auto</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="ex">[push]</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    <span class="ex">default</span> = current</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    <span class="ex">autoSetupRemote</span> = true</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="ex">[pull]</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>    <span class="ex">rebase</span> = false</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="ex">[merge]</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>    <span class="ex">ff</span> = no</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="ex">[init]</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>    <span class="ex">defaultBranch</span> = main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>The above configuration will:
+<ul>
+<li>Set your name and email address for commits</li>
+<li>Set up a <code>git lg</code> alias that will show a nice graph of the commit history</li>
+<li>Change the default editor for making commit messages from <code>vi</code> to <code>nano</code>.</li>
+</ul></li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
 </div>
 </div>
+<div class="callout-body-container callout-body">
+<p>You can change this to something else, like VS Code!</p>
+</div>
+</div>
+<ul>
+<li>This is a good tutorial on using <code>git</code> within VS Code: <a href="https://code.visualstudio.com/docs/sourcecontrol/overview">Using Git source control in VS Code</a></li>
+</ul>
+</section>
+<section id="setup-duke-gitlab-account" class="level2">
+<h2 class="anchored" data-anchor-id="setup-duke-gitlab-account">Setup Duke GitLab Account</h2>
+<p>While <a href="https://github.com">GitHub</a> is a very popular public git repository hosting site, we will be using Duke’s GitLab server. Please make sure you can log into https://gitlab.oit.duke.edu using your Oath2 NetID authentication.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This is <strong>not</strong> <code>gitlab.com</code>!</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Caution
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Do <strong>not</strong> edit files in remote git repositories using the GitLab web interface!! Only work with your repository files using your local clone of the repository.</p>
+</div>
+</div>
+</section>
+<section id="ssh-key-authentication" class="level2">
+<h2 class="anchored" data-anchor-id="ssh-key-authentication">SSH Key Authentication</h2>
+<p>We will use SSH keys to authenticate us on GitLab to be able to <code>clone</code>/<code>push</code>/<code>pull</code> from GitLab without needing to always enter your username and password.</p>
+<p>To setup an SSH key and add it to your GitLab profile:</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The guide below will reference <code>github.com</code>; you want to substitute <code>gitlab.oit.duke.edu</code>.</p>
+</div>
+</div>
+<ol type="1">
+<li><p><a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent">Generate a New SSH Key</a></p>
+<ul>
+<li><p>While your private key is most secure by encrypting it with a passphrase, you will need to either enter that passphrase everytime the key is used, or you will need to add it to your local credential manager (i.e., keychain) or <code>ssh-agent</code> to keep it unlocked.</p></li>
+<li><p>If you are just using this SSH key for this class, you can use an empty passphrase and not need to worry about needing to deal with the password management.</p></li>
+</ul></li>
+<li><p><a href="https://linuxhint.com/add-and-configure-ssh-key-on-gitlab">Add your SSH key to your GitLab Profile</a></p></li>
+</ol>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The guide above will reference <code>gitlab.com</code>; you want to substitute <code>gitlab.oit.duke.edu</code>.</p>
+</div>
+</div>
+</section>
+<section id="git-tutorials" class="level2">
+<h2 class="anchored" data-anchor-id="git-tutorials">Git Tutorials</h2>
+<p>We are going to cover <code>git</code> extensively in class, but it can really help to review some tutorials ahead of time to get familiar with the nomenclature and high-level overview of the workflow. If you have never used <code>git</code> before, I would recommend reviewing the following tutorials:</p>
+<ul>
+<li><a href="https://gitimmersion.com/">Git Immersion</a></li>
+<li><a href="https://learngitbranching.js.org/">Learn Git Branching</a></li>
+<li><a href="https://think-like-a-git.net/">Think Like (a) Git</a></li>
+<li><a href="https://www.youtube.com/watch?v=8JJ101D3knE">Git Tutorial for Beginners: Learn Git in 1 Hour</a></li>
+</ul>
+<p>More comprehensive <code>git</code> documentation can be found at https://git-scm.com/doc.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -724,4 +838,4 @@ Note
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/mlp6/MedTech-Prototyping-Skills/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/mlp6/MedTech-Prototyping-Skills/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>

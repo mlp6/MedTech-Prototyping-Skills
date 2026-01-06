@@ -111,352 +111,103 @@
     ]
   },
   {
-    "objectID": "course-syllabus.html",
-    "href": "course-syllabus.html",
-    "title": "MedTech Prototyping Skills (BME254L) Syllabus",
+    "objectID": "labs/software-install_tutorials.html",
+    "href": "labs/software-install_tutorials.html",
+    "title": "MedTech Prototyping Skills: Software Installation & Tutorials",
     "section": "",
-    "text": "Dr. Mark Palmeri\n\nEmail (slower): mark.palmeri@duke.edu\nEd Discussion (private message, TAs included)\nOffice Hours: Sign Up\n\n\n\n\n\nCarson Pazdan (cbp31)\nLauren Kenselaar (lbk18)\nEmily Song (ecs94)\n\n\n\n\n\n\n\nTip\n\n\n\nQuestions that can be answered by Dr. Palmeri or a teaching assistant should be posted on Ed Discussion.\n\n\n\n\n\n\nLecture: Tuesday & Thursday, 11:45-13:00, Hudson Hall 212 (Panopto recorded)\nLab: As needed, Fitzpatrick B209 (Door Code: 4-1-5-2)\nThere are no formally scheduled lab sections, but you will need to use the lab equipment to perform testing of your devices. Your TAs will announce times when they will hold lab hours.\n\n\n\n\n\n\nImportant\n\n\n\nPlease review the lab policies before using the lab for the first time this semester.\n\n\n\n\n\n\n\n\nWarning\n\n\n\nNo food or drink is allowed in the lab! Failure to adhere to this policy will have consequences on your course participation grade.\n\n\n\n\n\nThis course focuses on developing medical device prototyping skills that will be used in future project and design courses, with a focus on preparing our students for positions in the medtech industry. Students will work individually to complete design tasks that will be tested to quantitative specifications. Students will gain hands-on experience with device fabrication, debugging, testing and failure analysis.\nUpon completion of this course, students should be able to:\n\nSoftware version control (git)\nPerform functional decomposition and express as a stage diagram (UML)\nUtilize ECAD (KiCad) for:\n\nElectronic schematic capture\nPrinted circuit board (PCB) layout\n\nModular breadboarding of circuits to translation to testable PCBs\nDesign a battery-powered device that:\n\nAccepts analog and digital user input\nOutputs analog and digital outputs\nPasses testable specifications to 95% CI\n\nImplement electronic logic on microcontroller (Arduino framework)\n\nModular / testable code development in C\nInterupt Service Routines\nPulse Width Modulation\nState Machine\n\nUtilize CAD (Onshape) for:\n\nDevice enclosure design with UI/UX considerations\nInput / Output considerations\nSize / weight constraints\nPreparation of mechanical drawings\n\n3D printing of designs\n\nAssembly of discrete enclosure pieces\nUse of mechanical fasteners\n\nWrite technical analysis reports in Jupyter notebook\n\n\n\n\n\n\n\nComputational Methods in Engineering (EGR103) or equivalent\nFundamentals of Electrical and Computer Engineering (ECE110L) / Biomedical Electronics Measurements (BME290L) or equivalent\n\n\n\n\n\nWe will be using Canvas as the learning management system for this course. It will host the syllabus, which will have hyperlinks to all lecture content and lab assignments.\nDuke’s GitLab server will be used for most course lab exercises, and code-related questions will be submitted to Dr. Palmeri / TAs using GitLab Issues.\nEd Discussion will be used for general course questions and discussion.\n\n\n\nThis class is organized in a sequence of modules. Specific details surrounding dates for assignments associated with each module will be posted to Gradescope.\nThis course uses a version of Mastery Learning, where “mastery” of a given module is necessary to progress onto the subsequent module. Quizzes are used to evaluate “knowledge”; lab exercises are used to demonstrate application of skills. In this course, assignments of later modules depends on the successful completion of earlier modules.\n\n\n\n\nMedTech Skill Overview\nEvent-Drive State Machines\nVersion Control (git)\nComputer Aided Design (CAD) (Onshape)\nLightbox Project (Kanban Board)\nECAD (KiCad): Schematic Capture\nECAD (KiCad): SPICE Modeling\nECAD (KiCad): PCB Layout\nFirmware Development: C Programming Overview\nFirmware Development: Button Event ISRs, ADC & State Machines\n\n\n\n\n\nClass participation in both lecture and lab time is strongly encouraged. Lecture will be used to provide skill overview and live demonstrations, many of while will kickstart your efforts for your project. Lab time will provide you access to equipment and the TAs for assistance.\nStudents are responsible for obtaining missed lecture content from other students in the class. All lecture slides/presented content will be made availabe online (Canvas/Gitlab), and lectures will be recorded via Panopto and posted to Canvas.\nParticipation on Ed Discussion is also encouraged, in the form of:\n\nAsking questions about the course material (ideally, publicly, so that others\ncan benefit (Anonymous okay))\nAnswering questions from other students\nSharing interesting articles or resources related to the course material\n\n\n\n\n\n\nThere will be quizzes / completion surveys, and lab exercises associated with some of the learning modules (40%), all of which will be submitted through Gradescope.\nThe course project will have regular milestones throughout the semester, culminating in a final functional device that you will present and an associated technical report testing device function (50%).\nClass participation (10%) will be evaluated based on your engagement in the lecture/lab setting, demonstrating good lab practices and submitting assignments on time for feedback.\nAll assignment grades will be posted to Canvas/Gradescope throughout the semester to track your performance.\n\nGrade Distribution\n\n\nGrade Category\nRelative Percentage\n\n\n\n\nQuizzes / Lab Modules\n40%\n\n\nProject\n50%\n\n\nParticipation\n10%\n\n\n\n\n\n\nThis course is not “curved” (i.e., a distribution of grades will not be enforced), and a traditional grading scheme will be used (e.g., 90-93 = A-, 94-97 = A, 97-100 = A+). Participation throughout the semester will influence rounding up/down for fractional grades.\nFailing the course can happen with a cummulative score &lt; 60 (D-) or not completing all of the assignments.\n\n\n\nAny regrading requests need to be made within one week of grades for a given assignment being released. You must make the request via Gradescope and provide a description of why you feel a regrade is appropriate. Requesting a regrade could lead to additional loss of credit when an assignment is re-evaluated.\nSome assignments will have an opportunity to be resubmitted based on grading feedback at the discretion of Dr. Palmeri.\n\n\n\nLate submission windows will be available for some assignments and should be used to accomodate acute illness, travel, high workload from other classes and other unforeseen circumstances. This late submission window can be utilized without penalty and without prior approval.\nStudents with SDAO accomodations for extended time on assignments can use this extended late submission window for all assignments.\nAny assignments submitted after the late submission window will only be accepted for partial credit at the discretion of Dr. Palmeri or if prior approval was sought before the original due date. Requests for late submission accomodation will be considered on a case-by-case basis and will result in a deduction in the course participation grade.\n\n\n\n\nAll students are expected to adhere to all principles of the Duke Community Standard. Violations of the Duke Community Standard will be referred immediately to the Office of Student Conduct. Please do not hesitate to talk with Dr. Palmeri about any situations involving academic honor, especially if it is ambiguous what should be done.\n\n\n\n\n\nEngineering is inherently a collaborative field, and in this class, you are encouraged to work collaboratively on your projects. That being said, all of the work that you submit must be generated by you and reflect your understanding of the material.\n\n\n\n\n\n\nNote\n\n\n\nAll resources used in your projects that were developed by another person or company must be properly acknowledged using comments in your code / reports.\n\n\n\n\n\nThe use of artificial intelligence is a rapidly developing resource / tool in engineering. In software development, there are many levels of AI-assitance available. Such form of assistance include the IntelliCode tools and GitHub CoPilot (free to students through the GitHub Education program). These tools can be leveraged to help with syntax. You are, however, strongly cautioned to not rely on these tools for logical implementation.\n\nMedTech Prototyping Skills by Mark L. Palmeri is licensed under CC BY-SA 4.0",
+    "text": "Please follow the instructions on this dedicated git page to:\n\nInstall git\nConfigure git\nSetup an SSH key\nProvide links to git tutorials to reinforce the concepts and mechanics of using git.",
     "crumbs": [
-      "Course Information",
-      "Course Syllabus"
+      "Labs",
+      "Software Installation Tutorials"
     ]
   },
   {
-    "objectID": "course-syllabus.html#personnel",
-    "href": "course-syllabus.html#personnel",
-    "title": "MedTech Prototyping Skills (BME254L) Syllabus",
+    "objectID": "labs/software-install_tutorials.html#git-version-control",
+    "href": "labs/software-install_tutorials.html#git-version-control",
+    "title": "MedTech Prototyping Skills: Software Installation & Tutorials",
     "section": "",
-    "text": "Dr. Mark Palmeri\n\nEmail (slower): mark.palmeri@duke.edu\nEd Discussion (private message, TAs included)\nOffice Hours: Sign Up\n\n\n\n\n\nCarson Pazdan (cbp31)\nLauren Kenselaar (lbk18)\nEmily Song (ecs94)\n\n\n\n\n\n\n\nTip\n\n\n\nQuestions that can be answered by Dr. Palmeri or a teaching assistant should be posted on Ed Discussion.",
+    "text": "Please follow the instructions on this dedicated git page to:\n\nInstall git\nConfigure git\nSetup an SSH key\nProvide links to git tutorials to reinforce the concepts and mechanics of using git.",
     "crumbs": [
-      "Course Information",
-      "Course Syllabus"
+      "Labs",
+      "Software Installation Tutorials"
     ]
   },
   {
-    "objectID": "course-syllabus.html#course-times-locations",
-    "href": "course-syllabus.html#course-times-locations",
-    "title": "MedTech Prototyping Skills (BME254L) Syllabus",
-    "section": "",
-    "text": "Lecture: Tuesday & Thursday, 11:45-13:00, Hudson Hall 212 (Panopto recorded)\nLab: As needed, Fitzpatrick B209 (Door Code: 4-1-5-2)\nThere are no formally scheduled lab sections, but you will need to use the lab equipment to perform testing of your devices. Your TAs will announce times when they will hold lab hours.\n\n\n\n\n\n\nImportant\n\n\n\nPlease review the lab policies before using the lab for the first time this semester.\n\n\n\n\n\n\n\n\nWarning\n\n\n\nNo food or drink is allowed in the lab! Failure to adhere to this policy will have consequences on your course participation grade.",
+    "objectID": "labs/software-install_tutorials.html#kicad-eda",
+    "href": "labs/software-install_tutorials.html#kicad-eda",
+    "title": "MedTech Prototyping Skills: Software Installation & Tutorials",
+    "section": "KiCad (EDA)",
+    "text": "KiCad (EDA)\n\nPlease install KiCad: https://kicad.org\n\n\n\n\n\n\n\nNote\n\n\n\nThis installation file can be a bit large, so this may take a few minutes to download.",
     "crumbs": [
-      "Course Information",
-      "Course Syllabus"
+      "Labs",
+      "Software Installation Tutorials"
     ]
   },
   {
-    "objectID": "course-syllabus.html#course-objectives",
-    "href": "course-syllabus.html#course-objectives",
-    "title": "MedTech Prototyping Skills (BME254L) Syllabus",
-    "section": "",
-    "text": "This course focuses on developing medical device prototyping skills that will be used in future project and design courses, with a focus on preparing our students for positions in the medtech industry. Students will work individually to complete design tasks that will be tested to quantitative specifications. Students will gain hands-on experience with device fabrication, debugging, testing and failure analysis.\nUpon completion of this course, students should be able to:\n\nSoftware version control (git)\nPerform functional decomposition and express as a stage diagram (UML)\nUtilize ECAD (KiCad) for:\n\nElectronic schematic capture\nPrinted circuit board (PCB) layout\n\nModular breadboarding of circuits to translation to testable PCBs\nDesign a battery-powered device that:\n\nAccepts analog and digital user input\nOutputs analog and digital outputs\nPasses testable specifications to 95% CI\n\nImplement electronic logic on microcontroller (Arduino framework)\n\nModular / testable code development in C\nInterupt Service Routines\nPulse Width Modulation\nState Machine\n\nUtilize CAD (Onshape) for:\n\nDevice enclosure design with UI/UX considerations\nInput / Output considerations\nSize / weight constraints\nPreparation of mechanical drawings\n\n3D printing of designs\n\nAssembly of discrete enclosure pieces\nUse of mechanical fasteners\n\nWrite technical analysis reports in Jupyter notebook",
+    "objectID": "labs/software-install_tutorials.html#onshape-cad",
+    "href": "labs/software-install_tutorials.html#onshape-cad",
+    "title": "MedTech Prototyping Skills: Software Installation & Tutorials",
+    "section": "Onshape (CAD)",
+    "text": "Onshape (CAD)\n\nPlease make sure to activate your invitation to Duke’s Onshape server (see email).\n\n\n\n\n\n\n\nNote\n\n\n\nIf you did not receive an email invitation, please send Dr. Palmeri and your TAs a private message on Ed.",
     "crumbs": [
-      "Course Information",
-      "Course Syllabus"
+      "Labs",
+      "Software Installation Tutorials"
     ]
   },
   {
-    "objectID": "course-syllabus.html#prerequisites",
-    "href": "course-syllabus.html#prerequisites",
-    "title": "MedTech Prototyping Skills (BME254L) Syllabus",
-    "section": "",
-    "text": "Computational Methods in Engineering (EGR103) or equivalent\nFundamentals of Electrical and Computer Engineering (ECE110L) / Biomedical Electronics Measurements (BME290L) or equivalent",
+    "objectID": "labs/software-install_tutorials.html#visual-studio-code-ide",
+    "href": "labs/software-install_tutorials.html#visual-studio-code-ide",
+    "title": "MedTech Prototyping Skills: Software Installation & Tutorials",
+    "section": "Visual Studio Code (IDE)",
+    "text": "Visual Studio Code (IDE)\nWe will be using Visual Studio Code as the IDE for all projects in this class. In addition to installing the base program, please install the following Extensions:\n\nPlantUML (generate state diagrams)\nGitLens (help with git operations / visualization)\nMicrosoft C/C++ Extension Pack\nMicrosoft IntelliCode (assistance with C syntax)\nPlatformIO\nGitHub CoPilot (AI-assisted coding)\n\nSign up for free GitHub Education Student account to get access to this extension: https://github.com/education/students\nInstall the GitHub CoPilot extension\n\n\n\n\n\n\n\n\nTip\n\n\n\nYou will need a document to verify your student status that includes your dates of enrollment, which your DukeCard does not contain. Instead, you can get an Enrollment Verification document through DukeHub (Academics Tab) and convert the downloaded PDF to a JPG or PNG file to upload to GitHub.\n\n\n\nPython & Jupyter extensions (for technical report preparation)\nConda to install a Python virtual environment for Jupyter notebooks.\n\n\n\n\n\n\n\nNote\n\n\n\nYou can use an existing Python installation on your laptop if you have one.",
     "crumbs": [
-      "Course Information",
-      "Course Syllabus"
+      "Labs",
+      "Software Installation Tutorials"
     ]
   },
   {
-    "objectID": "course-syllabus.html#learning-management-system",
-    "href": "course-syllabus.html#learning-management-system",
-    "title": "MedTech Prototyping Skills (BME254L) Syllabus",
-    "section": "",
-    "text": "We will be using Canvas as the learning management system for this course. It will host the syllabus, which will have hyperlinks to all lecture content and lab assignments.\nDuke’s GitLab server will be used for most course lab exercises, and code-related questions will be submitted to Dr. Palmeri / TAs using GitLab Issues.\nEd Discussion will be used for general course questions and discussion.",
+    "objectID": "labs/software-install_tutorials.html#arduino-nano-every",
+    "href": "labs/software-install_tutorials.html#arduino-nano-every",
+    "title": "MedTech Prototyping Skills: Software Installation & Tutorials",
+    "section": "Arduino Nano Every",
+    "text": "Arduino Nano Every\n\nOrder yourself an Arduino Nano Every.\n\n\n\n\n\n\n\nNote\n\n\n\nYou do not have to order from the Arduino store if you can find this board elsewhere, but please make sure you get the “Every” version of the Nano. Other versions of the board use different logic voltages and even different chips!\n\n\n\nMake sure you have a data-cable USB cable to connect your Arduino Nano Every to your laptop.",
     "crumbs": [
-      "Course Information",
-      "Course Syllabus"
+      "Labs",
+      "Software Installation Tutorials"
     ]
   },
   {
-    "objectID": "course-syllabus.html#class-schedule",
-    "href": "course-syllabus.html#class-schedule",
-    "title": "MedTech Prototyping Skills (BME254L) Syllabus",
-    "section": "",
-    "text": "This class is organized in a sequence of modules. Specific details surrounding dates for assignments associated with each module will be posted to Gradescope.\nThis course uses a version of Mastery Learning, where “mastery” of a given module is necessary to progress onto the subsequent module. Quizzes are used to evaluate “knowledge”; lab exercises are used to demonstrate application of skills. In this course, assignments of later modules depends on the successful completion of earlier modules.\n\n\n\n\nMedTech Skill Overview\nEvent-Drive State Machines\nVersion Control (git)\nComputer Aided Design (CAD) (Onshape)\nLightbox Project (Kanban Board)\nECAD (KiCad): Schematic Capture\nECAD (KiCad): SPICE Modeling\nECAD (KiCad): PCB Layout\nFirmware Development: C Programming Overview\nFirmware Development: Button Event ISRs, ADC & State Machines",
+    "objectID": "labs/software-install_tutorials.html#technical-report-preparation",
+    "href": "labs/software-install_tutorials.html#technical-report-preparation",
+    "title": "MedTech Prototyping Skills: Software Installation & Tutorials",
+    "section": "Technical Report Preparation",
+    "text": "Technical Report Preparation\nEach lab exercise will have an associated technical report submitted. These reports will be prepared and submitted using Python-based Jupyter notebooks that will be included as part of your assignment git repositories.\nYou will need to be able to perform the following tasks in your Jupyter notebooks:\n\nRead CSV text data saved from an oscilloscope.\nPerform simple statistics (e.g., mean, standard deviation, 95% CI) on the data.\nGenerate plots\n\nIf you need to install a Python environment on your laptop, then this is a good starting point: Getting Started with Python in VS Code.\nThis is a good tutorial on getting started with Jupyter notebooks in VS Code: Jupyter Notebooks in Visual Studio Code.",
     "crumbs": [
-      "Course Information",
-      "Course Syllabus"
+      "Labs",
+      "Software Installation Tutorials"
     ]
   },
   {
-    "objectID": "course-syllabus.html#attendance-participation",
-    "href": "course-syllabus.html#attendance-participation",
-    "title": "MedTech Prototyping Skills (BME254L) Syllabus",
-    "section": "",
-    "text": "Class participation in both lecture and lab time is strongly encouraged. Lecture will be used to provide skill overview and live demonstrations, many of while will kickstart your efforts for your project. Lab time will provide you access to equipment and the TAs for assistance.\nStudents are responsible for obtaining missed lecture content from other students in the class. All lecture slides/presented content will be made availabe online (Canvas/Gitlab), and lectures will be recorded via Panopto and posted to Canvas.\nParticipation on Ed Discussion is also encouraged, in the form of:\n\nAsking questions about the course material (ideally, publicly, so that others\ncan benefit (Anonymous okay))\nAnswering questions from other students\nSharing interesting articles or resources related to the course material",
+    "objectID": "labs/software-install_tutorials.html#lab-policies-safety",
+    "href": "labs/software-install_tutorials.html#lab-policies-safety",
+    "title": "MedTech Prototyping Skills: Software Installation & Tutorials",
+    "section": "Lab Policies & Safety",
+    "text": "Lab Policies & Safety\nPlease review the lab policies and safety guidelines for working in the lab.",
     "crumbs": [
-      "Course Information",
-      "Course Syllabus"
+      "Labs",
+      "Software Installation Tutorials"
     ]
   },
   {
-    "objectID": "course-syllabus.html#assignments-grading",
-    "href": "course-syllabus.html#assignments-grading",
-    "title": "MedTech Prototyping Skills (BME254L) Syllabus",
-    "section": "",
-    "text": "There will be quizzes / completion surveys, and lab exercises associated with some of the learning modules (40%), all of which will be submitted through Gradescope.\nThe course project will have regular milestones throughout the semester, culminating in a final functional device that you will present and an associated technical report testing device function (50%).\nClass participation (10%) will be evaluated based on your engagement in the lecture/lab setting, demonstrating good lab practices and submitting assignments on time for feedback.\nAll assignment grades will be posted to Canvas/Gradescope throughout the semester to track your performance.\n\nGrade Distribution\n\n\nGrade Category\nRelative Percentage\n\n\n\n\nQuizzes / Lab Modules\n40%\n\n\nProject\n50%\n\n\nParticipation\n10%\n\n\n\n\n\n\nThis course is not “curved” (i.e., a distribution of grades will not be enforced), and a traditional grading scheme will be used (e.g., 90-93 = A-, 94-97 = A, 97-100 = A+). Participation throughout the semester will influence rounding up/down for fractional grades.\nFailing the course can happen with a cummulative score &lt; 60 (D-) or not completing all of the assignments.\n\n\n\nAny regrading requests need to be made within one week of grades for a given assignment being released. You must make the request via Gradescope and provide a description of why you feel a regrade is appropriate. Requesting a regrade could lead to additional loss of credit when an assignment is re-evaluated.\nSome assignments will have an opportunity to be resubmitted based on grading feedback at the discretion of Dr. Palmeri.\n\n\n\nLate submission windows will be available for some assignments and should be used to accomodate acute illness, travel, high workload from other classes and other unforeseen circumstances. This late submission window can be utilized without penalty and without prior approval.\nStudents with SDAO accomodations for extended time on assignments can use this extended late submission window for all assignments.\nAny assignments submitted after the late submission window will only be accepted for partial credit at the discretion of Dr. Palmeri or if prior approval was sought before the original due date. Requests for late submission accomodation will be considered on a case-by-case basis and will result in a deduction in the course participation grade.",
+    "objectID": "labs/software-install_tutorials.html#what-to-submit",
+    "href": "labs/software-install_tutorials.html#what-to-submit",
+    "title": "MedTech Prototyping Skills: Software Installation & Tutorials",
+    "section": "What to Submit",
+    "text": "What to Submit\nComplete the online Gradescope “quiz” indicating completion of each of the main tasks above.",
     "crumbs": [
-      "Course Information",
-      "Course Syllabus"
+      "Labs",
+      "Software Installation Tutorials"
     ]
-  },
-  {
-    "objectID": "course-syllabus.html#duke-community-standard",
-    "href": "course-syllabus.html#duke-community-standard",
-    "title": "MedTech Prototyping Skills (BME254L) Syllabus",
-    "section": "",
-    "text": "All students are expected to adhere to all principles of the Duke Community Standard. Violations of the Duke Community Standard will be referred immediately to the Office of Student Conduct. Please do not hesitate to talk with Dr. Palmeri about any situations involving academic honor, especially if it is ambiguous what should be done.",
-    "crumbs": [
-      "Course Information",
-      "Course Syllabus"
-    ]
-  },
-  {
-    "objectID": "course-syllabus.html#faq",
-    "href": "course-syllabus.html#faq",
-    "title": "MedTech Prototyping Skills (BME254L) Syllabus",
-    "section": "",
-    "text": "Engineering is inherently a collaborative field, and in this class, you are encouraged to work collaboratively on your projects. That being said, all of the work that you submit must be generated by you and reflect your understanding of the material.\n\n\n\n\n\n\nNote\n\n\n\nAll resources used in your projects that were developed by another person or company must be properly acknowledged using comments in your code / reports.\n\n\n\n\n\nThe use of artificial intelligence is a rapidly developing resource / tool in engineering. In software development, there are many levels of AI-assitance available. Such form of assistance include the IntelliCode tools and GitHub CoPilot (free to students through the GitHub Education program). These tools can be leveraged to help with syntax. You are, however, strongly cautioned to not rely on these tools for logical implementation.\n\nMedTech Prototyping Skills by Mark L. Palmeri is licensed under CC BY-SA 4.0",
-    "crumbs": [
-      "Course Information",
-      "Course Syllabus"
-    ]
-  },
-  {
-    "objectID": "lectures/arduino-state-machine-notes.html",
-    "href": "lectures/arduino-state-machine-notes.html",
-    "title": "Firmware: Event-Driven State Machines",
-    "section": "",
-    "text": "What is a “kernel”?\n\nThe part of the RTOS that interacts with hardware.\n\nKernel events can be used to indicate that “something” has happened, which may dictate the function of the state machine.\n\nButton press\nSensor crossing a threshold\nTimer expiring\n\nWhen an event occurs, it triggers an Interupt Service Routine (ISR), which calls a callback function.\n\n\n\n\nThe simplest implementation of a state machine is a switch-case statement.\nThe switch statement is used to select the current state.\nThe case statements are used to implement the logic for each state.\n\nCases can be nested to implement sub-states.\nEnumerations can be used to give states verbose names instead of numbers.\n\nThe break statement is used to exit the switch statement.\nThe default statement is used to handle unexpected states.\n\n\n\n\nenum device_states { init, run, sleep };\n\nint device_state = init; // initialize state\n\n/* structure to bookkeep state variables */\nstruct device_state_vars {\n    int var1;\n    int var2;\n};\n\nwhile (1) {\n    switch (device_state) {\n        case init:\n            /* do stuff to initialize device */\n            device_state = run; // change the state\n            break;  // exit the switch statement\n        case run:\n            /* run device */\n            if (condition) {\n                device_state = sleep;\n            }\n            break;\n        case sleep:\n            /* sleep device */\n            if (condition) {\n                device_state = run;\n            }\n            break;\n        default:\n            /* handle unexpected state */\n            break;\n    }\n}\nThe switch-case approach loses some of its elegance when there are many states and many transitions and states have entry / exit routines.\n\n\n\n\nhttps://www.digikey.com/en/maker/tutorials/2023/how-to-program-an-arduino-finite-state-machine\nhttps://www.instructables.com/Finite-State-Machine-on-an-Arduino/"
-  },
-  {
-    "objectID": "lectures/arduino-state-machine-notes.html#kernel-events",
-    "href": "lectures/arduino-state-machine-notes.html#kernel-events",
-    "title": "Firmware: Event-Driven State Machines",
-    "section": "",
-    "text": "What is a “kernel”?\n\nThe part of the RTOS that interacts with hardware.\n\nKernel events can be used to indicate that “something” has happened, which may dictate the function of the state machine.\n\nButton press\nSensor crossing a threshold\nTimer expiring\n\nWhen an event occurs, it triggers an Interupt Service Routine (ISR), which calls a callback function.\n\n\n\n\nThe simplest implementation of a state machine is a switch-case statement.\nThe switch statement is used to select the current state.\nThe case statements are used to implement the logic for each state.\n\nCases can be nested to implement sub-states.\nEnumerations can be used to give states verbose names instead of numbers.\n\nThe break statement is used to exit the switch statement.\nThe default statement is used to handle unexpected states.\n\n\n\n\nenum device_states { init, run, sleep };\n\nint device_state = init; // initialize state\n\n/* structure to bookkeep state variables */\nstruct device_state_vars {\n    int var1;\n    int var2;\n};\n\nwhile (1) {\n    switch (device_state) {\n        case init:\n            /* do stuff to initialize device */\n            device_state = run; // change the state\n            break;  // exit the switch statement\n        case run:\n            /* run device */\n            if (condition) {\n                device_state = sleep;\n            }\n            break;\n        case sleep:\n            /* sleep device */\n            if (condition) {\n                device_state = run;\n            }\n            break;\n        default:\n            /* handle unexpected state */\n            break;\n    }\n}\nThe switch-case approach loses some of its elegance when there are many states and many transitions and states have entry / exit routines.\n\n\n\n\nhttps://www.digikey.com/en/maker/tutorials/2023/how-to-program-an-arduino-finite-state-machine\nhttps://www.instructables.com/Finite-State-Machine-on-an-Arduino/"
-  },
-  {
-    "objectID": "lectures/arduino-state-machine-slides.html#kernel-events",
-    "href": "lectures/arduino-state-machine-slides.html#kernel-events",
-    "title": "Firmware: Event-Driven State Machines",
-    "section": "Kernel Events",
-    "text": "Kernel Events\n\nWhat is a “kernel”?\n\nThe part of the RTOS that interacts with hardware.\n\nKernel events can be used to indicate that “something” has happened, which may dictate the function of the state machine.\n\nButton press\nSensor crossing a threshold\nTimer expiring\n\nWhen an event occurs, it triggers an Interupt Service Routine (ISR), which calls a callback function.\n\nCode: Switch-Case\n\nThe simplest implementation of a state machine is a switch-case statement.\nThe switch statement is used to select the current state.\nThe case statements are used to implement the logic for each state.\n\nCases can be nested to implement sub-states.\nEnumerations can be used to give states verbose names instead of numbers.\n\nThe break statement is used to exit the switch statement.\nThe default statement is used to handle unexpected states.\n\nPseudo-Code\nenum device_states { init, run, sleep };\n\nint device_state = init; // initialize state\n\n/* structure to bookkeep state variables */\nstruct device_state_vars {\n    int var1;\n    int var2;\n};\n\nwhile (1) {\n    switch (device_state) {\n        case init:\n            /* do stuff to initialize device */\n            device_state = run; // change the state\n            break;  // exit the switch statement\n        case run:\n            /* run device */\n            if (condition) {\n                device_state = sleep;\n            }\n            break;\n        case sleep:\n            /* sleep device */\n            if (condition) {\n                device_state = run;\n            }\n            break;\n        default:\n            /* handle unexpected state */\n            break;\n    }\n}\nThe switch-case approach loses some of its elegance when there are many states and many transitions and states have entry / exit routines.\nResources / Examples\n\nhttps://www.digikey.com/en/maker/tutorials/2023/how-to-program-an-arduino-finite-state-machine\nhttps://www.instructables.com/Finite-State-Machine-on-an-Arduino/"
-  },
-  {
-    "objectID": "bme-lab-policies.html",
-    "href": "bme-lab-policies.html",
-    "title": "BME Lab Procedures and Safety Expectations",
-    "section": "",
-    "text": "Important\n\n\n\nSafety is Always First, Cleanliness a close second\n\n\nSafety always comes first in lab. To that end, you are expected to follow the rules in this document. Failure to do so may result in revocation of laboratory privileges, reduction of your course grade, and possible withdrawal from your course. Understanding risks and learning to work safely in the laboratory are an important part of your education.\nBefore entering lab, your safety training must be current. You need Duke’s Occupational and Environmental Safety Office’s:\n\nFire/Life Safety, and\nLaboratory Safety-General\n\ntraining modules. We know that you may have done this training before, but it expires in one year, and you must be current through the end of the semester.\nMost accidents are the result of a series of failures. That said, most accidents are preventable. You are responsible for your safety and the safety of those around you. The vast majority of accidents involve some combination of inattention, carelessness, horseplay, impairment, broken tools, and lack of knowledge. All of these factors can be mitigated and it’s your job to do so.\nYou are responsible for keeping the lab clean.\n\n\n\n\n\n\nWarning\n\n\n\nFailure to keep a clean workspace can result in a lower grade for you and your team.\n\n\n\n\n\n\n\n\nImportant\n\n\n\nIf you or someone else in lab needs immediate medical attention, call 911.\n\n\nIn case you need to report your location, you are in CIEMAS B209. Non-emergent problems, call 681-WELL (681-9355). If you are injured in lab, you must let an instructor/TA/lab staff member know as soon as possible. Lab staff after-hours phone number is on the contact cards posted outside every lab door.\n\n\n\n\n\n\nNote\n\n\n\nKeep these points in mind… - In an emergency, call 911. Location: CIEMAS B209\n\nIn the event of a non-emergent injury, seek medical attention and let an instructor/TA/lab staff know within 12 hours.\nFind the emergency exits.\nNever work alone. Two or more people must be present and able to see and hear each other.\nInspect every tool before use. Remove broken tools from service, place them on the broken tools shelf at the back of the room, and notify lab staff.\nWear safety glasses when appropriate. This includes, but is not limited to, activities such as soldering, sanding, filing, hammering, cutting, and drilling.\nWear hearing protection when using noisy tools such as drills and the Dremel tool. Ear buds or music headphones are not sufficient hearing protection.\nNever work impaired. If you are tired, stressed, in a rush, or impaired in any other way then do not work in lab. Go home and recuperate.\nTie back long hair to keep it away from tools.\nClosed-toe shoes must be worn in the lab. Long trousers are preferred.\nProperly secure materials. Clamps, vises and portable worktables are available.\nDon’t force anything. If the job requires significant force, you’re doing it wrong.\nKeep food and drink out of the lab!\nPower down equipment when finished with it.\nA fire extinguisher is outside the door.\nWash your hands before leaving lab.\nBits of unused solder, wire and lead trimmings all go in a “Solder Scrap” container.\nAnything contaminated with solder paste (wipes, boards, applicators) goes in a “Solder Scrap” container.\nOther hazardous waste dealt with on a case by case basis; ask lab staff for help.\nPut tools away, in the right place. Tool drawers are labeled, but if you’re unsure where to put a tool, ask your TA/lab staff.\nDo not hoard parts or tools.\nThis bears repeating: Take the parts you need, but only the parts you need. Do not hoard parts. If you see a part becoming scarce, let lab staff know so they can re-order.\nBenches are for temporary use only. Leave no trace that you were at the bench when you leave for the day. Rarely, with approval, a bench can be claimed for the semester.\nAny and all paint must be pre-approved by an instructor/TA/lab staff. Unapproved paint on projects will result in a lower grade. (Spray paint indoors is never approved.)\nA representative from your group is expected to participate in weekly cleaning. Your instructor will give you the schedule.\nPlace a cover on the bench for messy work. Chucks and Ram Board are available for this.\nLab staff have a collection of good soldering tips and fine tools (e.g. tweezers). If you have need for something better than you can find in lab, ask lab staff.",
-    "crumbs": [
-      "Course Information",
-      "BME Lab Policies"
-    ]
-  },
-  {
-    "objectID": "lectures/event-driven-state-machine-slides.html#introduction",
-    "href": "lectures/event-driven-state-machine-slides.html#introduction",
-    "title": "Event-Driven State Machine",
-    "section": "Introduction",
-    "text": "Introduction\n\nNested conditional logic main loops are hard to read and maintain.\nState machines are a common way to implement complex logic.\nStates have transitions that are triggered by events or conditions.\n\nStates can have entry / exit routines that are executed when the state is entered / exited.\nThe “run” status of a state is commonly referred to as the “state machine tick” and recurrently loops.\n\nState diagrams are used to visualize state machines.\nState structures are used to capture variables associated with describing the state."
-  },
-  {
-    "objectID": "lectures/event-driven-state-machine-slides.html#in-class-demo",
-    "href": "lectures/event-driven-state-machine-slides.html#in-class-demo",
-    "title": "Event-Driven State Machine",
-    "section": "In-Class Demo",
-    "text": "In-Class Demo\n\nYou (and your daily routine)\n\nWhat are your “states”?\nWhat are your “events”?\n\nICD"
-  },
-  {
-    "objectID": "lectures/event-driven-state-machine-slides.html#implementation",
-    "href": "lectures/event-driven-state-machine-slides.html#implementation",
-    "title": "Event-Driven State Machine",
-    "section": "Implementation",
-    "text": "Implementation\nState Diagram\n\nGenerating the state diagram is the first step in implementing a state machine.\nUsually start with “pencil and paper” to sketch out the states and transitions.\nConsider the following:\n\nWhat are the states?\nWhat are the transitions?\nWhat are the events that trigger transitions?\nWhat are the entry / exit routines for each state?\n\nUML (Universal Modeling Language) is a common way to represent state diagrams.\n\nPlantUML Example\n@startuml\n\n[*] -&gt; Init\n\nstate Init {\n    init_run: Do Stuff\n}\n\nstate RhythmDetect {\n    rhythm_detect_run: Detect Rhythm\n}\n\nstate Sleep {\n    sleep_run: Save Power\n}\n\nstate Pace {\n    pace_run: Pace\n}\n\nstate OTA {\n    ota_init: Download Update\n    ota_init -&gt; ota_run\n    ota_run: Over The Air Update\n    ota_run -&gt; ota_exit\n    ota_exit: Post Successful OTA\n}\n\nstate Error {\n    error_run: Put device into safe mode\n}\n\nInit -&gt; RhythmDetect : Successful Init\nInit -d-&gt; Error : Init Fault Error Code\nRhythmDetect -&gt; Pace : Arrhythmia Detected\nPace -&gt; RhythmDetect : Pacing Timer Expired\nRhythmDetect -d-&gt; Sleep : NSR\nSleep -&gt; RhythmDetect: Sleep Timer Expired\nSleep -&gt; OTA : OTA Button Pressed\nOTA -&gt; RhythmDetect : OTA Success Kernel Event Posted\nError -&gt; [*]\n\n@enduml"
-  },
-  {
-    "objectID": "lectures/event-driven-state-machine-slides.html#in-class-lab-exercise",
-    "href": "lectures/event-driven-state-machine-slides.html#in-class-lab-exercise",
-    "title": "Event-Driven State Machine",
-    "section": "In-Class / Lab Exercise",
-    "text": "In-Class / Lab Exercise\nEvent-Driven State Machine Lab Exercise (Kitchen Timer)"
-  },
-  {
-    "objectID": "lectures/event-driven-state-machine-notes.html",
-    "href": "lectures/event-driven-state-machine-notes.html",
-    "title": "Event-Driven State Machine",
-    "section": "",
-    "text": "Nested conditional logic main loops are hard to read and maintain.\nState machines are a common way to implement complex logic.\nStates have transitions that are triggered by events or conditions.\n\nStates can have entry / exit routines that are executed when the state is entered / exited.\nThe “run” status of a state is commonly referred to as the “state machine tick” and recurrently loops.\n\nState diagrams are used to visualize state machines.\nState structures are used to capture variables associated with describing the state.\n\n\n\n\n\nYou (and your daily routine)\n\nWhat are your “states”?\nWhat are your “events”?\n\nICD\n\n\n\n\n\n\n\n\nGenerating the state diagram is the first step in implementing a state machine.\nUsually start with “pencil and paper” to sketch out the states and transitions.\nConsider the following:\n\nWhat are the states?\nWhat are the transitions?\nWhat are the events that trigger transitions?\nWhat are the entry / exit routines for each state?\n\nUML (Universal Modeling Language) is a common way to represent state diagrams.\n\n\n\n@startuml\n\n[*] -&gt; Init\n\nstate Init {\n    init_run: Do Stuff\n}\n\nstate RhythmDetect {\n    rhythm_detect_run: Detect Rhythm\n}\n\nstate Sleep {\n    sleep_run: Save Power\n}\n\nstate Pace {\n    pace_run: Pace\n}\n\nstate OTA {\n    ota_init: Download Update\n    ota_init -&gt; ota_run\n    ota_run: Over The Air Update\n    ota_run -&gt; ota_exit\n    ota_exit: Post Successful OTA\n}\n\nstate Error {\n    error_run: Put device into safe mode\n}\n\nInit -&gt; RhythmDetect : Successful Init\nInit -d-&gt; Error : Init Fault Error Code\nRhythmDetect -&gt; Pace : Arrhythmia Detected\nPace -&gt; RhythmDetect : Pacing Timer Expired\nRhythmDetect -d-&gt; Sleep : NSR\nSleep -&gt; RhythmDetect: Sleep Timer Expired\nSleep -&gt; OTA : OTA Button Pressed\nOTA -&gt; RhythmDetect : OTA Success Kernel Event Posted\nError -&gt; [*]\n\n@enduml\n\n\n\n\n\nEvent-Driven State Machine Lab Exercise (Kitchen Timer)",
-    "crumbs": [
-      "Learning Modules",
-      "Event-Driven State Machines"
-    ]
-  },
-  {
-    "objectID": "lectures/event-driven-state-machine-notes.html#introduction",
-    "href": "lectures/event-driven-state-machine-notes.html#introduction",
-    "title": "Event-Driven State Machine",
-    "section": "",
-    "text": "Nested conditional logic main loops are hard to read and maintain.\nState machines are a common way to implement complex logic.\nStates have transitions that are triggered by events or conditions.\n\nStates can have entry / exit routines that are executed when the state is entered / exited.\nThe “run” status of a state is commonly referred to as the “state machine tick” and recurrently loops.\n\nState diagrams are used to visualize state machines.\nState structures are used to capture variables associated with describing the state.",
-    "crumbs": [
-      "Learning Modules",
-      "Event-Driven State Machines"
-    ]
-  },
-  {
-    "objectID": "lectures/event-driven-state-machine-notes.html#in-class-demo",
-    "href": "lectures/event-driven-state-machine-notes.html#in-class-demo",
-    "title": "Event-Driven State Machine",
-    "section": "",
-    "text": "You (and your daily routine)\n\nWhat are your “states”?\nWhat are your “events”?\n\nICD",
-    "crumbs": [
-      "Learning Modules",
-      "Event-Driven State Machines"
-    ]
-  },
-  {
-    "objectID": "lectures/event-driven-state-machine-notes.html#implementation",
-    "href": "lectures/event-driven-state-machine-notes.html#implementation",
-    "title": "Event-Driven State Machine",
-    "section": "",
-    "text": "Generating the state diagram is the first step in implementing a state machine.\nUsually start with “pencil and paper” to sketch out the states and transitions.\nConsider the following:\n\nWhat are the states?\nWhat are the transitions?\nWhat are the events that trigger transitions?\nWhat are the entry / exit routines for each state?\n\nUML (Universal Modeling Language) is a common way to represent state diagrams.\n\n\n\n@startuml\n\n[*] -&gt; Init\n\nstate Init {\n    init_run: Do Stuff\n}\n\nstate RhythmDetect {\n    rhythm_detect_run: Detect Rhythm\n}\n\nstate Sleep {\n    sleep_run: Save Power\n}\n\nstate Pace {\n    pace_run: Pace\n}\n\nstate OTA {\n    ota_init: Download Update\n    ota_init -&gt; ota_run\n    ota_run: Over The Air Update\n    ota_run -&gt; ota_exit\n    ota_exit: Post Successful OTA\n}\n\nstate Error {\n    error_run: Put device into safe mode\n}\n\nInit -&gt; RhythmDetect : Successful Init\nInit -d-&gt; Error : Init Fault Error Code\nRhythmDetect -&gt; Pace : Arrhythmia Detected\nPace -&gt; RhythmDetect : Pacing Timer Expired\nRhythmDetect -d-&gt; Sleep : NSR\nSleep -&gt; RhythmDetect: Sleep Timer Expired\nSleep -&gt; OTA : OTA Button Pressed\nOTA -&gt; RhythmDetect : OTA Success Kernel Event Posted\nError -&gt; [*]\n\n@enduml",
-    "crumbs": [
-      "Learning Modules",
-      "Event-Driven State Machines"
-    ]
-  },
-  {
-    "objectID": "lectures/event-driven-state-machine-notes.html#in-class-lab-exercise",
-    "href": "lectures/event-driven-state-machine-notes.html#in-class-lab-exercise",
-    "title": "Event-Driven State Machine",
-    "section": "",
-    "text": "Event-Driven State Machine Lab Exercise (Kitchen Timer)",
-    "crumbs": [
-      "Learning Modules",
-      "Event-Driven State Machines"
-    ]
-  },
-  {
-    "objectID": "lectures/medtech-skills-overview-slides.html#why-skills",
-    "href": "lectures/medtech-skills-overview-slides.html#why-skills",
-    "title": "MedTech Skills Overview",
-    "section": "Why skills?",
-    "text": "Why skills?\n\nDo not want design ideas to be limited by what you “think” you can actually make!\nAs the engineer, you bring both solution creativity and execution to the table.\nMost of the engineering curriculum has been ``book heavy’’ to date.\n\nFunctional Decomposition\nCAD/EDA (simulation, PCB layout)\nFabrication & Integration (3D printing, soldering, fastening, mounting)\nVerification & Validation: testing to specifications\nMCU Firmware Development (C, git)"
-  },
-  {
-    "objectID": "lectures/medtech-skills-overview-slides.html#why-cad",
-    "href": "lectures/medtech-skills-overview-slides.html#why-cad",
-    "title": "MedTech Skills Overview",
-    "section": "Why CAD?",
-    "text": "Why CAD?\n\nFormally capture 2D projection sketches \\(\\rightarrow\\) 3D parts.\nDimension consistency checks.\nAssemble multiple parts to check fit, interfaces and simulate stress/strain/movement.\nTranslate to physical realization (e.g., 3D print, mil).\nGeneral technical drawings for manufacturing.\nCapture design history, while facilitating iteration / change."
-  },
-  {
-    "objectID": "lectures/medtech-skills-overview-slides.html#onshape",
-    "href": "lectures/medtech-skills-overview-slides.html#onshape",
-    "title": "MedTech Skills Overview",
-    "section": "Onshape",
-    "text": "Onshape\n\n\nWe will be using Onshape, a cloud-based CAD package with a similar workflow to SolidWorks.\nYou will be automatically registered to join Duke’s Onshape team.\nTutorials are available through https://learn.onshape.com."
-  },
-  {
-    "objectID": "lectures/medtech-skills-overview-slides.html#part-design",
-    "href": "lectures/medtech-skills-overview-slides.html#part-design",
-    "title": "MedTech Skills Overview",
-    "section": "Part Design",
-    "text": "Part Design"
-  },
-  {
-    "objectID": "lectures/medtech-skills-overview-slides.html#mechanical-drawings",
-    "href": "lectures/medtech-skills-overview-slides.html#mechanical-drawings",
-    "title": "MedTech Skills Overview",
-    "section": "Mechanical Drawings",
-    "text": "Mechanical Drawings"
-  },
-  {
-    "objectID": "lectures/medtech-skills-overview-slides.html#design-example-mhealth-tympanometer",
-    "href": "lectures/medtech-skills-overview-slides.html#design-example-mhealth-tympanometer",
-    "title": "MedTech Skills Overview",
-    "section": "Design Example: mHealth Tympanometer",
-    "text": "Design Example: mHealth Tympanometer"
-  },
-  {
-    "objectID": "lectures/medtech-skills-overview-slides.html#why-eda",
-    "href": "lectures/medtech-skills-overview-slides.html#why-eda",
-    "title": "MedTech Skills Overview",
-    "section": "Why EDA?",
-    "text": "Why EDA?\n\nFormalize circuit schematics.\nValidate circuit behavior (design rules and SPICE simulations).\nConvert circuit to printed circuit board (more space efficient and permanent than a breadboard).\nCapture design history and facilitate rapid iteration.\nGenerate 3D “parts” to integrate with CAD."
-  },
-  {
-    "objectID": "lectures/medtech-skills-overview-slides.html#kicad",
-    "href": "lectures/medtech-skills-overview-slides.html#kicad",
-    "title": "MedTech Skills Overview",
-    "section": "KiCad",
-    "text": "KiCad\n\n\nhttps://kicad.org\nA completely open-source alternative to Eagle.\nJust as capable as Altium Designer (to a point); similar workflow.\nIntegrated SPICE simulator."
-  },
-  {
-    "objectID": "lectures/medtech-skills-overview-slides.html#schematic-capture",
-    "href": "lectures/medtech-skills-overview-slides.html#schematic-capture",
-    "title": "MedTech Skills Overview",
-    "section": "Schematic Capture",
-    "text": "Schematic Capture"
-  },
-  {
-    "objectID": "lectures/medtech-skills-overview-slides.html#pcb-layout",
-    "href": "lectures/medtech-skills-overview-slides.html#pcb-layout",
-    "title": "MedTech Skills Overview",
-    "section": "PCB Layout",
-    "text": "PCB Layout"
-  },
-  {
-    "objectID": "lectures/medtech-skills-overview-slides.html#pcb-3d-model",
-    "href": "lectures/medtech-skills-overview-slides.html#pcb-3d-model",
-    "title": "MedTech Skills Overview",
-    "section": "PCB 3D Model",
-    "text": "PCB 3D Model"
-  },
-  {
-    "objectID": "lectures/medtech-skills-overview-slides.html#why-version-control",
-    "href": "lectures/medtech-skills-overview-slides.html#why-version-control",
-    "title": "MedTech Skills Overview",
-    "section": "Why Version Control?",
-    "text": "Why Version Control?\n\nPreserve software (project) development history\nCollaboration\nContinuous Integration / Deployment\nTesting\nMaintaining multiple released versions\nRequired for IEC 62304 (Medical Software), FDA V&V (510k clearance)"
-  },
-  {
-    "objectID": "lectures/medtech-skills-overview-slides.html#git",
-    "href": "lectures/medtech-skills-overview-slides.html#git",
-    "title": "MedTech Skills Overview",
-    "section": "Git",
-    "text": "Git\n\n\nhttps://git-scm.com\nhttps://gitlab.oit.duke.edu\nhttps://www.gitkraken.com/gitlens"
-  },
-  {
-    "objectID": "lectures/medtech-skills-overview-slides.html#why-firmware",
-    "href": "lectures/medtech-skills-overview-slides.html#why-firmware",
-    "title": "MedTech Skills Overview",
-    "section": "Why Firmware?",
-    "text": "Why Firmware?\n\nWhile many things can be done in discrete electronics, microcontrollers and microprocessors (and SoCs) are becoming inexpensive and ubiquitous.\n“Knowing Arduino” is not an eye-catching skill on a resume; but firmware development is!"
-  },
-  {
-    "objectID": "lectures/medtech-skills-overview-slides.html#firmware-isnt-software",
-    "href": "lectures/medtech-skills-overview-slides.html#firmware-isnt-software",
-    "title": "MedTech Skills Overview",
-    "section": "Firmware isn’t “software”…",
-    "text": "Firmware isn’t “software”…\n\nFirmware is a special kind of software that is designed to interact with hardware.\nFirmware is often written in C, but can be written in other languages.\nFirmware is highly resource constrained\nSoftware is often written in Python, Java, C++, etc.\nSoftware is often written to be run on a general-purpose computer (laptop, desktop, server, etc.), that typically is not resource constrained.\n\nUser Interface\nWeb Server\nDatabase\nData Processing / Analytics"
-  },
-  {
-    "objectID": "lectures/medtech-skills-overview-slides.html#arduino-framework-platformio",
-    "href": "lectures/medtech-skills-overview-slides.html#arduino-framework-platformio",
-    "title": "MedTech Skills Overview",
-    "section": "Arduino-Framework / PlatformIO",
-    "text": "Arduino-Framework / PlatformIO\n\nWe will use PlatformIO to develop firmware for our projects using Visual Studio Code as our IDE.\nWe will use the Arduino framework (in contrast to something like Zephyr RTOS) to develop firmware for our projects.\nLearn robust, modular firmware development practices."
   },
   {
     "objectID": "lectures/medtech-skills-overview-notes.html",
@@ -646,102 +397,1061 @@
     ]
   },
   {
-    "objectID": "labs/software-install_tutorials.html",
-    "href": "labs/software-install_tutorials.html",
-    "title": "MedTech Prototyping Skills: Software Installation & Tutorials",
+    "objectID": "lectures/medtech-skills-overview-slides.html#why-skills",
+    "href": "lectures/medtech-skills-overview-slides.html#why-skills",
+    "title": "MedTech Skills Overview",
+    "section": "Why skills?",
+    "text": "Why skills?\n\nDo not want design ideas to be limited by what you “think” you can actually make!\nAs the engineer, you bring both solution creativity and execution to the table.\nMost of the engineering curriculum has been ``book heavy’’ to date.\n\nFunctional Decomposition\nCAD/EDA (simulation, PCB layout)\nFabrication & Integration (3D printing, soldering, fastening, mounting)\nVerification & Validation: testing to specifications\nMCU Firmware Development (C, git)"
+  },
+  {
+    "objectID": "lectures/medtech-skills-overview-slides.html#why-cad",
+    "href": "lectures/medtech-skills-overview-slides.html#why-cad",
+    "title": "MedTech Skills Overview",
+    "section": "Why CAD?",
+    "text": "Why CAD?\n\nFormally capture 2D projection sketches \\(\\rightarrow\\) 3D parts.\nDimension consistency checks.\nAssemble multiple parts to check fit, interfaces and simulate stress/strain/movement.\nTranslate to physical realization (e.g., 3D print, mil).\nGeneral technical drawings for manufacturing.\nCapture design history, while facilitating iteration / change."
+  },
+  {
+    "objectID": "lectures/medtech-skills-overview-slides.html#onshape",
+    "href": "lectures/medtech-skills-overview-slides.html#onshape",
+    "title": "MedTech Skills Overview",
+    "section": "Onshape",
+    "text": "Onshape\n\n\nWe will be using Onshape, a cloud-based CAD package with a similar workflow to SolidWorks.\nYou will be automatically registered to join Duke’s Onshape team.\nTutorials are available through https://learn.onshape.com."
+  },
+  {
+    "objectID": "lectures/medtech-skills-overview-slides.html#part-design",
+    "href": "lectures/medtech-skills-overview-slides.html#part-design",
+    "title": "MedTech Skills Overview",
+    "section": "Part Design",
+    "text": "Part Design"
+  },
+  {
+    "objectID": "lectures/medtech-skills-overview-slides.html#mechanical-drawings",
+    "href": "lectures/medtech-skills-overview-slides.html#mechanical-drawings",
+    "title": "MedTech Skills Overview",
+    "section": "Mechanical Drawings",
+    "text": "Mechanical Drawings"
+  },
+  {
+    "objectID": "lectures/medtech-skills-overview-slides.html#design-example-mhealth-tympanometer",
+    "href": "lectures/medtech-skills-overview-slides.html#design-example-mhealth-tympanometer",
+    "title": "MedTech Skills Overview",
+    "section": "Design Example: mHealth Tympanometer",
+    "text": "Design Example: mHealth Tympanometer"
+  },
+  {
+    "objectID": "lectures/medtech-skills-overview-slides.html#why-eda",
+    "href": "lectures/medtech-skills-overview-slides.html#why-eda",
+    "title": "MedTech Skills Overview",
+    "section": "Why EDA?",
+    "text": "Why EDA?\n\nFormalize circuit schematics.\nValidate circuit behavior (design rules and SPICE simulations).\nConvert circuit to printed circuit board (more space efficient and permanent than a breadboard).\nCapture design history and facilitate rapid iteration.\nGenerate 3D “parts” to integrate with CAD."
+  },
+  {
+    "objectID": "lectures/medtech-skills-overview-slides.html#kicad",
+    "href": "lectures/medtech-skills-overview-slides.html#kicad",
+    "title": "MedTech Skills Overview",
+    "section": "KiCad",
+    "text": "KiCad\n\n\nhttps://kicad.org\nA completely open-source alternative to Eagle.\nJust as capable as Altium Designer (to a point); similar workflow.\nIntegrated SPICE simulator."
+  },
+  {
+    "objectID": "lectures/medtech-skills-overview-slides.html#schematic-capture",
+    "href": "lectures/medtech-skills-overview-slides.html#schematic-capture",
+    "title": "MedTech Skills Overview",
+    "section": "Schematic Capture",
+    "text": "Schematic Capture"
+  },
+  {
+    "objectID": "lectures/medtech-skills-overview-slides.html#pcb-layout",
+    "href": "lectures/medtech-skills-overview-slides.html#pcb-layout",
+    "title": "MedTech Skills Overview",
+    "section": "PCB Layout",
+    "text": "PCB Layout"
+  },
+  {
+    "objectID": "lectures/medtech-skills-overview-slides.html#pcb-3d-model",
+    "href": "lectures/medtech-skills-overview-slides.html#pcb-3d-model",
+    "title": "MedTech Skills Overview",
+    "section": "PCB 3D Model",
+    "text": "PCB 3D Model"
+  },
+  {
+    "objectID": "lectures/medtech-skills-overview-slides.html#why-version-control",
+    "href": "lectures/medtech-skills-overview-slides.html#why-version-control",
+    "title": "MedTech Skills Overview",
+    "section": "Why Version Control?",
+    "text": "Why Version Control?\n\nPreserve software (project) development history\nCollaboration\nContinuous Integration / Deployment\nTesting\nMaintaining multiple released versions\nRequired for IEC 62304 (Medical Software), FDA V&V (510k clearance)"
+  },
+  {
+    "objectID": "lectures/medtech-skills-overview-slides.html#git",
+    "href": "lectures/medtech-skills-overview-slides.html#git",
+    "title": "MedTech Skills Overview",
+    "section": "Git",
+    "text": "Git\n\n\nhttps://git-scm.com\nhttps://gitlab.oit.duke.edu\nhttps://www.gitkraken.com/gitlens"
+  },
+  {
+    "objectID": "lectures/medtech-skills-overview-slides.html#why-firmware",
+    "href": "lectures/medtech-skills-overview-slides.html#why-firmware",
+    "title": "MedTech Skills Overview",
+    "section": "Why Firmware?",
+    "text": "Why Firmware?\n\nWhile many things can be done in discrete electronics, microcontrollers and microprocessors (and SoCs) are becoming inexpensive and ubiquitous.\n“Knowing Arduino” is not an eye-catching skill on a resume; but firmware development is!"
+  },
+  {
+    "objectID": "lectures/medtech-skills-overview-slides.html#firmware-isnt-software",
+    "href": "lectures/medtech-skills-overview-slides.html#firmware-isnt-software",
+    "title": "MedTech Skills Overview",
+    "section": "Firmware isn’t “software”…",
+    "text": "Firmware isn’t “software”…\n\nFirmware is a special kind of software that is designed to interact with hardware.\nFirmware is often written in C, but can be written in other languages.\nFirmware is highly resource constrained\nSoftware is often written in Python, Java, C++, etc.\nSoftware is often written to be run on a general-purpose computer (laptop, desktop, server, etc.), that typically is not resource constrained.\n\nUser Interface\nWeb Server\nDatabase\nData Processing / Analytics"
+  },
+  {
+    "objectID": "lectures/medtech-skills-overview-slides.html#arduino-framework-platformio",
+    "href": "lectures/medtech-skills-overview-slides.html#arduino-framework-platformio",
+    "title": "MedTech Skills Overview",
+    "section": "Arduino-Framework / PlatformIO",
+    "text": "Arduino-Framework / PlatformIO\n\nWe will use PlatformIO to develop firmware for our projects using Visual Studio Code as our IDE.\nWe will use the Arduino framework (in contrast to something like Zephyr RTOS) to develop firmware for our projects.\nLearn robust, modular firmware development practices."
+  },
+  {
+    "objectID": "lectures/arduino-state-machine-notes.html",
+    "href": "lectures/arduino-state-machine-notes.html",
+    "title": "Firmware: Event-Driven State Machines",
     "section": "",
-    "text": "Please follow the instructions on this dedicated git page to:\n\nInstall git\nConfigure git\nSetup an SSH key\nProvide links to git tutorials to reinforce the concepts and mechanics of using git.",
-    "crumbs": [
-      "Labs",
-      "Software Installation Tutorials"
-    ]
+    "text": "What is a “kernel”?\n\nThe part of the RTOS that interacts with hardware.\n\nKernel events can be used to indicate that “something” has happened, which may dictate the function of the state machine.\n\nButton press\nSensor crossing a threshold\nTimer expiring\n\nWhen an event occurs, it triggers an Interupt Service Routine (ISR), which calls a callback function.\n\n\n\n\nThe simplest implementation of a state machine is a switch-case statement.\nThe switch statement is used to select the current state.\nThe case statements are used to implement the logic for each state.\n\nCases can be nested to implement sub-states.\nEnumerations can be used to give states verbose names instead of numbers.\n\nThe break statement is used to exit the switch statement.\nThe default statement is used to handle unexpected states.\n\n\n\n\nenum device_states { init, run, sleep };\n\nint device_state = init; // initialize state\n\n/* structure to bookkeep state variables */\nstruct device_state_vars {\n    int var1;\n    int var2;\n};\n\nwhile (1) {\n    switch (device_state) {\n        case init:\n            /* do stuff to initialize device */\n            device_state = run; // change the state\n            break;  // exit the switch statement\n        case run:\n            /* run device */\n            if (condition) {\n                device_state = sleep;\n            }\n            break;\n        case sleep:\n            /* sleep device */\n            if (condition) {\n                device_state = run;\n            }\n            break;\n        default:\n            /* handle unexpected state */\n            break;\n    }\n}\nThe switch-case approach loses some of its elegance when there are many states and many transitions and states have entry / exit routines.\n\n\n\n\nhttps://www.digikey.com/en/maker/tutorials/2023/how-to-program-an-arduino-finite-state-machine\nhttps://www.instructables.com/Finite-State-Machine-on-an-Arduino/"
   },
   {
-    "objectID": "labs/software-install_tutorials.html#git-version-control",
-    "href": "labs/software-install_tutorials.html#git-version-control",
-    "title": "MedTech Prototyping Skills: Software Installation & Tutorials",
+    "objectID": "lectures/arduino-state-machine-notes.html#kernel-events",
+    "href": "lectures/arduino-state-machine-notes.html#kernel-events",
+    "title": "Firmware: Event-Driven State Machines",
     "section": "",
-    "text": "Please follow the instructions on this dedicated git page to:\n\nInstall git\nConfigure git\nSetup an SSH key\nProvide links to git tutorials to reinforce the concepts and mechanics of using git.",
+    "text": "What is a “kernel”?\n\nThe part of the RTOS that interacts with hardware.\n\nKernel events can be used to indicate that “something” has happened, which may dictate the function of the state machine.\n\nButton press\nSensor crossing a threshold\nTimer expiring\n\nWhen an event occurs, it triggers an Interupt Service Routine (ISR), which calls a callback function.\n\n\n\n\nThe simplest implementation of a state machine is a switch-case statement.\nThe switch statement is used to select the current state.\nThe case statements are used to implement the logic for each state.\n\nCases can be nested to implement sub-states.\nEnumerations can be used to give states verbose names instead of numbers.\n\nThe break statement is used to exit the switch statement.\nThe default statement is used to handle unexpected states.\n\n\n\n\nenum device_states { init, run, sleep };\n\nint device_state = init; // initialize state\n\n/* structure to bookkeep state variables */\nstruct device_state_vars {\n    int var1;\n    int var2;\n};\n\nwhile (1) {\n    switch (device_state) {\n        case init:\n            /* do stuff to initialize device */\n            device_state = run; // change the state\n            break;  // exit the switch statement\n        case run:\n            /* run device */\n            if (condition) {\n                device_state = sleep;\n            }\n            break;\n        case sleep:\n            /* sleep device */\n            if (condition) {\n                device_state = run;\n            }\n            break;\n        default:\n            /* handle unexpected state */\n            break;\n    }\n}\nThe switch-case approach loses some of its elegance when there are many states and many transitions and states have entry / exit routines.\n\n\n\n\nhttps://www.digikey.com/en/maker/tutorials/2023/how-to-program-an-arduino-finite-state-machine\nhttps://www.instructables.com/Finite-State-Machine-on-an-Arduino/"
+  },
+  {
+    "objectID": "lectures/arduino-state-machine-slides.html#kernel-events",
+    "href": "lectures/arduino-state-machine-slides.html#kernel-events",
+    "title": "Firmware: Event-Driven State Machines",
+    "section": "Kernel Events",
+    "text": "Kernel Events\n\nWhat is a “kernel”?\n\nThe part of the RTOS that interacts with hardware.\n\nKernel events can be used to indicate that “something” has happened, which may dictate the function of the state machine.\n\nButton press\nSensor crossing a threshold\nTimer expiring\n\nWhen an event occurs, it triggers an Interupt Service Routine (ISR), which calls a callback function.\n\nCode: Switch-Case\n\nThe simplest implementation of a state machine is a switch-case statement.\nThe switch statement is used to select the current state.\nThe case statements are used to implement the logic for each state.\n\nCases can be nested to implement sub-states.\nEnumerations can be used to give states verbose names instead of numbers.\n\nThe break statement is used to exit the switch statement.\nThe default statement is used to handle unexpected states.\n\nPseudo-Code\nenum device_states { init, run, sleep };\n\nint device_state = init; // initialize state\n\n/* structure to bookkeep state variables */\nstruct device_state_vars {\n    int var1;\n    int var2;\n};\n\nwhile (1) {\n    switch (device_state) {\n        case init:\n            /* do stuff to initialize device */\n            device_state = run; // change the state\n            break;  // exit the switch statement\n        case run:\n            /* run device */\n            if (condition) {\n                device_state = sleep;\n            }\n            break;\n        case sleep:\n            /* sleep device */\n            if (condition) {\n                device_state = run;\n            }\n            break;\n        default:\n            /* handle unexpected state */\n            break;\n    }\n}\nThe switch-case approach loses some of its elegance when there are many states and many transitions and states have entry / exit routines.\nResources / Examples\n\nhttps://www.digikey.com/en/maker/tutorials/2023/how-to-program-an-arduino-finite-state-machine\nhttps://www.instructables.com/Finite-State-Machine-on-an-Arduino/"
+  },
+  {
+    "objectID": "lectures/event-driven-state-machine-slides.html#introduction",
+    "href": "lectures/event-driven-state-machine-slides.html#introduction",
+    "title": "Event-Driven State Machine",
+    "section": "Introduction",
+    "text": "Introduction\n\nNested conditional logic main loops are hard to read and maintain.\nState machines are a common way to implement complex logic.\nStates have transitions that are triggered by events or conditions.\n\nStates can have entry / exit routines that are executed when the state is entered / exited.\nThe “run” status of a state is commonly referred to as the “state machine tick” and recurrently loops.\n\nState diagrams are used to visualize state machines.\nState structures are used to capture variables associated with describing the state."
+  },
+  {
+    "objectID": "lectures/event-driven-state-machine-slides.html#in-class-demo",
+    "href": "lectures/event-driven-state-machine-slides.html#in-class-demo",
+    "title": "Event-Driven State Machine",
+    "section": "In-Class Demo",
+    "text": "In-Class Demo\n\nYou (and your daily routine)\n\nWhat are your “states”?\nWhat are your “events”?\n\nICD"
+  },
+  {
+    "objectID": "lectures/event-driven-state-machine-slides.html#implementation",
+    "href": "lectures/event-driven-state-machine-slides.html#implementation",
+    "title": "Event-Driven State Machine",
+    "section": "Implementation",
+    "text": "Implementation\nState Diagram\n\nGenerating the state diagram is the first step in implementing a state machine.\nUsually start with “pencil and paper” to sketch out the states and transitions.\nConsider the following:\n\nWhat are the states?\nWhat are the transitions?\nWhat are the events that trigger transitions?\nWhat are the entry / exit routines for each state?\n\nUML (Universal Modeling Language) is a common way to represent state diagrams.\n\nPlantUML Example\n@startuml\n\n[*] -&gt; Init\n\nstate Init {\n    init_run: Do Stuff\n}\n\nstate RhythmDetect {\n    rhythm_detect_run: Detect Rhythm\n}\n\nstate Sleep {\n    sleep_run: Save Power\n}\n\nstate Pace {\n    pace_run: Pace\n}\n\nstate OTA {\n    ota_init: Download Update\n    ota_init -&gt; ota_run\n    ota_run: Over The Air Update\n    ota_run -&gt; ota_exit\n    ota_exit: Post Successful OTA\n}\n\nstate Error {\n    error_run: Put device into safe mode\n}\n\nInit -&gt; RhythmDetect : Successful Init\nInit -d-&gt; Error : Init Fault Error Code\nRhythmDetect -&gt; Pace : Arrhythmia Detected\nPace -&gt; RhythmDetect : Pacing Timer Expired\nRhythmDetect -d-&gt; Sleep : NSR\nSleep -&gt; RhythmDetect: Sleep Timer Expired\nSleep -&gt; OTA : OTA Button Pressed\nOTA -&gt; RhythmDetect : OTA Success Kernel Event Posted\nError -&gt; [*]\n\n@enduml"
+  },
+  {
+    "objectID": "lectures/event-driven-state-machine-slides.html#in-class-lab-exercise",
+    "href": "lectures/event-driven-state-machine-slides.html#in-class-lab-exercise",
+    "title": "Event-Driven State Machine",
+    "section": "In-Class / Lab Exercise",
+    "text": "In-Class / Lab Exercise\nEvent-Driven State Machine Lab Exercise (Kitchen Timer)"
+  },
+  {
+    "objectID": "lectures/event-driven-state-machine-notes.html",
+    "href": "lectures/event-driven-state-machine-notes.html",
+    "title": "Event-Driven State Machine",
+    "section": "",
+    "text": "Nested conditional logic main loops are hard to read and maintain.\nState machines are a common way to implement complex logic.\nStates have transitions that are triggered by events or conditions.\n\nStates can have entry / exit routines that are executed when the state is entered / exited.\nThe “run” status of a state is commonly referred to as the “state machine tick” and recurrently loops.\n\nState diagrams are used to visualize state machines.\nState structures are used to capture variables associated with describing the state.\n\n\n\n\n\nYou (and your daily routine)\n\nWhat are your “states”?\nWhat are your “events”?\n\nICD\n\n\n\n\n\n\n\n\nGenerating the state diagram is the first step in implementing a state machine.\nUsually start with “pencil and paper” to sketch out the states and transitions.\nConsider the following:\n\nWhat are the states?\nWhat are the transitions?\nWhat are the events that trigger transitions?\nWhat are the entry / exit routines for each state?\n\nUML (Universal Modeling Language) is a common way to represent state diagrams.\n\n\n\n@startuml\n\n[*] -&gt; Init\n\nstate Init {\n    init_run: Do Stuff\n}\n\nstate RhythmDetect {\n    rhythm_detect_run: Detect Rhythm\n}\n\nstate Sleep {\n    sleep_run: Save Power\n}\n\nstate Pace {\n    pace_run: Pace\n}\n\nstate OTA {\n    ota_init: Download Update\n    ota_init -&gt; ota_run\n    ota_run: Over The Air Update\n    ota_run -&gt; ota_exit\n    ota_exit: Post Successful OTA\n}\n\nstate Error {\n    error_run: Put device into safe mode\n}\n\nInit -&gt; RhythmDetect : Successful Init\nInit -d-&gt; Error : Init Fault Error Code\nRhythmDetect -&gt; Pace : Arrhythmia Detected\nPace -&gt; RhythmDetect : Pacing Timer Expired\nRhythmDetect -d-&gt; Sleep : NSR\nSleep -&gt; RhythmDetect: Sleep Timer Expired\nSleep -&gt; OTA : OTA Button Pressed\nOTA -&gt; RhythmDetect : OTA Success Kernel Event Posted\nError -&gt; [*]\n\n@enduml\n\n\n\n\n\nEvent-Driven State Machine Lab Exercise (Kitchen Timer)",
     "crumbs": [
-      "Labs",
-      "Software Installation Tutorials"
+      "Learning Modules",
+      "Event-Driven State Machines"
     ]
   },
   {
-    "objectID": "labs/software-install_tutorials.html#kicad-eda",
-    "href": "labs/software-install_tutorials.html#kicad-eda",
-    "title": "MedTech Prototyping Skills: Software Installation & Tutorials",
-    "section": "KiCad (EDA)",
-    "text": "KiCad (EDA)\n\nPlease install KiCad: https://kicad.org\n\n\n\n\n\n\n\nNote\n\n\n\nThis installation file can be a bit large, so this may take a few minutes to download.",
+    "objectID": "lectures/event-driven-state-machine-notes.html#introduction",
+    "href": "lectures/event-driven-state-machine-notes.html#introduction",
+    "title": "Event-Driven State Machine",
+    "section": "",
+    "text": "Nested conditional logic main loops are hard to read and maintain.\nState machines are a common way to implement complex logic.\nStates have transitions that are triggered by events or conditions.\n\nStates can have entry / exit routines that are executed when the state is entered / exited.\nThe “run” status of a state is commonly referred to as the “state machine tick” and recurrently loops.\n\nState diagrams are used to visualize state machines.\nState structures are used to capture variables associated with describing the state.",
     "crumbs": [
-      "Labs",
-      "Software Installation Tutorials"
+      "Learning Modules",
+      "Event-Driven State Machines"
     ]
   },
   {
-    "objectID": "labs/software-install_tutorials.html#onshape-cad",
-    "href": "labs/software-install_tutorials.html#onshape-cad",
-    "title": "MedTech Prototyping Skills: Software Installation & Tutorials",
-    "section": "Onshape (CAD)",
-    "text": "Onshape (CAD)\n\nPlease make sure to activate your invitation to Duke’s Onshape server (see email).\n\n\n\n\n\n\n\nNote\n\n\n\nIf you did not receive an email invitation, please send Dr. Palmeri and your TAs a private message on Ed.",
+    "objectID": "lectures/event-driven-state-machine-notes.html#in-class-demo",
+    "href": "lectures/event-driven-state-machine-notes.html#in-class-demo",
+    "title": "Event-Driven State Machine",
+    "section": "",
+    "text": "You (and your daily routine)\n\nWhat are your “states”?\nWhat are your “events”?\n\nICD",
     "crumbs": [
-      "Labs",
-      "Software Installation Tutorials"
+      "Learning Modules",
+      "Event-Driven State Machines"
     ]
   },
   {
-    "objectID": "labs/software-install_tutorials.html#visual-studio-code-ide",
-    "href": "labs/software-install_tutorials.html#visual-studio-code-ide",
-    "title": "MedTech Prototyping Skills: Software Installation & Tutorials",
-    "section": "Visual Studio Code (IDE)",
-    "text": "Visual Studio Code (IDE)\nWe will be using Visual Studio Code as the IDE for all projects in this class. In addition to installing the base program, please install the following Extensions:\n\nPlantUML (generate state diagrams)\nGitLens (help with git operations / visualization)\nMicrosoft C/C++ Extension Pack\nMicrosoft IntelliCode (assistance with C syntax)\nPlatformIO\nGitHub CoPilot (AI-assisted coding)\n\nSign up for free GitHub Education Student account to get access to this extension: https://github.com/education/students\nInstall the GitHub CoPilot extension\n\n\n\n\n\n\n\n\nTip\n\n\n\nYou will need a document to verify your student status that includes your dates of enrollment, which your DukeCard does not contain. Instead, you can get an Enrollment Verification document through DukeHub (Academics Tab) and convert the downloaded PDF to a JPG or PNG file to upload to GitHub.\n\n\n\nPython & Jupyter extensions (for technical report preparation)\nConda to install a Python virtual environment for Jupyter notebooks.\n\n\n\n\n\n\n\nNote\n\n\n\nYou can use an existing Python installation on your laptop if you have one.",
+    "objectID": "lectures/event-driven-state-machine-notes.html#implementation",
+    "href": "lectures/event-driven-state-machine-notes.html#implementation",
+    "title": "Event-Driven State Machine",
+    "section": "",
+    "text": "Generating the state diagram is the first step in implementing a state machine.\nUsually start with “pencil and paper” to sketch out the states and transitions.\nConsider the following:\n\nWhat are the states?\nWhat are the transitions?\nWhat are the events that trigger transitions?\nWhat are the entry / exit routines for each state?\n\nUML (Universal Modeling Language) is a common way to represent state diagrams.\n\n\n\n@startuml\n\n[*] -&gt; Init\n\nstate Init {\n    init_run: Do Stuff\n}\n\nstate RhythmDetect {\n    rhythm_detect_run: Detect Rhythm\n}\n\nstate Sleep {\n    sleep_run: Save Power\n}\n\nstate Pace {\n    pace_run: Pace\n}\n\nstate OTA {\n    ota_init: Download Update\n    ota_init -&gt; ota_run\n    ota_run: Over The Air Update\n    ota_run -&gt; ota_exit\n    ota_exit: Post Successful OTA\n}\n\nstate Error {\n    error_run: Put device into safe mode\n}\n\nInit -&gt; RhythmDetect : Successful Init\nInit -d-&gt; Error : Init Fault Error Code\nRhythmDetect -&gt; Pace : Arrhythmia Detected\nPace -&gt; RhythmDetect : Pacing Timer Expired\nRhythmDetect -d-&gt; Sleep : NSR\nSleep -&gt; RhythmDetect: Sleep Timer Expired\nSleep -&gt; OTA : OTA Button Pressed\nOTA -&gt; RhythmDetect : OTA Success Kernel Event Posted\nError -&gt; [*]\n\n@enduml",
     "crumbs": [
-      "Labs",
-      "Software Installation Tutorials"
+      "Learning Modules",
+      "Event-Driven State Machines"
     ]
   },
   {
-    "objectID": "labs/software-install_tutorials.html#arduino-nano-every",
-    "href": "labs/software-install_tutorials.html#arduino-nano-every",
-    "title": "MedTech Prototyping Skills: Software Installation & Tutorials",
-    "section": "Arduino Nano Every",
-    "text": "Arduino Nano Every\n\nOrder yourself an Arduino Nano Every.\n\n\n\n\n\n\n\nNote\n\n\n\nYou do not have to order from the Arduino store if you can find this board elsewhere, but please make sure you get the “Every” version of the Nano. Other versions of the board use different logic voltages and even different chips!\n\n\n\nMake sure you have a data-cable USB cable to connect your Arduino Nano Every to your laptop.",
+    "objectID": "lectures/event-driven-state-machine-notes.html#in-class-lab-exercise",
+    "href": "lectures/event-driven-state-machine-notes.html#in-class-lab-exercise",
+    "title": "Event-Driven State Machine",
+    "section": "",
+    "text": "Event-Driven State Machine Lab Exercise (Kitchen Timer)",
     "crumbs": [
-      "Labs",
-      "Software Installation Tutorials"
+      "Learning Modules",
+      "Event-Driven State Machines"
     ]
   },
   {
-    "objectID": "labs/software-install_tutorials.html#technical-report-preparation",
-    "href": "labs/software-install_tutorials.html#technical-report-preparation",
-    "title": "MedTech Prototyping Skills: Software Installation & Tutorials",
-    "section": "Technical Report Preparation",
-    "text": "Technical Report Preparation\nEach lab exercise will have an associated technical report submitted. These reports will be prepared and submitted using Python-based Jupyter notebooks that will be included as part of your assignment git repositories.\nYou will need to be able to perform the following tasks in your Jupyter notebooks:\n\nRead CSV text data saved from an oscilloscope.\nPerform simple statistics (e.g., mean, standard deviation, 95% CI) on the data.\nGenerate plots\n\nIf you need to install a Python environment on your laptop, then this is a good starting point: Getting Started with Python in VS Code.\nThis is a good tutorial on getting started with Jupyter notebooks in VS Code: Jupyter Notebooks in Visual Studio Code.",
+    "objectID": "lectures/git-fundamentals-slides.html#why-version-control",
+    "href": "lectures/git-fundamentals-slides.html#why-version-control",
+    "title": "Git (Version Control) Fundamentals",
+    "section": "Why Version Control?",
+    "text": "Why Version Control?\n\nMaintain history of software development changes.\nMaintain multiple versions of software that are released.\nTool for code review.\nAudit trail for compliance.\nRequired for IEC 62304 (Medical Software), FDA V&V (510k clearance).\nCollaboration between multiple developers.\nGreat skill to have on a resume."
+  },
+  {
+    "objectID": "lectures/git-fundamentals-slides.html#why-git",
+    "href": "lectures/git-fundamentals-slides.html#why-git",
+    "title": "Git (Version Control) Fundamentals",
+    "section": "Why git?",
+    "text": "Why git?\n\nMost popular distributed version control system\nReplaces centralized, single-point systems (e.g., subversion)\nOpen-source\nLightweight"
+  },
+  {
+    "objectID": "lectures/git-fundamentals-slides.html#why-not-git",
+    "href": "lectures/git-fundamentals-slides.html#why-not-git",
+    "title": "Git (Version Control) Fundamentals",
+    "section": "Why not git?",
+    "text": "Why not git?\n\nLearning curve non-trivial, especially for advanced usage\nDoesn’t work well with binary (non-text) data\nDoesn’t work well with large files (e.g., audio, video)"
+  },
+  {
+    "objectID": "lectures/git-fundamentals-slides.html#remotes",
+    "href": "lectures/git-fundamentals-slides.html#remotes",
+    "title": "Git (Version Control) Fundamentals",
+    "section": "Remotes",
+    "text": "Remotes"
+  },
+  {
+    "objectID": "lectures/git-fundamentals-slides.html#git-collaboration",
+    "href": "lectures/git-fundamentals-slides.html#git-collaboration",
+    "title": "Git (Version Control) Fundamentals",
+    "section": "Git Collaboration",
+    "text": "Git Collaboration\n\nLocal version control is very powerful, and if you are the only developer of a project and using a single computer exclusively, all that is necessary.\nBut what if you want to collaborate with others / yourself on another system? Git Remotes!"
+  },
+  {
+    "objectID": "lectures/git-fundamentals-slides.html#git-remotes",
+    "href": "lectures/git-fundamentals-slides.html#git-remotes",
+    "title": "Git (Version Control) Fundamentals",
+    "section": "Git Remotes",
+    "text": "Git Remotes\n\nA remote is another location where your git repository history exists.\nRemotes can be:\n\nOn your local computer\nOn a networked computer (e.g., server)\nOn a cloud-based service (e.g., GitHub, GitLab, BitBucket)\n\nWhen starting a new git repository that will be shared (i.e., will have at least one remote), you have a few ways to start things:\n\n\nCreate a local git repository and then add a remote.\nCreate a remote git repository and then clone it to your local computer.\n:balloon: For this class, all of your assignment repositories will need to be shared via GitLab, so I will recommend you create them on GitLab first, and then clone them to your local computer."
+  },
+  {
+    "objectID": "lectures/git-fundamentals-slides.html#creating-a-new-repository-on-gitlab",
+    "href": "lectures/git-fundamentals-slides.html#creating-a-new-repository-on-gitlab",
+    "title": "Git (Version Control) Fundamentals",
+    "section": "Creating a new repository on GitLab",
+    "text": "Creating a new repository on GitLab\n\n:white_check_mark: Create a new repository on GitLab, named my_first_git_repo.\n\n:warning: Spaces are not allowed in repository names and create problems when working on the commandline, so use underscores or dashes instead.\n\n+ icon in the upper left :arrow_right: New project/repository"
+  },
+  {
+    "objectID": "lectures/git-fundamentals-slides.html#clone-a-repository",
+    "href": "lectures/git-fundamentals-slides.html#clone-a-repository",
+    "title": "Git (Version Control) Fundamentals",
+    "section": "Clone a Repository",
+    "text": "Clone a Repository\n\nCloning a repository is only done the first time you want to get a copy of your remote repository on your local computer. (Future interactions with the remote repository will be done via push and pull commands.)\nYou can clone directly using the Git tools in VS Code, but I recommend you do it on the commandline so you can see what is happening.\nBelow are the steps to clone a repository.\n\nFor all of this example code, do not replicate the $; that indicates that this is a command you would enter in your Terminal or Git Bash session.\n\nPlease CHANGE THE THINGS IN ALL CAPS.\n\n\n$ cd DIRECTORY_WHERE_YOU_WANT_TO_CLONE\n$ git clone git@gitlab.oit.duke.edu:YOUR_NET_ID/my_first_git_repo.git"
+  },
+  {
+    "objectID": "lectures/git-fundamentals-slides.html#success-will-look-like",
+    "href": "lectures/git-fundamentals-slides.html#success-will-look-like",
+    "title": "Git (Version Control) Fundamentals",
+    "section": "Success will look like:",
+    "text": "Success will look like:\nCloning into 'my_first_git_repo'...\nwarning: You appear to have cloned an empty repository.\n\nYou will not see that warning if you chose to have GitLab create a README.md file when you created the repository."
+  },
+  {
+    "objectID": "lectures/git-fundamentals-slides.html#git-remotelocal-workflow",
+    "href": "lectures/git-fundamentals-slides.html#git-remotelocal-workflow",
+    "title": "Git (Version Control) Fundamentals",
+    "section": "Git Remote/Local Workflow",
+    "text": "Git Remote/Local Workflow"
+  },
+  {
+    "objectID": "lectures/git-fundamentals-slides.html#initialize-a-project-directory-not-already-on-a-remote",
+    "href": "lectures/git-fundamentals-slides.html#initialize-a-project-directory-not-already-on-a-remote",
+    "title": "Git (Version Control) Fundamentals",
+    "section": "Initialize a Project Directory (not already on a remote)",
+    "text": "Initialize a Project Directory (not already on a remote)\n\nMake sure you are at the root level of your desired project directory (the “main” folder of the project).\n\n$ git init\n\nA .git/ directory will be created that stores all version history\nSuccess will look like:\n\nInitialized empty Git repository in YOURPROJECTDIR/.git/"
+  },
+  {
+    "objectID": "lectures/git-fundamentals-slides.html#local-workflow",
+    "href": "lectures/git-fundamentals-slides.html#local-workflow",
+    "title": "Git (Version Control) Fundamentals",
+    "section": "Local Workflow",
+    "text": "Local Workflow\nOnce you have a local git repository, either through cloning or initializing one, you can start working on your project. All of the following commands are valid when you are “inside” your project directory (root level or deeper). You can also execute all of these commands natively within VS Code (and more elegantly with GitLens within VS Code)."
+  },
+  {
+    "objectID": "lectures/git-fundamentals-slides.html#git-status",
+    "href": "lectures/git-fundamentals-slides.html#git-status",
+    "title": "Git (Version Control) Fundamentals",
+    "section": "Git Status",
+    "text": "Git Status\n$ git status \n\nFiles that are not tracked (“untracked”).\nTracked files that have been modified since last committed.\nFiles that are staged (explicitly added / removed) to be committed.\nRun git status frequently to keep track of what you are doing. VS Code will show you the status “live” in the bottom left corner of the window."
+  },
+  {
+    "objectID": "lectures/git-fundamentals-slides.html#what-does-git-track",
+    "href": "lectures/git-fundamentals-slides.html#what-does-git-track",
+    "title": "Git (Version Control) Fundamentals",
+    "section": "What does git track?",
+    "text": "What does git track?\n\ngit will only track files that you explicitly tell it to track.\nDirectories are only tracked if they contain tracked files.\nUntracked files can be added to a queue (staged) to be committed to a git history (in a separate step) using:\n\n$ git add FILENAME(S) \n\nAdding a file stages it for commit.\ngit stage is a direct alias for git add. VS Code’s GitLens will use the term “stage” instead of “add”."
+  },
+  {
+    "objectID": "lectures/git-fundamentals-slides.html#committing-staged-files",
+    "href": "lectures/git-fundamentals-slides.html#committing-staged-files",
+    "title": "Git (Version Control) Fundamentals",
+    "section": "Committing Staged Files",
+    "text": "Committing Staged Files\n\nThe following command will commit your staged files. A commit message is required, which can be entered in the editor that opens when you execute the command, or you can use the -m option to enter a one-line commit message on the commandline.\n\n$ git commit -m 'one line commit message goes between the quotes'\n\nCommitting is the process of capturing the specific state of files in the version history."
+  },
+  {
+    "objectID": "lectures/git-fundamentals-slides.html#commit-messages",
+    "href": "lectures/git-fundamentals-slides.html#commit-messages",
+    "title": "Git (Version Control) Fundamentals",
+    "section": "Commit Messages",
+    "text": "Commit Messages\n\nNeed to include a commit message that describes why you are making these changes.\nYou do not need to describe what has changed; that is done automatically by:\n\n$ git diff FILE_NAME"
+  },
+  {
+    "objectID": "lectures/git-fundamentals-slides.html#git-addcommit-shortcut",
+    "href": "lectures/git-fundamentals-slides.html#git-addcommit-shortcut",
+    "title": "Git (Version Control) Fundamentals",
+    "section": "Git Add/Commit Shortcut",
+    "text": "Git Add/Commit Shortcut\n\nA common operation is editing files that are already under version control and wanting to commit all of those changed files.\nThere is a shortcut to do this quickly:\n\n$ git commit -am 'commit message'"
+  },
+  {
+    "objectID": "lectures/git-fundamentals-slides.html#git-log",
+    "href": "lectures/git-fundamentals-slides.html#git-log",
+    "title": "Git (Version Control) Fundamentals",
+    "section": "Git Log",
+    "text": "Git Log\n\nYou can view a history of your commits:\n\n$ git log\n\nNote that the first line of your commit message will be displayed in the log output.\nIncludes your name and email address, as configured in .gitconfig.\nIf you setup my lg alias, you will see a “prettier” version of the output using git lg."
+  },
+  {
+    "objectID": "lectures/git-fundamentals-slides.html#can-certain-filesdirectories-be-ignored",
+    "href": "lectures/git-fundamentals-slides.html#can-certain-filesdirectories-be-ignored",
+    "title": "Git (Version Control) Fundamentals",
+    "section": "Can certain files/directories be “ignored”?",
+    "text": "Can certain files/directories be “ignored”?\n\nSometimes we will have files that we never want git to manage\nThese will always show up as Untracked if they are never added.\nWe can tell git to ignore these files/directories in a file called .gitignore.\n\nCreate this file at the root of the project.\n\nBe sure to add and commit it!\n\nCan use / at the end of the name to indicate a directory name.\nCan use * as a wildcard to any characters in the name pattern match.\nCertain types of projects will have default templates of files to ignore."
+  },
+  {
+    "objectID": "lectures/git-fundamentals-slides.html#example-.gitignore",
+    "href": "lectures/git-fundamentals-slides.html#example-.gitignore",
+    "title": "Git (Version Control) Fundamentals",
+    "section": "Example .gitignore:",
+    "text": "Example .gitignore:\n$ cat .gitignore \nbuild/*\n.idea\n.cache\n.ipynb_checkpoints\n.DS_Store\nenv/\nvenv/\n.venv/"
+  },
+  {
+    "objectID": "lectures/git-fundamentals-slides.html#live-demo",
+    "href": "lectures/git-fundamentals-slides.html#live-demo",
+    "title": "Git (Version Control) Fundamentals",
+    "section": "Live Demo",
+    "text": "Live Demo\nLive demo time!"
+  },
+  {
+    "objectID": "lectures/git-fundamentals-slides.html#more-git-basics",
+    "href": "lectures/git-fundamentals-slides.html#more-git-basics",
+    "title": "Git (Version Control) Fundamentals",
+    "section": "More Git Basics",
+    "text": "More Git Basics"
+  },
+  {
+    "objectID": "lectures/git-fundamentals-slides.html#how-do-a-undo-changes-to-a-file",
+    "href": "lectures/git-fundamentals-slides.html#how-do-a-undo-changes-to-a-file",
+    "title": "Git (Version Control) Fundamentals",
+    "section": "How do a undo changes to a file?",
+    "text": "How do a undo changes to a file?\n\nIf you have modified a file that was already tracked and want to restore it to the previously-committed version:\n\ngit restore [file] \n\nYou can also revert to previously-committed versions older than the latest commit… but that is a more advanced topic."
+  },
+  {
+    "objectID": "lectures/git-fundamentals-slides.html#pushingpulling-git-commits",
+    "href": "lectures/git-fundamentals-slides.html#pushingpulling-git-commits",
+    "title": "Git (Version Control) Fundamentals",
+    "section": "Pushing/Pulling Git Commits",
+    "text": "Pushing/Pulling Git Commits\n\nOnce a local repository is connected to a remote, you can:\n\nPush local commits to the remote (git push)\nPull commits from the remote (git pull)\n\n\n\n\n\n\n\n\nImportant\n\n\nYou will always need to pull the latest commits from a repository before you push anything new."
+  },
+  {
+    "objectID": "lectures/git-fundamentals-slides.html#more-advanced-git-workflows",
+    "href": "lectures/git-fundamentals-slides.html#more-advanced-git-workflows",
+    "title": "Git (Version Control) Fundamentals",
+    "section": "More Advanced Git Workflows",
+    "text": "More Advanced Git Workflows"
+  },
+  {
+    "objectID": "lectures/git-fundamentals-slides.html#branching",
+    "href": "lectures/git-fundamentals-slides.html#branching",
+    "title": "Git (Version Control) Fundamentals",
+    "section": "Branching",
+    "text": "Branching\n\nBy default, your project is working on a branch called main.\n\n\n\n\n\n\n\nNote\n\n\nSome older versions of git used a default name of master, but that has been deprecated.* If your configuration is still using master, please consider changing the default branch name.\n\n\n\n\nBranches allow you to add/modify files, potentially with multiple commits, but without changing the files as they exist in main.\nCommitted changes on your branch can be merged into main (or another branch) when they are “ready”."
+  },
+  {
+    "objectID": "lectures/git-fundamentals-slides.html#steps-to-create-and-use-a-development-branch",
+    "href": "lectures/git-fundamentals-slides.html#steps-to-create-and-use-a-development-branch",
+    "title": "Git (Version Control) Fundamentals",
+    "section": "Steps to Create and Use a Development Branch",
+    "text": "Steps to Create and Use a Development Branch\n$ git branch BRANCHNAME  # this creates a new branch\n$ git checkout BRANCHNAME  # this switches to the branch\n\nIf a branch already exists, you can just switch to it using git checkout.\ngit switch achieves the same behavior when swiching between branches.\n\n\n\n\n\n\n\nTip\n\n\nYou can create and checkout a branch using:\n$ git checkout -b BRANCHNAME\n \nOR\n\n$ git switch -c BRANCHNAME"
+  },
+  {
+    "objectID": "lectures/git-fundamentals-slides.html#naming-branches",
+    "href": "lectures/git-fundamentals-slides.html#naming-branches",
+    "title": "Git (Version Control) Fundamentals",
+    "section": "Naming Branches",
+    "text": "Naming Branches\n\nIt is important to use good branch names! This will be helpful for you when breaking up your tasks, and knowing what you should focus on developing in the specified branch.\nThere isn’t a best practice for naming branches, but consider using the template: functionality-in-my-project.\nFor example, if you are developing a library to calculate heart rate from an ECG signal, a good branch name would be dev-calc-ecg-hr."
+  },
+  {
+    "objectID": "lectures/git-fundamentals-slides.html#branches-on-remotes",
+    "href": "lectures/git-fundamentals-slides.html#branches-on-remotes",
+    "title": "Git (Version Control) Fundamentals",
+    "section": "Branches on Remotes",
+    "text": "Branches on Remotes\n\nYou can push a branch to your remote just like you would main.\nGit may prompt you to have to create the branch on origin with the same name as the local branch:\n\n$ git push --set-upstream origin BRANCHNAME\n\nIf you want to avoid having to manually set the upstream branch, you can set a configuration option to always do that for you. You probably set this up in the first week of class in your .gitconfig file, but if not:\n\n$ git config --global push.autoSetupRemote true"
+  },
+  {
+    "objectID": "lectures/git-fundamentals-slides.html#merging-a-branch",
+    "href": "lectures/git-fundamentals-slides.html#merging-a-branch",
+    "title": "Git (Version Control) Fundamentals",
+    "section": "Merging a Branch",
+    "text": "Merging a Branch\n\nOnce you are “done” developing on a branch, you can merge your changes back into your main branch (or another branch).\nMerging is also the way that you can incorporate another developer’s code into your branches.\n\n$ git checkout main  # switch to the branch you want to merge into\n$ git merge BRANCHNAME  # merge the branch into the current branch"
+  },
+  {
+    "objectID": "lectures/git-fundamentals-slides.html#merging-approaches",
+    "href": "lectures/git-fundamentals-slides.html#merging-approaches",
+    "title": "Git (Version Control) Fundamentals",
+    "section": "Merging Approaches",
+    "text": "Merging Approaches\n\nMerge: Creates a commit reflecting the merged content, in addition to the individual commits on the branch being merged.\nSquash: Create a single merge commit, “squashing” all of the commits of the feature branch into one commit.\nRebase: Integrate the commits of the feature branch into your target branch by “replaying” them into the history.\n\nThis can be the trickiest approach to use and can cause major headaches if you have already pushed commits to a remote.\n\nProbably best to avoid as you get familiar with merging."
+  },
+  {
+    "objectID": "lectures/git-fundamentals-slides.html#pullmerge-requests",
+    "href": "lectures/git-fundamentals-slides.html#pullmerge-requests",
+    "title": "Git (Version Control) Fundamentals",
+    "section": "Pull/Merge Requests",
+    "text": "Pull/Merge Requests\n\nYou can also use the UI of GitHub/GitLab to merge one branch into another.\nThese “requests” can allow you to:\n\nReview the differences between the branches.\nProvide feedback to developers before merging."
+  },
+  {
+    "objectID": "lectures/git-fundamentals-slides.html#annotated-tags",
+    "href": "lectures/git-fundamentals-slides.html#annotated-tags",
+    "title": "Git (Version Control) Fundamentals",
+    "section": "[Annotated] Tags",
+    "text": "[Annotated] Tags\n\nTags are simply meaningful “names” to associate with specific git commits.\nTypically associated with some milestone / release.\nAnnotated tags are usually used to tags a semantic version number–along with a message–to a specific commit.\nExample syntax to create a tag for the current commit checked out:\n\n$ git tag -a 'v1.0.0' -m 'version of code for submission'\n\nExample syntax to create a tag for a specified commit:\n\n$ git tag -a 'v1.0.0' -m 'version of code for submission' COMMIT_HASH"
+  },
+  {
+    "objectID": "lectures/git-fundamentals-slides.html#issues",
+    "href": "lectures/git-fundamentals-slides.html#issues",
+    "title": "Git (Version Control) Fundamentals",
+    "section": "Issues",
+    "text": "Issues\n\nIssues are used via the web UI to report bugs, request features, ask questions, etc.\nWe will use Issues as the primary way to ask the TAs / Dr. Palmeri questions (you will need to add collaborators explicitly to your Private projects).\nCommits related to issues can automatically trigger action (e.g., closing, fixing) using certain commit message keywords."
+  },
+  {
+    "objectID": "lectures/git-fundamentals-slides.html#miscellaneous-topics",
+    "href": "lectures/git-fundamentals-slides.html#miscellaneous-topics",
+    "title": "Git (Version Control) Fundamentals",
+    "section": "Miscellaneous Topics",
+    "text": "Miscellaneous Topics"
+  },
+  {
+    "objectID": "lectures/git-fundamentals-slides.html#add-a-remote",
+    "href": "lectures/git-fundamentals-slides.html#add-a-remote",
+    "title": "Git (Version Control) Fundamentals",
+    "section": "Add a Remote",
+    "text": "Add a Remote\n\nYou can add a remote using the following syntax:\n\n$ git remote add origin git@gitlab.oit.duke.edu:YOUR_NET_ID/YOUR_PROJECT_NAME.git\n\nYou can access the URL for a remote repository after you create it online.\nThe default remote name is origin. That name is arbitrary, but widely used.\nYou can have multiple remotes associated with a repository.\nURLs that start with git@ use SSH keys to authenticate you.\nYou can see the remotes associated with your local git repository as follows:\n\n$ git remote -v\norigin  git@gitlab.oit.duke.edu:YOUR_NET_ID/YOUR_PROJECT_NAME.git (fetch)\norigin  git@gitlab.oit.duke.edu:YOUR_NET_ID/YOUR_PROJECT_NAME.git (push)"
+  },
+  {
+    "objectID": "lectures/git-fundamentals-slides.html#mac-users",
+    "href": "lectures/git-fundamentals-slides.html#mac-users",
+    "title": "Git (Version Control) Fundamentals",
+    "section": "Mac Users",
+    "text": "Mac Users\nIf your Mac terminal doesn’t have tab autocompletion enabled when typing out your long branch name you created among other git commands, follow the steps from this link.\nThis will only work in your Mac terminal. If you’d like to enable this in VS Code as well, open up your preferences with Cmd + ,, and then navigate through this:\n\nUser -&gt; Extensions -&gt; Git.\nScroll down to the setting labeled Terminal Git Editor and check this box.\nYou will need to restart your existing terminal inside of VS Code if one is already open."
+  },
+  {
+    "objectID": "lectures/git-fundamentals-notes.html",
+    "href": "lectures/git-fundamentals-notes.html",
+    "title": "Git (Version Control) Fundamentals",
+    "section": "",
+    "text": "Maintain history of software development changes.\nMaintain multiple versions of software that are released.\nTool for code review.\nAudit trail for compliance.\nRequired for IEC 62304 (Medical Software), FDA V&V (510k clearance).\nCollaboration between multiple developers.\nGreat skill to have on a resume.",
     "crumbs": [
-      "Labs",
-      "Software Installation Tutorials"
+      "Learning Modules",
+      "Version Control (git)"
     ]
   },
   {
-    "objectID": "labs/software-install_tutorials.html#lab-policies-safety",
-    "href": "labs/software-install_tutorials.html#lab-policies-safety",
-    "title": "MedTech Prototyping Skills: Software Installation & Tutorials",
-    "section": "Lab Policies & Safety",
-    "text": "Lab Policies & Safety\nPlease review the lab policies and safety guidelines for working in the lab.",
+    "objectID": "lectures/git-fundamentals-notes.html#why-version-control",
+    "href": "lectures/git-fundamentals-notes.html#why-version-control",
+    "title": "Git (Version Control) Fundamentals",
+    "section": "",
+    "text": "Maintain history of software development changes.\nMaintain multiple versions of software that are released.\nTool for code review.\nAudit trail for compliance.\nRequired for IEC 62304 (Medical Software), FDA V&V (510k clearance).\nCollaboration between multiple developers.\nGreat skill to have on a resume.",
     "crumbs": [
-      "Labs",
-      "Software Installation Tutorials"
+      "Learning Modules",
+      "Version Control (git)"
     ]
   },
   {
-    "objectID": "labs/software-install_tutorials.html#what-to-submit",
-    "href": "labs/software-install_tutorials.html#what-to-submit",
-    "title": "MedTech Prototyping Skills: Software Installation & Tutorials",
+    "objectID": "lectures/git-fundamentals-notes.html#why-git",
+    "href": "lectures/git-fundamentals-notes.html#why-git",
+    "title": "Git (Version Control) Fundamentals",
+    "section": "Why git?",
+    "text": "Why git?\n\nMost popular distributed version control system\nReplaces centralized, single-point systems (e.g., subversion)\nOpen-source\nLightweight",
+    "crumbs": [
+      "Learning Modules",
+      "Version Control (git)"
+    ]
+  },
+  {
+    "objectID": "lectures/git-fundamentals-notes.html#why-not-git",
+    "href": "lectures/git-fundamentals-notes.html#why-not-git",
+    "title": "Git (Version Control) Fundamentals",
+    "section": "Why not git?",
+    "text": "Why not git?\n\nLearning curve non-trivial, especially for advanced usage\nDoesn’t work well with binary (non-text) data\nDoesn’t work well with large files (e.g., audio, video)",
+    "crumbs": [
+      "Learning Modules",
+      "Version Control (git)"
+    ]
+  },
+  {
+    "objectID": "lectures/git-fundamentals-notes.html#remotes",
+    "href": "lectures/git-fundamentals-notes.html#remotes",
+    "title": "Git (Version Control) Fundamentals",
+    "section": "Remotes",
+    "text": "Remotes",
+    "crumbs": [
+      "Learning Modules",
+      "Version Control (git)"
+    ]
+  },
+  {
+    "objectID": "lectures/git-fundamentals-notes.html#git-collaboration",
+    "href": "lectures/git-fundamentals-notes.html#git-collaboration",
+    "title": "Git (Version Control) Fundamentals",
+    "section": "Git Collaboration",
+    "text": "Git Collaboration\n\nLocal version control is very powerful, and if you are the only developer of a project and using a single computer exclusively, all that is necessary.\nBut what if you want to collaborate with others / yourself on another system? Git Remotes!",
+    "crumbs": [
+      "Learning Modules",
+      "Version Control (git)"
+    ]
+  },
+  {
+    "objectID": "lectures/git-fundamentals-notes.html#git-remotes",
+    "href": "lectures/git-fundamentals-notes.html#git-remotes",
+    "title": "Git (Version Control) Fundamentals",
+    "section": "Git Remotes",
+    "text": "Git Remotes\n\nA remote is another location where your git repository history exists.\nRemotes can be:\n\nOn your local computer\nOn a networked computer (e.g., server)\nOn a cloud-based service (e.g., GitHub, GitLab, BitBucket)\n\nWhen starting a new git repository that will be shared (i.e., will have at least one remote), you have a few ways to start things:\n\n\nCreate a local git repository and then add a remote.\nCreate a remote git repository and then clone it to your local computer.\n:balloon: For this class, all of your assignment repositories will need to be shared via GitLab, so I will recommend you create them on GitLab first, and then clone them to your local computer.",
+    "crumbs": [
+      "Learning Modules",
+      "Version Control (git)"
+    ]
+  },
+  {
+    "objectID": "lectures/git-fundamentals-notes.html#creating-a-new-repository-on-gitlab",
+    "href": "lectures/git-fundamentals-notes.html#creating-a-new-repository-on-gitlab",
+    "title": "Git (Version Control) Fundamentals",
+    "section": "Creating a new repository on GitLab",
+    "text": "Creating a new repository on GitLab\n\n:white_check_mark: Create a new repository on GitLab, named my_first_git_repo.\n\n:warning: Spaces are not allowed in repository names and create problems when working on the commandline, so use underscores or dashes instead.\n\n+ icon in the upper left :arrow_right: New project/repository\n\n\n\n\nChoose: Create Blank Project\nChoose Project Name: my_first_git_repo\n\n\n\n\n\n\n\nWarning\n\n\n\nIf this is a new repository that doesn’t already exist locally on your laptop, then you can choose to have GitLab create a README.md file; otherwise, deselect that default option.\n\n\n\n\nChoose: Create Project",
+    "crumbs": [
+      "Learning Modules",
+      "Version Control (git)"
+    ]
+  },
+  {
+    "objectID": "lectures/git-fundamentals-notes.html#clone-a-repository",
+    "href": "lectures/git-fundamentals-notes.html#clone-a-repository",
+    "title": "Git (Version Control) Fundamentals",
+    "section": "Clone a Repository",
+    "text": "Clone a Repository\n\nCloning a repository is only done the first time you want to get a copy of your remote repository on your local computer. (Future interactions with the remote repository will be done via push and pull commands.)\nYou can clone directly using the Git tools in VS Code, but I recommend you do it on the commandline so you can see what is happening.\nBelow are the steps to clone a repository.\n\nFor all of this example code, do not replicate the $; that indicates that this is a command you would enter in your Terminal or Git Bash session.\n\nPlease CHANGE THE THINGS IN ALL CAPS.\n\n\n$ cd DIRECTORY_WHERE_YOU_WANT_TO_CLONE\n$ git clone git@gitlab.oit.duke.edu:YOUR_NET_ID/my_first_git_repo.git",
+    "crumbs": [
+      "Learning Modules",
+      "Version Control (git)"
+    ]
+  },
+  {
+    "objectID": "lectures/git-fundamentals-notes.html#success-will-look-like",
+    "href": "lectures/git-fundamentals-notes.html#success-will-look-like",
+    "title": "Git (Version Control) Fundamentals",
+    "section": "Success will look like:",
+    "text": "Success will look like:\nCloning into 'my_first_git_repo'...\nwarning: You appear to have cloned an empty repository.\n\nYou will not see that warning if you chose to have GitLab create a README.md file when you created the repository.",
+    "crumbs": [
+      "Learning Modules",
+      "Version Control (git)"
+    ]
+  },
+  {
+    "objectID": "lectures/git-fundamentals-notes.html#git-remotelocal-workflow",
+    "href": "lectures/git-fundamentals-notes.html#git-remotelocal-workflow",
+    "title": "Git (Version Control) Fundamentals",
+    "section": "Git Remote/Local Workflow",
+    "text": "Git Remote/Local Workflow",
+    "crumbs": [
+      "Learning Modules",
+      "Version Control (git)"
+    ]
+  },
+  {
+    "objectID": "lectures/git-fundamentals-notes.html#initialize-a-project-directory-not-already-on-a-remote",
+    "href": "lectures/git-fundamentals-notes.html#initialize-a-project-directory-not-already-on-a-remote",
+    "title": "Git (Version Control) Fundamentals",
+    "section": "Initialize a Project Directory (not already on a remote)",
+    "text": "Initialize a Project Directory (not already on a remote)\n\nMake sure you are at the root level of your desired project directory (the “main” folder of the project).\n\n$ git init\n\nA .git/ directory will be created that stores all version history\nSuccess will look like:\n\nInitialized empty Git repository in YOURPROJECTDIR/.git/",
+    "crumbs": [
+      "Learning Modules",
+      "Version Control (git)"
+    ]
+  },
+  {
+    "objectID": "lectures/git-fundamentals-notes.html#local-workflow",
+    "href": "lectures/git-fundamentals-notes.html#local-workflow",
+    "title": "Git (Version Control) Fundamentals",
+    "section": "Local Workflow",
+    "text": "Local Workflow\nOnce you have a local git repository, either through cloning or initializing one, you can start working on your project. All of the following commands are valid when you are “inside” your project directory (root level or deeper). You can also execute all of these commands natively within VS Code (and more elegantly with GitLens within VS Code).",
+    "crumbs": [
+      "Learning Modules",
+      "Version Control (git)"
+    ]
+  },
+  {
+    "objectID": "lectures/git-fundamentals-notes.html#git-status",
+    "href": "lectures/git-fundamentals-notes.html#git-status",
+    "title": "Git (Version Control) Fundamentals",
+    "section": "Git Status",
+    "text": "Git Status\n$ git status \n\nFiles that are not tracked (“untracked”).\nTracked files that have been modified since last committed.\nFiles that are staged (explicitly added / removed) to be committed.\nRun git status frequently to keep track of what you are doing. VS Code will show you the status “live” in the bottom left corner of the window.",
+    "crumbs": [
+      "Learning Modules",
+      "Version Control (git)"
+    ]
+  },
+  {
+    "objectID": "lectures/git-fundamentals-notes.html#what-does-git-track",
+    "href": "lectures/git-fundamentals-notes.html#what-does-git-track",
+    "title": "Git (Version Control) Fundamentals",
+    "section": "What does git track?",
+    "text": "What does git track?\n\ngit will only track files that you explicitly tell it to track.\nDirectories are only tracked if they contain tracked files.\nUntracked files can be added to a queue (staged) to be committed to a git history (in a separate step) using:\n\n$ git add FILENAME(S) \n\nAdding a file stages it for commit.\ngit stage is a direct alias for git add. VS Code’s GitLens will use the term “stage” instead of “add”.\n\n\n\nChanges made to tracked files must be explicitly added to the commit queue too.\nMultiple files can be staged together to create a commit that logically should be bundled together.\n\n\n\n\n\n\n\nWarning\n\n\n\nWhile it is valid syntax to add an entire directory as git add . or to use wildcards to add mutliple files by a common pattern using git add *_SOME_PATTERN, I recommend you explicitly add files one at a time to avoid accidentally adding files you don’t want to track.",
+    "crumbs": [
+      "Learning Modules",
+      "Version Control (git)"
+    ]
+  },
+  {
+    "objectID": "lectures/git-fundamentals-notes.html#committing-staged-files",
+    "href": "lectures/git-fundamentals-notes.html#committing-staged-files",
+    "title": "Git (Version Control) Fundamentals",
+    "section": "Committing Staged Files",
+    "text": "Committing Staged Files\n\nThe following command will commit your staged files. A commit message is required, which can be entered in the editor that opens when you execute the command, or you can use the -m option to enter a one-line commit message on the commandline.\n\n$ git commit -m 'one line commit message goes between the quotes'\n\nCommitting is the process of capturing the specific state of files in the version history.",
+    "crumbs": [
+      "Learning Modules",
+      "Version Control (git)"
+    ]
+  },
+  {
+    "objectID": "lectures/git-fundamentals-notes.html#commit-messages",
+    "href": "lectures/git-fundamentals-notes.html#commit-messages",
+    "title": "Git (Version Control) Fundamentals",
+    "section": "Commit Messages",
+    "text": "Commit Messages\n\nNeed to include a commit message that describes why you are making these changes.\nYou do not need to describe what has changed; that is done automatically by:\n\n$ git diff FILE_NAME \n\n\nHere are some examples of what a proper commit message looks like, such that when you perform a git log, you thank your past self for knowing what and when you edited.\n\n\n\n\n\n\n\n\nBad Commit Message\nGood Commit Message\n\n\n\n\nfixed issue\nFixed GND pour on my PCB to ensure DRC checks pass\n\n\nadded function\nedited arduino code to user timers instead of sleep\n\n\nboom\nif you’re right at the deadline, this one is understandable\n\n\nupdated piece\nupdated CAD render for H3 neck to be at 75deg angle",
+    "crumbs": [
+      "Learning Modules",
+      "Version Control (git)"
+    ]
+  },
+  {
+    "objectID": "lectures/git-fundamentals-notes.html#git-addcommit-shortcut",
+    "href": "lectures/git-fundamentals-notes.html#git-addcommit-shortcut",
+    "title": "Git (Version Control) Fundamentals",
+    "section": "Git Add/Commit Shortcut",
+    "text": "Git Add/Commit Shortcut\n\nA common operation is editing files that are already under version control and wanting to commit all of those changed files.\nThere is a shortcut to do this quickly:\n\n$ git commit -am 'commit message'",
+    "crumbs": [
+      "Learning Modules",
+      "Version Control (git)"
+    ]
+  },
+  {
+    "objectID": "lectures/git-fundamentals-notes.html#git-log",
+    "href": "lectures/git-fundamentals-notes.html#git-log",
+    "title": "Git (Version Control) Fundamentals",
+    "section": "Git Log",
+    "text": "Git Log\n\nYou can view a history of your commits:\n\n$ git log\n\nNote that the first line of your commit message will be displayed in the log output.\nIncludes your name and email address, as configured in .gitconfig.\nIf you setup my lg alias, you will see a “prettier” version of the output using git lg.",
+    "crumbs": [
+      "Learning Modules",
+      "Version Control (git)"
+    ]
+  },
+  {
+    "objectID": "lectures/git-fundamentals-notes.html#can-certain-filesdirectories-be-ignored",
+    "href": "lectures/git-fundamentals-notes.html#can-certain-filesdirectories-be-ignored",
+    "title": "Git (Version Control) Fundamentals",
+    "section": "Can certain files/directories be “ignored”?",
+    "text": "Can certain files/directories be “ignored”?\n\nSometimes we will have files that we never want git to manage\nThese will always show up as Untracked if they are never added.\nWe can tell git to ignore these files/directories in a file called .gitignore.\n\nCreate this file at the root of the project.\n\nBe sure to add and commit it!\n\nCan use / at the end of the name to indicate a directory name.\nCan use * as a wildcard to any characters in the name pattern match.\nCertain types of projects will have default templates of files to ignore.",
+    "crumbs": [
+      "Learning Modules",
+      "Version Control (git)"
+    ]
+  },
+  {
+    "objectID": "lectures/git-fundamentals-notes.html#example-.gitignore",
+    "href": "lectures/git-fundamentals-notes.html#example-.gitignore",
+    "title": "Git (Version Control) Fundamentals",
+    "section": "Example .gitignore:",
+    "text": "Example .gitignore:\n$ cat .gitignore \nbuild/*\n.idea\n.cache\n.ipynb_checkpoints\n.DS_Store\nenv/\nvenv/\n.venv/",
+    "crumbs": [
+      "Learning Modules",
+      "Version Control (git)"
+    ]
+  },
+  {
+    "objectID": "lectures/git-fundamentals-notes.html#live-demo",
+    "href": "lectures/git-fundamentals-notes.html#live-demo",
+    "title": "Git (Version Control) Fundamentals",
+    "section": "Live Demo",
+    "text": "Live Demo\nLive demo time!",
+    "crumbs": [
+      "Learning Modules",
+      "Version Control (git)"
+    ]
+  },
+  {
+    "objectID": "lectures/git-fundamentals-notes.html#more-git-basics",
+    "href": "lectures/git-fundamentals-notes.html#more-git-basics",
+    "title": "Git (Version Control) Fundamentals",
+    "section": "More Git Basics",
+    "text": "More Git Basics",
+    "crumbs": [
+      "Learning Modules",
+      "Version Control (git)"
+    ]
+  },
+  {
+    "objectID": "lectures/git-fundamentals-notes.html#how-do-a-undo-changes-to-a-file",
+    "href": "lectures/git-fundamentals-notes.html#how-do-a-undo-changes-to-a-file",
+    "title": "Git (Version Control) Fundamentals",
+    "section": "How do a undo changes to a file?",
+    "text": "How do a undo changes to a file?\n\nIf you have modified a file that was already tracked and want to restore it to the previously-committed version:\n\ngit restore [file] \n\nYou can also revert to previously-committed versions older than the latest commit… but that is a more advanced topic.",
+    "crumbs": [
+      "Learning Modules",
+      "Version Control (git)"
+    ]
+  },
+  {
+    "objectID": "lectures/git-fundamentals-notes.html#pushingpulling-git-commits",
+    "href": "lectures/git-fundamentals-notes.html#pushingpulling-git-commits",
+    "title": "Git (Version Control) Fundamentals",
+    "section": "Pushing/Pulling Git Commits",
+    "text": "Pushing/Pulling Git Commits\n\nOnce a local repository is connected to a remote, you can:\n\nPush local commits to the remote (git push)\nPull commits from the remote (git pull)\n\n\n\n\n\n\n\n\nImportant\n\n\n\nYou will always need to pull the latest commits from a repository before you push anything new.",
+    "crumbs": [
+      "Learning Modules",
+      "Version Control (git)"
+    ]
+  },
+  {
+    "objectID": "lectures/git-fundamentals-notes.html#more-advanced-git-workflows",
+    "href": "lectures/git-fundamentals-notes.html#more-advanced-git-workflows",
+    "title": "Git (Version Control) Fundamentals",
+    "section": "More Advanced Git Workflows",
+    "text": "More Advanced Git Workflows",
+    "crumbs": [
+      "Learning Modules",
+      "Version Control (git)"
+    ]
+  },
+  {
+    "objectID": "lectures/git-fundamentals-notes.html#branching",
+    "href": "lectures/git-fundamentals-notes.html#branching",
+    "title": "Git (Version Control) Fundamentals",
+    "section": "Branching",
+    "text": "Branching\n\nBy default, your project is working on a branch called main.\n\n\n\n\n\n\n\nNote\n\n\n\nSome older versions of git used a default name of master, but that has been deprecated.* If your configuration is still using master, please consider changing the default branch name.\n\n\n\nBranches allow you to add/modify files, potentially with multiple commits, but without changing the files as they exist in main.\nCommitted changes on your branch can be merged into main (or another branch) when they are “ready”.",
+    "crumbs": [
+      "Learning Modules",
+      "Version Control (git)"
+    ]
+  },
+  {
+    "objectID": "lectures/git-fundamentals-notes.html#steps-to-create-and-use-a-development-branch",
+    "href": "lectures/git-fundamentals-notes.html#steps-to-create-and-use-a-development-branch",
+    "title": "Git (Version Control) Fundamentals",
+    "section": "Steps to Create and Use a Development Branch",
+    "text": "Steps to Create and Use a Development Branch\n$ git branch BRANCHNAME  # this creates a new branch\n$ git checkout BRANCHNAME  # this switches to the branch\n\nIf a branch already exists, you can just switch to it using git checkout.\ngit switch achieves the same behavior when swiching between branches.\n\n\n\n\n\n\n\nTip\n\n\n\nYou can create and checkout a branch using:\n$ git checkout -b BRANCHNAME\n \nOR\n\n$ git switch -c BRANCHNAME",
+    "crumbs": [
+      "Learning Modules",
+      "Version Control (git)"
+    ]
+  },
+  {
+    "objectID": "lectures/git-fundamentals-notes.html#naming-branches",
+    "href": "lectures/git-fundamentals-notes.html#naming-branches",
+    "title": "Git (Version Control) Fundamentals",
+    "section": "Naming Branches",
+    "text": "Naming Branches\n\nIt is important to use good branch names! This will be helpful for you when breaking up your tasks, and knowing what you should focus on developing in the specified branch.\nThere isn’t a best practice for naming branches, but consider using the template: functionality-in-my-project.\nFor example, if you are developing a library to calculate heart rate from an ECG signal, a good branch name would be dev-calc-ecg-hr.",
+    "crumbs": [
+      "Learning Modules",
+      "Version Control (git)"
+    ]
+  },
+  {
+    "objectID": "lectures/git-fundamentals-notes.html#branches-on-remotes",
+    "href": "lectures/git-fundamentals-notes.html#branches-on-remotes",
+    "title": "Git (Version Control) Fundamentals",
+    "section": "Branches on Remotes",
+    "text": "Branches on Remotes\n\nYou can push a branch to your remote just like you would main.\nGit may prompt you to have to create the branch on origin with the same name as the local branch:\n\n$ git push --set-upstream origin BRANCHNAME\n\nIf you want to avoid having to manually set the upstream branch, you can set a configuration option to always do that for you. You probably set this up in the first week of class in your .gitconfig file, but if not:\n\n$ git config --global push.autoSetupRemote true",
+    "crumbs": [
+      "Learning Modules",
+      "Version Control (git)"
+    ]
+  },
+  {
+    "objectID": "lectures/git-fundamentals-notes.html#merging-a-branch",
+    "href": "lectures/git-fundamentals-notes.html#merging-a-branch",
+    "title": "Git (Version Control) Fundamentals",
+    "section": "Merging a Branch",
+    "text": "Merging a Branch\n\nOnce you are “done” developing on a branch, you can merge your changes back into your main branch (or another branch).\nMerging is also the way that you can incorporate another developer’s code into your branches.\n\n$ git checkout main  # switch to the branch you want to merge into\n$ git merge BRANCHNAME  # merge the branch into the current branch",
+    "crumbs": [
+      "Learning Modules",
+      "Version Control (git)"
+    ]
+  },
+  {
+    "objectID": "lectures/git-fundamentals-notes.html#merging-approaches",
+    "href": "lectures/git-fundamentals-notes.html#merging-approaches",
+    "title": "Git (Version Control) Fundamentals",
+    "section": "Merging Approaches",
+    "text": "Merging Approaches\n\nMerge: Creates a commit reflecting the merged content, in addition to the individual commits on the branch being merged.\nSquash: Create a single merge commit, “squashing” all of the commits of the feature branch into one commit.\nRebase: Integrate the commits of the feature branch into your target branch by “replaying” them into the history.\n\nThis can be the trickiest approach to use and can cause major headaches if you have already pushed commits to a remote.\n\nProbably best to avoid as you get familiar with merging.",
+    "crumbs": [
+      "Learning Modules",
+      "Version Control (git)"
+    ]
+  },
+  {
+    "objectID": "lectures/git-fundamentals-notes.html#pullmerge-requests",
+    "href": "lectures/git-fundamentals-notes.html#pullmerge-requests",
+    "title": "Git (Version Control) Fundamentals",
+    "section": "Pull/Merge Requests",
+    "text": "Pull/Merge Requests\n\nYou can also use the UI of GitHub/GitLab to merge one branch into another.\nThese “requests” can allow you to:\n\nReview the differences between the branches.\nProvide feedback to developers before merging.",
+    "crumbs": [
+      "Learning Modules",
+      "Version Control (git)"
+    ]
+  },
+  {
+    "objectID": "lectures/git-fundamentals-notes.html#annotated-tags",
+    "href": "lectures/git-fundamentals-notes.html#annotated-tags",
+    "title": "Git (Version Control) Fundamentals",
+    "section": "[Annotated] Tags",
+    "text": "[Annotated] Tags\n\nTags are simply meaningful “names” to associate with specific git commits.\nTypically associated with some milestone / release.\nAnnotated tags are usually used to tags a semantic version number–along with a message–to a specific commit.\nExample syntax to create a tag for the current commit checked out:\n\n$ git tag -a 'v1.0.0' -m 'version of code for submission'\n\nExample syntax to create a tag for a specified commit:\n\n$ git tag -a 'v1.0.0' -m 'version of code for submission' COMMIT_HASH\n\n\nLocally-created tags have to be specifically pushed to remotes using:\n\n$ git push --tags\n\nYou can see what tags exist locally using:\n\n$ git tag --list\n\nTags are available via the GitLab/GitHub web UI (and can be used to create Releases).",
+    "crumbs": [
+      "Learning Modules",
+      "Version Control (git)"
+    ]
+  },
+  {
+    "objectID": "lectures/git-fundamentals-notes.html#issues",
+    "href": "lectures/git-fundamentals-notes.html#issues",
+    "title": "Git (Version Control) Fundamentals",
+    "section": "Issues",
+    "text": "Issues\n\nIssues are used via the web UI to report bugs, request features, ask questions, etc.\nWe will use Issues as the primary way to ask the TAs / Dr. Palmeri questions (you will need to add collaborators explicitly to your Private projects).\nCommits related to issues can automatically trigger action (e.g., closing, fixing) using certain commit message keywords.",
+    "crumbs": [
+      "Learning Modules",
+      "Version Control (git)"
+    ]
+  },
+  {
+    "objectID": "lectures/git-fundamentals-notes.html#miscellaneous-topics",
+    "href": "lectures/git-fundamentals-notes.html#miscellaneous-topics",
+    "title": "Git (Version Control) Fundamentals",
+    "section": "Miscellaneous Topics",
+    "text": "Miscellaneous Topics",
+    "crumbs": [
+      "Learning Modules",
+      "Version Control (git)"
+    ]
+  },
+  {
+    "objectID": "lectures/git-fundamentals-notes.html#add-a-remote",
+    "href": "lectures/git-fundamentals-notes.html#add-a-remote",
+    "title": "Git (Version Control) Fundamentals",
+    "section": "Add a Remote",
+    "text": "Add a Remote\n\nYou can add a remote using the following syntax:\n\n$ git remote add origin git@gitlab.oit.duke.edu:YOUR_NET_ID/YOUR_PROJECT_NAME.git\n\nYou can access the URL for a remote repository after you create it online.\nThe default remote name is origin. That name is arbitrary, but widely used.\nYou can have multiple remotes associated with a repository.\nURLs that start with git@ use SSH keys to authenticate you.\nYou can see the remotes associated with your local git repository as follows:\n\n$ git remote -v\norigin  git@gitlab.oit.duke.edu:YOUR_NET_ID/YOUR_PROJECT_NAME.git (fetch)\norigin  git@gitlab.oit.duke.edu:YOUR_NET_ID/YOUR_PROJECT_NAME.git (push)",
+    "crumbs": [
+      "Learning Modules",
+      "Version Control (git)"
+    ]
+  },
+  {
+    "objectID": "lectures/git-fundamentals-notes.html#mac-users",
+    "href": "lectures/git-fundamentals-notes.html#mac-users",
+    "title": "Git (Version Control) Fundamentals",
+    "section": "Mac Users",
+    "text": "Mac Users\nIf your Mac terminal doesn’t have tab autocompletion enabled when typing out your long branch name you created among other git commands, follow the steps from this link.\nThis will only work in your Mac terminal. If you’d like to enable this in VS Code as well, open up your preferences with Cmd + ,, and then navigate through this:\n\nUser -&gt; Extensions -&gt; Git.\nScroll down to the setting labeled Terminal Git Editor and check this box.\nYou will need to restart your existing terminal inside of VS Code if one is already open.",
+    "crumbs": [
+      "Learning Modules",
+      "Version Control (git)"
+    ]
+  },
+  {
+    "objectID": "course-syllabus.html",
+    "href": "course-syllabus.html",
+    "title": "MedTech Prototyping Skills (BME254L) Syllabus",
+    "section": "",
+    "text": "Dr. Mark Palmeri\n\nEmail (slower): mark.palmeri@duke.edu\nEd Discussion (private message, TAs included)\nOffice Hours: Sign Up\n\n\n\n\n\nCarson Pazdan (cbp31)\nLauren Kenselaar (lbk18)\nEmily Song (ecs94)\n\n\n\n\n\n\n\nTip\n\n\n\nQuestions that can be answered by Dr. Palmeri or a teaching assistant should be posted on Ed Discussion.\n\n\n\n\n\n\nLecture: Tuesday & Thursday, 11:45-13:00, Hudson Hall 212 (Panopto recorded)\nLab: As needed, Fitzpatrick B209 (Door Code: 4-1-5-2)\nThere are no formally scheduled lab sections, but you will need to use the lab equipment to perform testing of your devices. Your TAs will announce times when they will hold lab hours.\n\n\n\n\n\n\nImportant\n\n\n\nPlease review the lab policies before using the lab for the first time this semester.\n\n\n\n\n\n\n\n\nWarning\n\n\n\nNo food or drink is allowed in the lab! Failure to adhere to this policy will have consequences on your course participation grade.\n\n\n\n\n\nThis course focuses on developing medical device prototyping skills that will be used in future project and design courses, with a focus on preparing our students for positions in the medtech industry. Students will work individually to complete design tasks that will be tested to quantitative specifications. Students will gain hands-on experience with device fabrication, debugging, testing and failure analysis.\nUpon completion of this course, students should be able to:\n\nSoftware version control (git)\nPerform functional decomposition and express as a stage diagram (UML)\nUtilize ECAD (KiCad) for:\n\nElectronic schematic capture\nPrinted circuit board (PCB) layout\n\nModular breadboarding of circuits to translation to testable PCBs\nDesign a battery-powered device that:\n\nAccepts analog and digital user input\nOutputs analog and digital outputs\nPasses testable specifications to 95% CI\n\nImplement electronic logic on microcontroller (Arduino framework)\n\nModular / testable code development in C\nInterupt Service Routines\nPulse Width Modulation\nState Machine\n\nUtilize CAD (Onshape) for:\n\nDevice enclosure design with UI/UX considerations\nInput / Output considerations\nSize / weight constraints\nPreparation of mechanical drawings\n\n3D printing of designs\n\nAssembly of discrete enclosure pieces\nUse of mechanical fasteners\n\nWrite technical analysis reports in Jupyter notebook\n\n\n\n\n\n\n\nComputational Methods in Engineering (EGR103) or equivalent\nFundamentals of Electrical and Computer Engineering (ECE110L) / Biomedical Electronics Measurements (BME290L) or equivalent\n\n\n\n\n\nWe will be using Canvas as the learning management system for this course. It will host the syllabus, which will have hyperlinks to all lecture content and lab assignments.\nDuke’s GitLab server will be used for most course lab exercises, and code-related questions will be submitted to Dr. Palmeri / TAs using GitLab Issues.\nEd Discussion will be used for general course questions and discussion.\n\n\n\nThis class is organized in a sequence of modules. Specific details surrounding dates for assignments associated with each module will be posted to Gradescope.\nThis course uses a version of Mastery Learning, where “mastery” of a given module is necessary to progress onto the subsequent module. Quizzes are used to evaluate “knowledge”; lab exercises are used to demonstrate application of skills. In this course, assignments of later modules depends on the successful completion of earlier modules.\n\n\n\n\nMedTech Skill Overview\nEvent-Drive State Machines\nVersion Control (git)\nComputer Aided Design (CAD) (Onshape)\nLightbox Project (Kanban Board)\nECAD (KiCad): Schematic Capture\nECAD (KiCad): SPICE Modeling\nECAD (KiCad): PCB Layout\nFirmware Development: C Programming Overview\nFirmware Development: Button Event ISRs, ADC & State Machines\n\n\n\n\n\nClass participation in both lecture and lab time is strongly encouraged. Lecture will be used to provide skill overview and live demonstrations, many of while will kickstart your efforts for your project. Lab time will provide you access to equipment and the TAs for assistance.\nStudents are responsible for obtaining missed lecture content from other students in the class. All lecture slides/presented content will be made availabe online (Canvas/Gitlab), and lectures will be recorded via Panopto and posted to Canvas.\nParticipation on Ed Discussion is also encouraged, in the form of:\n\nAsking questions about the course material (ideally, publicly, so that others\ncan benefit (Anonymous okay))\nAnswering questions from other students\nSharing interesting articles or resources related to the course material\n\n\n\n\n\n\nThere will be quizzes / completion surveys, and lab exercises associated with some of the learning modules (40%), all of which will be submitted through Gradescope.\nThe course project will have regular milestones throughout the semester, culminating in a final functional device that you will present and an associated technical report testing device function (50%).\nClass participation (10%) will be evaluated based on your engagement in the lecture/lab setting, demonstrating good lab practices and submitting assignments on time for feedback.\nAll assignment grades will be posted to Canvas/Gradescope throughout the semester to track your performance.\n\nGrade Distribution\n\n\nGrade Category\nRelative Percentage\n\n\n\n\nQuizzes / Lab Modules\n40%\n\n\nProject\n50%\n\n\nParticipation\n10%\n\n\n\n\n\n\nThis course is not “curved” (i.e., a distribution of grades will not be enforced), and a traditional grading scheme will be used (e.g., 90-93 = A-, 94-97 = A, 97-100 = A+). Participation throughout the semester will influence rounding up/down for fractional grades.\nFailing the course can happen with a cummulative score &lt; 60 (D-) or not completing all of the assignments.\n\n\n\nAny regrading requests need to be made within one week of grades for a given assignment being released. You must make the request via Gradescope and provide a description of why you feel a regrade is appropriate. Requesting a regrade could lead to additional loss of credit when an assignment is re-evaluated.\nSome assignments will have an opportunity to be resubmitted based on grading feedback at the discretion of Dr. Palmeri.\n\n\n\nLate submission windows will be available for some assignments and should be used to accomodate acute illness, travel, high workload from other classes and other unforeseen circumstances. This late submission window can be utilized without penalty and without prior approval.\nStudents with SDAO accomodations for extended time on assignments can use this extended late submission window for all assignments.\nAny assignments submitted after the late submission window will only be accepted for partial credit at the discretion of Dr. Palmeri or if prior approval was sought before the original due date. Requests for late submission accomodation will be considered on a case-by-case basis and will result in a deduction in the course participation grade.\n\n\n\n\nAll students are expected to adhere to all principles of the Duke Community Standard. Violations of the Duke Community Standard will be referred immediately to the Office of Student Conduct. Please do not hesitate to talk with Dr. Palmeri about any situations involving academic honor, especially if it is ambiguous what should be done.\n\n\n\n\n\nEngineering is inherently a collaborative field, and in this class, you are encouraged to work collaboratively on your projects. That being said, all of the work that you submit must be generated by you and reflect your understanding of the material.\n\n\n\n\n\n\nNote\n\n\n\nAll resources used in your projects that were developed by another person or company must be properly acknowledged using comments in your code / reports.\n\n\n\n\n\nThe use of artificial intelligence is a rapidly developing resource / tool in engineering. In software development, there are many levels of AI-assitance available. Such form of assistance include the IntelliCode tools and GitHub CoPilot (free to students through the GitHub Education program). These tools can be leveraged to help with syntax. You are, however, strongly cautioned to not rely on these tools for logical implementation.\n\nMedTech Prototyping Skills by Mark L. Palmeri is licensed under CC BY-SA 4.0",
+    "crumbs": [
+      "Course Information",
+      "Course Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-syllabus.html#personnel",
+    "href": "course-syllabus.html#personnel",
+    "title": "MedTech Prototyping Skills (BME254L) Syllabus",
+    "section": "",
+    "text": "Dr. Mark Palmeri\n\nEmail (slower): mark.palmeri@duke.edu\nEd Discussion (private message, TAs included)\nOffice Hours: Sign Up\n\n\n\n\n\nCarson Pazdan (cbp31)\nLauren Kenselaar (lbk18)\nEmily Song (ecs94)\n\n\n\n\n\n\n\nTip\n\n\n\nQuestions that can be answered by Dr. Palmeri or a teaching assistant should be posted on Ed Discussion.",
+    "crumbs": [
+      "Course Information",
+      "Course Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-syllabus.html#course-times-locations",
+    "href": "course-syllabus.html#course-times-locations",
+    "title": "MedTech Prototyping Skills (BME254L) Syllabus",
+    "section": "",
+    "text": "Lecture: Tuesday & Thursday, 11:45-13:00, Hudson Hall 212 (Panopto recorded)\nLab: As needed, Fitzpatrick B209 (Door Code: 4-1-5-2)\nThere are no formally scheduled lab sections, but you will need to use the lab equipment to perform testing of your devices. Your TAs will announce times when they will hold lab hours.\n\n\n\n\n\n\nImportant\n\n\n\nPlease review the lab policies before using the lab for the first time this semester.\n\n\n\n\n\n\n\n\nWarning\n\n\n\nNo food or drink is allowed in the lab! Failure to adhere to this policy will have consequences on your course participation grade.",
+    "crumbs": [
+      "Course Information",
+      "Course Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-syllabus.html#course-objectives",
+    "href": "course-syllabus.html#course-objectives",
+    "title": "MedTech Prototyping Skills (BME254L) Syllabus",
+    "section": "",
+    "text": "This course focuses on developing medical device prototyping skills that will be used in future project and design courses, with a focus on preparing our students for positions in the medtech industry. Students will work individually to complete design tasks that will be tested to quantitative specifications. Students will gain hands-on experience with device fabrication, debugging, testing and failure analysis.\nUpon completion of this course, students should be able to:\n\nSoftware version control (git)\nPerform functional decomposition and express as a stage diagram (UML)\nUtilize ECAD (KiCad) for:\n\nElectronic schematic capture\nPrinted circuit board (PCB) layout\n\nModular breadboarding of circuits to translation to testable PCBs\nDesign a battery-powered device that:\n\nAccepts analog and digital user input\nOutputs analog and digital outputs\nPasses testable specifications to 95% CI\n\nImplement electronic logic on microcontroller (Arduino framework)\n\nModular / testable code development in C\nInterupt Service Routines\nPulse Width Modulation\nState Machine\n\nUtilize CAD (Onshape) for:\n\nDevice enclosure design with UI/UX considerations\nInput / Output considerations\nSize / weight constraints\nPreparation of mechanical drawings\n\n3D printing of designs\n\nAssembly of discrete enclosure pieces\nUse of mechanical fasteners\n\nWrite technical analysis reports in Jupyter notebook",
+    "crumbs": [
+      "Course Information",
+      "Course Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-syllabus.html#prerequisites",
+    "href": "course-syllabus.html#prerequisites",
+    "title": "MedTech Prototyping Skills (BME254L) Syllabus",
+    "section": "",
+    "text": "Computational Methods in Engineering (EGR103) or equivalent\nFundamentals of Electrical and Computer Engineering (ECE110L) / Biomedical Electronics Measurements (BME290L) or equivalent",
+    "crumbs": [
+      "Course Information",
+      "Course Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-syllabus.html#learning-management-system",
+    "href": "course-syllabus.html#learning-management-system",
+    "title": "MedTech Prototyping Skills (BME254L) Syllabus",
+    "section": "",
+    "text": "We will be using Canvas as the learning management system for this course. It will host the syllabus, which will have hyperlinks to all lecture content and lab assignments.\nDuke’s GitLab server will be used for most course lab exercises, and code-related questions will be submitted to Dr. Palmeri / TAs using GitLab Issues.\nEd Discussion will be used for general course questions and discussion.",
+    "crumbs": [
+      "Course Information",
+      "Course Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-syllabus.html#class-schedule",
+    "href": "course-syllabus.html#class-schedule",
+    "title": "MedTech Prototyping Skills (BME254L) Syllabus",
+    "section": "",
+    "text": "This class is organized in a sequence of modules. Specific details surrounding dates for assignments associated with each module will be posted to Gradescope.\nThis course uses a version of Mastery Learning, where “mastery” of a given module is necessary to progress onto the subsequent module. Quizzes are used to evaluate “knowledge”; lab exercises are used to demonstrate application of skills. In this course, assignments of later modules depends on the successful completion of earlier modules.\n\n\n\n\nMedTech Skill Overview\nEvent-Drive State Machines\nVersion Control (git)\nComputer Aided Design (CAD) (Onshape)\nLightbox Project (Kanban Board)\nECAD (KiCad): Schematic Capture\nECAD (KiCad): SPICE Modeling\nECAD (KiCad): PCB Layout\nFirmware Development: C Programming Overview\nFirmware Development: Button Event ISRs, ADC & State Machines",
+    "crumbs": [
+      "Course Information",
+      "Course Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-syllabus.html#attendance-participation",
+    "href": "course-syllabus.html#attendance-participation",
+    "title": "MedTech Prototyping Skills (BME254L) Syllabus",
+    "section": "",
+    "text": "Class participation in both lecture and lab time is strongly encouraged. Lecture will be used to provide skill overview and live demonstrations, many of while will kickstart your efforts for your project. Lab time will provide you access to equipment and the TAs for assistance.\nStudents are responsible for obtaining missed lecture content from other students in the class. All lecture slides/presented content will be made availabe online (Canvas/Gitlab), and lectures will be recorded via Panopto and posted to Canvas.\nParticipation on Ed Discussion is also encouraged, in the form of:\n\nAsking questions about the course material (ideally, publicly, so that others\ncan benefit (Anonymous okay))\nAnswering questions from other students\nSharing interesting articles or resources related to the course material",
+    "crumbs": [
+      "Course Information",
+      "Course Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-syllabus.html#assignments-grading",
+    "href": "course-syllabus.html#assignments-grading",
+    "title": "MedTech Prototyping Skills (BME254L) Syllabus",
+    "section": "",
+    "text": "There will be quizzes / completion surveys, and lab exercises associated with some of the learning modules (40%), all of which will be submitted through Gradescope.\nThe course project will have regular milestones throughout the semester, culminating in a final functional device that you will present and an associated technical report testing device function (50%).\nClass participation (10%) will be evaluated based on your engagement in the lecture/lab setting, demonstrating good lab practices and submitting assignments on time for feedback.\nAll assignment grades will be posted to Canvas/Gradescope throughout the semester to track your performance.\n\nGrade Distribution\n\n\nGrade Category\nRelative Percentage\n\n\n\n\nQuizzes / Lab Modules\n40%\n\n\nProject\n50%\n\n\nParticipation\n10%\n\n\n\n\n\n\nThis course is not “curved” (i.e., a distribution of grades will not be enforced), and a traditional grading scheme will be used (e.g., 90-93 = A-, 94-97 = A, 97-100 = A+). Participation throughout the semester will influence rounding up/down for fractional grades.\nFailing the course can happen with a cummulative score &lt; 60 (D-) or not completing all of the assignments.\n\n\n\nAny regrading requests need to be made within one week of grades for a given assignment being released. You must make the request via Gradescope and provide a description of why you feel a regrade is appropriate. Requesting a regrade could lead to additional loss of credit when an assignment is re-evaluated.\nSome assignments will have an opportunity to be resubmitted based on grading feedback at the discretion of Dr. Palmeri.\n\n\n\nLate submission windows will be available for some assignments and should be used to accomodate acute illness, travel, high workload from other classes and other unforeseen circumstances. This late submission window can be utilized without penalty and without prior approval.\nStudents with SDAO accomodations for extended time on assignments can use this extended late submission window for all assignments.\nAny assignments submitted after the late submission window will only be accepted for partial credit at the discretion of Dr. Palmeri or if prior approval was sought before the original due date. Requests for late submission accomodation will be considered on a case-by-case basis and will result in a deduction in the course participation grade.",
+    "crumbs": [
+      "Course Information",
+      "Course Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-syllabus.html#duke-community-standard",
+    "href": "course-syllabus.html#duke-community-standard",
+    "title": "MedTech Prototyping Skills (BME254L) Syllabus",
+    "section": "",
+    "text": "All students are expected to adhere to all principles of the Duke Community Standard. Violations of the Duke Community Standard will be referred immediately to the Office of Student Conduct. Please do not hesitate to talk with Dr. Palmeri about any situations involving academic honor, especially if it is ambiguous what should be done.",
+    "crumbs": [
+      "Course Information",
+      "Course Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-syllabus.html#faq",
+    "href": "course-syllabus.html#faq",
+    "title": "MedTech Prototyping Skills (BME254L) Syllabus",
+    "section": "",
+    "text": "Engineering is inherently a collaborative field, and in this class, you are encouraged to work collaboratively on your projects. That being said, all of the work that you submit must be generated by you and reflect your understanding of the material.\n\n\n\n\n\n\nNote\n\n\n\nAll resources used in your projects that were developed by another person or company must be properly acknowledged using comments in your code / reports.\n\n\n\n\n\nThe use of artificial intelligence is a rapidly developing resource / tool in engineering. In software development, there are many levels of AI-assitance available. Such form of assistance include the IntelliCode tools and GitHub CoPilot (free to students through the GitHub Education program). These tools can be leveraged to help with syntax. You are, however, strongly cautioned to not rely on these tools for logical implementation.\n\nMedTech Prototyping Skills by Mark L. Palmeri is licensed under CC BY-SA 4.0",
+    "crumbs": [
+      "Course Information",
+      "Course Syllabus"
+    ]
+  },
+  {
+    "objectID": "labs/git-fundamentals-lab.html",
+    "href": "labs/git-fundamentals-lab.html",
+    "title": "Git Fundamentals Lab",
+    "section": "",
+    "text": "This week we will go through a very simple git workflow to get you familiar with the process and to confirm that your toolchain works for future assignments.\n\n\n\nMake sure that you have git installed, ssh keys configured, and your Duke GitLab account is setup, as detailed here\nBe sure to review the tutorials outlined on the git setup page, as needed, to complete the tasks below.\nCreate a fork–not a clone–of the git-fundamentals-lab in your userspace.\nAdd Dr. Palmeri (mlp6) as a Maintainer of your forked repository (Left Sidebar: Manage -&gt; Members -&gt; Invite members)\nClone your forked repository to your laptop using the URL available under the blue Code button: Clone with SSH.\n\n\n\n\n\n\n\nWarning\n\n\n\nYou want to clone your forked repository, not the parent repository you forked from!\n\n\n\n\n\n\nSwitch to the about_me branch.\nEdit AboutMe.md to replace all of the FILL_ME_IN placeholders with your own information.\nAdd and commit these text changes with a meaningful commit message.\nAdd and commit a new image file named fun_picture.png in a directory called images/ to complete that section of the AboutMe.md file.\nPush this updated branch to the remote of your GitLab repository.\n\nConfirm that you can see your latest commit on this branch on the GitLab website.\n\n\n\n\n\nCreate a new Merge Request on the GitLab to merge the about_me branch into the main branch.\n\nAssign the Merge Request to yourself.\nYou do not need a Reviewer.\nYou do not want to squash or rebase your branch commits\nYou do not want to delete the source branch.\n\nCheck that the check_image and check_about_me pipline jobs have passed.\n\nBuild -&gt; Pipelines\nClick on the latest pipeline (the colored rounded rectangle button in the status column).\nClick on the check_image or check_about_me job to see the output of the test if it Failed.\n\nIf the pipeline jobs for this branch have failed, you will need to fix the issue(s) and push the changes to your about_me branch.\n\nIf you are not sure what the issue is, click on the failed job to see the output of the test.\nIf you are not sure how to fix it, ask for help!\n\nOnce your CI jobs pass, approve your Merge Request on the GitLab website and Merge your about_me branch into main.\nCheckout the main branch on your laptop and pull the latest changes from the GitLab server.\nConfirm that you can see the updated AboutMe.md file in your main branch, along with its associated commit in your git commit history.\n\n\n\n\n\nOn main, create an annotated tag for this commit associated with your merged about_me branch called v1.0.0, with the message \"include the about me info\".\nPush this annotated tag to the GitLab server (origin).\nConfirm that you can see your latest commit and tag on the GitLab website.\nYou should see that the check_v1_0_0_tag pipeline job has passed if this was successful.\n\n\n\n\n\nInspect the contents of AboutDrPalmeri.md in main.\nSwitch to the about_dr_p branch, and look at the content (slightly different) of AboutDrPalmeri.md.\nSwitch back to the main branch, and merge the about_dr_p branch into main.\n\nYou will be told that there is a Merge Conflict:\n\n$ git merge about_dr_p\nCONFLICT (content): Merge conflict in AboutDrPalmeri.md\nAutomatic merge failed; fix conflicts and then commit the result.\n\ngit status will show you the files that are in conflict, and what your next likely steps will be to resolve this conflict:\n\n$ git status\nYour branch is up to date with 'origin/main'.\n\nYou have unmerged paths.\n(fix conflicts and run \"git commit\")\n(use \"git merge --abort\" to abort the merge)\n\nUnmerged paths:\n(use \"git add &lt;file&gt;...\" to mark resolution)\n        both modified:   AboutDrPalmeri.md\n\nno changes added to commit (use \"git add\" and/or \"git commit -a\") \nStaying on the main branch, open AboutDrPalmeri.md in your text editor, and inspect the &lt;&lt;&lt;&lt;&lt;&lt;&lt;, =======, and &gt;&gt;&gt;&gt;&gt;&gt;&gt; markers that indicate the conflicting lines.\nKeep the version of the conflicting line that is in main, and delete the line that was incoming from about_dr_p.\nBe sure to delete the &lt;&lt;&lt;&lt;&lt;&lt;&lt;, =======, and &gt;&gt;&gt;&gt;&gt;&gt;&gt; markers (lines).\nAdd and commit this merge conflict resolution.\nCreate an annotated tag called v1.0.1 with the message \"fix Dr. P's age\".\nPush your latest commits and tags to main on the GitLab server (origin).\nAll of your CI jobs should pass if everything was successful.",
+    "crumbs": [
+      "Labs",
+      "Git Fundamentals Lab"
+    ]
+  },
+  {
+    "objectID": "labs/git-fundamentals-lab.html#git-practice",
+    "href": "labs/git-fundamentals-lab.html#git-practice",
+    "title": "Git Fundamentals Lab",
+    "section": "",
+    "text": "This week we will go through a very simple git workflow to get you familiar with the process and to confirm that your toolchain works for future assignments.\n\n\n\nMake sure that you have git installed, ssh keys configured, and your Duke GitLab account is setup, as detailed here\nBe sure to review the tutorials outlined on the git setup page, as needed, to complete the tasks below.\nCreate a fork–not a clone–of the git-fundamentals-lab in your userspace.\nAdd Dr. Palmeri (mlp6) as a Maintainer of your forked repository (Left Sidebar: Manage -&gt; Members -&gt; Invite members)\nClone your forked repository to your laptop using the URL available under the blue Code button: Clone with SSH.\n\n\n\n\n\n\n\nWarning\n\n\n\nYou want to clone your forked repository, not the parent repository you forked from!\n\n\n\n\n\n\nSwitch to the about_me branch.\nEdit AboutMe.md to replace all of the FILL_ME_IN placeholders with your own information.\nAdd and commit these text changes with a meaningful commit message.\nAdd and commit a new image file named fun_picture.png in a directory called images/ to complete that section of the AboutMe.md file.\nPush this updated branch to the remote of your GitLab repository.\n\nConfirm that you can see your latest commit on this branch on the GitLab website.\n\n\n\n\n\nCreate a new Merge Request on the GitLab to merge the about_me branch into the main branch.\n\nAssign the Merge Request to yourself.\nYou do not need a Reviewer.\nYou do not want to squash or rebase your branch commits\nYou do not want to delete the source branch.\n\nCheck that the check_image and check_about_me pipline jobs have passed.\n\nBuild -&gt; Pipelines\nClick on the latest pipeline (the colored rounded rectangle button in the status column).\nClick on the check_image or check_about_me job to see the output of the test if it Failed.\n\nIf the pipeline jobs for this branch have failed, you will need to fix the issue(s) and push the changes to your about_me branch.\n\nIf you are not sure what the issue is, click on the failed job to see the output of the test.\nIf you are not sure how to fix it, ask for help!\n\nOnce your CI jobs pass, approve your Merge Request on the GitLab website and Merge your about_me branch into main.\nCheckout the main branch on your laptop and pull the latest changes from the GitLab server.\nConfirm that you can see the updated AboutMe.md file in your main branch, along with its associated commit in your git commit history.\n\n\n\n\n\nOn main, create an annotated tag for this commit associated with your merged about_me branch called v1.0.0, with the message \"include the about me info\".\nPush this annotated tag to the GitLab server (origin).\nConfirm that you can see your latest commit and tag on the GitLab website.\nYou should see that the check_v1_0_0_tag pipeline job has passed if this was successful.\n\n\n\n\n\nInspect the contents of AboutDrPalmeri.md in main.\nSwitch to the about_dr_p branch, and look at the content (slightly different) of AboutDrPalmeri.md.\nSwitch back to the main branch, and merge the about_dr_p branch into main.\n\nYou will be told that there is a Merge Conflict:\n\n$ git merge about_dr_p\nCONFLICT (content): Merge conflict in AboutDrPalmeri.md\nAutomatic merge failed; fix conflicts and then commit the result.\n\ngit status will show you the files that are in conflict, and what your next likely steps will be to resolve this conflict:\n\n$ git status\nYour branch is up to date with 'origin/main'.\n\nYou have unmerged paths.\n(fix conflicts and run \"git commit\")\n(use \"git merge --abort\" to abort the merge)\n\nUnmerged paths:\n(use \"git add &lt;file&gt;...\" to mark resolution)\n        both modified:   AboutDrPalmeri.md\n\nno changes added to commit (use \"git add\" and/or \"git commit -a\") \nStaying on the main branch, open AboutDrPalmeri.md in your text editor, and inspect the &lt;&lt;&lt;&lt;&lt;&lt;&lt;, =======, and &gt;&gt;&gt;&gt;&gt;&gt;&gt; markers that indicate the conflicting lines.\nKeep the version of the conflicting line that is in main, and delete the line that was incoming from about_dr_p.\nBe sure to delete the &lt;&lt;&lt;&lt;&lt;&lt;&lt;, =======, and &gt;&gt;&gt;&gt;&gt;&gt;&gt; markers (lines).\nAdd and commit this merge conflict resolution.\nCreate an annotated tag called v1.0.1 with the message \"fix Dr. P's age\".\nPush your latest commits and tags to main on the GitLab server (origin).\nAll of your CI jobs should pass if everything was successful.",
+    "crumbs": [
+      "Labs",
+      "Git Fundamentals Lab"
+    ]
+  },
+  {
+    "objectID": "labs/git-fundamentals-lab.html#how-to-ask-for-help",
+    "href": "labs/git-fundamentals-lab.html#how-to-ask-for-help",
+    "title": "Git Fundamentals Lab",
+    "section": "How to Ask for Help",
+    "text": "How to Ask for Help\n\nIf you have a general / non-coding question, you should ask your TAs / Dr. Palmeri on Ed to allow any of them to respond in a timely manner.\nPush you code to your GitLab repository, ideally with your active development on a non-main branch.\nCreate an Issue in your repository.\n\nAdd as much detail as possible as to your problem, and add links to specific lines / section of code when possible.\nAssign the label “Bug” or “Question”, as appropriate.\nBe sure to specify what branch you are working on.\nAssign the Issue to one of the TAs.\nIf your TA cannot solve your Issue, they can escalate the Issue to Dr. Palmeri.\n\nYou will get a response to your Issue, and maybe a new branch of code will be pushed to help you with some example syntax that you can use git diff to visualize.",
+    "crumbs": [
+      "Labs",
+      "Git Fundamentals Lab"
+    ]
+  },
+  {
+    "objectID": "labs/git-fundamentals-lab.html#what-to-submit",
+    "href": "labs/git-fundamentals-lab.html#what-to-submit",
+    "title": "Git Fundamentals Lab",
     "section": "What to Submit",
-    "text": "What to Submit\nComplete the online Gradescope “quiz” indicating completion of each of the main tasks above.",
+    "text": "What to Submit\nYour fork of this GitLab repository will be running this CI script: .gitlab-ci.yml\n\nGo to the Build -&gt; Pipelines page of your GitLab repository.\nTake a screenshot of the latest pipeline that shows all of the tests passing, along with your repository information, as shown below (except all of those Failed tests should report Passed).\n\n\n\n\nci_pipeline\n\n\n\nSubmit this screenshot to Gradescope assignment, along with completing the prompted questions.",
     "crumbs": [
       "Labs",
-      "Software Installation Tutorials"
+      "Git Fundamentals Lab"
     ]
   },
   {

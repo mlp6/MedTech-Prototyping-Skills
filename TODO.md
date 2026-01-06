@@ -11,4 +11,4 @@
 - [ ] Setup 3DPrinterOS
 - [ ] Add students to Duke's Onshape
 - [ ] Order project parts
-- [WIP] Setup Pratt AV Panopto recording (https://it.pratt.duke.edu/av)
+- [X] Setup Pratt AV Panopto recording (https://it.pratt.duke.edu/av)

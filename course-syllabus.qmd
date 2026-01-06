@@ -1,9 +1,5 @@
 # MedTech Prototyping Skills (BME254L) Syllabus
 
-::: callout-caution
-This syllabus is actively being updated and is not yet final for Spring 2026!
-:::
-
 ## Personnel
 
 ### Instructor
@@ -11,9 +7,8 @@ This syllabus is actively being updated and is not yet final for Spring 2026!
 Dr. Mark Palmeri 
 
 * Email (slower): mark.palmeri@duke.edu
-* Duke GitLab username: [mlp6](https://gitlab.oit.duke.edu/mlp6)
-* Office: 258 Hudson Hall Annex
-* Office Hours: https://calendly.com/mark-palmeri
+* [Ed Discussion](https://edstem.org/us/courses/91011/discussion) (private message, TAs included)
+* Office Hours: [Sign Up](https://outlook.office.com/bookwithme/user/b65348e3d8d949d38306522cadcdb57b@duke.edu?anonymous&ismsaljsauthenabled&ep=plink)
 
 ### Teaching Assistants
 
@@ -32,9 +27,18 @@ posted on Ed Discussion.
 
 **Lab:** As needed, Fitzpatrick B209 (Door Code: 4-1-5-2)
 
+There are no formally scheduled lab sections, but you will need to use the lab
+equipment to perform testing of your devices.  Your TAs will announce times when
+they will hold lab hours.
+
+::: callout-important
+Please review the [lab policies](bme-lab-policies.qmd) before using the lab for
+the first time this semester.
+:::
+
 ::: callout-warning
 No food or drink is allowed in the lab!  Failure to adhere to this policy will
-have consequences on your course grade.
+have consequences on your course participation grade.
 :::
 
 ## Course Objectives
@@ -48,45 +52,65 @@ testing and failure analysis.
 
 Upon completion of this course, students should be able to:
 
-* Software version control (`git`)
-* Perform functional decomposition and express as a stage diagram (UML)
-* Utilize ECAD (`KiCad`) for:
-  * Electronic schematic capture
-  * Printed circuit board (PCB) layout
-* Modular breadboarding of circuits to translation to testable PCBs
-* Design a battery-powered device that:
-  * Accepts analog and digital user input
-  * Outputs analog and digital outputs
-  * Passes testable specifications to 95\% CI
-* Implement electronic logic on microcontroller (Arduino framework)
-  * Modular / testable code development in C
-  * Interupt Service Routines
-  * Pulse Width Modulation
-  * State Machine
-* Utilize CAD (`Onshape`) for:
-  * Device enclosure design with UI/UX considerations
-  * Input / Output considerations
-  * Size / weight constraints
-  * Preparation of mechanical drawings
-* 3D printing of designs
-  * Assembly of discrete enclosure pieces
-  * Use of mechanical fasteners
-* Write technical analysis reports
+- Software version control (`git`)
+
+- Perform functional decomposition and express as a stage diagram (UML)
+
+- Utilize ECAD (`KiCad`) for:
+
+  - Electronic schematic capture
+
+  - Printed circuit board (PCB) layout
+
+- Modular breadboarding of circuits to translation to testable PCBs
+
+- Design a battery-powered device that:
+
+  - Accepts analog and digital user input
+
+  - Outputs analog and digital outputs
+
+  - Passes testable specifications to 95\% CI
+
+- Implement electronic logic on microcontroller (Arduino framework)
+
+  - Modular / testable code development in C
+
+  - Interupt Service Routines
+
+  - Pulse Width Modulation
+
+  - State Machine
+
+- Utilize CAD (`Onshape`) for:
+
+  - Device enclosure design with UI/UX considerations
+
+  - Input / Output considerations
+
+  - Size / weight constraints
+
+  - Preparation of mechanical drawings
+
+- 3D printing of designs
+
+  - Assembly of discrete enclosure pieces
+
+  - Use of mechanical fasteners
+
+- Write technical analysis reports in Jupyter notebook
 
 ## Prerequisites
 
 ### Mandatory
 
-* Computational Methods in Engineering (EGR103) or equivalent
-* Fundamentals of Electrical and Computer Engineering (ECE110L)
+- Computational Methods in Engineering (EGR103) or equivalent
 
-### Recommended / Corequisite
-
-* Introduction to Electricity, Magnetism and Optics (PHY152L)
+- Fundamentals of Electrical and Computer Engineering (ECE110L) / Biomedical Electronics Measurements (BME290L) or equivalent
 
 ## Learning Management System
 
-We will be using [Canvas](https://canvas.duke.edu) as the learning management
+We will be using [Canvas](https://canvas.duke.edu/courses/73999) as the learning management
 system for this course.  It will host the syllabus, which will have hyperlinks
 to all lecture content and lab assignments.
 
@@ -101,10 +125,11 @@ Ed Discussion will be used for general course questions and discussion.
 This class is organized in a sequence of modules.  Specific details surrounding
 dates for assignments associated with each module will be posted to Gradescope.
 
-This course uses a version of [Mastery Learning](https://en.wikipedia.org/wiki/Mastery_learning), where "mastery" of a given module is necessary to progress onto the subsequent module.  Quizzes are
-used to evaluate "knowledge"; lab exercises are used to demonstrate application
-of skills.  In this course, assignments of later modules depends on the
-successful completion of earlier modules.
+This course uses a version of [Mastery Learning](https://en.wikipedia.org/wiki/Mastery_learning), 
+where "mastery" of a given module is necessary to progress onto the subsequent
+module.  Quizzes are used to evaluate "knowledge"; lab exercises are used to
+demonstrate application of skills.  In this course, assignments of later modules
+depends on the successful completion of earlier modules.
 
 ### Learning Modules
 
@@ -121,13 +146,6 @@ successful completion of earlier modules.
 | Firmware Development: Button Event ISRs, ADC & State Machines | None | [Button Event ISR & ADC](https://gitlab.oit.duke.edu/MedTechPrototyping/arduino_isr_adc) (Paired Coding) |
 | [Lightbox Project (Kanban Board)](https://trello.com/b/3vtxGG3U/lightbox) | None | [Lightbox Project Repository](https://gitlab.oit.duke.edu/kits/BME-254L-001-Sp25/lightbox) |
 
-### Special Dates
-
-* MLK Holiday (Jan 20, 2025)
-* Spring Break (Mar 10-14, 2025)
-* LDOC (Apr 23, 2025)
-* Final Project Repository & Report Duke (April 29 @ 17:00) :warning: **NO LATE SUBMISSIONS ACCEPTED**
-
 ## Attendance & Participation
 
 Class participation in both lecture and lab time is strongly encouraged.
@@ -142,7 +160,8 @@ posted to Canvas.
 
 Participation on Ed Discussion is also encouraged, in the form of:
 
-- Asking questions about the course material (ideally, publicly, so that others * can benefit (Anonymous okay))
+- Asking questions about the course material (ideally, publicly, so that others
+* can benefit (Anonymous okay))
 
 - Answering questions from other students
 
@@ -152,13 +171,28 @@ Participation on Ed Discussion is also encouraged, in the form of:
 
 ### Grading
 
-There will be quizzes, lab exercises, and completion surveys associated with
-some of the learning modules (25%), all of which will be submitted through
-Gradescope.  All of the learning modules will contribute to the final project
-and the associated technical report (75%).
+There will be quizzes / completion surveys, and lab exercises associated with
+some of the learning modules (40%), all of which will be submitted through
+Gradescope.  
 
-All assignment grades will be posted to Gradescope (and linked to the Canvas
-gradebook) throughout the semester to track your performance.
+The course project will have regular milestones throughout the semester,
+culminating in a final functional device that you will present and an associated
+technical report testing device function (50%).
+
+Class participation (10%) will be evaluated based on your engagement in the
+lecture/lab setting, demonstrating good lab practices and submitting assignments
+on time for feedback.
+
+All assignment grades will be posted to Canvas/Gradescope throughout the
+semester to track your performance.
+
+| Grade Category   | Relative Percentage   |
+|:----------------|:---------------------|
+| Quizzes / Lab Modules | 40% |
+| Project | 50% |
+| Participation | 10% |
+
+: Grade Distribution
 
 ### Course Grade
 
@@ -183,34 +217,52 @@ feedback at the discretion of Dr. Palmeri.
 
 ### Late Policy / SDAO Accomodations
 
-Late submission windows will be available for all assignments, minus the final
-project, and should be used to accomodate acute illness, travel, high workload
-from other classes and other unforeseen circumstances.  This late submission
-window can be utilized without penalty and without prior approval.
+Late submission windows will be available for some assignments and should be
+used to accomodate acute illness, travel, high workload from other classes and
+other unforeseen circumstances.  This late submission window can be utilized
+without penalty and without prior approval.
 
 Students with SDAO accomodations for extended time on assignments can use this
 extended late submission window for all assignments.
 
 Any assignments submitted after the late submission window will only be accepted
 for partial credit at the discretion of Dr. Palmeri or if prior approval was
-sought **before the original due date**.
+sought **before the original due date**.  Requests for late submission
+accomodation will be considered on a case-by-case basis and will result in a
+deduction in the course participation grade.
 
 ## Duke Community Standard
 
-All students are expected to adhere to all principles of the [Duke Community Standard](https://trinity.duke.edu/undergraduate/academic-policies/community-standard-student-conduct). Violations of the Duke Community Standard will be referred immediately to the Office of Student Conduct. Please do not hesitate to talk with Dr. Palmeri about any situations involving academic honor, especially if it is ambiguous what should be done.
+All students are expected to adhere to all principles of the 
+[Duke Community Standard](https://trinity.duke.edu/undergraduate/academic-policies/community-standard-student-conduct). 
+Violations of the Duke Community Standard will be referred immediately to the
+Office of Student Conduct. Please do not hesitate to talk with Dr. Palmeri about
+any situations involving academic honor, especially if it is ambiguous what
+should be done.
 
 ## FAQ
 
 ### Can I collaborate with other students?
 
-Engineering is inherently a collaborative field, and in this class, you are encouraged to work collaboratively on your projects.  That being said, all of the work that you submit must be generated by you and reflect your understanding of the material. 
+Engineering is inherently a collaborative field, and in this class, you are
+encouraged to work collaboratively on your projects.  That being said, all of
+the work that you submit must be generated by you and reflect your understanding
+of the material. 
 
 ::: callout-note
-All resources used in your projects that were developed by another person or company must be properly acknowledged using comments in your code / reports.
+All resources used in your projects that were developed by another person or
+company must be properly acknowledged using comments in your code / reports.
 :::
 
 ### Can I use AI?
 
-The use of artificial intelligence is a rapidly developing resource / tool in engineering.  In software development, there are many levels of AI-assitance available.  Such form of assistance include the [IntelliCode](https://visualstudio.microsoft.com/services/intellicode/) tools and [GitHub CoPilot](https://github.com/features/copilot) (free to students through the [GitHub Education](https://github.com/education/students) program).  These tools can be leveraged to help with syntax.  **You are, however, strongly cautioned to not rely on these tools for logical implementation.**
+The use of artificial intelligence is a rapidly developing resource / tool in
+engineering.  In software development, there are many levels of AI-assitance
+available.  Such form of assistance include the
+[IntelliCode](https://visualstudio.microsoft.com/services/intellicode/) tools
+and [GitHub CoPilot](https://github.com/features/copilot) (free to students
+through the [GitHub Education](https://github.com/education/students) program).
+These tools can be leveraged to help with syntax.  **You are, however, strongly
+cautioned to not rely on these tools for logical implementation.**
 
 <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/mlp6/MedTech-Prototyping-Skills/">MedTech Prototyping Skills</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://bme.duke.edu/faculty/mark-palmeri">Mark L. Palmeri</a> is licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p>

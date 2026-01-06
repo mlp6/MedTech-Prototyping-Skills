@@ -23,16 +23,12 @@ website:
           text: Course Syllabus
         - href: bme-lab-policies.qmd
           text: "BME Lab Policies"
-        - href: https://canvas.duke.edu/courses/XXXX
+        - href: https://canvas.duke.edu/courses/73999
           text: Canvas
-        - href: https://edstem.org/us/courses/XXXX/
+        - href: https://edstem.org/us/courses/91011
           text: Ed Discussion
-        - href: https://canvas.duke.edu/courses/XXXX
+        - href: https://gradescope.com/courses/1211060
           text: Gradescope
-        - href: software-install-tutorials.qmd
-          text: "Software Installation & Tutorials"
-        - href: faq.qmd
-          text: FAQ
       - section: "Learning Modules"
       - section: Labs
       - section: Resources

@@ -1,0 +1,116 @@
+---
+title: "MedTech Prototyping Skills: Software Installation & Tutorials"
+date: "2026-01-06"
+format:
+  html: default
+  pdf: default
+---
+
+## Git (Version Control)
+
+Please follow the instructions on this dedicated [git page](../resources/git.qmd) to:
+
+- Install `git`
+
+- Configure `git`
+
+- Setup an SSH key
+
+- Provide links to `git` tutorials to reinforce the concepts and mechanics of
+using `git`.
+
+## KiCad (EDA)
+
+- Please install KiCad: [https://kicad.org](https://kicad.org)
+
+::: callout-note
+This installation file can be a bit large, so this may take a few minutes to
+download.
+:::
+
+## Onshape (CAD)
+
+- Please make sure to activate your invitation to Duke's Onshape server (see
+email).
+
+::: callout-note
+If you did not receive an email invitation, please send Dr. Palmeri and your
+TAs a private message on Ed.
+:::
+
+## Visual Studio Code (IDE)
+
+We will be using [Visual Studio Code](https://code.visualstudio.com/) as the IDE
+for all projects in this class.  In addition to installing the base program,
+please install the following Extensions:
+
+- PlantUML (generate state diagrams)
+
+- GitLens (help with git operations / visualization)
+
+- Microsoft C/C++ Extension Pack
+
+- Microsoft IntelliCode (assistance with C syntax)
+
+- PlatformIO
+
+- [GitHub CoPilot](https://code.visualstudio.com/docs/copilot/overview) (AI-assisted coding)
+
+  - Sign up for free GitHub Education Student account to get access to this extension: https://github.com/education/students
+
+  - Install the `GitHub CoPilot` extension
+
+::: callout-tip
+You will need a document to verify your student status that includes your dates
+of enrollment, which your DukeCard does not contain.  Instead, you can get an
+Enrollment Verification document through DukeHub (Academics Tab) and convert the
+downloaded PDF to a JPG or PNG file to upload to GitHub.
+:::
+
+- Python & Jupyter extensions (for technical report preparation)
+
+- [Conda](https://docs.conda.io/projects/conda/en/stable/user-guide/getting-started.html) to install a Python virtual environment for Jupyter notebooks.
+
+::: callout-note
+You can use an existing Python installation on your laptop if you have one.
+:::
+
+## Arduino Nano Every
+
+- Order yourself an [Arduino Nano Every](https://store-usa.arduino.cc/products/arduino-nano-every-with-headers?selectedStore=us).
+
+::: callout-note
+You do not have to order from the Arduino store if you can find this board
+elsewhere, but please make sure you get the "Every" version of the Nano.  Other
+versions of the board use different logic voltages and even different chips!
+:::
+
+- Make sure you have a data-cable USB cable to connect your Arduino Nano Every
+to your laptop.
+
+## Technical Report Preparation
+
+Each lab exercise will have an associated technical report submitted.  These
+reports will be prepared and submitted using Python-based Jupyter notebooks that
+will be included as part of your assignment git repositories.
+
+You will need to be able to perform the following tasks in your Jupyter
+notebooks:
+
+- Read CSV text data saved from an oscilloscope.
+
+- Perform simple statistics (e.g., mean, standard deviation, 95% CI) on the data.
+
+- Generate plots
+
+If you need to install a Python environment on your laptop, then this is a good starting point: [Getting Started with Python in VS Code](https://code.visualstudio.com/docs/python/python-tutorial).
+
+This is a good tutorial on getting started with Jupyter notebooks in VS Code: [Jupyter Notebooks in Visual Studio Code](https://code.visualstudio.com/docs/python/jupyter-support).
+
+## Lab Policies & Safety
+
+Please review the [lab policies and safety guidelines](../resources/bme-lab-policies.qmd) for working in the lab.
+
+## What to Submit
+
+Complete the online Gradescope "quiz" indicating completion of each of the main tasks above.

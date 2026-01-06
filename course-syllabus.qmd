@@ -146,7 +146,7 @@ depends on the successful completion of earlier modules.
 -->
 
 - [MedTech Skill Overview](lectures/medtech-skills-overview.qmd)
-- Event-Drive State Machines
+- [Event-Drive State Machines](lectures/event-driven-state-machine.qmd)
 - Version Control (`git`)
 - Computer Aided Design (CAD) (`Onshape`)
 - Lightbox Project (Kanban Board)

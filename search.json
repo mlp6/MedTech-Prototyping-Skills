@@ -21,6 +21,237 @@
     "text": "Please use the links in the sidebar to navigate through the course materials."
   },
   {
+    "objectID": "lectures/medtech-skills-overview-notes.html",
+    "href": "lectures/medtech-skills-overview-notes.html",
+    "title": "MedTech Skills Overview",
+    "section": "",
+    "text": "Do not want design ideas to be limited by what you “think” you can actually make!\nAs the engineer, you bring both solution creativity and execution to the table.\nMost of the engineering curriculum has been ``book heavy’’ to date.\n\nFunctional Decomposition\nCAD/EDA (simulation, PCB layout)\nFabrication & Integration (3D printing, soldering, fastening, mounting)\nVerification & Validation: testing to specifications\nMCU Firmware Development (C, git)"
+  },
+  {
+    "objectID": "lectures/medtech-skills-overview-notes.html#why-skills",
+    "href": "lectures/medtech-skills-overview-notes.html#why-skills",
+    "title": "MedTech Skills Overview",
+    "section": "",
+    "text": "Do not want design ideas to be limited by what you “think” you can actually make!\nAs the engineer, you bring both solution creativity and execution to the table.\nMost of the engineering curriculum has been ``book heavy’’ to date.\n\nFunctional Decomposition\nCAD/EDA (simulation, PCB layout)\nFabrication & Integration (3D printing, soldering, fastening, mounting)\nVerification & Validation: testing to specifications\nMCU Firmware Development (C, git)"
+  },
+  {
+    "objectID": "lectures/medtech-skills-overview-notes.html#why-cad",
+    "href": "lectures/medtech-skills-overview-notes.html#why-cad",
+    "title": "MedTech Skills Overview",
+    "section": "Why CAD?",
+    "text": "Why CAD?\n\nFormally capture 2D projection sketches \\(\\rightarrow\\) 3D parts.\nDimension consistency checks.\nAssemble multiple parts to check fit, interfaces and simulate stress/strain/movement.\nTranslate to physical realization (e.g., 3D print, mil).\nGeneral technical drawings for manufacturing.\nCapture design history, while facilitating iteration / change."
+  },
+  {
+    "objectID": "lectures/medtech-skills-overview-notes.html#onshape",
+    "href": "lectures/medtech-skills-overview-notes.html#onshape",
+    "title": "MedTech Skills Overview",
+    "section": "Onshape",
+    "text": "Onshape\n\n\nWe will be using Onshape, a cloud-based CAD package with a similar workflow to SolidWorks.\nYou will be automatically registered to join Duke’s Onshape team.\nTutorials are available through https://learn.onshape.com."
+  },
+  {
+    "objectID": "lectures/medtech-skills-overview-notes.html#part-design",
+    "href": "lectures/medtech-skills-overview-notes.html#part-design",
+    "title": "MedTech Skills Overview",
+    "section": "Part Design",
+    "text": "Part Design"
+  },
+  {
+    "objectID": "lectures/medtech-skills-overview-notes.html#mechanical-drawings",
+    "href": "lectures/medtech-skills-overview-notes.html#mechanical-drawings",
+    "title": "MedTech Skills Overview",
+    "section": "Mechanical Drawings",
+    "text": "Mechanical Drawings"
+  },
+  {
+    "objectID": "lectures/medtech-skills-overview-notes.html#design-example-mhealth-tympanometer",
+    "href": "lectures/medtech-skills-overview-notes.html#design-example-mhealth-tympanometer",
+    "title": "MedTech Skills Overview",
+    "section": "Design Example: mHealth Tympanometer",
+    "text": "Design Example: mHealth Tympanometer"
+  },
+  {
+    "objectID": "lectures/medtech-skills-overview-notes.html#why-eda",
+    "href": "lectures/medtech-skills-overview-notes.html#why-eda",
+    "title": "MedTech Skills Overview",
+    "section": "Why EDA?",
+    "text": "Why EDA?\n\nFormalize circuit schematics.\nValidate circuit behavior (design rules and SPICE simulations).\nConvert circuit to printed circuit board (more space efficient and permanent than a breadboard).\nCapture design history and facilitate rapid iteration.\nGenerate 3D “parts” to integrate with CAD."
+  },
+  {
+    "objectID": "lectures/medtech-skills-overview-notes.html#kicad",
+    "href": "lectures/medtech-skills-overview-notes.html#kicad",
+    "title": "MedTech Skills Overview",
+    "section": "KiCad",
+    "text": "KiCad\n\n\nhttps://kicad.org\nA completely open-source alternative to Eagle.\nJust as capable as Altium Designer (to a point); similar workflow.\nIntegrated SPICE simulator."
+  },
+  {
+    "objectID": "lectures/medtech-skills-overview-notes.html#schematic-capture",
+    "href": "lectures/medtech-skills-overview-notes.html#schematic-capture",
+    "title": "MedTech Skills Overview",
+    "section": "Schematic Capture",
+    "text": "Schematic Capture"
+  },
+  {
+    "objectID": "lectures/medtech-skills-overview-notes.html#pcb-layout",
+    "href": "lectures/medtech-skills-overview-notes.html#pcb-layout",
+    "title": "MedTech Skills Overview",
+    "section": "PCB Layout",
+    "text": "PCB Layout"
+  },
+  {
+    "objectID": "lectures/medtech-skills-overview-notes.html#pcb-3d-model",
+    "href": "lectures/medtech-skills-overview-notes.html#pcb-3d-model",
+    "title": "MedTech Skills Overview",
+    "section": "PCB 3D Model",
+    "text": "PCB 3D Model"
+  },
+  {
+    "objectID": "lectures/medtech-skills-overview-notes.html#why-version-control",
+    "href": "lectures/medtech-skills-overview-notes.html#why-version-control",
+    "title": "MedTech Skills Overview",
+    "section": "Why Version Control?",
+    "text": "Why Version Control?\n\nPreserve software (project) development history\nCollaboration\nContinuous Integration / Deployment\nTesting\nMaintaining multiple released versions\nRequired for IEC 62304 (Medical Software), FDA V&V (510k clearance)"
+  },
+  {
+    "objectID": "lectures/medtech-skills-overview-notes.html#git",
+    "href": "lectures/medtech-skills-overview-notes.html#git",
+    "title": "MedTech Skills Overview",
+    "section": "Git",
+    "text": "Git\n\n\nhttps://git-scm.com\nhttps://gitlab.oit.duke.edu\nhttps://www.gitkraken.com/gitlens"
+  },
+  {
+    "objectID": "lectures/medtech-skills-overview-notes.html#why-firmware",
+    "href": "lectures/medtech-skills-overview-notes.html#why-firmware",
+    "title": "MedTech Skills Overview",
+    "section": "Why Firmware?",
+    "text": "Why Firmware?\n\nWhile many things can be done in discrete electronics, microcontrollers and microprocessors (and SoCs) are becoming inexpensive and ubiquitous.\n“Knowing Arduino” is not an eye-catching skill on a resume; but firmware development is!"
+  },
+  {
+    "objectID": "lectures/medtech-skills-overview-notes.html#firmware-isnt-software",
+    "href": "lectures/medtech-skills-overview-notes.html#firmware-isnt-software",
+    "title": "MedTech Skills Overview",
+    "section": "Firmware isn’t “software”…",
+    "text": "Firmware isn’t “software”…\n\nFirmware is a special kind of software that is designed to interact with hardware.\nFirmware is often written in C, but can be written in other languages.\nFirmware is highly resource constrained\nSoftware is often written in Python, Java, C++, etc.\nSoftware is often written to be run on a general-purpose computer (laptop, desktop, server, etc.), that typically is not resource constrained.\n\nUser Interface\nWeb Server\nDatabase\nData Processing / Analytics"
+  },
+  {
+    "objectID": "lectures/medtech-skills-overview-notes.html#arduino-framework-platformio",
+    "href": "lectures/medtech-skills-overview-notes.html#arduino-framework-platformio",
+    "title": "MedTech Skills Overview",
+    "section": "Arduino-Framework / PlatformIO",
+    "text": "Arduino-Framework / PlatformIO\n\nWe will use PlatformIO to develop firmware for our projects using Visual Studio Code as our IDE.\nWe will use the Arduino framework (in contrast to something like Zephyr RTOS) to develop firmware for our projects.\nLearn robust, modular firmware development practices."
+  },
+  {
+    "objectID": "lectures/medtech-skills-overview-slides.html#why-skills",
+    "href": "lectures/medtech-skills-overview-slides.html#why-skills",
+    "title": "MedTech Skills Overview",
+    "section": "Why skills?",
+    "text": "Why skills?\n\nDo not want design ideas to be limited by what you “think” you can actually make!\nAs the engineer, you bring both solution creativity and execution to the table.\nMost of the engineering curriculum has been ``book heavy’’ to date.\n\nFunctional Decomposition\nCAD/EDA (simulation, PCB layout)\nFabrication & Integration (3D printing, soldering, fastening, mounting)\nVerification & Validation: testing to specifications\nMCU Firmware Development (C, git)"
+  },
+  {
+    "objectID": "lectures/medtech-skills-overview-slides.html#why-cad",
+    "href": "lectures/medtech-skills-overview-slides.html#why-cad",
+    "title": "MedTech Skills Overview",
+    "section": "Why CAD?",
+    "text": "Why CAD?\n\nFormally capture 2D projection sketches \\(\\rightarrow\\) 3D parts.\nDimension consistency checks.\nAssemble multiple parts to check fit, interfaces and simulate stress/strain/movement.\nTranslate to physical realization (e.g., 3D print, mil).\nGeneral technical drawings for manufacturing.\nCapture design history, while facilitating iteration / change."
+  },
+  {
+    "objectID": "lectures/medtech-skills-overview-slides.html#onshape",
+    "href": "lectures/medtech-skills-overview-slides.html#onshape",
+    "title": "MedTech Skills Overview",
+    "section": "Onshape",
+    "text": "Onshape\n\n\nWe will be using Onshape, a cloud-based CAD package with a similar workflow to SolidWorks.\nYou will be automatically registered to join Duke’s Onshape team.\nTutorials are available through https://learn.onshape.com."
+  },
+  {
+    "objectID": "lectures/medtech-skills-overview-slides.html#part-design",
+    "href": "lectures/medtech-skills-overview-slides.html#part-design",
+    "title": "MedTech Skills Overview",
+    "section": "Part Design",
+    "text": "Part Design"
+  },
+  {
+    "objectID": "lectures/medtech-skills-overview-slides.html#mechanical-drawings",
+    "href": "lectures/medtech-skills-overview-slides.html#mechanical-drawings",
+    "title": "MedTech Skills Overview",
+    "section": "Mechanical Drawings",
+    "text": "Mechanical Drawings"
+  },
+  {
+    "objectID": "lectures/medtech-skills-overview-slides.html#design-example-mhealth-tympanometer",
+    "href": "lectures/medtech-skills-overview-slides.html#design-example-mhealth-tympanometer",
+    "title": "MedTech Skills Overview",
+    "section": "Design Example: mHealth Tympanometer",
+    "text": "Design Example: mHealth Tympanometer"
+  },
+  {
+    "objectID": "lectures/medtech-skills-overview-slides.html#why-eda",
+    "href": "lectures/medtech-skills-overview-slides.html#why-eda",
+    "title": "MedTech Skills Overview",
+    "section": "Why EDA?",
+    "text": "Why EDA?\n\nFormalize circuit schematics.\nValidate circuit behavior (design rules and SPICE simulations).\nConvert circuit to printed circuit board (more space efficient and permanent than a breadboard).\nCapture design history and facilitate rapid iteration.\nGenerate 3D “parts” to integrate with CAD."
+  },
+  {
+    "objectID": "lectures/medtech-skills-overview-slides.html#kicad",
+    "href": "lectures/medtech-skills-overview-slides.html#kicad",
+    "title": "MedTech Skills Overview",
+    "section": "KiCad",
+    "text": "KiCad\n\n\nhttps://kicad.org\nA completely open-source alternative to Eagle.\nJust as capable as Altium Designer (to a point); similar workflow.\nIntegrated SPICE simulator."
+  },
+  {
+    "objectID": "lectures/medtech-skills-overview-slides.html#schematic-capture",
+    "href": "lectures/medtech-skills-overview-slides.html#schematic-capture",
+    "title": "MedTech Skills Overview",
+    "section": "Schematic Capture",
+    "text": "Schematic Capture"
+  },
+  {
+    "objectID": "lectures/medtech-skills-overview-slides.html#pcb-layout",
+    "href": "lectures/medtech-skills-overview-slides.html#pcb-layout",
+    "title": "MedTech Skills Overview",
+    "section": "PCB Layout",
+    "text": "PCB Layout"
+  },
+  {
+    "objectID": "lectures/medtech-skills-overview-slides.html#pcb-3d-model",
+    "href": "lectures/medtech-skills-overview-slides.html#pcb-3d-model",
+    "title": "MedTech Skills Overview",
+    "section": "PCB 3D Model",
+    "text": "PCB 3D Model"
+  },
+  {
+    "objectID": "lectures/medtech-skills-overview-slides.html#why-version-control",
+    "href": "lectures/medtech-skills-overview-slides.html#why-version-control",
+    "title": "MedTech Skills Overview",
+    "section": "Why Version Control?",
+    "text": "Why Version Control?\n\nPreserve software (project) development history\nCollaboration\nContinuous Integration / Deployment\nTesting\nMaintaining multiple released versions\nRequired for IEC 62304 (Medical Software), FDA V&V (510k clearance)"
+  },
+  {
+    "objectID": "lectures/medtech-skills-overview-slides.html#git",
+    "href": "lectures/medtech-skills-overview-slides.html#git",
+    "title": "MedTech Skills Overview",
+    "section": "Git",
+    "text": "Git\n\n\nhttps://git-scm.com\nhttps://gitlab.oit.duke.edu\nhttps://www.gitkraken.com/gitlens"
+  },
+  {
+    "objectID": "lectures/medtech-skills-overview-slides.html#why-firmware",
+    "href": "lectures/medtech-skills-overview-slides.html#why-firmware",
+    "title": "MedTech Skills Overview",
+    "section": "Why Firmware?",
+    "text": "Why Firmware?\n\nWhile many things can be done in discrete electronics, microcontrollers and microprocessors (and SoCs) are becoming inexpensive and ubiquitous.\n“Knowing Arduino” is not an eye-catching skill on a resume; but firmware development is!"
+  },
+  {
+    "objectID": "lectures/medtech-skills-overview-slides.html#firmware-isnt-software",
+    "href": "lectures/medtech-skills-overview-slides.html#firmware-isnt-software",
+    "title": "MedTech Skills Overview",
+    "section": "Firmware isn’t “software”…",
+    "text": "Firmware isn’t “software”…\n\nFirmware is a special kind of software that is designed to interact with hardware.\nFirmware is often written in C, but can be written in other languages.\nFirmware is highly resource constrained\nSoftware is often written in Python, Java, C++, etc.\nSoftware is often written to be run on a general-purpose computer (laptop, desktop, server, etc.), that typically is not resource constrained.\n\nUser Interface\nWeb Server\nDatabase\nData Processing / Analytics"
+  },
+  {
+    "objectID": "lectures/medtech-skills-overview-slides.html#arduino-framework-platformio",
+    "href": "lectures/medtech-skills-overview-slides.html#arduino-framework-platformio",
+    "title": "MedTech Skills Overview",
+    "section": "Arduino-Framework / PlatformIO",
+    "text": "Arduino-Framework / PlatformIO\n\nWe will use PlatformIO to develop firmware for our projects using Visual Studio Code as our IDE.\nWe will use the Arduino framework (in contrast to something like Zephyr RTOS) to develop firmware for our projects.\nLearn robust, modular firmware development practices."
+  },
+  {
     "objectID": "bme-lab-policies.html",
     "href": "bme-lab-policies.html",
     "title": "BME Lab Procedures and Safety Expectations",
@@ -36,7 +267,7 @@
     "href": "course-syllabus.html",
     "title": "MedTech Prototyping Skills (BME254L) Syllabus",
     "section": "",
-    "text": "Dr. Mark Palmeri\n\nEmail (slower): mark.palmeri@duke.edu\nEd Discussion (private message, TAs included)\nOffice Hours: Sign Up\n\n\n\n\n\nCarson Pazdan (cbp31)\nLauren Kenselaar (lbk18)\nEmily Song (ecs94)\n\n\n\n\n\n\n\nTip\n\n\n\nQuestions that can be answered by Dr. Palmeri or a teaching assistant should be posted on Ed Discussion.\n\n\n\n\n\n\nLecture: Tuesday & Thursday, 11:45-13:00, Hudson Hall 212 (Panopto recorded)\nLab: As needed, Fitzpatrick B209 (Door Code: 4-1-5-2)\nThere are no formally scheduled lab sections, but you will need to use the lab equipment to perform testing of your devices. Your TAs will announce times when they will hold lab hours.\n\n\n\n\n\n\nImportant\n\n\n\nPlease review the lab policies before using the lab for the first time this semester.\n\n\n\n\n\n\n\n\nWarning\n\n\n\nNo food or drink is allowed in the lab! Failure to adhere to this policy will have consequences on your course participation grade.\n\n\n\n\n\nThis course focuses on developing medical device prototyping skills that will be used in future project and design courses, with a focus on preparing our students for positions in the medtech industry. Students will work individually to complete design tasks that will be tested to quantitative specifications. Students will gain hands-on experience with device fabrication, debugging, testing and failure analysis.\nUpon completion of this course, students should be able to:\n\nSoftware version control (git)\nPerform functional decomposition and express as a stage diagram (UML)\nUtilize ECAD (KiCad) for:\n\nElectronic schematic capture\nPrinted circuit board (PCB) layout\n\nModular breadboarding of circuits to translation to testable PCBs\nDesign a battery-powered device that:\n\nAccepts analog and digital user input\nOutputs analog and digital outputs\nPasses testable specifications to 95% CI\n\nImplement electronic logic on microcontroller (Arduino framework)\n\nModular / testable code development in C\nInterupt Service Routines\nPulse Width Modulation\nState Machine\n\nUtilize CAD (Onshape) for:\n\nDevice enclosure design with UI/UX considerations\nInput / Output considerations\nSize / weight constraints\nPreparation of mechanical drawings\n\n3D printing of designs\n\nAssembly of discrete enclosure pieces\nUse of mechanical fasteners\n\nWrite technical analysis reports in Jupyter notebook\n\n\n\n\n\n\n\nComputational Methods in Engineering (EGR103) or equivalent\nFundamentals of Electrical and Computer Engineering (ECE110L) / Biomedical Electronics Measurements (BME290L) or equivalent\n\n\n\n\n\nWe will be using Canvas as the learning management system for this course. It will host the syllabus, which will have hyperlinks to all lecture content and lab assignments.\nDuke’s GitLab server will be used for most course lab exercises, and code-related questions will be submitted to Dr. Palmeri / TAs using GitLab Issues.\nEd Discussion will be used for general course questions and discussion.\n\n\n\nThis class is organized in a sequence of modules. Specific details surrounding dates for assignments associated with each module will be posted to Gradescope.\nThis course uses a version of Mastery Learning, where “mastery” of a given module is necessary to progress onto the subsequent module. Quizzes are used to evaluate “knowledge”; lab exercises are used to demonstrate application of skills. In this course, assignments of later modules depends on the successful completion of earlier modules.\n\n\n\n\n\n\nModule\nGradescope\nLab\n\n\n\n\nFDOC: Who am I? / Skill Overview\nCompletion Survey\nSoftware Installation & Tutorials\n\n\nEvent-Driven State Machines\nWireless HRM State Diagram\nWireless HRM State Diagram\n\n\nVersion Control (git)\nGit Fundamentals Quiz\nGit Lab Exercise\n\n\nComputer Aided Design (CAD) (Onshape)\nHybrid III Drawings & Screenshots\nHybrid III 6 y/o\n\n\nECAD (KiCad): Schematic Capture\nNone\nSchematic Capture: Voltage Dividers and LED Output\n\n\nECAD (KiCad): SPICE Modeling\nNone\nSPICE Modeling Lab\n\n\nECAD (KiCad): PCB Layout\nNone\nPCB Layout Lab: Microcontroller Peripherals\n\n\nFirmware Development: C Programming Overview\nNone\nPlatformIO / Arduino Framework: Timing & GPIO (Paired Coding)\n\n\nFirmware Development: Button Event ISRs, ADC & State Machines\nNone\nButton Event ISR & ADC (Paired Coding)\n\n\nLightbox Project (Kanban Board)\nNone\nLightbox Project Repository\n\n\n\n\n\n\n\nClass participation in both lecture and lab time is strongly encouraged. Lecture will be used to provide skill overview and live demonstrations, many of while will kickstart your efforts for your project. Lab time will provide you access to equipment and the TAs for assistance.\nStudents are responsible for obtaining missed lecture content from other students in the class. All lecture slides/presented content will be made availabe online (Canvas/Gitlab), and lectures will be recorded via Panopto and posted to Canvas.\nParticipation on Ed Discussion is also encouraged, in the form of:\n\nAsking questions about the course material (ideally, publicly, so that others\ncan benefit (Anonymous okay))\nAnswering questions from other students\nSharing interesting articles or resources related to the course material\n\n\n\n\n\n\nThere will be quizzes / completion surveys, and lab exercises associated with some of the learning modules (40%), all of which will be submitted through Gradescope.\nThe course project will have regular milestones throughout the semester, culminating in a final functional device that you will present and an associated technical report testing device function (50%).\nClass participation (10%) will be evaluated based on your engagement in the lecture/lab setting, demonstrating good lab practices and submitting assignments on time for feedback.\nAll assignment grades will be posted to Canvas/Gradescope throughout the semester to track your performance.\n\nGrade Distribution\n\n\nGrade Category\nRelative Percentage\n\n\n\n\nQuizzes / Lab Modules\n40%\n\n\nProject\n50%\n\n\nParticipation\n10%\n\n\n\n\n\n\nThis course is not “curved” (i.e., a distribution of grades will not be enforced), and a traditional grading scheme will be used (e.g., 90-93 = A-, 94-97 = A, 97-100 = A+). Participation throughout the semester will influence rounding up/down for fractional grades.\nFailing the course can happen with a cummulative score &lt; 60 (D-) or not completing all of the assignments.\n\n\n\nAny regrading requests need to be made within one week of grades for a given assignment being released. You must make the request via Gradescope and provide a description of why you feel a regrade is appropriate. Requesting a regrade could lead to additional loss of credit when an assignment is re-evaluated.\nSome assignments will have an opportunity to be resubmitted based on grading feedback at the discretion of Dr. Palmeri.\n\n\n\nLate submission windows will be available for some assignments and should be used to accomodate acute illness, travel, high workload from other classes and other unforeseen circumstances. This late submission window can be utilized without penalty and without prior approval.\nStudents with SDAO accomodations for extended time on assignments can use this extended late submission window for all assignments.\nAny assignments submitted after the late submission window will only be accepted for partial credit at the discretion of Dr. Palmeri or if prior approval was sought before the original due date. Requests for late submission accomodation will be considered on a case-by-case basis and will result in a deduction in the course participation grade.\n\n\n\n\nAll students are expected to adhere to all principles of the Duke Community Standard. Violations of the Duke Community Standard will be referred immediately to the Office of Student Conduct. Please do not hesitate to talk with Dr. Palmeri about any situations involving academic honor, especially if it is ambiguous what should be done.\n\n\n\n\n\nEngineering is inherently a collaborative field, and in this class, you are encouraged to work collaboratively on your projects. That being said, all of the work that you submit must be generated by you and reflect your understanding of the material.\n\n\n\n\n\n\nNote\n\n\n\nAll resources used in your projects that were developed by another person or company must be properly acknowledged using comments in your code / reports.\n\n\n\n\n\nThe use of artificial intelligence is a rapidly developing resource / tool in engineering. In software development, there are many levels of AI-assitance available. Such form of assistance include the IntelliCode tools and GitHub CoPilot (free to students through the GitHub Education program). These tools can be leveraged to help with syntax. You are, however, strongly cautioned to not rely on these tools for logical implementation.\n\nMedTech Prototyping Skills by Mark L. Palmeri is licensed under CC BY-SA 4.0",
+    "text": "Dr. Mark Palmeri\n\nEmail (slower): mark.palmeri@duke.edu\nEd Discussion (private message, TAs included)\nOffice Hours: Sign Up\n\n\n\n\n\nCarson Pazdan (cbp31)\nLauren Kenselaar (lbk18)\nEmily Song (ecs94)\n\n\n\n\n\n\n\nTip\n\n\n\nQuestions that can be answered by Dr. Palmeri or a teaching assistant should be posted on Ed Discussion.\n\n\n\n\n\n\nLecture: Tuesday & Thursday, 11:45-13:00, Hudson Hall 212 (Panopto recorded)\nLab: As needed, Fitzpatrick B209 (Door Code: 4-1-5-2)\nThere are no formally scheduled lab sections, but you will need to use the lab equipment to perform testing of your devices. Your TAs will announce times when they will hold lab hours.\n\n\n\n\n\n\nImportant\n\n\n\nPlease review the lab policies before using the lab for the first time this semester.\n\n\n\n\n\n\n\n\nWarning\n\n\n\nNo food or drink is allowed in the lab! Failure to adhere to this policy will have consequences on your course participation grade.\n\n\n\n\n\nThis course focuses on developing medical device prototyping skills that will be used in future project and design courses, with a focus on preparing our students for positions in the medtech industry. Students will work individually to complete design tasks that will be tested to quantitative specifications. Students will gain hands-on experience with device fabrication, debugging, testing and failure analysis.\nUpon completion of this course, students should be able to:\n\nSoftware version control (git)\nPerform functional decomposition and express as a stage diagram (UML)\nUtilize ECAD (KiCad) for:\n\nElectronic schematic capture\nPrinted circuit board (PCB) layout\n\nModular breadboarding of circuits to translation to testable PCBs\nDesign a battery-powered device that:\n\nAccepts analog and digital user input\nOutputs analog and digital outputs\nPasses testable specifications to 95% CI\n\nImplement electronic logic on microcontroller (Arduino framework)\n\nModular / testable code development in C\nInterupt Service Routines\nPulse Width Modulation\nState Machine\n\nUtilize CAD (Onshape) for:\n\nDevice enclosure design with UI/UX considerations\nInput / Output considerations\nSize / weight constraints\nPreparation of mechanical drawings\n\n3D printing of designs\n\nAssembly of discrete enclosure pieces\nUse of mechanical fasteners\n\nWrite technical analysis reports in Jupyter notebook\n\n\n\n\n\n\n\nComputational Methods in Engineering (EGR103) or equivalent\nFundamentals of Electrical and Computer Engineering (ECE110L) / Biomedical Electronics Measurements (BME290L) or equivalent\n\n\n\n\n\nWe will be using Canvas as the learning management system for this course. It will host the syllabus, which will have hyperlinks to all lecture content and lab assignments.\nDuke’s GitLab server will be used for most course lab exercises, and code-related questions will be submitted to Dr. Palmeri / TAs using GitLab Issues.\nEd Discussion will be used for general course questions and discussion.\n\n\n\nThis class is organized in a sequence of modules. Specific details surrounding dates for assignments associated with each module will be posted to Gradescope.\nThis course uses a version of Mastery Learning, where “mastery” of a given module is necessary to progress onto the subsequent module. Quizzes are used to evaluate “knowledge”; lab exercises are used to demonstrate application of skills. In this course, assignments of later modules depends on the successful completion of earlier modules.\n\n\n\n\nMedTech Skill Overview\n\n\n\n\n\nClass participation in both lecture and lab time is strongly encouraged. Lecture will be used to provide skill overview and live demonstrations, many of while will kickstart your efforts for your project. Lab time will provide you access to equipment and the TAs for assistance.\nStudents are responsible for obtaining missed lecture content from other students in the class. All lecture slides/presented content will be made availabe online (Canvas/Gitlab), and lectures will be recorded via Panopto and posted to Canvas.\nParticipation on Ed Discussion is also encouraged, in the form of:\n\nAsking questions about the course material (ideally, publicly, so that others\ncan benefit (Anonymous okay))\nAnswering questions from other students\nSharing interesting articles or resources related to the course material\n\n\n\n\n\n\nThere will be quizzes / completion surveys, and lab exercises associated with some of the learning modules (40%), all of which will be submitted through Gradescope.\nThe course project will have regular milestones throughout the semester, culminating in a final functional device that you will present and an associated technical report testing device function (50%).\nClass participation (10%) will be evaluated based on your engagement in the lecture/lab setting, demonstrating good lab practices and submitting assignments on time for feedback.\nAll assignment grades will be posted to Canvas/Gradescope throughout the semester to track your performance.\n\nGrade Distribution\n\n\nGrade Category\nRelative Percentage\n\n\n\n\nQuizzes / Lab Modules\n40%\n\n\nProject\n50%\n\n\nParticipation\n10%\n\n\n\n\n\n\nThis course is not “curved” (i.e., a distribution of grades will not be enforced), and a traditional grading scheme will be used (e.g., 90-93 = A-, 94-97 = A, 97-100 = A+). Participation throughout the semester will influence rounding up/down for fractional grades.\nFailing the course can happen with a cummulative score &lt; 60 (D-) or not completing all of the assignments.\n\n\n\nAny regrading requests need to be made within one week of grades for a given assignment being released. You must make the request via Gradescope and provide a description of why you feel a regrade is appropriate. Requesting a regrade could lead to additional loss of credit when an assignment is re-evaluated.\nSome assignments will have an opportunity to be resubmitted based on grading feedback at the discretion of Dr. Palmeri.\n\n\n\nLate submission windows will be available for some assignments and should be used to accomodate acute illness, travel, high workload from other classes and other unforeseen circumstances. This late submission window can be utilized without penalty and without prior approval.\nStudents with SDAO accomodations for extended time on assignments can use this extended late submission window for all assignments.\nAny assignments submitted after the late submission window will only be accepted for partial credit at the discretion of Dr. Palmeri or if prior approval was sought before the original due date. Requests for late submission accomodation will be considered on a case-by-case basis and will result in a deduction in the course participation grade.\n\n\n\n\nAll students are expected to adhere to all principles of the Duke Community Standard. Violations of the Duke Community Standard will be referred immediately to the Office of Student Conduct. Please do not hesitate to talk with Dr. Palmeri about any situations involving academic honor, especially if it is ambiguous what should be done.\n\n\n\n\n\nEngineering is inherently a collaborative field, and in this class, you are encouraged to work collaboratively on your projects. That being said, all of the work that you submit must be generated by you and reflect your understanding of the material.\n\n\n\n\n\n\nNote\n\n\n\nAll resources used in your projects that were developed by another person or company must be properly acknowledged using comments in your code / reports.\n\n\n\n\n\nThe use of artificial intelligence is a rapidly developing resource / tool in engineering. In software development, there are many levels of AI-assitance available. Such form of assistance include the IntelliCode tools and GitHub CoPilot (free to students through the GitHub Education program). These tools can be leveraged to help with syntax. You are, however, strongly cautioned to not rely on these tools for logical implementation.\n\nMedTech Prototyping Skills by Mark L. Palmeri is licensed under CC BY-SA 4.0",
     "crumbs": [
       "Course Information",
       "Course Syllabus"
@@ -102,7 +333,7 @@
     "href": "course-syllabus.html#class-schedule",
     "title": "MedTech Prototyping Skills (BME254L) Syllabus",
     "section": "",
-    "text": "This class is organized in a sequence of modules. Specific details surrounding dates for assignments associated with each module will be posted to Gradescope.\nThis course uses a version of Mastery Learning, where “mastery” of a given module is necessary to progress onto the subsequent module. Quizzes are used to evaluate “knowledge”; lab exercises are used to demonstrate application of skills. In this course, assignments of later modules depends on the successful completion of earlier modules.\n\n\n\n\n\n\nModule\nGradescope\nLab\n\n\n\n\nFDOC: Who am I? / Skill Overview\nCompletion Survey\nSoftware Installation & Tutorials\n\n\nEvent-Driven State Machines\nWireless HRM State Diagram\nWireless HRM State Diagram\n\n\nVersion Control (git)\nGit Fundamentals Quiz\nGit Lab Exercise\n\n\nComputer Aided Design (CAD) (Onshape)\nHybrid III Drawings & Screenshots\nHybrid III 6 y/o\n\n\nECAD (KiCad): Schematic Capture\nNone\nSchematic Capture: Voltage Dividers and LED Output\n\n\nECAD (KiCad): SPICE Modeling\nNone\nSPICE Modeling Lab\n\n\nECAD (KiCad): PCB Layout\nNone\nPCB Layout Lab: Microcontroller Peripherals\n\n\nFirmware Development: C Programming Overview\nNone\nPlatformIO / Arduino Framework: Timing & GPIO (Paired Coding)\n\n\nFirmware Development: Button Event ISRs, ADC & State Machines\nNone\nButton Event ISR & ADC (Paired Coding)\n\n\nLightbox Project (Kanban Board)\nNone\nLightbox Project Repository",
+    "text": "This class is organized in a sequence of modules. Specific details surrounding dates for assignments associated with each module will be posted to Gradescope.\nThis course uses a version of Mastery Learning, where “mastery” of a given module is necessary to progress onto the subsequent module. Quizzes are used to evaluate “knowledge”; lab exercises are used to demonstrate application of skills. In this course, assignments of later modules depends on the successful completion of earlier modules.\n\n\n\n\nMedTech Skill Overview",
     "crumbs": [
       "Course Information",
       "Course Syllabus"

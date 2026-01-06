@@ -133,7 +133,7 @@ depends on the successful completion of earlier modules.
 
 ### Learning Modules
 
-<!-- TODO: update to GitHub Quarto links -->
+<!-- TODO: update to GitHub Quarto links
 | Module | Gradescope | Lab |
 | --- | --- | --- |
 | [FDOC: Who am I?](https://mlp6.pages.oit.duke.edu/FDOC_WhoAmI/FDOC_WhoAmI.html) / [Skill Overview](https://medtechprototyping.pages.oit.duke.edu/medtech-skill-overview/MedTech-Skill-Overview.html) | [Completion Survey](https://www.gradescope.com/courses/941961/assignments/5544754) | [Software Installation & Tutorials](https://gitlab.oit.duke.edu/MedTechPrototyping/medtech-skill-overview/-/blob/main/lab/Software-Install-Tutorials.md?ref_type=heads) |
@@ -146,6 +146,9 @@ depends on the successful completion of earlier modules.
 | Firmware Development: C Programming Overview | None | [PlatformIO / Arduino Framework: Timing & GPIO](https://gitlab.oit.duke.edu/kits/BME-254L-001-Sp25/arduino_timing_gpio) (Paired Coding)|
 | Firmware Development: Button Event ISRs, ADC & State Machines | None | [Button Event ISR & ADC](https://gitlab.oit.duke.edu/MedTechPrototyping/arduino_isr_adc) (Paired Coding) |
 | [Lightbox Project (Kanban Board)](https://trello.com/b/3vtxGG3U/lightbox) | None | [Lightbox Project Repository](https://gitlab.oit.duke.edu/kits/BME-254L-001-Sp25/lightbox) |
+-->
+
+- [MedTech Skill Overview](https://medtechprototyping.pages.oit.duke.edu/medtech-skill-overview/MedTech-Skill-Overview.html)
 
 ## Attendance & Participation
 

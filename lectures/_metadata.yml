@@ -1,0 +1,19 @@
+institute: "Duke University"
+subtitle: "BME254L - Spring 2026"
+author: "Dr. Mark Palmeri, M.D., Ph.D."
+date-format: long
+format:
+  live-revealjs:
+    footer: "[🔗 https://github.com/mlp6/MedTech-Prototyping-Skills/](https://github.com/mlp6/MedTech-Prototyping-Skills/)"
+    theme: slides.scss
+    transition: fade
+    slide-number: true
+    #logo: "images/logo.png" 
+    toc: false
+    smaller: true
+    scroll: true
+  live-html:
+    code-link: true
+    css: styles.css
+engine: knitr
+highlight-style: a11y-light

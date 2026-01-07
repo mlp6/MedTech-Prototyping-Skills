@@ -1,0 +1,15 @@
+---
+title: "3D Printing"
+date: 2026-01-07
+format:
+  html: default
+  pdf: default
+---
+
+1. Log into your account on [https://duke.3dprinteros.com/](https://duke.3dprinteros.com/)
+
+2. You can use the Co-Lab printers or add the BME class-specific printers in CIEMAS B209.
+
+    - Under the `Printers` tab, choose `Add Workgroup Printers`
+
+    - `B209` access code: `TheDungeon209`

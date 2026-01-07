@@ -51,6 +51,8 @@ website:
           text: "State Diagrams"
         - href: resources/bme-lab-policies.qmd
           text: "BME Lab Policies"
+        - href: resources/3d_printing.qmd
+          text: "3D Printing"
 
     page-footer:
       right: 'This page is built with [Quarto](https://quarto.org/).'

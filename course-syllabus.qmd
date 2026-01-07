@@ -134,7 +134,6 @@ depends on the successful completion of earlier modules.
 ### Learning Modules
 
 <!-- TODO: update to GitHub Quarto links
-| [Computer Aided Design (CAD) (`Onshape`)](https://medtechprototyping.pages.oit.duke.edu/cad-onshape/cad-onshape.html) | [Hybrid III Drawings & Screenshots](https://www.gradescope.com/courses/941961/assignments/5674613) | [Hybrid III 6 y/o](https://gitlab.oit.duke.edu/MedTechPrototyping/cad-onshape/-/blob/main/lab/hybrid_iii_6yo.md?ref_type=heads) |
 | [ECAD (`KiCad`): Schematic Capture](https://medtechprototyping.pages.oit.duke.edu/eda-kicad-schematic-pcb/EDA-KiCad-Schematic-Capture.html) | None | [Schematic Capture: Voltage Dividers and LED Output](https://gitlab.oit.duke.edu/kits/BME-254L-001-Sp25/kicad-schematic-spice-lab/-/blob/main/README.md?ref_type=heads) |
 | [ECAD (`KiCad`): SPICE Modeling](https://medtechprototyping.pages.oit.duke.edu/eda-kicad-schematic-pcb/EDA-KiCad-Spice-Modeling.html) | None | [SPICE Modeling Lab](https://gitlab.oit.duke.edu/kits/BME-254L-001-Sp25/kicad-schematic-spice-lab/-/blob/main/README.md?ref_type=heads) |
 | [ECAD (`KiCad`): PCB Layout](https://medtechprototyping.pages.oit.duke.edu/eda-kicad-schematic-pcb/EDA-KiCad-PCB-Layout.html) | None | [PCB Layout Lab: Microcontroller Peripherals](https://gitlab.oit.duke.edu/kits/BME-254L-001-Sp25/kicad-schematic-spice-lab/-/blob/main/README.md?ref_type=heads) |
@@ -146,7 +145,7 @@ depends on the successful completion of earlier modules.
 - [MedTech Skill Overview](lectures/medtech-skills-overview.qmd)
 - [Event-Drive State Machines](lectures/event-driven-state-machine.qmd)
 - [Version Control (`git`)](lectures/git-fundamentals.qmd)
-- Computer Aided Design (CAD) (`Onshape`)
+- [Computer Aided Design (CAD) (`Onshape`)](lectures/cad-onshape.qmd)
 - Lightbox Project (Kanban Board)
 - ECAD (`KiCad`): Schematic Capture
 - ECAD (`KiCad`): SPICE Modeling

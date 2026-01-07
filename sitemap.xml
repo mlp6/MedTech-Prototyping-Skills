@@ -2,74 +2,74 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://mlp6.github.io/MedTech-Prototyping-Skills/TODO.html</loc>
-    <lastmod>2026-01-06T19:31:40.799Z</lastmod>
+    <lastmod>2026-01-07T16:43:30.600Z</lastmod>
   </url>
   <url>
-    <loc>https://mlp6.github.io/MedTech-Prototyping-Skills/resources/git.html</loc>
-    <lastmod>2026-01-06T19:31:41.094Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mlp6.github.io/MedTech-Prototyping-Skills/3D_printing.html</loc>
-    <lastmod>2026-01-06T19:31:40.799Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mlp6.github.io/MedTech-Prototyping-Skills/labs/event-driven-state-machine-lab.html</loc>
-    <lastmod>2026-01-06T19:31:40.831Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mlp6.github.io/MedTech-Prototyping-Skills/labs/software-install_tutorials.html</loc>
-    <lastmod>2026-01-06T19:31:40.832Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mlp6.github.io/MedTech-Prototyping-Skills/lectures/medtech-skills-overview-notes.html</loc>
-    <lastmod>2026-01-06T19:31:40.877Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mlp6.github.io/MedTech-Prototyping-Skills/lectures/medtech-skills-overview-slides.html</loc>
-    <lastmod>2026-01-06T19:31:40.877Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mlp6.github.io/MedTech-Prototyping-Skills/lectures/arduino-state-machine-notes.html</loc>
-    <lastmod>2026-01-06T19:31:40.857Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mlp6.github.io/MedTech-Prototyping-Skills/lectures/arduino-state-machine-slides.html</loc>
-    <lastmod>2026-01-06T19:31:40.857Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mlp6.github.io/MedTech-Prototyping-Skills/lectures/event-driven-state-machine-slides.html</loc>
-    <lastmod>2026-01-06T19:31:40.857Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mlp6.github.io/MedTech-Prototyping-Skills/lectures/event-driven-state-machine-notes.html</loc>
-    <lastmod>2026-01-06T19:31:40.857Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mlp6.github.io/MedTech-Prototyping-Skills/lectures/git-fundamentals-slides.html</loc>
-    <lastmod>2026-01-06T19:31:40.857Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mlp6.github.io/MedTech-Prototyping-Skills/lectures/git-fundamentals-notes.html</loc>
-    <lastmod>2026-01-06T19:31:40.857Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mlp6.github.io/MedTech-Prototyping-Skills/course-syllabus.html</loc>
-    <lastmod>2026-01-06T19:31:40.803Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mlp6.github.io/MedTech-Prototyping-Skills/labs/git-fundamentals-lab.html</loc>
-    <lastmod>2026-01-06T19:31:40.831Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mlp6.github.io/MedTech-Prototyping-Skills/index.html</loc>
-    <lastmod>2026-01-06T19:31:40.804Z</lastmod>
+    <loc>https://mlp6.github.io/MedTech-Prototyping-Skills/resources/3d_printing.html</loc>
+    <lastmod>2026-01-07T16:43:30.679Z</lastmod>
   </url>
   <url>
     <loc>https://mlp6.github.io/MedTech-Prototyping-Skills/resources/bme-lab-policies.html</loc>
-    <lastmod>2026-01-06T19:31:41.046Z</lastmod>
+    <lastmod>2026-01-07T16:43:30.847Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mlp6.github.io/MedTech-Prototyping-Skills/labs/event-driven-state-machine-lab.html</loc>
+    <lastmod>2026-01-07T16:43:30.633Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mlp6.github.io/MedTech-Prototyping-Skills/labs/software-install_tutorials.html</loc>
+    <lastmod>2026-01-07T16:43:30.633Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mlp6.github.io/MedTech-Prototyping-Skills/lectures/medtech-skills-overview-notes.html</loc>
+    <lastmod>2026-01-07T16:43:30.679Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mlp6.github.io/MedTech-Prototyping-Skills/lectures/medtech-skills-overview-slides.html</loc>
+    <lastmod>2026-01-07T16:43:30.679Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mlp6.github.io/MedTech-Prototyping-Skills/lectures/arduino-state-machine-notes.html</loc>
+    <lastmod>2026-01-07T16:43:30.658Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mlp6.github.io/MedTech-Prototyping-Skills/lectures/arduino-state-machine-slides.html</loc>
+    <lastmod>2026-01-07T16:43:30.658Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mlp6.github.io/MedTech-Prototyping-Skills/lectures/event-driven-state-machine-slides.html</loc>
+    <lastmod>2026-01-07T16:43:30.658Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mlp6.github.io/MedTech-Prototyping-Skills/lectures/event-driven-state-machine-notes.html</loc>
+    <lastmod>2026-01-07T16:43:30.658Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mlp6.github.io/MedTech-Prototyping-Skills/lectures/git-fundamentals-slides.html</loc>
+    <lastmod>2026-01-07T16:43:30.658Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mlp6.github.io/MedTech-Prototyping-Skills/lectures/git-fundamentals-notes.html</loc>
+    <lastmod>2026-01-07T16:43:30.658Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mlp6.github.io/MedTech-Prototyping-Skills/course-syllabus.html</loc>
+    <lastmod>2026-01-07T16:43:30.605Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mlp6.github.io/MedTech-Prototyping-Skills/labs/git-fundamentals-lab.html</loc>
+    <lastmod>2026-01-07T16:43:30.633Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mlp6.github.io/MedTech-Prototyping-Skills/index.html</loc>
+    <lastmod>2026-01-07T16:43:30.606Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mlp6.github.io/MedTech-Prototyping-Skills/resources/git.html</loc>
+    <lastmod>2026-01-07T16:43:30.895Z</lastmod>
   </url>
   <url>
     <loc>https://mlp6.github.io/MedTech-Prototyping-Skills/resources/state_diagram.html</loc>
-    <lastmod>2026-01-06T19:31:41.102Z</lastmod>
+    <lastmod>2026-01-07T16:43:30.902Z</lastmod>
   </url>
 </urlset>

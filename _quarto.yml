@@ -37,6 +37,8 @@ website:
           text: "Event-Driven State Machines"
         - href: lectures/git-fundamentals.qmd
           text: "Version Control (git)"
+        - href: lectures/cad-onshape.qmd
+          text: "CAD with Onshape"
       - section: Labs
         contents:
         - href: labs/software-install_tutorials.qmd
@@ -45,6 +47,8 @@ website:
           text: "Event-Driven State Machine (Kitchen Timer)"
         - href: labs/git-fundamentals-lab.qmd
           text: "Git Fundamentals Lab"
+        - href: labs/hybrid_iii_6yo.qmd
+          text: "Hybrid III 6YO Head and Neck Lab"
       - section: Resources
         contents:
         - href: resources/state_diagram.qmd

@@ -1,0 +1,62 @@
+---
+title: "Hybrid III 6 y/o Lab"
+date: "2026-01-07"
+format:
+  html: default
+  pdf: default
+---
+
+## Tasks
+
+- Create all of the parts for the Hybrid III 6yo test setup based on the
+attached drawings. 
+
+- You should create all of these parts and their associated drawings and
+assemblies as part of the same “Document” and share that document with Dr.
+Palmeri and the TA(s).
+
+- Create the mechanical drawings associated with each of those parts (i.e.,
+recreate the drawings that you are using to generate the parts) and the
+assembly.
+
+- Assemble your parts as guided by the assembly diagram and as shown in the
+uploaded animation. 
+
+- There are online tutorials on Assemblies if you need some refreshers:
+
+  - [https://learn.onshape.com/courses/introduction-to-assembly-design](https://learn.onshape.com/courses/introduction-to-assembly-design)
+
+  - [https://learn.onshape.com/courses/fundamentals-onshape-assemblies](https://learn.onshape.com/courses/fundamentals-onshape-assemblies)
+
+## What to submit
+
+Upload mechanical drawings and a screenshot of the part for all of your parts
+to the `Hybrid III 6 y/o` Gradescope assignment.
+
+## Bottom Plate
+
+![](images/BottomPlateDrawing.png){width="800"}
+
+## Top Plate
+
+![](images/TopPlateDrawing.png){ width="800"}
+
+## Nodding Plate
+
+![](images/NoddingPlateDrawing.png){ width="800"}
+
+## Molded Neck
+
+![](images/MoldedNeckDrawing.png){ width="800"}
+
+## Lower Neck Bracket
+
+![](images/LowerNeckBracketDrawing.png){ width="800"}
+
+## Load Cell
+
+![](images/LoadCellDrawing.png){ width="800"}
+
+## Assembly
+
+![](images/AssemblyDrawing.png){ width="800"}

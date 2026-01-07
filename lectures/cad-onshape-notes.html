@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Dr.&nbsp;Mark Palmeri, M.D., Ph.D.">
-<meta name="dcterms.date" content="2026-01-05">
+<meta name="dcterms.date" content="2026-01-07">
 
-<title>Git Fundamentals Lab – MedTech Prototyping Skills</title>
+<title>Computer Aided Design (CAD) with Onshape – MedTech Prototyping Skills</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -40,7 +40,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-fced259a1985fd972ecb57c7cd45153f.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-13f007c1943c6d3711256cc1d3aa22a2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-89abcb12e8852b82dab2915b19c79ac0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-contrib/live-runtime/live-runtime.js" type="module"></script>
+<link href="../site_libs/quarto-contrib/live-runtime/live-runtime.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -68,9 +70,11 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script type="module" src="../site_libs/quarto-ojs/quarto-ojs-runtime.js"></script>
+<link href="../site_libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
 
 
-<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-sidebar docked quarto-light">
@@ -82,7 +86,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../labs/software-install_tutorials.html">Labs</a></li><li class="breadcrumb-item"><a href="../labs/git-fundamentals-lab.html">Git Fundamentals Lab</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lectures/medtech-skills-overview-notes.html">Learning Modules</a></li><li class="breadcrumb-item"><a href="../lectures/cad-onshape-notes.html">CAD with Onshape</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -169,7 +173,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lectures/cad-onshape-notes.html" class="sidebar-item-text sidebar-link">
+  <a href="../lectures/cad-onshape-notes.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">CAD with Onshape</span></a>
   </div>
 </li>
@@ -198,7 +202,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../labs/git-fundamentals-lab.html" class="sidebar-item-text sidebar-link active">
+  <a href="../labs/git-fundamentals-lab.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Git Fundamentals Lab</span></a>
   </div>
 </li>
@@ -249,46 +253,59 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#git-practice" id="toc-git-practice" class="nav-link active" data-scroll-target="#git-practice">Git Practice</a>
+  <li><a href="#computer-aided-design-cad-with-onshape" id="toc-computer-aided-design-cad-with-onshape" class="nav-link active" data-scroll-target="#computer-aided-design-cad-with-onshape">Computer Aided Design (CAD) with Onshape</a>
   <ul class="collapse">
-  <li><a href="#initial-main-branch-development" id="toc-initial-main-branch-development" class="nav-link" data-scroll-target="#initial-main-branch-development">Initial <code>main</code> Branch Development</a></li>
-  <li><a href="#working-on-a-branch-local" id="toc-working-on-a-branch-local" class="nav-link" data-scroll-target="#working-on-a-branch-local">Working on a Branch (Local)</a></li>
-  <li><a href="#merge-request-time" id="toc-merge-request-time" class="nav-link" data-scroll-target="#merge-request-time">Merge Request Time!</a></li>
-  <li><a href="#create-an-annotated-tag" id="toc-create-an-annotated-tag" class="nav-link" data-scroll-target="#create-an-annotated-tag">Create an Annotated Tag</a></li>
-  <li><a href="#fix-a-merge-conflict-locally" id="toc-fix-a-merge-conflict-locally" class="nav-link" data-scroll-target="#fix-a-merge-conflict-locally">Fix a Merge Conflict (Locally)</a></li>
+  <li><a href="#why-cad" id="toc-why-cad" class="nav-link" data-scroll-target="#why-cad">Why CAD?</a></li>
+  <li><a href="#onshape" id="toc-onshape" class="nav-link" data-scroll-target="#onshape">Onshape</a>
+  <ul class="collapse">
+  <li><a href="#general-workflow" id="toc-general-workflow" class="nav-link" data-scroll-target="#general-workflow">General Workflow</a></li>
+  <li><a href="#tips" id="toc-tips" class="nav-link" data-scroll-target="#tips">Tips</a></li>
   </ul></li>
-  <li><a href="#how-to-ask-for-help" id="toc-how-to-ask-for-help" class="nav-link" data-scroll-target="#how-to-ask-for-help">How to Ask for Help</a></li>
-  <li><a href="#what-to-submit" id="toc-what-to-submit" class="nav-link" data-scroll-target="#what-to-submit">What to Submit</a></li>
+  <li><a href="#mechanical-design-considerations" id="toc-mechanical-design-considerations" class="nav-link" data-scroll-target="#mechanical-design-considerations">Mechanical Design Considerations</a>
+  <ul class="collapse">
+  <li><a href="#modifying-edges-corners" id="toc-modifying-edges-corners" class="nav-link" data-scroll-target="#modifying-edges-corners">Modifying Edges / Corners</a></li>
+  <li><a href="#why-modify-edges" id="toc-why-modify-edges" class="nav-link" data-scroll-target="#why-modify-edges">Why modify edges?</a></li>
+  <li><a href="#type-of-holes" id="toc-type-of-holes" class="nav-link" data-scroll-target="#type-of-holes">Type of Holes</a></li>
+  </ul></li>
+  <li><a href="#mechanical-drawings" id="toc-mechanical-drawings" class="nav-link" data-scroll-target="#mechanical-drawings">Mechanical Drawings</a></li>
+  <li><a href="#design-for-manufacturing-dfm-and-beyond" id="toc-design-for-manufacturing-dfm-and-beyond" class="nav-link" data-scroll-target="#design-for-manufacturing-dfm-and-beyond">Design For Manufacturing (DFM) (and beyond)</a></li>
+  <li><a href="#subtractive-vs.-additive-manufacturing" id="toc-subtractive-vs.-additive-manufacturing" class="nav-link" data-scroll-target="#subtractive-vs.-additive-manufacturing">Subtractive vs.&nbsp;Additive Manufacturing</a></li>
+  <li><a href="#in-class-demo" id="toc-in-class-demo" class="nav-link" data-scroll-target="#in-class-demo">In-Class Demo</a></li>
+  </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/mlp6/MedTech-Prototyping-Skills/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div><div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="git-fundamentals-lab.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/mlp6/MedTech-Prototyping-Skills/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div><div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="cad-onshape-slides.html"><i class="bi bi-file-slides"></i>RevealJS (live)</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../labs/software-install_tutorials.html">Labs</a></li><li class="breadcrumb-item"><a href="../labs/git-fundamentals-lab.html">Git Fundamentals Lab</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lectures/medtech-skills-overview-notes.html">Learning Modules</a></li><li class="breadcrumb-item"><a href="../lectures/cad-onshape-notes.html">CAD with Onshape</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Git Fundamentals Lab</h1>
-<p class="subtitle lead">BME254L - Spring 2026 - Palmeri</p>
-  <div class="quarto-categories">
-    <div class="quarto-category">Lab</div>
-  </div>
-  </div>
+<h1 class="title">Computer Aided Design (CAD) with Onshape</h1>
+<p class="subtitle lead">BME254L - Spring 2026</p>
+</div>
 
 
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Dr.&nbsp;Mark Palmeri, M.D., Ph.D. </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Duke University
+          </p>
+      </div>
+  </div>
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Dr.&nbsp;Mark Palmeri, M.D., Ph.D. </p>
-          </div>
-  </div>
-    
+      
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">January 5, 2026</p>
+      <p class="date">January 7, 2026</p>
     </div>
   </div>
   
@@ -300,153 +317,206 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="git-practice" class="level2">
-<h2 class="anchored" data-anchor-id="git-practice">Git Practice</h2>
-<p>This week we will go through a very simple git workflow to get you familiar with the process and to confirm that your toolchain works for future assignments.</p>
-<section id="initial-main-branch-development" class="level3">
-<h3 class="anchored" data-anchor-id="initial-main-branch-development">Initial <code>main</code> Branch Development</h3>
-<ol type="1">
-<li>Make sure that you have git installed, ssh keys configured, and your Duke GitLab account is setup, as detailed <a href="../resources/git.html">here</a></li>
-<li>Be sure to review the tutorials outlined on the <a href="../resources/git.html">git setup page</a>, as needed, to complete the tasks below.</li>
-<li>Create a <strong>fork</strong>–<em>not a <strong>clone</strong></em>–of the <a href="https://gitlab.oit.duke.edu/mlp6/git-fundamentals-lab">git-fundamentals-lab</a> in your userspace.</li>
-<li>Add Dr.&nbsp;Palmeri (<code>mlp6</code>) as a <code>Maintainer</code> of your forked repository (Left Sidebar: <code>Manage -&gt; Members -&gt; Invite members</code>)</li>
-<li>Clone your forked repository to your laptop using the URL available under the blue Code button: <code>Clone with SSH</code>.</li>
-</ol>
-<div class="callout callout-style-default callout-warning callout-titled">
+<section id="computer-aided-design-cad-with-onshape" class="level1">
+<h1>Computer Aided Design (CAD) with Onshape</h1>
+<section id="why-cad" class="level2">
+<h2 class="anchored" data-anchor-id="why-cad">Why CAD?</h2>
+<ul>
+<li><p>Formally capture 2D projection sketches → 3D parts.</p></li>
+<li><p>Dimension consistency checks.</p></li>
+<li><p>Assemble multiple parts to check ﬁt, interfaces and simulate stress/strain/movement.</p></li>
+<li><p>Translate to physical realization (e.g., 3D print, mil).</p></li>
+<li><p>General technical drawings for manufacturing.</p></li>
+<li><p>Capture design history, while facilitating iteration / change.</p></li>
+</ul>
+</section>
+<section id="onshape" class="level2">
+<h2 class="anchored" data-anchor-id="onshape">Onshape</h2>
+<p><img src="images/logo-onshape-gray-green.png" class="img-fluid" style="width:50.0%"></p>
+<ul>
+<li><p>We will be using Onshape, a cloud-based CAD package with a similar workﬂow to SolidWorks.</p></li>
+<li><p>You will receive an email notification about being added to Duke’s Onshape instance: <a href="https://duke.onshape.com">https://duke.onshape.com</a></p></li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Warning
+Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>You want to clone your forked repository, not the parent repository you forked from!</p>
+<p>This is a specific Duke instance of Onshape, not the public one (<a href="https://onshape.com">https://onshape.com</a>). Your Duke account creation will also automatically trigger an account being created in the non-Duke system too, but you cannot share projects between the two instances, so please make sure that you are using the Duke version for coursework!!</p>
 </div>
 </div>
-</section>
-<section id="working-on-a-branch-local" class="level3">
-<h3 class="anchored" data-anchor-id="working-on-a-branch-local">Working on a Branch (Local)</h3>
-<ol type="1">
-<li>Switch to the <code>about_me</code> branch.</li>
-<li>Edit <code>AboutMe.md</code> to replace all of the <code>FILL_ME_IN</code> placeholders with your own information.</li>
-<li>Add and commit these text changes with a meaningful commit message.</li>
-<li>Add and commit a new image file named <code>fun_picture.png</code> in a directory called <code>images/</code> to complete that section of the <code>AboutMe.md</code> file.</li>
-<li>Push this updated branch to the remote of your GitLab repository.<br>
-</li>
-<li>Confirm that you can see your latest commit on this branch on the GitLab website.</li>
-</ol>
-</section>
-<section id="merge-request-time" class="level3">
-<h3 class="anchored" data-anchor-id="merge-request-time">Merge Request Time!</h3>
-<ol type="1">
-<li>Create a new Merge Request on the GitLab to merge the <code>about_me</code> branch into the <code>main</code> branch.
+<p><img src="./rd2.png" class="img-fluid"></p>
+<section id="general-workflow" class="level3">
+<h3 class="anchored" data-anchor-id="general-workflow">General Workflow</h3>
 <ul>
-<li>Assign the Merge Request to yourself.</li>
-<li>You do not need a Reviewer.</li>
-<li>You do <strong>not</strong> want to <em>squash</em> or <em>rebase</em> your branch commits</li>
-<li>You do not want to delete the source branch.</li>
+<li><p><strong>Sketch</strong> 2D profiles (dimensioned).</p>
+<ul>
+<li><p>Use <strong>dimensions</strong> to size parts / features.</p></li>
+<li><p>Use <strong>constraints</strong> to align sketch features to one another (avoid over constraining!).</p></li>
+<li><p>Use <strong>contruction</strong> lines to help with sketching.</p></li>
 </ul></li>
-<li>Check that the <code>check_image</code> and <code>check_about_me</code> pipline jobs have passed.
+<li><p><strong>Extend</strong> 2D profiles to 3D parts.</p>
 <ul>
-<li><code>Build -&gt; Pipelines</code></li>
-<li>Click on the latest pipeline (the colored rounded rectangle button in the status column).</li>
-<li>Click on the <code>check_image</code> or <code>check_about_me</code> job to see the output of the test if it <code>Failed</code>.</li>
+<li><p>Extrude (new, add, subtract, intersection)</p></li>
+<li><p>Revolve</p></li>
+<li><p>Utilize symmetry to mirror operations</p></li>
 </ul></li>
-<li>If the pipeline jobs for this branch have failed, you will need to fix the issue(s) and push the changes to your <code>about_me</code> branch.
-<ul>
-<li>If you are not sure what the issue is, click on the failed job to see the output of the test.</li>
-<li>If you are not sure how to fix it, ask for help!</li>
-</ul></li>
-<li>Once your CI jobs pass, approve your Merge Request on the GitLab website and <code>Merge</code> your <code>about_me</code> branch into <code>main</code>.</li>
-<li>Checkout the <code>main</code> branch on your laptop and pull the latest changes from the GitLab server.</li>
-<li>Confirm that you can see the updated <code>AboutMe.md</code> file in your <code>main</code> branch, along with its associated commit in your git commit history.</li>
-</ol>
-</section>
-<section id="create-an-annotated-tag" class="level3">
-<h3 class="anchored" data-anchor-id="create-an-annotated-tag">Create an Annotated Tag</h3>
-<ol type="1">
-<li>On <code>main</code>, create an annotated tag for this commit associated with your merged <code>about_me</code> branch called <code>v1.0.0</code>, with the message <code>"include the about me info"</code>.</li>
-<li>Push this annotated tag to the GitLab server (<code>origin</code>).</li>
-<li>Confirm that you can see your latest commit and tag on the GitLab website.</li>
-<li>You should see that the <code>check_v1_0_0_tag</code> pipeline job has passed if this was successful.</li>
-</ol>
-</section>
-<section id="fix-a-merge-conflict-locally" class="level3">
-<h3 class="anchored" data-anchor-id="fix-a-merge-conflict-locally">Fix a Merge Conflict (Locally)</h3>
-<ol type="1">
-<li>Inspect the contents of <code>AboutDrPalmeri.md</code> in <code>main</code>.</li>
-<li>Switch to the <code>about_dr_p</code> branch, and look at the content (slightly different) of <code>AboutDrPalmeri.md</code>.</li>
-<li>Switch back to the <code>main</code> branch, and merge the <code>about_dr_p</code> branch into <code>main</code>.
-<ul>
-<li>You will be told that there is a <code>Merge Conflict</code>:</li>
 </ul>
-<pre class="text"><code>$ git merge about_dr_p
-CONFLICT (content): Merge conflict in AboutDrPalmeri.md
-Automatic merge failed; fix conflicts and then commit the result.</code></pre>
+<hr>
 <ul>
-<li><code>git status</code> will show you the files that are in conflict, and what your next likely steps will be to resolve this conflict:</li>
-</ul>
-<pre class="text"><code>$ git status
-Your branch is up to date with 'origin/main'.
-
-You have unmerged paths.
-(fix conflicts and run "git commit")
-(use "git merge --abort" to abort the merge)
-
-Unmerged paths:
-(use "git add &lt;file&gt;..." to mark resolution)
-        both modified:   AboutDrPalmeri.md
-
-no changes added to commit (use "git add" and/or "git commit -a") </code></pre></li>
-<li>Staying on the <code>main</code> branch, open <code>AboutDrPalmeri.md</code> in your text editor, and inspect the <code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code>, <code>=======</code>, and <code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code> markers that indicate the conflicting lines.</li>
-<li>Keep the version of the conflicting line that is in <code>main</code>, and delete the line that was incoming from <code>about_dr_p</code>.</li>
-<li>Be sure to delete the <code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code>, <code>=======</code>, and <code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code> markers (lines).</li>
-<li>Add and commit this merge conflict resolution.</li>
-<li>Create an annotated tag called <code>v1.0.1</code> with the message <code>"fix Dr. P's age"</code>.</li>
-<li>Push your latest commits and tags to <code>main</code> on the GitLab server (<code>origin</code>).</li>
-<li>All of your CI jobs should pass if everything was successful.</li>
-</ol>
-</section>
-</section>
-<section id="how-to-ask-for-help" class="level2">
-<h2 class="anchored" data-anchor-id="how-to-ask-for-help">How to Ask for Help</h2>
-<ol type="1">
-<li>If you have a general / non-coding question, you should ask your TAs / Dr. Palmeri on Ed to allow any of them to respond in a timely manner.</li>
-<li>Push you code to your GitLab repository, ideally with your active development on a non-<code>main</code> branch.</li>
-<li>Create an <a href="https://docs.gitlab.com/ee/user/project/issues/">Issue</a> in your repository.
+<li><p><strong>Modify</strong> 3D parts</p>
 <ul>
-<li>Add as much detail as possible as to your problem, and add links to specific lines / section of code when possible.</li>
-<li>Assign the label “Bug” or “Question”, as appropriate.</li>
-<li>Be sure to specify what branch you are working on.</li>
-<li>Assign the Issue to one of the TAs.</li>
-<li>If your TA cannot solve your Issue, they can escalate the Issue to Dr.&nbsp;Palmeri.</li>
+<li><p>Fillet/chamfer edges</p></li>
+<li><p>Hole tool</p></li>
+<li><p>Combine common modifications into single step</p></li>
+<li><p>Utilize “patterns” to repeat modifications</p></li>
 </ul></li>
-<li>You will get a response to your Issue, and maybe a new branch of code will be pushed to help you with some example syntax that you can use <code>git diff</code> to visualize.</li>
-</ol>
+<li><p><strong>Assemble</strong> multiple parts.</p></li>
+<li><p>Create mechanical drawings for machining / documentation.</p></li>
+</ul>
 </section>
-<section id="what-to-submit" class="level2">
-<h2 class="anchored" data-anchor-id="what-to-submit">What to Submit</h2>
-<p>Your fork of this GitLab repository will be running this CI script: <a href=".gitlab-ci.yml"><code>.gitlab-ci.yml</code></a></p>
-<ol type="1">
-<li>Go to the <code>Build -&gt; Pipelines</code> page of your GitLab repository.</li>
-<li>Take a screenshot of the latest pipeline that shows all of the tests passing, along with your repository information, as shown below (except all of those <code>Failed</code> tests should report <code>Passed</code>).</li>
-</ol>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/ci_pipeline.png" class="img-fluid figure-img"></p>
-<figcaption>ci_pipeline</figcaption>
-</figure>
+<section id="tips" class="level3">
+<h3 class="anchored" data-anchor-id="tips">Tips</h3>
+<ul>
+<li><p>Utilize part symmetry and patterns to reduce manual effort.</p></li>
+<li><p>Define new sketch planes on part references that “make sense”.</p></li>
+<li><p><strong>Practice!!</strong></p>
+<ul>
+<li><p>There are many ways to create the same parts.</p></li>
+<li><p>Some are more amenable to future modification than others; those aren’t always the fastest to create from scratch.</p></li>
+<li><p>Experience is highly valuable on a resume.</p></li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="mechanical-design-considerations" class="level2">
+<h2 class="anchored" data-anchor-id="mechanical-design-considerations">Mechanical Design Considerations</h2>
+<section id="modifying-edges-corners" class="level3">
+<h3 class="anchored" data-anchor-id="modifying-edges-corners">Modifying Edges / Corners</h3>
+<ul>
+<li><p><strong>Fillet</strong> - rounded edge/corner</p></li>
+<li><p><strong>Chamfer</strong> - sloped / angled corner / edge</p></li>
+</ul>
+<p><img src="images/edge_chamfer_fillet.jpg" class="img-fluid" style="width:50.0%"></p>
+<p><img src="images/chamfering_beveling.jpg" class="img-fluid" style="width:50.0%"></p>
+</section>
+<section id="why-modify-edges" class="level3">
+<h3 class="anchored" data-anchor-id="why-modify-edges">Why modify edges?</h3>
+<ul>
+<li><p>Reduce stress concentrations (fillet &gt; chamfer)</p></li>
+<li><p>Reduce sharp edges</p></li>
+<li><p>Ease assembly (potentially at a cost to manufacturing)</p></li>
+</ul>
+<p><img src="images/stress_concentration.png" class="img-fluid" style="width:50.0%"></p>
+</section>
+<section id="type-of-holes" class="level3">
+<h3 class="anchored" data-anchor-id="type-of-holes">Type of Holes</h3>
+<p><img src="images/holes.jpg" class="img-fluid" style="width:100.0%"></p>
+<ul>
+<li><p>CAD tools have Hole tools that can be very useful.</p></li>
+<li><p>Hole diameter (and threading) can be specified by ANSI (e.g., #10-32, 32 tpi) or ISO (e.g., M5-0.8, mm pitch) standards</p></li>
+<li><p>Mechanical drawings typically consistent of a table of holes (that can be automatically generated when using the Hole tool)</p></li>
+</ul>
+</section>
+</section>
+<section id="mechanical-drawings" class="level2">
+<h2 class="anchored" data-anchor-id="mechanical-drawings">Mechanical Drawings</h2>
+<ul>
+<li><p>Multiview / orthographic projection</p></li>
+<li><p>ISO 8015: Geometrical product specifications (GPS) — Fundamentals — Concepts, principles and rules</p></li>
+<li><p>Dimension callouts / values should not overlap any part lines!</p></li>
+</ul>
+<hr>
+<p><img src="images/mechanical_drawing.png" class="img-fluid" style="width:55.0%"></p>
+</section>
+<section id="design-for-manufacturing-dfm-and-beyond" class="level2">
+<h2 class="anchored" data-anchor-id="design-for-manufacturing-dfm-and-beyond">Design For Manufacturing (DFM) (and beyond)</h2>
+<ul>
+<li><p>Purpose</p>
+<ul>
+<li><p>Protection (e.g., water, debris, sunlight)</p></li>
+<li><p>Supporting relative position</p></li>
+<li><p>Mounting</p></li>
+</ul></li>
+<li><p>Loading</p>
+<ul>
+<li><p>Shipping</p></li>
+<li><p>Gravity / Momentum</p></li>
+<li><p>Falls (especially corners!)</p></li>
+</ul></li>
+<li><p>Buttons / Dials / Sliders</p></li>
+</ul>
+<hr>
+<ul>
+<li><p>Interfaces</p>
+<ul>
+<li><p>Cables</p></li>
+<li><p>Displays</p></li>
+<li><p>Buttons</p></li>
+</ul></li>
+<li><p>Minimize everything else to save on time and cost!</p></li>
+</ul>
+</section>
+<section id="subtractive-vs.-additive-manufacturing" class="level2">
+<h2 class="anchored" data-anchor-id="subtractive-vs.-additive-manufacturing">Subtractive vs.&nbsp;Additive Manufacturing</h2>
+<ul>
+<li><p>Machining (subtractive)</p>
+<ul>
+<li><p>Milling</p></li>
+<li><p>Turning</p></li>
+<li><p>Drilling</p></li>
+<li><p>Grinding</p></li>
+</ul></li>
+<li><p>Additive</p>
+<ul>
+<li><p>3D Printing</p></li>
+<li><p>Laser Sintering</p></li>
+<li><p>Stereolithography</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="in-class-demo" class="level2">
+<h2 class="anchored" data-anchor-id="in-class-demo">In-Class Demo</h2>
+<ul>
+<li><p>Give operations meaningful names</p></li>
+<li><p>Use variables for dimensions that may change</p></li>
+</ul>
+
+
+<script type="ojs-module-contents">
+eyJjb250ZW50cyI6W119
+</script>
+<div id="exercise-loading-indicator" class="exercise-loading-indicator d-none d-flex align-items-center gap-2">
+<div id="exercise-loading-status" class="d-flex gap-2">
+
 </div>
-<ol type="1">
-<li>Submit this screenshot to Gradescope assignment, along with completing the prompted questions.</li>
-</ol>
+<div class="spinner-grow spinner-grow-sm">
 
-
+</div>
+</div>
+<script type="vfs-file">
+W10=
+</script>
+</section>
 </section>
 
 </main> <!-- /main -->
+<script type="ojs-module-contents">
+eyJjb250ZW50cyI6W119
+</script>
+<script type="module">
+if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
+window._ojs.paths.runtimeToDoc = "../../lectures";
+window._ojs.paths.runtimeToRoot = "../..";
+window._ojs.paths.docToRoot = "..";
+window._ojs.selfContained = false;
+window._ojs.runtime.interpretFromScriptTags();
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

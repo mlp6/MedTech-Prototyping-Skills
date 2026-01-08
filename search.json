@@ -315,7 +315,18 @@
     "href": "lectures/medtech-skills-overview-notes.html",
     "title": "MedTech Skills Overview",
     "section": "",
-    "text": "Do not want design ideas to be limited by what you “think” you can actually make!\nAs the engineer, you bring both solution creativity and execution to the table.\nMost of the engineering curriculum has been ``book heavy’’ to date.\n\nFunctional Decomposition\nCAD/EDA (simulation, PCB layout)\nFabrication & Integration (3D printing, soldering, fastening, mounting)\nVerification & Validation: testing to specifications\nMCU Firmware Development (C, git)",
+    "text": "BME in Industry\n\n\n\n\nDo not want design ideas to be limited by what you “think” you can actually make!\nAs the engineer, you bring both solution creativity and execution to the table.\nMost of the engineering curriculum has been ``book heavy’’ to date.\n\nFunctional Decomposition\nCAD/EDA (simulation, PCB layout)\nFabrication & Integration (3D printing, soldering, fastening, mounting)\nVerification & Validation: testing to specifications\nMCU Firmware Development (C, git)",
+    "crumbs": [
+      "Learning Modules",
+      "MedTech Prototyping Skills Overview"
+    ]
+  },
+  {
+    "objectID": "lectures/medtech-skills-overview-notes.html#what-is-medtech",
+    "href": "lectures/medtech-skills-overview-notes.html#what-is-medtech",
+    "title": "MedTech Skills Overview",
+    "section": "",
+    "text": "BME in Industry",
     "crumbs": [
       "Learning Modules",
       "MedTech Prototyping Skills Overview"
@@ -496,6 +507,13 @@
       "Learning Modules",
       "MedTech Prototyping Skills Overview"
     ]
+  },
+  {
+    "objectID": "lectures/medtech-skills-overview-slides.html#what-is-medtech",
+    "href": "lectures/medtech-skills-overview-slides.html#what-is-medtech",
+    "title": "MedTech Skills Overview",
+    "section": "What is MedTech?",
+    "text": "What is MedTech?\nBME in Industry"
   },
   {
     "objectID": "lectures/medtech-skills-overview-slides.html#why-skills",

@@ -10,6 +10,10 @@ format:
 
 # MedTech Skills Overview
 
+## What is MedTech?
+
+[BME in Industry](https://sites.google.com/view/dukebmeindustryopportunities/home?authuser=0)
+
 ## Why skills?
 
 - Do not want design ideas to be limited by what you "think" you can actually make!

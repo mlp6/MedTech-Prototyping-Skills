@@ -3,9 +3,9 @@ title: "Electronics Design Automation - KiCad PCB Layout"
 date: "2026-01-08"
 format:
   live-html: 
-    output-file: cad-onshape-notes.html
+    output-file: EDA-KiCad-PCB-Layout-notes.html
   live-revealjs: 
-    output-file: cad-onshape-slides.html
+    output-file: EDA-KiCad-PCB-Layout-slides.html
 ---
 
 # Electronics Design Automation: PCB Layout

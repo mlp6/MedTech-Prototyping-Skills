@@ -32,7 +32,7 @@ equipment to perform testing of your devices.  Your TAs will announce times when
 they will hold lab hours.
 
 ::: callout-important
-Please review the [lab policies](bme-lab-policies.qmd) before using the lab for
+Please review the [lab policies](resources/bme-lab-policies.qmd) before using the lab for
 the first time this semester.
 :::
 

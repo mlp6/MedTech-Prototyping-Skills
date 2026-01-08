@@ -3,9 +3,9 @@ title: "Electronics Design Automation - KiCad SPICE Modeling"
 date: "2026-01-08"
 format:
   live-html: 
-    output-file: cad-onshape-notes.html
+    output-file: EDA-KiCad-SPICE-notes.html
   live-revealjs: 
-    output-file: cad-onshape-slides.html
+    output-file: EDA-KiCad-SPICE-slides.html
 ---
 
 # Electronics Design Automation: SPICE Modeling

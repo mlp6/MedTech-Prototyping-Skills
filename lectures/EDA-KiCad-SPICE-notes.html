@@ -6,9 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-01-05">
+<meta name="author" content="Dr.&nbsp;Mark Palmeri, M.D., Ph.D.">
+<meta name="dcterms.date" content="2026-01-08">
 
-<title>State Diagrams – MedTech Prototyping Skills</title>
+<title>Electronics Design Automation - KiCad SPICE Modeling – MedTech Prototyping Skills</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -39,7 +40,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-fced259a1985fd972ecb57c7cd45153f.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-13f007c1943c6d3711256cc1d3aa22a2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-89abcb12e8852b82dab2915b19c79ac0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-contrib/live-runtime/live-runtime.js" type="module"></script>
+<link href="../site_libs/quarto-contrib/live-runtime/live-runtime.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -67,9 +70,40 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script type="module" src="../site_libs/quarto-ojs/quarto-ojs-runtime.js"></script>
+<link href="../site_libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="../styles.css">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-sidebar docked quarto-light">
@@ -81,7 +115,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../resources/state_diagram.html">Resources</a></li><li class="breadcrumb-item"><a href="../resources/state_diagram.html">State Diagrams</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lectures/medtech-skills-overview-notes.html">Learning Modules</a></li><li class="breadcrumb-item"><a href="../lectures/eda-kicad-schematic-capture-notes.html">EDA (KiCad)</a></li><li class="breadcrumb-item"><a href="../lectures/EDA-KiCad-SPICE-notes.html">SPICE Modeling</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -174,13 +208,13 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
  <span class="menu-text">EDA (KiCad)</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lectures/eda-kicad-schematic-capture-notes.html" class="sidebar-item-text sidebar-link">
@@ -189,7 +223,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lectures/EDA-KiCad-SPICE-notes.html" class="sidebar-item-text sidebar-link">
+  <a href="../lectures/EDA-KiCad-SPICE-notes.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">SPICE Modeling</span></a>
   </div>
 </li>
@@ -249,7 +283,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../resources/state_diagram.html" class="sidebar-item-text sidebar-link active">
+  <a href="../resources/state_diagram.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">State Diagrams</span></a>
   </div>
 </li>
@@ -283,27 +317,52 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#state-diagram-software" id="toc-state-diagram-software" class="nav-link active" data-scroll-target="#state-diagram-software">State Diagram Software</a></li>
+  <li><a href="#electronics-design-automation-spice-modeling" id="toc-electronics-design-automation-spice-modeling" class="nav-link active" data-scroll-target="#electronics-design-automation-spice-modeling">Electronics Design Automation: SPICE Modeling</a>
+  <ul class="collapse">
+  <li><a href="#what-is-spice" id="toc-what-is-spice" class="nav-link" data-scroll-target="#what-is-spice">What is SPICE?</a></li>
+  <li><a href="#why-model-circuits" id="toc-why-model-circuits" class="nav-link" data-scroll-target="#why-model-circuits">Why model circuits?</a></li>
+  <li><a href="#spice-vs.-non-spice-components" id="toc-spice-vs.-non-spice-components" class="nav-link" data-scroll-target="#spice-vs.-non-spice-components">SPICE vs.&nbsp;Non-SPICE Components</a></li>
+  <li><a href="#limiting-scope-of-spice-simulation" id="toc-limiting-scope-of-spice-simulation" class="nav-link" data-scroll-target="#limiting-scope-of-spice-simulation">Limiting Scope of SPICE Simulation</a></li>
+  <li><a href="#setting-component-simulation-parameters" id="toc-setting-component-simulation-parameters" class="nav-link" data-scroll-target="#setting-component-simulation-parameters">Setting Component Simulation Parameters</a></li>
+  <li><a href="#setting-analysis-parameters" id="toc-setting-analysis-parameters" class="nav-link" data-scroll-target="#setting-analysis-parameters">Setting Analysis Parameters</a></li>
+  <li><a href="#run-simulation-and-probe-components" id="toc-run-simulation-and-probe-components" class="nav-link" data-scroll-target="#run-simulation-and-probe-components">Run Simulation and Probe Components</a></li>
+  <li><a href="#examples" id="toc-examples" class="nav-link" data-scroll-target="#examples">Examples</a></li>
+  <li><a href="#resources" id="toc-resources" class="nav-link" data-scroll-target="#resources">Resources</a></li>
+  </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/mlp6/MedTech-Prototyping-Skills/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div><div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="state_diagram.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/mlp6/MedTech-Prototyping-Skills/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div><div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="EDA-KiCad-SPICE-slides.html"><i class="bi bi-file-slides"></i>RevealJS (live)</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../resources/state_diagram.html">Resources</a></li><li class="breadcrumb-item"><a href="../resources/state_diagram.html">State Diagrams</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lectures/medtech-skills-overview-notes.html">Learning Modules</a></li><li class="breadcrumb-item"><a href="../lectures/eda-kicad-schematic-capture-notes.html">EDA (KiCad)</a></li><li class="breadcrumb-item"><a href="../lectures/EDA-KiCad-SPICE-notes.html">SPICE Modeling</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">State Diagrams</h1>
+<h1 class="title">Electronics Design Automation - KiCad SPICE Modeling</h1>
+<p class="subtitle lead">BME254L - Spring 2026</p>
 </div>
 
 
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Dr.&nbsp;Mark Palmeri, M.D., Ph.D. </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Duke University
+          </p>
+      </div>
+  </div>
 
 <div class="quarto-title-meta">
 
-    
+      
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">January 5, 2026</p>
+      <p class="date">January 8, 2026</p>
     </div>
   </div>
   
@@ -315,56 +374,130 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="state-diagram-software" class="level2">
-<h2 class="anchored" data-anchor-id="state-diagram-software">State Diagram Software</h2>
-<p>We will be generating state diagrams all semester, which can be done with a variety of different software packages:</p>
+<section id="electronics-design-automation-spice-modeling" class="level1">
+<h1>Electronics Design Automation: SPICE Modeling</h1>
+<section id="what-is-spice" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-spice">What is SPICE?</h2>
 <ul>
-<li><p><a href="https://plantuml.com/">PlantUML</a></p>
-<ul>
-<li><p>Text-based diagramming tool that can be integrated into VS Code</p></li>
-<li><p>A bit outdated, and a tad clunky in default layouts without some “nudging”</p></li>
-<li><p>What will be used in lecture and lab assignments</p></li>
-</ul></li>
+<li><p>Simulation Program with Integrated Circuit Emphasis (SPICE)</p></li>
+<li><p>Model and analyze the behavior of electronic circuits before they are physically constructed.</p></li>
+<li><p>Input schematic representations of circuits (e.g., resistors, capacitors, transistors, diodes, etc.)</p></li>
+<li><p>Simulate circuit performance by computing current, voltage, and power, across these components under different conditions.</p></li>
 </ul>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>PlantUML uses Java, which may require you to install a Java Runtime Environment (JRE) on your laptop if you do not already have one. If you would like to avoid installing that, you can use the <a href="https://plantuml.com/server">PlantUML Server</a> option in the PlantUML VS Code extension settings.</p>
-</div>
-</div>
+</section>
+<section id="why-model-circuits" class="level2">
+<h2 class="anchored" data-anchor-id="why-model-circuits">Why model circuits?</h2>
 <ul>
-<li><p><a href="https://mermaid-js.github.io/mermaid/#/">Mermaid Markdown</a></p>
-<ul>
-<li><p>Markdown-based diagramming tool that can be integrated into VS Code</p></li>
-<li><p>More modern and easier to use than PlantUML</p></li>
-<li><p>Not as feature-rich as PlantUML</p></li>
-</ul></li>
-<li><p><a href="https://app.diagrams.net/">draw.io</a></p>
-<ul>
-<li><p>Web-based diagramming tool that can be integrated into VS Code (Draw.io Integration)</p></li>
-<li><p>Very feature-rich and easy to use</p></li>
-<li><p>Not text-based</p></li>
-</ul></li>
-<li><p><a href="https://www.lucidchart.com/">Lucidchart</a></p>
-<ul>
-<li><p>Web-based diagramming tool</p></li>
-<li><p>Very feature-rich and easy to use</p></li>
-<li><p>Not text-based (less VCS friendly)</p></li>
-</ul></li>
+<li><p>Reduce design costs.</p></li>
+<li><p>Breadboards / thru-hole prototyping is not realistic for complex circuits.</p></li>
+<li><p>Most components are now surface mount.</p></li>
+<li><p>Model <span class="math inline">\(\rightarrow\)</span> Breakout Boards <span class="math inline">\(\rightarrow\)</span> PCB</p></li>
 </ul>
-<p>You can use whatever software package you prefer for this class this semester, though PlantUML will be the only software supported by Dr.&nbsp;Palmeri and the teaching team.</p>
+</section>
+<section id="spice-vs.-non-spice-components" class="level2">
+<h2 class="anchored" data-anchor-id="spice-vs.-non-spice-components">SPICE vs.&nbsp;Non-SPICE Components</h2>
+<ul>
+<li><p>SPICE components are defined by their mathematical models.</p></li>
+<li><p>Non-SPICE components are defined by their physical characteristics.</p></li>
+<li><p>KiCad has a library of SPICE models for common components.</p></li>
+<li><p>SPICE models are not always available for all components, but can be downloaded and added to some libraries.</p></li>
+<li><p>SPICE models can be edited / created for custom components.</p></li>
+</ul>
+</section>
+<section id="limiting-scope-of-spice-simulation" class="level2">
+<h2 class="anchored" data-anchor-id="limiting-scope-of-spice-simulation">Limiting Scope of SPICE Simulation</h2>
+<ul>
+<li><p>We usually want to simulate as simple of a circuit as possible.</p></li>
+<li><p>We can limit the scope of the simulation by excluding components from the braoder schematic from the sub-circuit that we want to simulate:</p>
+<ol type="1">
+<li><p>Drag select all of the components you want to exclude to highlight them.</p></li>
+<li><p>Right Click: <code>Attributes -&gt; Exclude from Simulation</code></p></li>
+<li><p>Repeat this for other sheets / circuits in the schematic.</p></li>
+<li><p>In the Simulation window, Confirm that your <code>SPICE Netlist</code> reflets what you actually want to simulate.</p></li>
+</ol></li>
+</ul>
+</section>
+<section id="setting-component-simulation-parameters" class="level2">
+<h2 class="anchored" data-anchor-id="setting-component-simulation-parameters">Setting Component Simulation Parameters</h2>
+<ul>
+<li><p>The SPICE model can be set in the component properties.</p></li>
+<li><p>The component must have a SPICE model to be included in the simulation.</p></li>
+<li><p>Only certain components allow certain simulation parameters to be varied (e.g., resistors vs.&nbsp;potentiometers).</p></li>
+</ul>
+</section>
+<section id="setting-analysis-parameters" class="level2">
+<h2 class="anchored" data-anchor-id="setting-analysis-parameters">Setting Analysis Parameters</h2>
+<ol type="1">
+<li><p><strong>AC Sweep:</strong> frequency analysis</p></li>
+<li><p><strong>DC Sweep:</strong> sweep voltage, current, resistance, capacitance</p></li>
+<li><p><strong>Operating Point:</strong> analysis at a specific point in time</p></li>
+<li><p><strong>Transient:</strong> time-domain analysis</p></li>
+</ol>
+</section>
+<section id="run-simulation-and-probe-components" class="level2">
+<h2 class="anchored" data-anchor-id="run-simulation-and-probe-components">Run Simulation and Probe Components</h2>
+<ul>
+<li><p>Simulations are <code>Run</code> (Blue Arrow in Simulation window).</p></li>
+<li><p>Probes can be added by parameter and component name or interactively.</p></li>
+<li><p>Choose a <code>New Analysis</code> and what components you want to sweep.</p>
+<ul>
+<li>Avoid setting any values to <code>0</code> as they can cause numerical instability!</li>
+</ul></li>
+<li><p>After you hit <code>Ok</code>, choose the parameters from the right side of the window that you would like to plot.</p></li>
+<li><p>If you change your schematic, be sure to re-Run the simulation.</p>
+<ul>
+<li>You may want to create a new analysis tab to make sure that the simulation reflects the latest changes.</li>
+</ul></li>
+<li><p>All open analysis tabs must be valid for the running simulation to be successful!</p></li>
+</ul>
+</section>
+<section id="examples" class="level2">
+<h2 class="anchored" data-anchor-id="examples">Examples</h2>
+<ul>
+<li><p><a href="../kicad/voltage_divider/">Voltage Divider with Potentiometer (DC Sweep)</a></p></li>
+<li><p><a href="../kicad/active_lpf/">RC Filter (AC Sweep)</a></p></li>
+<li><p><a href="../kicad/RC_AC_Transient/">RC Filter (Transient Analysis)</a></p></li>
+<li><p><a href="../kicad/RC_Switched/">RC Filter (Switched, Transient Analysis)</a></p></li>
+</ul>
+</section>
+<section id="resources" class="level2">
+<h2 class="anchored" data-anchor-id="resources">Resources</h2>
+<ul>
+<li><p><a href="https://www.kicad.org/discover/spice/">KiCad SPICE Simulation</a></p></li>
+<li><p><a href="https://ngspice.sourceforge.io/">ngspice</a></p></li>
+<li><p><a href="https://www.woolseyworkshop.com/2019/07/01/performing-a-circuit-simulation-in-kicad/?s=09">Performing A Circuit Simulation In KiCad</a></p></li>
+</ul>
 
 
+<script type="ojs-module-contents">
+eyJjb250ZW50cyI6W119
+</script>
+<div id="exercise-loading-indicator" class="exercise-loading-indicator d-none d-flex align-items-center gap-2">
+<div id="exercise-loading-status" class="d-flex gap-2">
+
+</div>
+<div class="spinner-grow spinner-grow-sm">
+
+</div>
+</div>
+<script type="vfs-file">
+W10=
+</script>
+</section>
 </section>
 
 </main> <!-- /main -->
+<script type="ojs-module-contents">
+eyJjb250ZW50cyI6W119
+</script>
+<script type="module">
+if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
+window._ojs.paths.runtimeToDoc = "../../lectures";
+window._ojs.paths.runtimeToRoot = "../..";
+window._ojs.paths.docToRoot = "..";
+window._ojs.selfContained = false;
+window._ojs.runtime.interpretFromScriptTags();
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

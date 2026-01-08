@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Dr.&nbsp;Mark Palmeri, M.D., Ph.D.">
-<meta name="dcterms.date" content="2026-01-06">
+<meta name="dcterms.date" content="2026-01-08">
 
-<title>MedTech Prototyping Skills: Software Installation &amp; Tutorials – MedTech Prototyping Skills</title>
+<title>Electronics Design Automation - KiCad PCB Layout – MedTech Prototyping Skills</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -40,7 +40,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-fced259a1985fd972ecb57c7cd45153f.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-13f007c1943c6d3711256cc1d3aa22a2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-89abcb12e8852b82dab2915b19c79ac0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-contrib/live-runtime/live-runtime.js" type="module"></script>
+<link href="../site_libs/quarto-contrib/live-runtime/live-runtime.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -68,9 +70,40 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script type="module" src="../site_libs/quarto-ojs/quarto-ojs-runtime.js"></script>
+<link href="../site_libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="../styles.css">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-sidebar docked quarto-light">
@@ -82,7 +115,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../labs/software-install_tutorials.html">Labs</a></li><li class="breadcrumb-item"><a href="../labs/software-install_tutorials.html">Software Installation Tutorials</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lectures/medtech-skills-overview-notes.html">Learning Modules</a></li><li class="breadcrumb-item"><a href="../lectures/eda-kicad-schematic-capture-notes.html">EDA (KiCad)</a></li><li class="breadcrumb-item"><a href="../lectures/EDA-KiCad-PCB-Layout-notes.html">PCB Layout</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -173,20 +206,49 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">CAD with Onshape</span></a>
   </div>
 </li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
+          <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
- <span class="menu-text">Labs</span></a>
+ <span class="menu-text">EDA (KiCad)</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../labs/software-install_tutorials.html" class="sidebar-item-text sidebar-link active">
+  <a href="../lectures/eda-kicad-schematic-capture-notes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Schematic Capture</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lectures/EDA-KiCad-SPICE-notes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SPICE Modeling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lectures/EDA-KiCad-PCB-Layout-notes.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">PCB Layout</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Labs</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/software-install-tutorials.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Software Installation Tutorials</span></a>
   </div>
 </li>
@@ -212,13 +274,13 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
  <span class="menu-text">Resources</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../resources/state_diagram.html" class="sidebar-item-text sidebar-link">
@@ -237,6 +299,12 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">3D Printing</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../kicad/" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Example KiCad Projects</span></a>
+  </div>
+</li>
       </ul>
   </li>
     </ul>
@@ -249,44 +317,61 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#git-version-control" id="toc-git-version-control" class="nav-link active" data-scroll-target="#git-version-control">Git (Version Control)</a></li>
-  <li><a href="#kicad-eda" id="toc-kicad-eda" class="nav-link" data-scroll-target="#kicad-eda">KiCad (EDA)</a></li>
-  <li><a href="#onshape-cad" id="toc-onshape-cad" class="nav-link" data-scroll-target="#onshape-cad">Onshape (CAD)</a></li>
-  <li><a href="#visual-studio-code-ide" id="toc-visual-studio-code-ide" class="nav-link" data-scroll-target="#visual-studio-code-ide">Visual Studio Code (IDE)</a></li>
-  <li><a href="#arduino-nano-every" id="toc-arduino-nano-every" class="nav-link" data-scroll-target="#arduino-nano-every">Arduino Nano Every</a></li>
-  <li><a href="#technical-report-preparation" id="toc-technical-report-preparation" class="nav-link" data-scroll-target="#technical-report-preparation">Technical Report Preparation</a></li>
-  <li><a href="#lab-policies-safety" id="toc-lab-policies-safety" class="nav-link" data-scroll-target="#lab-policies-safety">Lab Policies &amp; Safety</a></li>
-  <li><a href="#what-to-submit" id="toc-what-to-submit" class="nav-link" data-scroll-target="#what-to-submit">What to Submit</a></li>
+  <li><a href="#electronics-design-automation-pcb-layout" id="toc-electronics-design-automation-pcb-layout" class="nav-link active" data-scroll-target="#electronics-design-automation-pcb-layout">Electronics Design Automation: PCB Layout</a>
+  <ul class="collapse">
+  <li><a href="#pcb-layout" id="toc-pcb-layout" class="nav-link" data-scroll-target="#pcb-layout">PCB Layout</a>
+  <ul class="collapse">
+  <li><a href="#why-a-pcb" id="toc-why-a-pcb" class="nav-link" data-scroll-target="#why-a-pcb">Why a PCB?</a></li>
+  <li><a href="#pcb-examples" id="toc-pcb-examples" class="nav-link" data-scroll-target="#pcb-examples">PCB Examples</a></li>
+  <li><a href="#top-layer" id="toc-top-layer" class="nav-link" data-scroll-target="#top-layer">Top Layer</a></li>
+  <li><a href="#this-is-actually-a-four-layer-pcb" id="toc-this-is-actually-a-four-layer-pcb" class="nav-link" data-scroll-target="#this-is-actually-a-four-layer-pcb">This is actually a four-layer PCB…</a></li>
+  <li><a href="#two-layer-pcb" id="toc-two-layer-pcb" class="nav-link" data-scroll-target="#two-layer-pcb">Two-layer PCB</a></li>
+  <li><a href="#surface-mount-devices-smd" id="toc-surface-mount-devices-smd" class="nav-link" data-scroll-target="#surface-mount-devices-smd">Surface Mount Devices (SMD)</a></li>
+  </ul></li>
+  <li><a href="#through-hole-components-tht" id="toc-through-hole-components-tht" class="nav-link" data-scroll-target="#through-hole-components-tht">Through-hole Components (THT)</a>
+  <ul class="collapse">
+  <li><a href="#pcb-editor" id="toc-pcb-editor" class="nav-link" data-scroll-target="#pcb-editor">PCB Editor</a></li>
+  <li><a href="#pcb-layout-1" id="toc-pcb-layout-1" class="nav-link" data-scroll-target="#pcb-layout-1">PCB Layout</a></li>
+  <li><a href="#tips-n-tricks" id="toc-tips-n-tricks" class="nav-link" data-scroll-target="#tips-n-tricks">Tips-n-Tricks</a></li>
+  <li><a href="#thermal-relief" id="toc-thermal-relief" class="nav-link" data-scroll-target="#thermal-relief">Thermal Relief</a></li>
+  <li><a href="#d-view-and-step-export" id="toc-d-view-and-step-export" class="nav-link" data-scroll-target="#d-view-and-step-export">3D View and STEP Export</a></li>
+  </ul></li>
+  <li><a href="#resources" id="toc-resources" class="nav-link" data-scroll-target="#resources">Resources</a></li>
+  </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/mlp6/MedTech-Prototyping-Skills/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div><div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="software-install_tutorials.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/mlp6/MedTech-Prototyping-Skills/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div><div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="EDA-KiCad-PCB-Layout-slides.html"><i class="bi bi-file-slides"></i>RevealJS (live)</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../labs/software-install_tutorials.html">Labs</a></li><li class="breadcrumb-item"><a href="../labs/software-install_tutorials.html">Software Installation Tutorials</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lectures/medtech-skills-overview-notes.html">Learning Modules</a></li><li class="breadcrumb-item"><a href="../lectures/eda-kicad-schematic-capture-notes.html">EDA (KiCad)</a></li><li class="breadcrumb-item"><a href="../lectures/EDA-KiCad-PCB-Layout-notes.html">PCB Layout</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">MedTech Prototyping Skills: Software Installation &amp; Tutorials</h1>
-<p class="subtitle lead">BME254L - Spring 2026 - Palmeri</p>
-  <div class="quarto-categories">
-    <div class="quarto-category">Lab</div>
-  </div>
-  </div>
+<h1 class="title">Electronics Design Automation - KiCad PCB Layout</h1>
+<p class="subtitle lead">BME254L - Spring 2026</p>
+</div>
 
 
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Dr.&nbsp;Mark Palmeri, M.D., Ph.D. </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Duke University
+          </p>
+      </div>
+  </div>
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Dr.&nbsp;Mark Palmeri, M.D., Ph.D. </p>
-          </div>
-  </div>
-    
+      
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">January 6, 2026</p>
+      <p class="date">January 8, 2026</p>
     </div>
   </div>
   
@@ -298,146 +383,243 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="git-version-control" class="level2">
-<h2 class="anchored" data-anchor-id="git-version-control">Git (Version Control)</h2>
-<p>Please follow the instructions on this dedicated <a href="../resources/git.html">git page</a> to:</p>
+<section id="electronics-design-automation-pcb-layout" class="level1">
+<h1>Electronics Design Automation: PCB Layout</h1>
+<section id="pcb-layout" class="level2">
+<h2 class="anchored" data-anchor-id="pcb-layout">PCB Layout</h2>
+<section id="why-a-pcb" class="level3">
+<h3 class="anchored" data-anchor-id="why-a-pcb">Why a PCB?</h3>
 <ul>
-<li><p>Install <code>git</code></p></li>
-<li><p>Configure <code>git</code></p></li>
-<li><p>Setup an SSH key</p></li>
-<li><p>Provide links to <code>git</code> tutorials to reinforce the concepts and mechanics of using <code>git</code>.</p></li>
+<li><p>Breadboards are good for simple testing, but not robust.</p></li>
+<li><p>Need to reduce form factor.</p></li>
+<li><p>Reduce noise, capacitive effects, etc.</p></li>
+<li><p>SMD (versus thru-hole) components are becoming ubiquitous.</p></li>
+</ul>
+<p><img src="images/breadboard.jpg" class="img-fluid" width="400"></p>
+</section>
+<section id="pcb-examples" class="level3">
+<h3 class="anchored" data-anchor-id="pcb-examples">PCB Examples</h3>
+<section id="physical-rendering" class="level4">
+<h4 class="anchored" data-anchor-id="physical-rendering">Physical Rendering</h4>
+<p><img src="images/pcb_rev1.png" class="img-fluid" width="800"></p>
+</section>
+</section>
+<section id="top-layer" class="level3">
+<h3 class="anchored" data-anchor-id="top-layer">Top Layer</h3>
+<p><img src="images/pcb_layout_rev1.png" class="img-fluid" width="800"> ### Bottom Layer</p>
+<p><img src="images/pcb_layout_rev1_bottom.png" class="img-fluid" width="800"></p>
+</section>
+<section id="this-is-actually-a-four-layer-pcb" class="level3">
+<h3 class="anchored" data-anchor-id="this-is-actually-a-four-layer-pcb">This is actually a four-layer PCB…</h3>
+<p>There are actually two layers in the middle of the board that are not visible in the above images:</p>
+<ul>
+<li><p><strong>Power Layer</strong>: 3.3 V (<code>VDD</code>)</p></li>
+<li><p><strong>GND Layer</strong></p></li>
 </ul>
 </section>
-<section id="kicad-eda" class="level2">
-<h2 class="anchored" data-anchor-id="kicad-eda">KiCad (EDA)</h2>
+<section id="two-layer-pcb" class="level3">
+<h3 class="anchored" data-anchor-id="two-layer-pcb">Two-layer PCB</h3>
 <ul>
-<li>Please install KiCad: <a href="https://kicad.org">https://kicad.org</a></li>
+<li><p>Single-layer boards for “trivial” layouts.</p></li>
+<li><p>Two-layer board best balance of flexibility and complexity for “simple” layouts.</p></li>
+<li><p><span class="math inline">\(&gt;\)</span> 2 layers increases complexity (but putting power and ground on their own layers can be advantageous)</p></li>
 </ul>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>This installation file can be a bit large, so this may take a few minutes to download.</p>
-</div>
-</div>
+<p><img src="images/pcb_layers_annotated.png" class="img-fluid" width="400"></p>
 </section>
-<section id="onshape-cad" class="level2">
-<h2 class="anchored" data-anchor-id="onshape-cad">Onshape (CAD)</h2>
+<section id="surface-mount-devices-smd" class="level3">
+<h3 class="anchored" data-anchor-id="surface-mount-devices-smd">Surface Mount Devices (SMD)</h3>
 <ul>
-<li>Please make sure to activate your invitation to Duke’s Onshape server (see email).</li>
+<li><p>Surface mount components on the same side as the traces</p></li>
+<li><p>Soldering using reflow.</p></li>
 </ul>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>If you did not receive an email invitation, please send Dr.&nbsp;Palmeri and your TAs a private message on Ed.</p>
-</div>
-</div>
+<p><img src="images/smd_components.jpg" class="img-fluid" width="400"></p>
 </section>
-<section id="visual-studio-code-ide" class="level2">
-<h2 class="anchored" data-anchor-id="visual-studio-code-ide">Visual Studio Code (IDE)</h2>
-<p>We will be using <a href="https://code.visualstudio.com/">Visual Studio Code</a> as the IDE for all projects in this class. In addition to installing the base program, please install the following Extensions:</p>
+</section>
+<section id="through-hole-components-tht" class="level2">
+<h2 class="anchored" data-anchor-id="through-hole-components-tht">Through-hole Components (THT)</h2>
 <ul>
-<li><p>PlantUML (generate state diagrams)</p></li>
-<li><p>GitLens (help with git operations / visualization)</p></li>
-<li><p>Microsoft C/C++ Extension Pack</p></li>
-<li><p>Microsoft IntelliCode (assistance with C syntax)</p></li>
-<li><p>PlatformIO</p></li>
-<li><p><a href="https://code.visualstudio.com/docs/copilot/overview">GitHub CoPilot</a> (AI-assisted coding)</p>
+<li><p>Thru-hole components on the opposite side from the traces (ease of soldering).</p></li>
+<li><p>Can be used on breadboards and protoboards too.</p></li>
+<li><p>Way less popular than SMD for production boards.</p></li>
+</ul>
+<p><img src="images/tht_component.png" class="img-fluid" width="400"></p>
+<section id="pcb-editor" class="level3">
+<h3 class="anchored" data-anchor-id="pcb-editor">PCB Editor</h3>
+<p><img src="images/pcbnew_ui.png" class="img-fluid" width="800"></p>
+</section>
+<section id="pcb-layout-1" class="level3">
+<h3 class="anchored" data-anchor-id="pcb-layout-1">PCB Layout</h3>
+<section id="getting-started" class="level4">
+<h4 class="anchored" data-anchor-id="getting-started">Getting Started</h4>
 <ul>
-<li><p>Sign up for free GitHub Education Student account to get access to this extension: https://github.com/education/students</p></li>
-<li><p>Install the <code>GitHub CoPilot</code> extension</p></li>
+<li><p>Make sure that all parts are <strong>annotated</strong> and have <strong>footprints</strong> in the schematic.</p></li>
+<li><p>If needed, include <strong>Mounting Holes</strong> in your design.</p></li>
+<li><p>Switch to the PCB editor (<code>Tools</code> <span class="math inline">\(\rightarrow\)</span> <code>Update PCB from Schematic</code>).</p></li>
+<li><p>All component pins/pads that need to be connected with traces will be connected with airwires.</p></li>
+</ul>
+</section>
+<section id="creating-the-pcb-edge-outline" class="level4">
+<h4 class="anchored" data-anchor-id="creating-the-pcb-edge-outline">Creating the PCB Edge Outline</h4>
+<ul>
+<li><p>Use <strong>Graphics Lines</strong> tool to create board outline (Layer: <code>Edge.Cuts</code>)</p></li>
+<li><p>Layout components based on your design needs / constraints, considering orientation, board side, etc.</p></li>
+<li><p>You can import a picture / CAD drawing to base the Edge outline on.</p></li>
+</ul>
+</section>
+<section id="design-rules" class="level4">
+<h4 class="anchored" data-anchor-id="design-rules">Design Rules</h4>
+<ul>
+<li><p>Each board manufacturer has different capabilities and constraints on PCB fabrication.</p></li>
+<li><p>For our mil, setup <strong>Design Rules</strong> (<code>File</code> <span class="math inline">\(\rightarrow\)</span> <code>Board Setup...</code>) as follows:</p>
+<ul>
+<li><p>Trace width (<span class="math inline">\(\geq\)</span> 20 mil)</p></li>
+<li><p>Drill diameter (<span class="math inline">\(\geq\)</span> 1 mm)</p></li>
+<li><p>Clearance (<span class="math inline">\(\geq\)</span> 32 mil)</p></li>
+</ul></li>
+<li><p>This can be done automatically by importing a design rules (DRU) file. I will be providing a <code>*.kicad_dru</code> file for you to use in your labs and project.</p></li>
+</ul>
+<hr>
+</section>
+<section id="routing-traces-tracks" class="level4">
+<h4 class="anchored" data-anchor-id="routing-traces-tracks">Routing Traces (Tracks)</h4>
+<ul>
+<li><p>Setup <strong>Net Classes</strong> for signal and power/ground (wider / more clearance).</p></li>
+<li><p>Choose the layer that you want your traces to be on (Front (<code>F.Cu</code>) or Back (<code>B.Cu</code>)).</p></li>
+<li><p>Route traces to make connections indicated by the airwires.</p>
+<ul>
+<li><p>Remember that you can go around and under parts.</p></li>
+<li><p>Avoid right angles (mitigate EMI).</p></li>
+</ul></li>
+<li><p>You do not need to connect <code>GND</code> with traces, as you will be creating a copper pour for that.</p></li>
+<li><p>Use <code>Filled Zone</code> tool to create a copper pour (<code>F/B.Cu</code>), usually associated with the <code>GND</code> net.</p></li>
+<li><p>Clearout other zones, as needed (e.g., plug, wireless controller).</p></li>
+<li><p>Perform <strong>Design Rule Check (DRC)</strong></p></li>
+</ul>
+</section>
+<section id="power-traces-layers" class="level4">
+<h4 class="anchored" data-anchor-id="power-traces-layers">Power Traces / Layers</h4>
+<ul>
+<li><p>Larger trace width for greater power delivery (less resistance for more current).</p></li>
+<li><p>Even better to dedicate an entire layer</p>
+<ul>
+<li><p>More direct return paths</p></li>
+<li><p>Shielding (EMI)</p></li>
+<li><p>Reduce noise (switching)</p></li>
+<li><p>Dissipate heat</p></li>
 </ul></li>
 </ul>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>You will need a document to verify your student status that includes your dates of enrollment, which your DukeCard does not contain. Instead, you can get an Enrollment Verification document through DukeHub (Academics Tab) and convert the downloaded PDF to a JPG or PNG file to upload to GitHub.</p>
-</div>
-</div>
-<ul>
-<li><p>Python &amp; Jupyter extensions (for technical report preparation)</p></li>
-<li><p><a href="https://docs.conda.io/projects/conda/en/stable/user-guide/getting-started.html">Conda</a> to install a Python virtual environment for Jupyter notebooks.</p></li>
-</ul>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>You can use an existing Python installation on your laptop if you have one.</p>
-</div>
-</div>
+<hr>
+<p><img src="images/pwr_vs_signal_traces.jpg" class="img-fluid" width="500"></p>
 </section>
-<section id="arduino-nano-every" class="level2">
-<h2 class="anchored" data-anchor-id="arduino-nano-every">Arduino Nano Every</h2>
+<section id="copper-ground-pours-filled-zones" class="level4">
+<h4 class="anchored" data-anchor-id="copper-ground-pours-filled-zones">Copper Ground Pours (Filled Zones)</h4>
 <ul>
-<li>Order yourself an <a href="https://store-usa.arduino.cc/products/arduino-nano-every-with-headers?selectedStore=us">Arduino Nano Every</a>.</li>
-</ul>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>You do not have to order from the Arduino store if you can find this board elsewhere, but please make sure you get the “Every” version of the Nano. Other versions of the board use different logic voltages and even different chips!</p>
-</div>
-</div>
-<ul>
-<li>Make sure you have a data-cable USB cable to connect your Arduino Nano Every to your laptop.</li>
+<li><p>Help reject noise &amp; interference</p></li>
+<li><p>Lower impedance to ground</p></li>
+<li><p>Save milling time and bits!!</p></li>
 </ul>
 </section>
-<section id="technical-report-preparation" class="level2">
-<h2 class="anchored" data-anchor-id="technical-report-preparation">Technical Report Preparation</h2>
-<p>Each lab exercise will have an associated technical report submitted. These reports will be prepared and submitted using Python-based Jupyter notebooks that will be included as part of your assignment git repositories.</p>
-<p>You will need to be able to perform the following tasks in your Jupyter notebooks:</p>
+<section id="filled-zone-islands" class="level4">
+<h4 class="anchored" data-anchor-id="filled-zone-islands">Filled Zone Islands</h4>
 <ul>
-<li><p>Read CSV text data saved from an oscilloscope.</p></li>
-<li><p>Perform simple statistics (e.g., mean, standard deviation, 95% CI) on the data.</p></li>
-<li><p>Generate plots</p></li>
+<li>Avoid creating “islands” of copper pour not connected to the main pour.</li>
 </ul>
-<p>If you need to install a Python environment on your laptop, then this is a good starting point: <a href="https://code.visualstudio.com/docs/python/python-tutorial">Getting Started with Python in VS Code</a>.</p>
-<p>This is a good tutorial on getting started with Jupyter notebooks in VS Code: <a href="https://code.visualstudio.com/docs/python/jupyter-support">Jupyter Notebooks in Visual Studio Code</a>.</p>
+<p><img src="images/example_island.png" class="img-fluid" width="175"></p>
+<ul>
+<li><p>Ways to fix:</p>
+<ul>
+<li><p>Rearrange components to allow the filled zone to be contiguous.</p></li>
+<li><p>When using an IC with multiple functional pins, try changing utilized pins.</p></li>
+<li><p>Use a <strong>Via</strong> on a two-sided board.</p></li>
+<li><p>Use a 0 <span class="math inline">\(\Omega\)</span> R to connect the island to the main pour. The resistor acts as a wire bridge to jump over other traces.</p></li>
+</ul></li>
+</ul>
 </section>
-<section id="lab-policies-safety" class="level2">
-<h2 class="anchored" data-anchor-id="lab-policies-safety">Lab Policies &amp; Safety</h2>
-<p>Please review the <a href="../resources/bme-lab-policies.html">lab policies and safety guidelines</a> for working in the lab.</p>
+<section id="reducing-noise" class="level4">
+<h4 class="anchored" data-anchor-id="reducing-noise">Reducing Noise</h4>
+<ul>
+<li><p>Separate analog (<code>AGND</code>) and digital grounds (<code>GND</code>), and electrically connect using a <strong>Net Tie</strong>.</p></li>
+<li><p>Reduce trace “loops” (RF interference)</p></li>
+<li><p>Place decoupling capacitors next to power pins they are supporting.</p></li>
+</ul>
 </section>
-<section id="what-to-submit" class="level2">
-<h2 class="anchored" data-anchor-id="what-to-submit">What to Submit</h2>
-<p>Complete the online Gradescope “quiz” indicating completion of each of the main tasks above.</p>
+<section id="ground-connections" class="level4">
+<h4 class="anchored" data-anchor-id="ground-connections">Ground Connections</h4>
+<p><img src="images/grounds01.png" class="img-fluid" width="800"></p>
+<hr>
+<p><img src="images/grounds02.png" class="img-fluid" width="800"></p>
+<p><a href="https://electronics.stackexchange.com/questions/392911/kicad-5-what-is-the-significance-of-the-various-gnd-symbols">https://electronics.stackexchange.com/questions/392911/kicad-5-what-is-the-significance-of-the-various-gnd-symbols</a></p>
+</section>
+</section>
+<section id="tips-n-tricks" class="level3">
+<h3 class="anchored" data-anchor-id="tips-n-tricks">Tips-n-Tricks</h3>
+<ul>
+<li><p>You need to make sure that you update your PCB everytime you edit your schematic. Failing to do so will create asyncrony of the two documents, which will be <strong>painful</strong> to resolve.</p></li>
+<li><p>Clean up airwires with the <code>Ratsnest</code> tool.</p></li>
+<li><p><strong>Vias</strong>: connections between top and bottom layers of a board. These can be plated or connected with a physical wire.</p></li>
+<li><p>Use plugs/sockets for off-board wire connections.</p></li>
+<li><p>Strategically place test pins / pads.</p></li>
+<li><p>Parallel running connections (e.g., <code>PWR</code> &amp; <code>GND</code>) can be routed as a <strong>Differential Pair</strong>.</p></li>
+</ul>
+</section>
+<section id="thermal-relief" class="level3">
+<h3 class="anchored" data-anchor-id="thermal-relief">Thermal Relief</h3>
+<ul>
+<li><p>Thermal relief is a technique used to make soldering easier by reducing the amount of copper connected to a pad, especially useful for large copper pours.</p></li>
+<li><p>The thermal relief pattern reduce thermal conductivity away from the pad, making it easier to solder.</p></li>
+</ul>
+<p><img src="images/thermal_relief.jpg" class="img-fluid" width="800"></p>
+</section>
+<section id="d-view-and-step-export" class="level3">
+<h3 class="anchored" data-anchor-id="d-view-and-step-export">3D View and STEP Export</h3>
+<ul>
+<li><p>You can render a 3D view of your PCB with your components, as long as 3D models are associated with the components.</p></li>
+<li><p>You can export a STEP file for mechanical design that can be importent into your CAD software for integration with other components.</p></li>
+</ul>
+</section>
+</section>
+<section id="resources" class="level2">
+<h2 class="anchored" data-anchor-id="resources">Resources</h2>
+<ul>
+<li><p><a href="https://docs.kicad.org/8.0/en/getting_started_in_kicad/getting_started_in_kicad.html">KiCad Documentation</a></p></li>
+<li><p><a href="https://learn.sparkfun.com/tutorials/pcb-basics">PCB Basics (SparkFun)</a></p></li>
+<li><p><a href="https://docs.kicad.org/7.0/en/pcbnew/pcbnew.html">KiCad Docs: PCB Editor</a></p></li>
+<li><p><a href="https://gitlab.oit.duke.edu/MedTechPrototypingSkills/kicad_test">Example KiCad Project</a></p></li>
+<li><p><a href="https://resources.pcb.cadence.com/blog/2020-grounding-and-voltage-routing-considerations-in-pcb-design-e2ek">Grounding and Voltage Routing Considerations in PCB Design</a></p></li>
+<li><p><a href="https://resources.pcb.cadence.com/blog/2021-effective-pcb-trace-width-and-spacing">Effective PCB Trace Width and Spacing</a></p></li>
+<li><p><a href="https://github.com/azonenberg/pcb-checklist/blob/master/layout-checklist.md">PCB Layout Review Checklist</a></p></li>
+</ul>
 
 
+<script type="ojs-module-contents">
+eyJjb250ZW50cyI6W119
+</script>
+<div id="exercise-loading-indicator" class="exercise-loading-indicator d-none d-flex align-items-center gap-2">
+<div id="exercise-loading-status" class="d-flex gap-2">
+
+</div>
+<div class="spinner-grow spinner-grow-sm">
+
+</div>
+</div>
+<script type="vfs-file">
+W10=
+</script>
+</section>
 </section>
 
 </main> <!-- /main -->
+<script type="ojs-module-contents">
+eyJjb250ZW50cyI6W119
+</script>
+<script type="module">
+if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
+window._ojs.paths.runtimeToDoc = "../../lectures";
+window._ojs.paths.runtimeToRoot = "../..";
+window._ojs.paths.docToRoot = "..";
+window._ojs.selfContained = false;
+window._ojs.runtime.interpretFromScriptTags();
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

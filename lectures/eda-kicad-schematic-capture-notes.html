@@ -6,9 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-01-05">
+<meta name="author" content="Dr.&nbsp;Mark Palmeri, M.D., Ph.D.">
+<meta name="dcterms.date" content="2026-01-08">
 
-<title>State Diagrams – MedTech Prototyping Skills</title>
+<title>Electronics Design Automation - KiCad Schematic Capture – MedTech Prototyping Skills</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -39,7 +40,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-fced259a1985fd972ecb57c7cd45153f.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-13f007c1943c6d3711256cc1d3aa22a2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-89abcb12e8852b82dab2915b19c79ac0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-contrib/live-runtime/live-runtime.js" type="module"></script>
+<link href="../site_libs/quarto-contrib/live-runtime/live-runtime.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -67,9 +70,40 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script type="module" src="../site_libs/quarto-ojs/quarto-ojs-runtime.js"></script>
+<link href="../site_libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="../styles.css">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-sidebar docked quarto-light">
@@ -81,7 +115,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../resources/state_diagram.html">Resources</a></li><li class="breadcrumb-item"><a href="../resources/state_diagram.html">State Diagrams</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lectures/medtech-skills-overview-notes.html">Learning Modules</a></li><li class="breadcrumb-item"><a href="../lectures/eda-kicad-schematic-capture-notes.html">EDA (KiCad)</a></li><li class="breadcrumb-item"><a href="../lectures/eda-kicad-schematic-capture-notes.html">Schematic Capture</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -174,16 +208,16 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
  <span class="menu-text">EDA (KiCad)</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lectures/eda-kicad-schematic-capture-notes.html" class="sidebar-item-text sidebar-link">
+  <a href="../lectures/eda-kicad-schematic-capture-notes.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Schematic Capture</span></a>
   </div>
 </li>
@@ -249,7 +283,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../resources/state_diagram.html" class="sidebar-item-text sidebar-link active">
+  <a href="../resources/state_diagram.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">State Diagrams</span></a>
   </div>
 </li>
@@ -283,27 +317,60 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#state-diagram-software" id="toc-state-diagram-software" class="nav-link active" data-scroll-target="#state-diagram-software">State Diagram Software</a></li>
+  <li><a href="#electronics-design-automation-schematic-capture" id="toc-electronics-design-automation-schematic-capture" class="nav-link active" data-scroll-target="#electronics-design-automation-schematic-capture">Electronics Design Automation: Schematic Capture</a>
+  <ul class="collapse">
+  <li><a href="#schematic-capture" id="toc-schematic-capture" class="nav-link" data-scroll-target="#schematic-capture">Schematic Capture</a>
+  <ul class="collapse">
+  <li><a href="#uiux" id="toc-uiux" class="nav-link" data-scroll-target="#uiux">UI/UX</a></li>
+  <li><a href="#creating-a-schematic" id="toc-creating-a-schematic" class="nav-link" data-scroll-target="#creating-a-schematic">Creating a Schematic</a></li>
+  <li><a href="#in-class-exercise-part-i" id="toc-in-class-exercise-part-i" class="nav-link" data-scroll-target="#in-class-exercise-part-i">In-Class Exercise: Part I</a></li>
+  <li><a href="#power-ports" id="toc-power-ports" class="nav-link" data-scroll-target="#power-ports">Power Ports</a></li>
+  <li><a href="#in-class-exercise-part-ii" id="toc-in-class-exercise-part-ii" class="nav-link" data-scroll-target="#in-class-exercise-part-ii">In-Class Exercise: Part II</a></li>
+  <li><a href="#electrical-rules-check-erc" id="toc-electrical-rules-check-erc" class="nav-link" data-scroll-target="#electrical-rules-check-erc">Electrical Rules Check (ERC)</a></li>
+  <li><a href="#best-practices" id="toc-best-practices" class="nav-link" data-scroll-target="#best-practices">Best Practices</a></li>
+  <li><a href="#schematic-components-not-on-the-pcb" id="toc-schematic-components-not-on-the-pcb" class="nav-link" data-scroll-target="#schematic-components-not-on-the-pcb">Schematic Components Not on the PCB</a></li>
+  <li><a href="#in-class-exercise-part-iii" id="toc-in-class-exercise-part-iii" class="nav-link" data-scroll-target="#in-class-exercise-part-iii">In-Class Exercise: Part III</a></li>
+  <li><a href="#heirarchecal-sheets" id="toc-heirarchecal-sheets" class="nav-link" data-scroll-target="#heirarchecal-sheets">Heirarchecal Sheets</a></li>
+  <li><a href="#example-project-schematic" id="toc-example-project-schematic" class="nav-link" data-scroll-target="#example-project-schematic">Example Project Schematic</a></li>
+  </ul></li>
+  <li><a href="#bill-of-materials-bom" id="toc-bill-of-materials-bom" class="nav-link" data-scroll-target="#bill-of-materials-bom">Bill of Materials (BOM)</a></li>
+  <li><a href="#troubleshooting" id="toc-troubleshooting" class="nav-link" data-scroll-target="#troubleshooting">Troubleshooting</a></li>
+  <li><a href="#resources" id="toc-resources" class="nav-link" data-scroll-target="#resources">Resources</a></li>
+  </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/mlp6/MedTech-Prototyping-Skills/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div><div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="state_diagram.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/mlp6/MedTech-Prototyping-Skills/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div><div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="eda-kicad-schematic-capture-slides.html"><i class="bi bi-file-slides"></i>RevealJS (live)</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../resources/state_diagram.html">Resources</a></li><li class="breadcrumb-item"><a href="../resources/state_diagram.html">State Diagrams</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lectures/medtech-skills-overview-notes.html">Learning Modules</a></li><li class="breadcrumb-item"><a href="../lectures/eda-kicad-schematic-capture-notes.html">EDA (KiCad)</a></li><li class="breadcrumb-item"><a href="../lectures/eda-kicad-schematic-capture-notes.html">Schematic Capture</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">State Diagrams</h1>
+<h1 class="title">Electronics Design Automation - KiCad Schematic Capture</h1>
+<p class="subtitle lead">BME254L - Spring 2026</p>
 </div>
 
 
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Dr.&nbsp;Mark Palmeri, M.D., Ph.D. </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Duke University
+          </p>
+      </div>
+  </div>
 
 <div class="quarto-title-meta">
 
-    
+      
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">January 5, 2026</p>
+      <p class="date">January 8, 2026</p>
     </div>
   </div>
   
@@ -315,56 +382,208 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="state-diagram-software" class="level2">
-<h2 class="anchored" data-anchor-id="state-diagram-software">State Diagram Software</h2>
-<p>We will be generating state diagrams all semester, which can be done with a variety of different software packages:</p>
+<section id="electronics-design-automation-schematic-capture" class="level1">
+<h1>Electronics Design Automation: Schematic Capture</h1>
+<section id="schematic-capture" class="level2">
+<h2 class="anchored" data-anchor-id="schematic-capture">Schematic Capture</h2>
+<section id="uiux" class="level3">
+<h3 class="anchored" data-anchor-id="uiux">UI/UX</h3>
+<p><img src="images/commands_overview.png" class="img-fluid" width="600"></p>
+</section>
+<section id="creating-a-schematic" class="level3">
+<h3 class="anchored" data-anchor-id="creating-a-schematic">Creating a Schematic</h3>
+<p>KiCad Documentation: <a href="https://docs.kicad.org/8.0/en/eeschema/eeschema.html#schematic-editing-operations">Schematic Editing Operations</a></p>
 <ul>
-<li><p><a href="https://plantuml.com/">PlantUML</a></p>
-<ul>
-<li><p>Text-based diagramming tool that can be integrated into VS Code</p></li>
-<li><p>A bit outdated, and a tad clunky in default layouts without some “nudging”</p></li>
-<li><p>What will be used in lecture and lab assignments</p></li>
-</ul></li>
+<li>Create a <code>New Project</code>, which creates a schematic file.</li>
 </ul>
-<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Tip
+Warning
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>PlantUML uses Java, which may require you to install a Java Runtime Environment (JRE) on your laptop if you do not already have one. If you would like to avoid installing that, you can use the <a href="https://plantuml.com/server">PlantUML Server</a> option in the PlantUML VS Code extension settings.</p>
+<p>DO NOT CHANGE THE GRID SPACING!!</p>
 </div>
 </div>
 <ul>
-<li><p><a href="https://mermaid-js.github.io/mermaid/#/">Mermaid Markdown</a></p>
+<li><p>Setup <code>Page Settings...</code>, using <a href="https://semver.org/">semantic versionin</a> for <code>Revision</code>.</p></li>
+<li><p>Configure <code>Schematic Setup...</code>, including <code>Project:Net Classes</code>.</p></li>
+<li><p>Place component / part (<code>Place Symbol</code>) using default library. If component doesn’t exist, then you either need to:</p>
 <ul>
-<li><p>Markdown-based diagramming tool that can be integrated into VS Code</p></li>
-<li><p>More modern and easier to use than PlantUML</p></li>
-<li><p>Not as feature-rich as PlantUML</p></li>
-</ul></li>
-<li><p><a href="https://app.diagrams.net/">draw.io</a></p>
-<ul>
-<li><p>Web-based diagramming tool that can be integrated into VS Code (Draw.io Integration)</p></li>
-<li><p>Very feature-rich and easy to use</p></li>
-<li><p>Not text-based</p></li>
-</ul></li>
-<li><p><a href="https://www.lucidchart.com/">Lucidchart</a></p>
-<ul>
-<li><p>Web-based diagramming tool</p></li>
-<li><p>Very feature-rich and easy to use</p></li>
-<li><p>Not text-based (less VCS friendly)</p></li>
+<li><p><a href="https://docs.kicad.org/8.0/en/getting_started_in_kicad/getting_started_in_kicad.html#library_and_library_table_basics">Import Parts into Libraries</a></p></li>
+<li><p>Download the part from an online database (e.g., <a href="https://www.snapeda.com/">SnapEDA</a>)</p></li>
+<li><p>Create part using the <code>Library Editor</code>.</p></li>
 </ul></li>
 </ul>
-<p>You can use whatever software package you prefer for this class this semester, though PlantUML will be the only software supported by Dr.&nbsp;Palmeri and the teaching team.</p>
+<hr>
+<ul>
+<li>Annotate components (give each component a unique label).</li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This is now done automatically in KiCad 8.x, but you may want to manually override some of the annotation defaults.</p>
+</div>
+</div>
+<ul>
+<li><p>Assign component values</p></li>
+<li><p>Label nets with meaningful names</p>
+<ul>
+<li><p>Nets are like nodes; common voltage connections.</p></li>
+<li><p>Use <strong>net labels</strong> to avoid connection chaos.</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="in-class-exercise-part-i" class="level3">
+<h3 class="anchored" data-anchor-id="in-class-exercise-part-i">In-Class Exercise: Part I</h3>
+<p>Let’s create a simple voltage divider circuit…</p>
+</section>
+<section id="power-ports" class="level3">
+<h3 class="anchored" data-anchor-id="power-ports">Power Ports</h3>
+<ul>
+<li><p>Power ports, including ground references, are also global net labels.</p></li>
+<li><p>Component pins can be explicitly designated power in/out (in contrast to signal).</p></li>
+<li><p>Power, ideally, cascades top-to-bottom (<code>+</code> <span class="math inline">\(\rightarrow\)</span> <code>GND</code> [<span class="math inline">\(\rightarrow\)</span> <code>-</code>]) on the schematic.</p></li>
+</ul>
+</section>
+<section id="in-class-exercise-part-ii" class="level3">
+<h3 class="anchored" data-anchor-id="in-class-exercise-part-ii">In-Class Exercise: Part II</h3>
+<p>Let’s add power ports…</p>
+</section>
+<section id="electrical-rules-check-erc" class="level3">
+<h3 class="anchored" data-anchor-id="electrical-rules-check-erc">Electrical Rules Check (ERC)</h3>
+<ul>
+<li><p>Check the validity of the schematic</p></li>
+<li><p>Common error message:</p></li>
+</ul>
+<blockquote class="blockquote">
+<p>“Input Power pin not driven by any Output Power pins”</p>
+</blockquote>
+<ul>
+<li><p>KiCad checks to make sure that power can “drive” components that demand that input.</p></li>
+<li><p>You can explicitly indicate this in the schematic using the <code>PWR_FLAG</code> symbol attached to the net in question.</p></li>
+<li><p>Might need to re-map pin types (<code>Properties:Edit Symbol:Pin Table</code>).</p></li>
+</ul>
+<hr>
+<p><img src="images/symbols-labeled.png" class="img-fluid" width="800"></p>
+</section>
+<section id="best-practices" class="level3">
+<h3 class="anchored" data-anchor-id="best-practices">Best Practices</h3>
+<ul>
+<li><p>Signal, ideally, flows left-to-right (input <span class="math inline">\(\rightarrow\)</span> output).</p></li>
+<li><p>Outline and label functional blocks. Use <code>Heirarchical Sheets</code> to organize more clearly-defined sub-circuits.</p></li>
+<li><p>Can include non-electrical items, like <code>Mounting Holes</code>.</p></li>
+<li><p>Add Test Pins/Pads to nets you will want to verify during testing.</p>
+<ul>
+<li><p>Power nets</p></li>
+<li><p>Signal I/O</p></li>
+</ul></li>
+<li><p>Use <code>No-Connection</code> flags for pins that are intentionally not connected to other components.</p></li>
+</ul>
+<hr>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/schematic_annotated.png" class="img-fluid figure-img"></p>
+<figcaption>schematic_annotated</figcaption>
+</figure>
+</div>
+</section>
+<section id="schematic-components-not-on-the-pcb" class="level3">
+<h3 class="anchored" data-anchor-id="schematic-components-not-on-the-pcb">Schematic Components Not on the PCB</h3>
+<p>If a component will not exist on the PCB (e.g., a power switch, a control knob):</p>
+<ul>
+<li><p>Be sure to exclude it from the board (<code>Properties</code> <span class="math inline">\(\rightarrow\)</span> <code>General</code> <span class="math inline">\(\rightarrow\)</span> <strong>Exclude from Board</strong>).</p></li>
+<li><p>Represent the <strong>Connectors</strong> or <strong>Terminal Blocks</strong> on th schematic that will be used to connect the component to the PCB by wires.</p></li>
+</ul>
+</section>
+<section id="in-class-exercise-part-iii" class="level3">
+<h3 class="anchored" data-anchor-id="in-class-exercise-part-iii">In-Class Exercise: Part III</h3>
+<p>Modify your circuit to use a 9 V battert that will be connected to the PCB using a 2-pin connector.</p>
+</section>
+<section id="heirarchecal-sheets" class="level3">
+<h3 class="anchored" data-anchor-id="heirarchecal-sheets">Heirarchecal Sheets</h3>
+<ul>
+<li><p>Circuits can get very complicated very quickly; quickly separated from functional signal flow.</p></li>
+<li><p>Can organize functional sub-circuits into <strong>sheets</strong> (similar to writing functions in software development).</p></li>
+<li><p>Sheets require explicit types of “pins” to allow signals to communicate between sheets.</p></li>
+<li><p>Power ports are <strong>global</strong> and do not need to be explicitly connects.</p></li>
+</ul>
+</section>
+<section id="example-project-schematic" class="level3">
+<h3 class="anchored" data-anchor-id="example-project-schematic">Example Project Schematic</h3>
+<hr>
+<p><img src="images/065-0100_Main_Board-1.png" class="img-fluid" width="800"></p>
+<hr>
+<p><img src="images/065-0100_Main_Board-5.png" class="img-fluid" width="800"></p>
+<hr>
+<p><img src="images/065-0100_Main_Board-6.png" class="img-fluid" width="800"></p>
+<hr>
+<p><img src="images/065-0100_Main_Board-3.png" class="img-fluid" width="800"></p>
+</section>
+</section>
+<section id="bill-of-materials-bom" class="level2">
+<h2 class="anchored" data-anchor-id="bill-of-materials-bom">Bill of Materials (BOM)</h2>
+<ul>
+<li><p>All of the components in the schematic can be populated into a Bill of Materials.</p></li>
+<li><p>Industry-standard ECAD packages will be automatically linked to online part catalogs to order.</p></li>
+<li><p>Components excluded from the board are still included in the BOM, unless explicitly excluded from the BOM (<code>Properties</code>).</p></li>
+</ul>
+</section>
+<section id="troubleshooting" class="level2">
+<h2 class="anchored" data-anchor-id="troubleshooting">Troubleshooting</h2>
+<ul>
+<li><p>Certain video cards will not work well with the PCB tool. In that case, disable the <code>Accelerated</code> toolset and choose the <code>Fallback</code> graphics toolset.</p></li>
+<li><p>On Macs, your part / footprint / model libraries might not be detected automatically after installation. You might need to manually point Kicad at them in a path similar to: <code>Macintosh/Library/Application Support/kicad/templates/sym-lib-table/</code>.</p></li>
+</ul>
+</section>
+<section id="resources" class="level2">
+<h2 class="anchored" data-anchor-id="resources">Resources</h2>
+<ul>
+<li><p><a href="https://docs.kicad.org/8.0/en/getting_started_in_kicad/getting_started_in_kicad.html">KiCad Documentation</a></p></li>
+<li><p><a href="https://github.com/azonenberg/pcb-checklist/blob/master/schematic-checklist.md">Schematic Review Checklist</a></p></li>
+</ul>
 
 
+<script type="ojs-module-contents">
+eyJjb250ZW50cyI6W119
+</script>
+<div id="exercise-loading-indicator" class="exercise-loading-indicator d-none d-flex align-items-center gap-2">
+<div id="exercise-loading-status" class="d-flex gap-2">
+
+</div>
+<div class="spinner-grow spinner-grow-sm">
+
+</div>
+</div>
+<script type="vfs-file">
+W10=
+</script>
+</section>
 </section>
 
 </main> <!-- /main -->
+<script type="ojs-module-contents">
+eyJjb250ZW50cyI6W119
+</script>
+<script type="module">
+if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
+window._ojs.paths.runtimeToDoc = "../../lectures";
+window._ojs.paths.runtimeToRoot = "../..";
+window._ojs.paths.docToRoot = "..";
+window._ojs.selfContained = false;
+window._ojs.runtime.interpretFromScriptTags();
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

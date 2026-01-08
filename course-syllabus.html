@@ -171,20 +171,49 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">CAD with Onshape</span></a>
   </div>
 </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
+ <span class="menu-text">EDA (KiCad)</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./lectures/eda-kicad-schematic-capture-notes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Schematic Capture</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./lectures/EDA-KiCad-SPICE-notes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SPICE Modeling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./lectures/EDA-KiCad-PCB-Layout-notes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">PCB Layout</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
  <span class="menu-text">Labs</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./labs/software-install_tutorials.html" class="sidebar-item-text sidebar-link">
+  <a href="./labs/software-install-tutorials.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Software Installation Tutorials</span></a>
   </div>
 </li>
@@ -210,13 +239,13 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
  <span class="menu-text">Resources</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./resources/state_diagram.html" class="sidebar-item-text sidebar-link">
@@ -233,6 +262,12 @@ ul.task-list li input[type="checkbox"] {
   <div class="sidebar-item-container"> 
   <a href="./resources/3d_printing.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">3D Printing</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./kicad/" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Example KiCad Projects</span></a>
   </div>
 </li>
       </ul>
@@ -339,7 +374,7 @@ Important
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Please review the <a href="bme-lab-policies.qmd">lab policies</a> before using the lab for the first time this semester.</p>
+<p>Please review the <a href="./resources/bme-lab-policies.html">lab policies</a> before using the lab for the first time this semester.</p>
 </div>
 </div>
 <div class="callout callout-style-default callout-warning callout-titled">
@@ -432,10 +467,13 @@ Warning
 <li><a href="./lectures/event-driven-state-machine-notes.html">Event-Drive State Machines</a></li>
 <li><a href="./lectures/git-fundamentals-notes.html">Version Control (<code>git</code>)</a></li>
 <li><a href="./lectures/cad-onshape-notes.html">Computer Aided Design (CAD) (<code>Onshape</code>)</a></li>
+<li>ECAD (<code>KiCad</code>)
+<ul>
+<li><a href="./lectures/eda-kicad-schematic-capture-notes.html">Schematic Capture</a></li>
+<li><a href="./lectures/EDA-KiCad-SPICE-notes.html">SPICE Modeling</a></li>
+<li><a href="./lectures/EDA-KiCad-PCB-Layout-notes.html">PCB Layout</a></li>
+</ul></li>
 <li>Lightbox Project (Kanban Board)</li>
-<li>ECAD (<code>KiCad</code>): Schematic Capture</li>
-<li>ECAD (<code>KiCad</code>): SPICE Modeling</li>
-<li>ECAD (<code>KiCad</code>): PCB Layout</li>
 <li>Firmware Development: C Programming Overview</li>
 <li>Firmware Development: Button Event ISRs, ADC &amp; State Machines</li>
 </ul>

@@ -39,6 +39,14 @@ website:
           text: "Version Control (git)"
         - href: lectures/cad-onshape.qmd
           text: "CAD with Onshape"
+        - section: "EDA (KiCad)"
+          contents:
+          - href: lectures/EDA-KiCad-Schematic-Capture.qmd
+            text: "Schematic Capture"
+          - href: lectures/EDA-KiCad-SPICE.qmd
+            text: "SPICE Modeling"
+          - href: lectures/EDA-KiCad-PCB-Layout.qmd
+            text: "PCB Layout"
       - section: Labs
         contents:
         - href: labs/software-install_tutorials.qmd
@@ -57,6 +65,8 @@ website:
           text: "BME Lab Policies"
         - href: resources/3d_printing.qmd
           text: "3D Printing"
+        - href: "kicad/"
+          text: "Example KiCad Projects"
 
     page-footer:
       right: 'This page is built with [Quarto](https://quarto.org/).'

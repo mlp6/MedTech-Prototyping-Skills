@@ -40,3 +40,5 @@ fp-info-cache
 **/*.quarto_ipynb
 
 _site/
+
+*.zip

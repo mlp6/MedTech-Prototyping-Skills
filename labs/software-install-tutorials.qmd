@@ -50,15 +50,13 @@ please install the following Extensions:
 
 - Microsoft C/C++ Extension Pack
 
-- Microsoft IntelliCode (assistance with C syntax)
-
 - PlatformIO
 
-- [GitHub CoPilot](https://code.visualstudio.com/docs/copilot/overview) (AI-assisted coding)
+- [GitHub CoPilot Chat](https://code.visualstudio.com/docs/copilot/overview) (AI-assisted coding)
 
   - Sign up for free GitHub Education Student account to get access to this extension: https://github.com/education/students
 
-  - Install the `GitHub CoPilot` extension
+  - Install the `GitHub CoPilot Chat` extension
 
 ::: callout-tip
 You will need a document to verify your student status that includes your dates

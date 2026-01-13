@@ -29,7 +29,8 @@ posted on Ed Discussion.
 
 There are no formally scheduled lab sections, but you will need to use the lab
 equipment to perform testing of your devices.  Your TAs will announce times when
-they will hold lab hours.
+they will hold lab hours.  Lab is available whenever classes are not scheduled
+in the space (posted on the lab door).
 
 ::: callout-important
 Please review the [lab policies](resources/bme-lab-policies.qmd) before using the lab for

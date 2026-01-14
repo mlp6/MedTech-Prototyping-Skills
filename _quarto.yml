@@ -29,6 +29,8 @@ website:
           text: Gradescope
         - href: https://duke.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=4d8bd7ca-c326-4c87-9e29-b3c9012f813e
           text: "Panopto Lecture Videos"
+        - href: faq.qmd
+          text: FAQ
       - section: "Learning Modules"
         contents:
         - href: lectures/medtech-skills-overview.qmd
@@ -53,8 +55,6 @@ website:
           text: "Software Installation Tutorials"
         - href: labs/event-driven-state-machine-lab.qmd
           text: "Event-Driven State Machine (Kitchen Timer)"
-        - href: labs/git-fundamentals-lab.qmd
-          text: "Git Fundamentals Lab"
         - href: labs/hybrid_iii_6yo.qmd
           text: "Hybrid III 6YO Head and Neck Lab"
       - section: Resources

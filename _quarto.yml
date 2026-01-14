@@ -37,8 +37,6 @@ website:
           text: "MedTech Prototyping Skills Overview"
         - href: lectures/event-driven-state-machine.qmd
           text: "Event-Driven State Machines"
-        - href: lectures/git-fundamentals.qmd
-          text: "Version Control (git)"
         - href: lectures/cad-onshape.qmd
           text: "CAD with Onshape"
         - section: "EDA (KiCad)"
@@ -49,6 +47,8 @@ website:
             text: "SPICE Modeling"
           - href: lectures/EDA-KiCad-PCB-Layout.qmd
             text: "PCB Layout"
+        - href: lectures/git-fundamentals.qmd
+          text: "Version Control (git)"
       - section: Labs
         contents:
         - href: labs/software-install-tutorials.qmd

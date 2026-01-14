@@ -145,13 +145,13 @@ depends on the successful completion of earlier modules.
 
 - [MedTech Skill Overview](lectures/medtech-skills-overview.qmd)
 - [Event-Drive State Machines](lectures/event-driven-state-machine.qmd)
-- [Version Control (`git`)](lectures/git-fundamentals.qmd)
 - [Computer Aided Design (CAD) (`Onshape`)](lectures/cad-onshape.qmd)
 - ECAD (`KiCad`)
   - [Schematic Capture](lectures/EDA-KiCad-Schematic-Capture.qmd)
   - [SPICE Modeling](lectures/EDA-KiCad-SPICE.qmd)
   - [PCB Layout](lectures/EDA-KiCad-PCB-Layout.qmd)
 - Lightbox Project (Kanban Board)
+- [Version Control (`git`)](lectures/git-fundamentals.qmd)
 - Firmware Development: C Programming Overview
 - Firmware Development: Button Event ISRs, ADC & State Machines
 

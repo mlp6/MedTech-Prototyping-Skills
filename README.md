@@ -1,9 +1,5 @@
 # MedTech Prototyping Skills (BME254L)
 
-**THIS REPOSITORY IS ACTIVELY BEING MIGRATED FROM DUKE'S GITLAB SERVER**
-
-**SOME LINKS ARE BROKEN**
-
 [![Build Site](https://github.com/mlp6/MedTech-Prototyping-Skills/actions/workflows/publish.yml/badge.svg)](https://github.com/mlp6/MedTech-Prototyping-Skills/actions/workflows/publish.yml)
 
 This repository serves as the default collection for all resources associated

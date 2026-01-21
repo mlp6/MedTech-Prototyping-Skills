@@ -2030,7 +2030,7 @@
     "href": "labs/hybrid_iii_6yo.html#molded-neck",
     "title": "Hybrid III 6 y/o Lab",
     "section": "Molded Neck",
-    "text": "Molded Neck",
+    "text": "Molded Neck\n\n\n\n\n\n\n\nTip\n\n\n\nNote that the this part has features that are dependent on the top and bottom plates. To reduce the overhead of manually entering these dimensions from the other parts, you can use the Derived tool in Onshape to bring in the relevant faces from the other parts.\nhttps://cad.onshape.com/help/Content/derived.htm#StepsDesktop",
     "crumbs": [
       "Labs",
       "Hybrid III 6YO Head and Neck Lab"

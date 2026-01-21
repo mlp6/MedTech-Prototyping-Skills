@@ -49,6 +49,12 @@ to the `Hybrid III 6 y/o` Gradescope assignment.
 
 ![](images/MoldedNeckDrawing.png){ width="800"}
 
+::: callout-tip
+Note that the this part has features that are dependent on the top and bottom plates.  To reduce the overhead of manually entering these dimensions from the other parts, you can use the `Derived` tool in Onshape to bring in the relevant faces from the other parts.
+
+[https://cad.onshape.com/help/Content/derived.htm#StepsDesktop](https://cad.onshape.com/help/Content/derived.htm#StepsDesktop)
+:::
+
 ## Lower Neck Bracket
 
 ![](images/LowerNeckBracketDrawing.png){ width="800"}

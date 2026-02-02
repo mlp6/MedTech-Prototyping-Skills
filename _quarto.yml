@@ -67,6 +67,8 @@ website:
           text: "BME Lab Policies"
         - href: resources/3d_printing.qmd
           text: "3D Printing"
+        - href: resources/git.qmd 
+          text: "Git: Getting Started"
         - href: "kicad/"
           text: "Example KiCad Projects"
 

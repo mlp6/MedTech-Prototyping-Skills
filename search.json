@@ -75,35 +75,55 @@
     "href": "resources/git.html",
     "title": "Git: Getting Started",
     "section": "",
-    "text": "Git - version control software\n\n\n\n\n\n\n\nNote\n\n\n\nMacOS usually comes with git pre-installed, so there is no need to install anything else.\n\n\n\nAfter installing git, please configure it: Getting Started - First-Time Git Setup\nThe setup steps above should create a ~/.gitconfig file that has some barebones configuration options. We can expand that a bit by manually editing it with the following content:\n\n[user]\n    name = your first and last name\n    email = yournetid@duke.edu\n[alias]\n    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset' --abbrev-commit --date=relative\n[core]\n    editor = nano\n    autocrlf = input\n    preloadindex = true\n    fileMode = false\n[color]\n    status = auto\n    branch = auto\n    interactive = auto\n    diff = auto\n    ui = auto\n[push]\n    default = current\n    autoSetupRemote = true\n[pull]\n    rebase = false\n[merge]\n    ff = no\n[init]\n    defaultBranch = main\n\nThe above configuration will:\n\nSet your name and email address for commits\nSet up a git lg alias that will show a nice graph of the commit history\nChange the default editor for making commit messages from vi to nano.\n\n\n\n\n\n\n\n\nTip\n\n\n\nYou can change this to something else, like VS Code!\n\n\n\nThis is a good tutorial on using git within VS Code: Using Git source control in VS Code"
+    "text": "Git - version control software\n\n\n\n\n\n\n\nNote\n\n\n\nMacOS usually comes with git pre-installed, so there is no need to install anything else.\n\n\n\nAfter installing git, please configure it: Getting Started - First-Time Git Setup\nThe setup steps above should create a ~/.gitconfig file that has some barebones configuration options. We can expand that a bit by manually editing it with the following content:\n\n[user]\n    name = your first and last name\n    email = yournetid@duke.edu\n[alias]\n    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset' --abbrev-commit --date=relative\n[core]\n    editor = nano\n    autocrlf = input\n    preloadindex = true\n    fileMode = false\n[color]\n    status = auto\n    branch = auto\n    interactive = auto\n    diff = auto\n    ui = auto\n[push]\n    default = current\n    autoSetupRemote = true\n[pull]\n    rebase = false\n[merge]\n    ff = no\n[init]\n    defaultBranch = main\n\nThe above configuration will:\n\nSet your name and email address for commits\nSet up a git lg alias that will show a nice graph of the commit history\nChange the default editor for making commit messages from vi to nano.\n\n\n\n\n\n\n\n\nTip\n\n\n\nYou can change this to something else, like VS Code!\n\n\n\nThis is a good tutorial on using git within VS Code: Using Git source control in VS Code",
+    "crumbs": [
+      "Resources",
+      "Git: Getting Started"
+    ]
   },
   {
     "objectID": "resources/git.html#installation-configuration",
     "href": "resources/git.html#installation-configuration",
     "title": "Git: Getting Started",
     "section": "",
-    "text": "Git - version control software\n\n\n\n\n\n\n\nNote\n\n\n\nMacOS usually comes with git pre-installed, so there is no need to install anything else.\n\n\n\nAfter installing git, please configure it: Getting Started - First-Time Git Setup\nThe setup steps above should create a ~/.gitconfig file that has some barebones configuration options. We can expand that a bit by manually editing it with the following content:\n\n[user]\n    name = your first and last name\n    email = yournetid@duke.edu\n[alias]\n    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset' --abbrev-commit --date=relative\n[core]\n    editor = nano\n    autocrlf = input\n    preloadindex = true\n    fileMode = false\n[color]\n    status = auto\n    branch = auto\n    interactive = auto\n    diff = auto\n    ui = auto\n[push]\n    default = current\n    autoSetupRemote = true\n[pull]\n    rebase = false\n[merge]\n    ff = no\n[init]\n    defaultBranch = main\n\nThe above configuration will:\n\nSet your name and email address for commits\nSet up a git lg alias that will show a nice graph of the commit history\nChange the default editor for making commit messages from vi to nano.\n\n\n\n\n\n\n\n\nTip\n\n\n\nYou can change this to something else, like VS Code!\n\n\n\nThis is a good tutorial on using git within VS Code: Using Git source control in VS Code"
+    "text": "Git - version control software\n\n\n\n\n\n\n\nNote\n\n\n\nMacOS usually comes with git pre-installed, so there is no need to install anything else.\n\n\n\nAfter installing git, please configure it: Getting Started - First-Time Git Setup\nThe setup steps above should create a ~/.gitconfig file that has some barebones configuration options. We can expand that a bit by manually editing it with the following content:\n\n[user]\n    name = your first and last name\n    email = yournetid@duke.edu\n[alias]\n    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset' --abbrev-commit --date=relative\n[core]\n    editor = nano\n    autocrlf = input\n    preloadindex = true\n    fileMode = false\n[color]\n    status = auto\n    branch = auto\n    interactive = auto\n    diff = auto\n    ui = auto\n[push]\n    default = current\n    autoSetupRemote = true\n[pull]\n    rebase = false\n[merge]\n    ff = no\n[init]\n    defaultBranch = main\n\nThe above configuration will:\n\nSet your name and email address for commits\nSet up a git lg alias that will show a nice graph of the commit history\nChange the default editor for making commit messages from vi to nano.\n\n\n\n\n\n\n\n\nTip\n\n\n\nYou can change this to something else, like VS Code!\n\n\n\nThis is a good tutorial on using git within VS Code: Using Git source control in VS Code",
+    "crumbs": [
+      "Resources",
+      "Git: Getting Started"
+    ]
   },
   {
     "objectID": "resources/git.html#setup-duke-gitlab-account",
     "href": "resources/git.html#setup-duke-gitlab-account",
     "title": "Git: Getting Started",
     "section": "Setup Duke GitLab Account",
-    "text": "Setup Duke GitLab Account\nWhile GitHub is a very popular public git repository hosting site, we will be using Duke’s GitLab server. Please make sure you can log into https://gitlab.oit.duke.edu using your Oath2 NetID authentication.\n\n\n\n\n\n\nWarning\n\n\n\nThis is not gitlab.com!\n\n\n\n\n\n\n\n\nCaution\n\n\n\nDo not edit files in remote git repositories using the GitLab web interface!! Only work with your repository files using your local clone of the repository."
+    "text": "Setup Duke GitLab Account\nWhile GitHub is a very popular public git repository hosting site, we will be using Duke’s GitLab server. Please make sure you can log into https://gitlab.oit.duke.edu using your Oath2 NetID authentication.\n\n\n\n\n\n\nWarning\n\n\n\nThis is not gitlab.com!\n\n\n\n\n\n\n\n\nCaution\n\n\n\nDo not edit files in remote git repositories using the GitLab web interface!! Only work with your repository files using your local clone of the repository.",
+    "crumbs": [
+      "Resources",
+      "Git: Getting Started"
+    ]
   },
   {
     "objectID": "resources/git.html#ssh-key-authentication",
     "href": "resources/git.html#ssh-key-authentication",
     "title": "Git: Getting Started",
     "section": "SSH Key Authentication",
-    "text": "SSH Key Authentication\nWe will use SSH keys to authenticate us on GitLab to be able to clone/push/pull from GitLab without needing to always enter your username and password.\nTo setup an SSH key and add it to your GitLab profile:\n\n\n\n\n\n\nWarning\n\n\n\nThe guide below will reference github.com; you want to substitute gitlab.oit.duke.edu.\n\n\n\nGenerate a New SSH Key\n\nWhile your private key is most secure by encrypting it with a passphrase, you will need to either enter that passphrase everytime the key is used, or you will need to add it to your local credential manager (i.e., keychain) or ssh-agent to keep it unlocked.\nIf you are just using this SSH key for this class, you can use an empty passphrase and not need to worry about needing to deal with the password management.\n\nAdd your SSH key to your GitLab Profile\n\n\n\n\n\n\n\nWarning\n\n\n\nThe guide above will reference gitlab.com; you want to substitute gitlab.oit.duke.edu."
+    "text": "SSH Key Authentication\nWe will use SSH keys to authenticate us on GitLab to be able to clone/push/pull from GitLab without needing to always enter your username and password.\nTo setup an SSH key and add it to your GitLab profile:\n\n\n\n\n\n\nWarning\n\n\n\nThe guide below will reference github.com; you want to substitute gitlab.oit.duke.edu.\n\n\n\nGenerate a New SSH Key\n\nWhile your private key is most secure by encrypting it with a passphrase, you will need to either enter that passphrase everytime the key is used, or you will need to add it to your local credential manager (i.e., keychain) or ssh-agent to keep it unlocked.\nIf you are just using this SSH key for this class, you can use an empty passphrase and not need to worry about needing to deal with the password management.\n\nAdd your SSH key to your GitLab Profile\n\n\n\n\n\n\n\nWarning\n\n\n\nThe guide above will reference gitlab.com; you want to substitute gitlab.oit.duke.edu.",
+    "crumbs": [
+      "Resources",
+      "Git: Getting Started"
+    ]
   },
   {
     "objectID": "resources/git.html#git-tutorials",
     "href": "resources/git.html#git-tutorials",
     "title": "Git: Getting Started",
     "section": "Git Tutorials",
-    "text": "Git Tutorials\nWe are going to cover git extensively in class, but it can really help to review some tutorials ahead of time to get familiar with the nomenclature and high-level overview of the workflow. If you have never used git before, I would recommend reviewing the following tutorials:\n\nLearn Git: Commands, Tutorials and More\nGit Immersion\nLearn Git Branching\nThink Like (a) Git\nGit Tutorial for Beginners: Learn Git in 1 Hour\n\nMore comprehensive git documentation can be found at https://git-scm.com/doc."
+    "text": "Git Tutorials\nWe are going to cover git extensively in class, but it can really help to review some tutorials ahead of time to get familiar with the nomenclature and high-level overview of the workflow. If you have never used git before, I would recommend reviewing the following tutorials:\n\nLearn Git: Commands, Tutorials and More\nGit Immersion\nLearn Git Branching\nThink Like (a) Git\nGit Tutorial for Beginners: Learn Git in 1 Hour\n\nMore comprehensive git documentation can be found at https://git-scm.com/doc.",
+    "crumbs": [
+      "Resources",
+      "Git: Getting Started"
+    ]
   },
   {
     "objectID": "faq.html",

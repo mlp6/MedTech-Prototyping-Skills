@@ -1,6 +1,9 @@
 project:
   type: website
 
+execute:
+  freeze: auto
+
 website:
   title: "MedTech Prototyping Skills"
   description: "Duke BME 254L - Spring 2026"

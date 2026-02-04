@@ -60,6 +60,8 @@ website:
           text: "Event-Driven State Machine (Kitchen Timer)"
         - href: labs/hybrid_iii_6yo.qmd
           text: "Hybrid III 6YO Head and Neck Lab"
+      - href: https://gitlab.oit.duke.edu/mlp6/lightbox
+        text: "Lightbox (GitLab Repo)"
       - section: Resources
         contents:
         - href: https://sites.google.com/view/dukebmeindustryopportunities/home?authuser=0

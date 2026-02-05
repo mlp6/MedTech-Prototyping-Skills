@@ -11,10 +11,17 @@ format:
 
 ### Tab Autocompletion
 
-If your Mac terminal doesn't have `tab` autocompletion enabled when typing out your long branch name you created among other git commands, follow the steps from this [link](https://www.macinstruct.com/tutorials/how-to-enable-git-tab-autocomplete-on-your-mac/). 
+If your Mac terminal doesn't have `tab` autocompletion enabled when typing out
+your long branch name you created among other git commands, follow the steps
+from this
+[link](https://www.macinstruct.com/tutorials/how-to-enable-git-tab-autocomplete-on-your-mac/).
 
-This will only work in your Mac terminal. If you'd like to enable this in VS Code as well, open up your preferences with `Cmd + ,`, and then navigate through this: 
+This will only work in your Mac terminal. If you'd like to enable this in VS
+Code as well, open up your preferences with `Cmd + ,`, and then navigate through
+this: 
 
 - `User -> Extensions -> Git`. 
+
 - Scroll down to the setting labeled `Terminal Git Editor` and check this box. 
+
 - You will need to restart your existing terminal inside of VS Code if one is already open.

@@ -42,6 +42,8 @@ website:
           text: "Event-Driven State Machines"
         - href: lectures/cad-onshape.qmd
           text: "CAD with Onshape"
+        - href: lectures/git-fundamentals.qmd
+          text: "Version Control (git)"
         - section: "EDA (KiCad)"
           contents:
           - href: lectures/EDA-KiCad-Schematic-Capture.qmd
@@ -50,8 +52,8 @@ website:
             text: "SPICE Modeling"
           - href: lectures/EDA-KiCad-PCB-Layout.qmd
             text: "PCB Layout"
-        - href: lectures/git-fundamentals.qmd
-          text: "Version Control (git)"
+        - href: lectures/c-programming.qmd
+          text: "C Programming"
       - section: Labs
         contents:
         - href: labs/software-install-tutorials.qmd

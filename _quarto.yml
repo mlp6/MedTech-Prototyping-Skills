@@ -94,8 +94,9 @@ format:
       - brand
     css: styles.css
     toc: true
-
-linkcolor: "#5D737E"
+    linkcolor: "#5D737E"
+  pdf:
+    linkcolor: teal
 toc: true
 code-copy: hover
 code-link: true

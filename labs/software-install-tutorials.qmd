@@ -1,6 +1,6 @@
 ---
 title: "MedTech Prototyping Skills: Software Installation & Tutorials"
-date: "2026-01-06"
+date: "2026-04-05"
 format:
   html: default
   pdf: default
@@ -21,7 +21,7 @@ using `git`.
 
 ## KiCad (EDA)
 
-- Please install KiCad: [https://kicad.org](https://kicad.org)
+- Please install KiCad (`v10.x`): [https://kicad.org](https://kicad.org)
 
 ::: callout-note
 This installation file can be a bit large, so this may take a few minutes to

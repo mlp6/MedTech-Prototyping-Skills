@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-01-05">
+<meta name="dcterms.date" content="2026-08-24">
 
 <title>State Diagrams – MedTech Prototyping Skills</title>
 <style>
@@ -227,14 +227,11 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
  <span class="menu-text">KiCad &amp; SPICE Lab (GitLab Repo)</span>
   </li>
+          <li class="sidebar-item">
+ <span class="menu-text">Lightbox (GitLab Repo)</span>
+  </li>
       </ul>
   </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="https://gitlab.oit.duke.edu/mlp6/lightbox" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Lightbox (GitLab Repo)</span></a>
-  </div>
-</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
@@ -312,7 +309,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">January 5, 2026</p>
+      <p class="date">August 24, 2026</p>
     </div>
   </div>
   
@@ -326,49 +323,50 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="state-diagram-software" class="level2">
 <h2 class="anchored" data-anchor-id="state-diagram-software">State Diagram Software</h2>
-<p>We will be generating state diagrams all semester, which can be done with a variety of different software packages:</p>
+<p>We will be generating state diagrams all semester, which can be done with a variety of different software packages. You can use whatever software package you prefer for this class this semester, though Mermaid will be the only software supported by Dr.&nbsp;Palmeri and the teaching team.</p>
 <ul>
+<li><p><a href="https://github.com/mermaid-js/mermaid">Mermaid Markdown</a></p>
+<ul>
+<li><p>Markdown-based diagramming tool that can be integrated into VS Code IDE with extension.</p></li>
+<li><p>Native Quarto Markdown (what is used for class content) rendering without needing to export to a separate image file.</p></li>
+<li><p>Ammenable to version control systems (VCS) since it is text-based.</p></li>
+<li><p>More modern and easier to use than PlantUML.</p></li>
+<li><p>State digram-specific syntax: <a href="https://mermaid.ai/open-source/syntax/stateDiagram.html">https://mermaid.ai/open-source/syntax/stateDiagram.html</a></p></li>
+</ul></li>
 <li><p><a href="https://plantuml.com/">PlantUML</a></p>
 <ul>
-<li><p>Text-based diagramming tool that can be integrated into VS Code</p></li>
+<li><p>Text-based diagramming tool with very long history.</p></li>
+<li><p>Can be integrated into VS Code with an extension.</p></li>
 <li><p>A bit outdated, and a tad clunky in default layouts without some “nudging”</p></li>
-<li><p>What will be used in lecture and lab assignments</p></li>
-</ul></li>
+<li><p>Ammenable to version control systems (VCS) since it is text-based.</p></li>
 </ul>
-<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Tip
+Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>PlantUML uses Java, which may require you to install a Java Runtime Environment (JRE) on your laptop if you do not already have one. If you would like to avoid installing that, you can use the <a href="https://plantuml.com/server">PlantUML Server</a> option in the PlantUML VS Code extension settings.</p>
+<p>Rendering engine requires Java Runtime Engine (JRE), which may have to be installed on your laptop if you do not already have it. If you would like to avoid installing that, you can use the <a href="https://plantuml.com/server">PlantUML Server</a> option in the PlantUML VS Code extension settings.</p>
 </div>
-</div>
-<ul>
-<li><p><a href="https://mermaid-js.github.io/mermaid/#/">Mermaid Markdown</a></p>
-<ul>
-<li><p>Markdown-based diagramming tool that can be integrated into VS Code</p></li>
-<li><p>More modern and easier to use than PlantUML</p></li>
-<li><p>Not as feature-rich as PlantUML</p></li>
-</ul></li>
+</div></li>
 <li><p><a href="https://app.diagrams.net/">draw.io</a></p>
 <ul>
-<li><p>Web-based diagramming tool that can be integrated into VS Code (Draw.io Integration)</p></li>
-<li><p>Very feature-rich and easy to use</p></li>
-<li><p>Not text-based</p></li>
+<li><p>Web-based diagramming tool (GUI) that can be integrated into VS Code (Draw.io Integration)</p></li>
+<li><p>Very feature-rich and easy to use.</p></li>
+<li><p>Not text-based, so less VCS friendly.</p></li>
+<li><p>Cannot directly render in Quarto Markdown, so you will need to export your diagrams to an image file (e.g., PNG, SVG).</p></li>
 </ul></li>
 <li><p><a href="https://www.lucidchart.com/">Lucidchart</a></p>
 <ul>
-<li><p>Web-based diagramming tool</p></li>
+<li><p>Web-based diagramming tool (GUI)</p></li>
 <li><p>Very feature-rich and easy to use</p></li>
-<li><p>Not text-based (less VCS friendly)</p></li>
+<li><p>Not text-based, so less VCS friendly.</p></li>
 </ul></li>
 </ul>
-<p>You can use whatever software package you prefer for this class this semester, though PlantUML will be the only software supported by Dr.&nbsp;Palmeri and the teaching team.</p>
 
 
 </section>

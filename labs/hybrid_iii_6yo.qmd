@@ -31,7 +31,7 @@ uploaded animation.
 ## What to submit
 
 Upload mechanical drawings and a screenshot of the part for all of your parts
-to the `Hybrid III 6 y/o` Gradescope assignment.
+to the `Hybrid III 6 y/o` Canvas assignment.
 
 ## Bottom Plate
 

@@ -111,4 +111,4 @@ Please review the [lab policies and safety guidelines](../resources/bme-lab-poli
 
 ## What to Submit
 
-Complete the online Gradescope "quiz" indicating completion of each of the main tasks above.
+Complete the online Canvas "quiz" indicating completion of each of the main tasks above.

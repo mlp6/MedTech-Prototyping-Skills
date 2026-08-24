@@ -87,6 +87,6 @@ Formally render your state diagram using one of the tools outlined on the
 For PlantUML-generated digrams, if the diagram's layout is difficult to follow using the automated layout, consider manually specifying relative positions and length of arrows using the following annotation: [https://crashedmind.github.io/PlantUMLHitchhikersGuide/layout/layout.html#:~:text=6.,Tip](https://crashedmind.github.io/PlantUMLHitchhikersGuide/layout/layout.html#:~:text=6.,Tip).
 :::
 
-## Gradescope
+## Canvas
 
-Upload your rendered state diagram to the associated Gradescope assignment.
+Upload your rendered state diagram to the associated Canvas assignment.

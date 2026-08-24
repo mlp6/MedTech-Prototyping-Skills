@@ -107,4 +107,4 @@ Your fork of this GitLab repository will be running this CI script: [`.gitlab-ci
 
 ![ci_pipeline](images/ci_pipeline.png)
 
-1. Submit this screenshot to Gradescope assignment, along with completing the prompted questions.
+1. Submit this screenshot to the Canvas assignment, along with completing the prompted questions.

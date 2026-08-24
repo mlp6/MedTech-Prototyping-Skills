@@ -26,10 +26,6 @@ website:
           text: Course Syllabus
         - href: https://canvas.duke.edu/courses/73999
           text: Canvas
-        - href: https://edstem.org/us/courses/91011
-          text: Ed Discussion
-        - href: https://gradescope.com/courses/1211060
-          text: Gradescope
         - href: https://duke.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=4d8bd7ca-c326-4c87-9e29-b3c9012f813e
           text: "Panopto Lecture Videos"
         - href: faq.qmd
@@ -58,12 +54,12 @@ website:
         contents:
         - href: labs/software-install-tutorials.qmd
           text: "Software Installation Tutorials"
-        - href: labs/event-driven-state-machine-lab.qmd
-          text: "Event-Driven State Machine (Kitchen Timer)"
-        - href: labs/hybrid_iii_6yo.qmd
-          text: "Hybrid III 6YO Head and Neck Lab"
-        - href: https://gitlab.oit.duke.edu/mlp6/kicad-spice
-          text: "KiCad & SPICE Lab (GitLab Repo)"
+        # - href: labs/event-driven-state-machine-lab.qmd
+        - text: "Event-Driven State Machine (Kitchen Timer)"
+        # - href: labs/hybrid_iii_6yo.qmd
+        - text: "Hybrid III 6YO Head and Neck Lab"
+        # - href: https://gitlab.oit.duke.edu/mlp6/kicad-spice
+        - text: "KiCad & SPICE Lab (GitLab Repo)"
       - href: https://gitlab.oit.duke.edu/mlp6/lightbox
         text: "Lightbox (GitLab Repo)"
       - section: Resources

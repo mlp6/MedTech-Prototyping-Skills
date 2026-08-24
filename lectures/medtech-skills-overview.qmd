@@ -1,6 +1,6 @@
 ---
 title: "MedTech Skills Overview"
-date: "2026-01-06"
+date: "2026-08-24"
 format:
   live-html: 
     output-file: medtech-skills-overview-notes.html

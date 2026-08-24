@@ -1,6 +1,6 @@
 ---
 title: "MedTech Prototyping Skills: Software Installation & Tutorials"
-date: "2026-04-05"
+date: "2026-08-24"
 format:
   html: default
   pdf: default
@@ -54,7 +54,7 @@ please install the following Extensions:
 
 - [GitHub CoPilot Chat](https://code.visualstudio.com/docs/copilot/overview) (AI-assisted coding)
 
-  - Sign up for free GitHub Education Student account to get access to this extension: https://github.com/education/students
+  - Sign up for free GitHub Education Student account to get access to this extension: [https://github.com/education/students](https://github.com/education/students)
 
   - Install the `GitHub CoPilot Chat` extension
 
@@ -85,6 +85,8 @@ versions of the board use different logic voltages and even different chips!
 
 - Make sure you have a data-cable USB cable to connect your Arduino Nano Every
 to your laptop.
+
+- Make sure that you have a USB memory key that can be used to download data from an oscillopscope (ours use an older USB-A connection, so make sure you have a USB-A port on your laptop or a USB-C to USB-A adapter).
 
 ## Technical Report Preparation
 

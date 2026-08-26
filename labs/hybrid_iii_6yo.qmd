@@ -30,8 +30,9 @@ uploaded animation.
 
 ## What to submit
 
-Upload mechanical drawings and a screenshot of the part for all of your parts
-to the `Hybrid III 6 y/o` Canvas assignment.
+Upload mechanical drawings of the part for all of your parts to the `Hybrid III
+6 y/o` Canvas assignment.  This can be done as one file per part or as a single
+PDF file with all of the drawings.
 
 ## Bottom Plate
 

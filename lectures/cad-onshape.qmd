@@ -1,6 +1,6 @@
 ---
 title: "Computer Aided Design (CAD) with Onshape"
-date: "2026-01-07"
+date: "2026-08-26"
 format:
   live-html: 
     output-file: cad-onshape-notes.html

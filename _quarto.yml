@@ -34,10 +34,10 @@ website:
         contents:
         - href: lectures/medtech-skills-overview.qmd
           text: "MedTech Prototyping Skills Overview"
-        - href: lectures/event-driven-state-machine.qmd
-          text: "Event-Driven State Machines"
         - href: lectures/cad-onshape.qmd
           text: "CAD with Onshape"
+        - href: lectures/event-driven-state-machine.qmd
+          text: "Event-Driven State Machines"
         - href: lectures/git-fundamentals.qmd
           text: "Version Control (git)"
         - section: "EDA (KiCad)"
@@ -54,10 +54,10 @@ website:
         contents:
         - href: labs/software-install-tutorials.qmd
           text: "Software Installation Tutorials"
+        - href: labs/hybrid_iii_6yo.qmd
+          text: "Hybrid III 6YO Head and Neck Lab"
         # - href: labs/event-driven-state-machine-lab.qmd
         - text: "Event-Driven State Machine (Kitchen Timer)"
-        # - href: labs/hybrid_iii_6yo.qmd
-        - text: "Hybrid III 6YO Head and Neck Lab"
         # - href: https://gitlab.oit.duke.edu/mlp6/kicad-spice
         - text: "KiCad & SPICE Lab (GitLab Repo)"
       #- href: https://gitlab.oit.duke.edu/mlp6/lightbox

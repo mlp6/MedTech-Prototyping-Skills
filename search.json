@@ -1438,70 +1438,110 @@
     "href": "labs/hybrid_iii_6yo.html",
     "title": "Hybrid III 6 y/o Lab",
     "section": "",
-    "text": "Create all of the parts for the Hybrid III 6yo test setup based on the attached drawings.\nYou should create all of these parts and their associated drawings and assemblies as part of the same “Document” and share that document with Dr. Palmeri and the TA(s).\nCreate the mechanical drawings associated with each of those parts (i.e., recreate the drawings that you are using to generate the parts) and the assembly.\nAssemble your parts as guided by the assembly diagram and as shown in the uploaded animation.\nThere are online tutorials on Assemblies if you need some refreshers:\n\nhttps://learn.onshape.com/courses/introduction-to-assembly-design\nhttps://learn.onshape.com/courses/fundamentals-onshape-assemblies"
+    "text": "Create all of the parts for the Hybrid III 6yo test setup based on the attached drawings.\nYou should create all of these parts and their associated drawings and assemblies as part of the same “Document” and share that document with Dr. Palmeri and the TA(s).\nCreate the mechanical drawings associated with each of those parts (i.e., recreate the drawings that you are using to generate the parts) and the assembly.\nAssemble your parts as guided by the assembly diagram and as shown in the uploaded animation.\nThere are online tutorials on Assemblies if you need some refreshers:\n\nhttps://learn.onshape.com/courses/introduction-to-assembly-design\nhttps://learn.onshape.com/courses/fundamentals-onshape-assemblies",
+    "crumbs": [
+      "Labs",
+      "Hybrid III 6YO Head and Neck Lab"
+    ]
   },
   {
     "objectID": "labs/hybrid_iii_6yo.html#tasks",
     "href": "labs/hybrid_iii_6yo.html#tasks",
     "title": "Hybrid III 6 y/o Lab",
     "section": "",
-    "text": "Create all of the parts for the Hybrid III 6yo test setup based on the attached drawings.\nYou should create all of these parts and their associated drawings and assemblies as part of the same “Document” and share that document with Dr. Palmeri and the TA(s).\nCreate the mechanical drawings associated with each of those parts (i.e., recreate the drawings that you are using to generate the parts) and the assembly.\nAssemble your parts as guided by the assembly diagram and as shown in the uploaded animation.\nThere are online tutorials on Assemblies if you need some refreshers:\n\nhttps://learn.onshape.com/courses/introduction-to-assembly-design\nhttps://learn.onshape.com/courses/fundamentals-onshape-assemblies"
+    "text": "Create all of the parts for the Hybrid III 6yo test setup based on the attached drawings.\nYou should create all of these parts and their associated drawings and assemblies as part of the same “Document” and share that document with Dr. Palmeri and the TA(s).\nCreate the mechanical drawings associated with each of those parts (i.e., recreate the drawings that you are using to generate the parts) and the assembly.\nAssemble your parts as guided by the assembly diagram and as shown in the uploaded animation.\nThere are online tutorials on Assemblies if you need some refreshers:\n\nhttps://learn.onshape.com/courses/introduction-to-assembly-design\nhttps://learn.onshape.com/courses/fundamentals-onshape-assemblies",
+    "crumbs": [
+      "Labs",
+      "Hybrid III 6YO Head and Neck Lab"
+    ]
   },
   {
     "objectID": "labs/hybrid_iii_6yo.html#what-to-submit",
     "href": "labs/hybrid_iii_6yo.html#what-to-submit",
     "title": "Hybrid III 6 y/o Lab",
     "section": "What to submit",
-    "text": "What to submit\nUpload mechanical drawings and a screenshot of the part for all of your parts to the Hybrid III 6 y/o Canvas assignment."
+    "text": "What to submit\nUpload mechanical drawings and a screenshot of the part for all of your parts to the Hybrid III 6 y/o Canvas assignment.",
+    "crumbs": [
+      "Labs",
+      "Hybrid III 6YO Head and Neck Lab"
+    ]
   },
   {
     "objectID": "labs/hybrid_iii_6yo.html#bottom-plate",
     "href": "labs/hybrid_iii_6yo.html#bottom-plate",
     "title": "Hybrid III 6 y/o Lab",
     "section": "Bottom Plate",
-    "text": "Bottom Plate"
+    "text": "Bottom Plate",
+    "crumbs": [
+      "Labs",
+      "Hybrid III 6YO Head and Neck Lab"
+    ]
   },
   {
     "objectID": "labs/hybrid_iii_6yo.html#top-plate",
     "href": "labs/hybrid_iii_6yo.html#top-plate",
     "title": "Hybrid III 6 y/o Lab",
     "section": "Top Plate",
-    "text": "Top Plate"
+    "text": "Top Plate",
+    "crumbs": [
+      "Labs",
+      "Hybrid III 6YO Head and Neck Lab"
+    ]
   },
   {
     "objectID": "labs/hybrid_iii_6yo.html#nodding-plate",
     "href": "labs/hybrid_iii_6yo.html#nodding-plate",
     "title": "Hybrid III 6 y/o Lab",
     "section": "Nodding Plate",
-    "text": "Nodding Plate"
+    "text": "Nodding Plate",
+    "crumbs": [
+      "Labs",
+      "Hybrid III 6YO Head and Neck Lab"
+    ]
   },
   {
     "objectID": "labs/hybrid_iii_6yo.html#molded-neck",
     "href": "labs/hybrid_iii_6yo.html#molded-neck",
     "title": "Hybrid III 6 y/o Lab",
     "section": "Molded Neck",
-    "text": "Molded Neck\n\n\n\n\n\n\n\nTip\n\n\n\nNote that the this part has features that are dependent on the top and bottom plates. To reduce the overhead of manually entering these dimensions from the other parts, you can use the Derived tool in Onshape to bring in the relevant faces from the other parts.\nhttps://cad.onshape.com/help/Content/derived.htm#StepsDesktop"
+    "text": "Molded Neck\n\n\n\n\n\n\n\nTip\n\n\n\nNote that the this part has features that are dependent on the top and bottom plates. To reduce the overhead of manually entering these dimensions from the other parts, you can use the Derived tool in Onshape to bring in the relevant faces from the other parts.\nhttps://cad.onshape.com/help/Content/derived.htm#StepsDesktop",
+    "crumbs": [
+      "Labs",
+      "Hybrid III 6YO Head and Neck Lab"
+    ]
   },
   {
     "objectID": "labs/hybrid_iii_6yo.html#lower-neck-bracket",
     "href": "labs/hybrid_iii_6yo.html#lower-neck-bracket",
     "title": "Hybrid III 6 y/o Lab",
     "section": "Lower Neck Bracket",
-    "text": "Lower Neck Bracket"
+    "text": "Lower Neck Bracket",
+    "crumbs": [
+      "Labs",
+      "Hybrid III 6YO Head and Neck Lab"
+    ]
   },
   {
     "objectID": "labs/hybrid_iii_6yo.html#load-cell",
     "href": "labs/hybrid_iii_6yo.html#load-cell",
     "title": "Hybrid III 6 y/o Lab",
     "section": "Load Cell",
-    "text": "Load Cell"
+    "text": "Load Cell",
+    "crumbs": [
+      "Labs",
+      "Hybrid III 6YO Head and Neck Lab"
+    ]
   },
   {
     "objectID": "labs/hybrid_iii_6yo.html#assembly",
     "href": "labs/hybrid_iii_6yo.html#assembly",
     "title": "Hybrid III 6 y/o Lab",
     "section": "Assembly",
-    "text": "Assembly"
+    "text": "Assembly",
+    "crumbs": [
+      "Labs",
+      "Hybrid III 6YO Head and Neck Lab"
+    ]
   },
   {
     "objectID": "labs/event-driven-state-machine-lab.html",

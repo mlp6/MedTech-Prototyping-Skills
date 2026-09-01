@@ -1293,145 +1293,137 @@
     ]
   },
   {
-    "objectID": "TODO.html",
-    "href": "TODO.html",
-    "title": "TODOs",
+    "objectID": "AGENTS.html",
+    "href": "AGENTS.html",
+    "title": "AGENTS.md",
     "section": "",
-    "text": "Update schedule & syllabus\nPublish Canvas\n\nAdd TAs and lab staff\nLink syllabus\n\nAdd students to Duke’s Onshape\nOrder project parts\nSetup Pratt AV Panopto recording (https://it.pratt.duke.edu/av)"
+    "text": "This file provides guidance to Codex (Codex.ai/code) when working with code in this repository.\n\n\nThis is the Duke BME 254L MedTech Prototyping Skills course website, built with Quarto. The site contains lecture materials, lab assignments, and resources for teaching medical device prototyping skills including CAD (Onshape), electronic design automation (KiCad), microcontroller firmware (Arduino), and version control (git).\n\n\n\n# Render all Quarto documents to HTML\nmake all\n# or directly:\nquarto render\n\n# Clean generated HTML and auxiliary files\nmake clean\n\n# Preview site locally with live reload\nquarto preview\n\n\n\n# Create conda environment with Python 3.11 and data science packages\nconda env create -f environment.yml\nconda activate medtech-prototyping-skills\n\n\n\n\n\n\nlectures/ - Learning modules as QMD files, rendered as both slides (RevealJS) and notes (HTML)\nlabs/ - Hands-on lab assignments with step-by-step instructions\nresources/ - Reference materials, PDFs, and guides\nkicad/ - Example KiCad projects (voltage divider, RC circuits, active LPF)\nmodules/ - Git submodules linking to external content repositories\n\n\n\n\n\n_quarto.yml - Main Quarto config: site navigation, theme, sidebar structure\nlectures/_metadata.yml - Lecture-specific metadata for dual output (slides + notes)\nenvironment.yml - Conda environment specification\n.github/workflows/publish.yml - GitHub Actions deployment to GitHub Pages\n\n\n\n\nSidebar navigation is controlled entirely via _quarto.yml. Content is organized into sections: Course Information, Learning Modules, Labs, and Resources.\n\n\n\n\nThe site auto-deploys to GitHub Pages via GitHub Actions on push to main. The workflow uses Quarto 1.7.31 with TinyTeX for PDF generation.\n\n\n\n\nQMD files use Quarto markdown with YAML front matter\nLectures use format: live-html for notes and format: live-revealjs for slides\nImages stored in lectures/images/ and labs/images/\nThe site uses Atkinson Hyperlegible font and a11y-light code theme for accessibility"
   },
   {
-    "objectID": "TODO.html#new-semester-tasks",
-    "href": "TODO.html#new-semester-tasks",
-    "title": "TODOs",
+    "objectID": "AGENTS.html#project-overview",
+    "href": "AGENTS.html#project-overview",
+    "title": "AGENTS.md",
     "section": "",
-    "text": "Update schedule & syllabus\nPublish Canvas\n\nAdd TAs and lab staff\nLink syllabus\n\nAdd students to Duke’s Onshape\nOrder project parts\nSetup Pratt AV Panopto recording (https://it.pratt.duke.edu/av)"
+    "text": "This is the Duke BME 254L MedTech Prototyping Skills course website, built with Quarto. The site contains lecture materials, lab assignments, and resources for teaching medical device prototyping skills including CAD (Onshape), electronic design automation (KiCad), microcontroller firmware (Arduino), and version control (git)."
   },
   {
-    "objectID": "labs/git-fundamentals-lab.html",
-    "href": "labs/git-fundamentals-lab.html",
-    "title": "Git Fundamentals Lab",
+    "objectID": "AGENTS.html#build-commands",
+    "href": "AGENTS.html#build-commands",
+    "title": "AGENTS.md",
     "section": "",
-    "text": "This week we will go through a very simple git workflow to get you familiar with the process and to confirm that your toolchain works for future assignments.\n\n\n\nMake sure that you have git installed, ssh keys configured, and your Duke GitLab account is setup, as detailed here\nBe sure to review the tutorials outlined on the git setup page, as needed, to complete the tasks below.\nCreate a fork–not a clone–of the git-fundamentals-lab in your userspace.\nAdd Dr. Palmeri (mlp6) as a Maintainer of your forked repository (Left Sidebar: Manage -&gt; Members -&gt; Invite members)\nClone your forked repository to your laptop using the URL available under the blue Code button: Clone with SSH.\n\n\n\n\n\n\n\nWarning\n\n\n\nYou want to clone your forked repository, not the parent repository you forked from!\n\n\n\n\n\n\nSwitch to the about_me branch.\nEdit AboutMe.md to replace all of the FILL_ME_IN placeholders with your own information.\nAdd and commit these text changes with a meaningful commit message.\nAdd and commit a new image file named fun_picture.png in a directory called images/ to complete that section of the AboutMe.md file.\nPush this updated branch to the remote of your GitLab repository.\n\nConfirm that you can see your latest commit on this branch on the GitLab website.\n\n\n\n\n\nCreate a new Merge Request on the GitLab to merge the about_me branch into the main branch.\n\nAssign the Merge Request to yourself.\nYou do not need a Reviewer.\nYou do not want to squash or rebase your branch commits\nYou do not want to delete the source branch.\n\nCheck that the check_image and check_about_me pipline jobs have passed.\n\nBuild -&gt; Pipelines\nClick on the latest pipeline (the colored rounded rectangle button in the status column).\nClick on the check_image or check_about_me job to see the output of the test if it Failed.\n\nIf the pipeline jobs for this branch have failed, you will need to fix the issue(s) and push the changes to your about_me branch.\n\nIf you are not sure what the issue is, click on the failed job to see the output of the test.\nIf you are not sure how to fix it, ask for help!\n\nOnce your CI jobs pass, approve your Merge Request on the GitLab website and Merge your about_me branch into main.\nCheckout the main branch on your laptop and pull the latest changes from the GitLab server.\nConfirm that you can see the updated AboutMe.md file in your main branch, along with its associated commit in your git commit history.\n\n\n\n\n\nOn main, create an annotated tag for this commit associated with your merged about_me branch called v1.0.0, with the message \"include the about me info\".\nPush this annotated tag to the GitLab server (origin).\nConfirm that you can see your latest commit and tag on the GitLab website.\nYou should see that the check_v1_0_0_tag pipeline job has passed if this was successful.\n\n\n\n\n\nInspect the contents of AboutDrPalmeri.md in main.\nSwitch to the about_dr_p branch, and look at the content (slightly different) of AboutDrPalmeri.md.\nSwitch back to the main branch, and merge the about_dr_p branch into main.\n\nYou will be told that there is a Merge Conflict:\n\n$ git merge about_dr_p\nCONFLICT (content): Merge conflict in AboutDrPalmeri.md\nAutomatic merge failed; fix conflicts and then commit the result.\n\ngit status will show you the files that are in conflict, and what your next likely steps will be to resolve this conflict:\n\n$ git status\nYour branch is up to date with 'origin/main'.\n\nYou have unmerged paths.\n(fix conflicts and run \"git commit\")\n(use \"git merge --abort\" to abort the merge)\n\nUnmerged paths:\n(use \"git add &lt;file&gt;...\" to mark resolution)\n        both modified:   AboutDrPalmeri.md\n\nno changes added to commit (use \"git add\" and/or \"git commit -a\") \nStaying on the main branch, open AboutDrPalmeri.md in your text editor, and inspect the &lt;&lt;&lt;&lt;&lt;&lt;&lt;, =======, and &gt;&gt;&gt;&gt;&gt;&gt;&gt; markers that indicate the conflicting lines.\nKeep the version of the conflicting line that is in main, and delete the line that was incoming from about_dr_p.\nBe sure to delete the &lt;&lt;&lt;&lt;&lt;&lt;&lt;, =======, and &gt;&gt;&gt;&gt;&gt;&gt;&gt; markers (lines).\nAdd and commit this merge conflict resolution.\nCreate an annotated tag called v1.0.1 with the message \"fix Dr. P's age\".\nPush your latest commits and tags to main on the GitLab server (origin).\nAll of your CI jobs should pass if everything was successful."
+    "text": "# Render all Quarto documents to HTML\nmake all\n# or directly:\nquarto render\n\n# Clean generated HTML and auxiliary files\nmake clean\n\n# Preview site locally with live reload\nquarto preview"
   },
   {
-    "objectID": "labs/git-fundamentals-lab.html#git-practice",
-    "href": "labs/git-fundamentals-lab.html#git-practice",
-    "title": "Git Fundamentals Lab",
+    "objectID": "AGENTS.html#environment-setup",
+    "href": "AGENTS.html#environment-setup",
+    "title": "AGENTS.md",
     "section": "",
-    "text": "This week we will go through a very simple git workflow to get you familiar with the process and to confirm that your toolchain works for future assignments.\n\n\n\nMake sure that you have git installed, ssh keys configured, and your Duke GitLab account is setup, as detailed here\nBe sure to review the tutorials outlined on the git setup page, as needed, to complete the tasks below.\nCreate a fork–not a clone–of the git-fundamentals-lab in your userspace.\nAdd Dr. Palmeri (mlp6) as a Maintainer of your forked repository (Left Sidebar: Manage -&gt; Members -&gt; Invite members)\nClone your forked repository to your laptop using the URL available under the blue Code button: Clone with SSH.\n\n\n\n\n\n\n\nWarning\n\n\n\nYou want to clone your forked repository, not the parent repository you forked from!\n\n\n\n\n\n\nSwitch to the about_me branch.\nEdit AboutMe.md to replace all of the FILL_ME_IN placeholders with your own information.\nAdd and commit these text changes with a meaningful commit message.\nAdd and commit a new image file named fun_picture.png in a directory called images/ to complete that section of the AboutMe.md file.\nPush this updated branch to the remote of your GitLab repository.\n\nConfirm that you can see your latest commit on this branch on the GitLab website.\n\n\n\n\n\nCreate a new Merge Request on the GitLab to merge the about_me branch into the main branch.\n\nAssign the Merge Request to yourself.\nYou do not need a Reviewer.\nYou do not want to squash or rebase your branch commits\nYou do not want to delete the source branch.\n\nCheck that the check_image and check_about_me pipline jobs have passed.\n\nBuild -&gt; Pipelines\nClick on the latest pipeline (the colored rounded rectangle button in the status column).\nClick on the check_image or check_about_me job to see the output of the test if it Failed.\n\nIf the pipeline jobs for this branch have failed, you will need to fix the issue(s) and push the changes to your about_me branch.\n\nIf you are not sure what the issue is, click on the failed job to see the output of the test.\nIf you are not sure how to fix it, ask for help!\n\nOnce your CI jobs pass, approve your Merge Request on the GitLab website and Merge your about_me branch into main.\nCheckout the main branch on your laptop and pull the latest changes from the GitLab server.\nConfirm that you can see the updated AboutMe.md file in your main branch, along with its associated commit in your git commit history.\n\n\n\n\n\nOn main, create an annotated tag for this commit associated with your merged about_me branch called v1.0.0, with the message \"include the about me info\".\nPush this annotated tag to the GitLab server (origin).\nConfirm that you can see your latest commit and tag on the GitLab website.\nYou should see that the check_v1_0_0_tag pipeline job has passed if this was successful.\n\n\n\n\n\nInspect the contents of AboutDrPalmeri.md in main.\nSwitch to the about_dr_p branch, and look at the content (slightly different) of AboutDrPalmeri.md.\nSwitch back to the main branch, and merge the about_dr_p branch into main.\n\nYou will be told that there is a Merge Conflict:\n\n$ git merge about_dr_p\nCONFLICT (content): Merge conflict in AboutDrPalmeri.md\nAutomatic merge failed; fix conflicts and then commit the result.\n\ngit status will show you the files that are in conflict, and what your next likely steps will be to resolve this conflict:\n\n$ git status\nYour branch is up to date with 'origin/main'.\n\nYou have unmerged paths.\n(fix conflicts and run \"git commit\")\n(use \"git merge --abort\" to abort the merge)\n\nUnmerged paths:\n(use \"git add &lt;file&gt;...\" to mark resolution)\n        both modified:   AboutDrPalmeri.md\n\nno changes added to commit (use \"git add\" and/or \"git commit -a\") \nStaying on the main branch, open AboutDrPalmeri.md in your text editor, and inspect the &lt;&lt;&lt;&lt;&lt;&lt;&lt;, =======, and &gt;&gt;&gt;&gt;&gt;&gt;&gt; markers that indicate the conflicting lines.\nKeep the version of the conflicting line that is in main, and delete the line that was incoming from about_dr_p.\nBe sure to delete the &lt;&lt;&lt;&lt;&lt;&lt;&lt;, =======, and &gt;&gt;&gt;&gt;&gt;&gt;&gt; markers (lines).\nAdd and commit this merge conflict resolution.\nCreate an annotated tag called v1.0.1 with the message \"fix Dr. P's age\".\nPush your latest commits and tags to main on the GitLab server (origin).\nAll of your CI jobs should pass if everything was successful."
+    "text": "# Create conda environment with Python 3.11 and data science packages\nconda env create -f environment.yml\nconda activate medtech-prototyping-skills"
   },
   {
-    "objectID": "labs/git-fundamentals-lab.html#how-to-ask-for-help",
-    "href": "labs/git-fundamentals-lab.html#how-to-ask-for-help",
-    "title": "Git Fundamentals Lab",
-    "section": "How to Ask for Help",
-    "text": "How to Ask for Help\n\nIf you have a general / non-coding question, you should ask your TAs / Dr. Palmeri on Ed to allow any of them to respond in a timely manner.\nPush you code to your GitLab repository, ideally with your active development on a non-main branch.\nCreate an Issue in your repository.\n\nAdd as much detail as possible as to your problem, and add links to specific lines / section of code when possible.\nAssign the label “Bug” or “Question”, as appropriate.\nBe sure to specify what branch you are working on.\nAssign the Issue to one of the TAs.\nIf your TA cannot solve your Issue, they can escalate the Issue to Dr. Palmeri.\n\nYou will get a response to your Issue, and maybe a new branch of code will be pushed to help you with some example syntax that you can use git diff to visualize."
-  },
-  {
-    "objectID": "labs/git-fundamentals-lab.html#what-to-submit",
-    "href": "labs/git-fundamentals-lab.html#what-to-submit",
-    "title": "Git Fundamentals Lab",
-    "section": "What to Submit",
-    "text": "What to Submit\nYour fork of this GitLab repository will be running this CI script: .gitlab-ci.yml\n\nGo to the Build -&gt; Pipelines page of your GitLab repository.\nTake a screenshot of the latest pipeline that shows all of the tests passing, along with your repository information, as shown below (except all of those Failed tests should report Passed).\n\n\n\n\nci_pipeline\n\n\n\nSubmit this screenshot to the Canvas assignment, along with completing the prompted questions."
-  },
-  {
-    "objectID": "labs/software-install-tutorials.html",
-    "href": "labs/software-install-tutorials.html",
-    "title": "MedTech Prototyping Skills: Software Installation & Tutorials",
+    "objectID": "AGENTS.html#architecture",
+    "href": "AGENTS.html#architecture",
+    "title": "AGENTS.md",
     "section": "",
-    "text": "Please follow the instructions on this dedicated git page to:\n\nInstall git\nConfigure git\nSetup an SSH key\nProvide links to git tutorials to reinforce the concepts and mechanics of using git.",
-    "crumbs": [
-      "Labs",
-      "Software Installation Tutorials"
-    ]
+    "text": "lectures/ - Learning modules as QMD files, rendered as both slides (RevealJS) and notes (HTML)\nlabs/ - Hands-on lab assignments with step-by-step instructions\nresources/ - Reference materials, PDFs, and guides\nkicad/ - Example KiCad projects (voltage divider, RC circuits, active LPF)\nmodules/ - Git submodules linking to external content repositories\n\n\n\n\n\n_quarto.yml - Main Quarto config: site navigation, theme, sidebar structure\nlectures/_metadata.yml - Lecture-specific metadata for dual output (slides + notes)\nenvironment.yml - Conda environment specification\n.github/workflows/publish.yml - GitHub Actions deployment to GitHub Pages\n\n\n\n\nSidebar navigation is controlled entirely via _quarto.yml. Content is organized into sections: Course Information, Learning Modules, Labs, and Resources."
   },
   {
-    "objectID": "labs/software-install-tutorials.html#git-version-control",
-    "href": "labs/software-install-tutorials.html#git-version-control",
-    "title": "MedTech Prototyping Skills: Software Installation & Tutorials",
+    "objectID": "AGENTS.html#deployment",
+    "href": "AGENTS.html#deployment",
+    "title": "AGENTS.md",
     "section": "",
-    "text": "Please follow the instructions on this dedicated git page to:\n\nInstall git\nConfigure git\nSetup an SSH key\nProvide links to git tutorials to reinforce the concepts and mechanics of using git.",
-    "crumbs": [
-      "Labs",
-      "Software Installation Tutorials"
-    ]
+    "text": "The site auto-deploys to GitHub Pages via GitHub Actions on push to main. The workflow uses Quarto 1.7.31 with TinyTeX for PDF generation."
   },
   {
-    "objectID": "labs/software-install-tutorials.html#kicad-eda",
-    "href": "labs/software-install-tutorials.html#kicad-eda",
-    "title": "MedTech Prototyping Skills: Software Installation & Tutorials",
-    "section": "KiCad (EDA)",
-    "text": "KiCad (EDA)\n\nPlease install KiCad (v10.x): https://kicad.org\n\n\n\n\n\n\n\nNote\n\n\n\nThis installation file can be a bit large, so this may take a few minutes to download.",
-    "crumbs": [
-      "Labs",
-      "Software Installation Tutorials"
-    ]
+    "objectID": "AGENTS.html#content-conventions",
+    "href": "AGENTS.html#content-conventions",
+    "title": "AGENTS.md",
+    "section": "",
+    "text": "QMD files use Quarto markdown with YAML front matter\nLectures use format: live-html for notes and format: live-revealjs for slides\nImages stored in lectures/images/ and labs/images/\nThe site uses Atkinson Hyperlegible font and a11y-light code theme for accessibility"
   },
   {
-    "objectID": "labs/software-install-tutorials.html#onshape-cad",
-    "href": "labs/software-install-tutorials.html#onshape-cad",
-    "title": "MedTech Prototyping Skills: Software Installation & Tutorials",
-    "section": "Onshape (CAD)",
-    "text": "Onshape (CAD)\n\nPlease make sure to activate your invitation to Duke’s Onshape server (see email).\n\n\n\n\n\n\n\nNote\n\n\n\nIf you did not receive an email invitation, please send Dr. Palmeri and your TAs a private message on Ed.",
-    "crumbs": [
-      "Labs",
-      "Software Installation Tutorials"
-    ]
+    "objectID": "CLAUDE.html",
+    "href": "CLAUDE.html",
+    "title": "CLAUDE.md",
+    "section": "",
+    "text": "This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.\n\n\nThis is the Duke BME 254L MedTech Prototyping Skills course website, built with Quarto. The site contains lecture materials, lab assignments, and resources for teaching medical device prototyping skills including CAD (Onshape), electronic design automation (KiCad), microcontroller firmware (Arduino), and version control (git).\n\n\n\n# Render all Quarto documents to HTML\nmake all\n# or directly:\nquarto render\n\n# Clean generated HTML and auxiliary files\nmake clean\n\n# Preview site locally with live reload\nquarto preview\n\n\n\n# Create conda environment with Python 3.11 and data science packages\nconda env create -f environment.yml\nconda activate medtech-prototyping-skills\n\n\n\n\n\n\nlectures/ - Learning modules as QMD files, rendered as both slides (RevealJS) and notes (HTML)\nlabs/ - Hands-on lab assignments with step-by-step instructions\nresources/ - Reference materials, PDFs, and guides\nkicad/ - Example KiCad projects (voltage divider, RC circuits, active LPF)\nmodules/ - Git submodules linking to external content repositories\n\n\n\n\n\n_quarto.yml - Main Quarto config: site navigation, theme, sidebar structure\nlectures/_metadata.yml - Lecture-specific metadata for dual output (slides + notes)\nenvironment.yml - Conda environment specification\n.github/workflows/publish.yml - GitHub Actions deployment to GitHub Pages\n\n\n\n\nSidebar navigation is controlled entirely via _quarto.yml. Content is organized into sections: Course Information, Learning Modules, Labs, and Resources.\n\n\n\n\nThe site auto-deploys to GitHub Pages via GitHub Actions on push to main. The workflow uses Quarto 1.7.31 with TinyTeX for PDF generation.\n\n\n\n\nQMD files use Quarto markdown with YAML front matter\nLectures use format: live-html for notes and format: live-revealjs for slides\nImages stored in lectures/images/ and labs/images/\nThe site uses Atkinson Hyperlegible font and a11y-light code theme for accessibility"
   },
   {
-    "objectID": "labs/software-install-tutorials.html#visual-studio-code-ide",
-    "href": "labs/software-install-tutorials.html#visual-studio-code-ide",
-    "title": "MedTech Prototyping Skills: Software Installation & Tutorials",
-    "section": "Visual Studio Code (IDE)",
-    "text": "Visual Studio Code (IDE)\nWe will be using Visual Studio Code as the IDE for all projects in this class. In addition to installing the base program, please install the following Extensions:\n\nPlantUML (generate state diagrams)\nGitLens (help with git operations / visualization)\nMicrosoft C/C++ Extension Pack\nPlatformIO\nGitHub CoPilot Chat (AI-assisted coding)\n\nSign up for free GitHub Education Student account to get access to this extension: https://github.com/education/students\nInstall the GitHub CoPilot Chat extension\n\n\n\n\n\n\n\n\nTip\n\n\n\nYou will need a document to verify your student status that includes your dates of enrollment, which your DukeCard does not contain. Instead, you can get an Enrollment Verification document through DukeHub (Academics Tab) and convert the downloaded PDF to a JPG or PNG file to upload to GitHub.\n\n\n\nPython & Jupyter extensions (for technical report preparation)\nConda to install a Python virtual environment for Jupyter notebooks.\n\n\n\n\n\n\n\nNote\n\n\n\nYou can use an existing Python installation on your laptop if you have one.",
-    "crumbs": [
-      "Labs",
-      "Software Installation Tutorials"
-    ]
+    "objectID": "CLAUDE.html#project-overview",
+    "href": "CLAUDE.html#project-overview",
+    "title": "CLAUDE.md",
+    "section": "",
+    "text": "This is the Duke BME 254L MedTech Prototyping Skills course website, built with Quarto. The site contains lecture materials, lab assignments, and resources for teaching medical device prototyping skills including CAD (Onshape), electronic design automation (KiCad), microcontroller firmware (Arduino), and version control (git)."
   },
   {
-    "objectID": "labs/software-install-tutorials.html#arduino-nano-every",
-    "href": "labs/software-install-tutorials.html#arduino-nano-every",
-    "title": "MedTech Prototyping Skills: Software Installation & Tutorials",
-    "section": "Arduino Nano Every",
-    "text": "Arduino Nano Every\n\nOrder yourself an Arduino Nano Every.\n\n\n\n\n\n\n\nNote\n\n\n\nYou do not have to order from the Arduino store if you can find this board elsewhere, but please make sure you get the “Every” version of the Nano. Other versions of the board use different logic voltages and even different chips!\n\n\n\nMake sure you have a data-cable USB cable to connect your Arduino Nano Every to your laptop.\nMake sure that you have a USB memory key that can be used to download data from an oscillopscope (ours use an older USB-A connection, so make sure you have a USB-A port on your laptop or a USB-C to USB-A adapter).",
-    "crumbs": [
-      "Labs",
-      "Software Installation Tutorials"
-    ]
+    "objectID": "CLAUDE.html#build-commands",
+    "href": "CLAUDE.html#build-commands",
+    "title": "CLAUDE.md",
+    "section": "",
+    "text": "# Render all Quarto documents to HTML\nmake all\n# or directly:\nquarto render\n\n# Clean generated HTML and auxiliary files\nmake clean\n\n# Preview site locally with live reload\nquarto preview"
   },
   {
-    "objectID": "labs/software-install-tutorials.html#technical-report-preparation",
-    "href": "labs/software-install-tutorials.html#technical-report-preparation",
-    "title": "MedTech Prototyping Skills: Software Installation & Tutorials",
-    "section": "Technical Report Preparation",
-    "text": "Technical Report Preparation\nEach lab exercise will have an associated technical report submitted. These reports will be prepared and submitted using Python-based Jupyter notebooks that will be included as part of your assignment git repositories.\nYou will need to be able to perform the following tasks in your Jupyter notebooks:\n\nRead CSV text data saved from an oscilloscope.\nPerform simple statistics (e.g., mean, standard deviation, 95% CI) on the data.\nGenerate plots\n\nIf you need to install a Python environment on your laptop, then this is a good starting point: Getting Started with Python in VS Code.\nThis is a good tutorial on getting started with Jupyter notebooks in VS Code: Jupyter Notebooks in Visual Studio Code.",
-    "crumbs": [
-      "Labs",
-      "Software Installation Tutorials"
-    ]
+    "objectID": "CLAUDE.html#environment-setup",
+    "href": "CLAUDE.html#environment-setup",
+    "title": "CLAUDE.md",
+    "section": "",
+    "text": "# Create conda environment with Python 3.11 and data science packages\nconda env create -f environment.yml\nconda activate medtech-prototyping-skills"
   },
   {
-    "objectID": "labs/software-install-tutorials.html#lab-policies-safety",
-    "href": "labs/software-install-tutorials.html#lab-policies-safety",
-    "title": "MedTech Prototyping Skills: Software Installation & Tutorials",
-    "section": "Lab Policies & Safety",
-    "text": "Lab Policies & Safety\nPlease review the lab policies and safety guidelines for working in the lab.",
-    "crumbs": [
-      "Labs",
-      "Software Installation Tutorials"
-    ]
+    "objectID": "CLAUDE.html#architecture",
+    "href": "CLAUDE.html#architecture",
+    "title": "CLAUDE.md",
+    "section": "",
+    "text": "lectures/ - Learning modules as QMD files, rendered as both slides (RevealJS) and notes (HTML)\nlabs/ - Hands-on lab assignments with step-by-step instructions\nresources/ - Reference materials, PDFs, and guides\nkicad/ - Example KiCad projects (voltage divider, RC circuits, active LPF)\nmodules/ - Git submodules linking to external content repositories\n\n\n\n\n\n_quarto.yml - Main Quarto config: site navigation, theme, sidebar structure\nlectures/_metadata.yml - Lecture-specific metadata for dual output (slides + notes)\nenvironment.yml - Conda environment specification\n.github/workflows/publish.yml - GitHub Actions deployment to GitHub Pages\n\n\n\n\nSidebar navigation is controlled entirely via _quarto.yml. Content is organized into sections: Course Information, Learning Modules, Labs, and Resources."
   },
   {
-    "objectID": "labs/software-install-tutorials.html#what-to-submit",
-    "href": "labs/software-install-tutorials.html#what-to-submit",
-    "title": "MedTech Prototyping Skills: Software Installation & Tutorials",
-    "section": "What to Submit",
-    "text": "What to Submit\nComplete the online Canvas “quiz” indicating completion of each of the main tasks above.",
-    "crumbs": [
-      "Labs",
-      "Software Installation Tutorials"
-    ]
+    "objectID": "CLAUDE.html#deployment",
+    "href": "CLAUDE.html#deployment",
+    "title": "CLAUDE.md",
+    "section": "",
+    "text": "The site auto-deploys to GitHub Pages via GitHub Actions on push to main. The workflow uses Quarto 1.7.31 with TinyTeX for PDF generation."
+  },
+  {
+    "objectID": "CLAUDE.html#content-conventions",
+    "href": "CLAUDE.html#content-conventions",
+    "title": "CLAUDE.md",
+    "section": "",
+    "text": "QMD files use Quarto markdown with YAML front matter\nLectures use format: live-html for notes and format: live-revealjs for slides\nImages stored in lectures/images/ and labs/images/\nThe site uses Atkinson Hyperlegible font and a11y-light code theme for accessibility"
+  },
+  {
+    "objectID": "labs/event-driven-state-machine-lab.html",
+    "href": "labs/event-driven-state-machine-lab.html",
+    "title": "Event Driven State Machine Lab",
+    "section": "",
+    "text": "Tip\n\n\n\nI would recommend doing this with pencil and paper first, not immediately jumping into a tool. Err on the side of more detail than not."
+  },
+  {
+    "objectID": "labs/event-driven-state-machine-lab.html#digital-kitchen-timer",
+    "href": "labs/event-driven-state-machine-lab.html#digital-kitchen-timer",
+    "title": "Event Driven State Machine Lab",
+    "section": "Digital Kitchen Timer",
+    "text": "Digital Kitchen Timer\nGenerate a state diagram for a simple digital kitchen timer that has the following buttons:\n\nStart/Stop Button\nReset Button\nPause Button\nUp/Down/Left/Right Arrow Buttons (4)\n\nThe timer outputs time intervals in the format: HH:MM:SS"
+  },
+  {
+    "objectID": "labs/event-driven-state-machine-lab.html#functional-states",
+    "href": "labs/event-driven-state-machine-lab.html#functional-states",
+    "title": "Event Driven State Machine Lab",
+    "section": "Functional States",
+    "text": "Functional States\n\nThe kitchen timer has an “Idle” state when it isn’t actively counting down time. In this state:\n\nThe Up/Down buttons increment the time for the HH, MM or SS values.\nThe Left/Right buttons let you move between HH, MM and SS.\nTime intervals will wrap around to 00 when a reasonable max value is exceeded.\nThe Reset button sets all of the time values to 00.\nThe Pause button is inactive.\n\nStart/Stop will start the timer countdown when in Idle.\nIn the Countdown state:\n\nThe Start/Stop button will stop and reset the countdown interval.\nThe Pause button will pause, but not reset, the countdown time.\n\nWhen the countdown is done, the timer enters an Alarm state, where:\n\nThe Up/Down/Right/Left arrow buttons, Reset and Pause buttons are inactive.\nStart/Stop will stop the alarm and return the timer to Idle with the previously set countdown time.\n\n\n\n\n\n\n\n\nTip\n\n\n\nIf any functional state expectation isn’t explicitly described above, please implement something reasonable.\n\n\nMake sure that your state diagram:\n\nHas initialization (i.e., batteries put in) and termination (i.e., completely powered off) dots.\nIncludes all functional states, including (but not limited to):\n\nIdle\nCountdown\nPaused\nAlarm\n\nConsider if states should have entry and exit actions.\nMake sure all transitions between states are annotated with associated triggering events."
+  },
+  {
+    "objectID": "labs/event-driven-state-machine-lab.html#generate-the-state-diagram",
+    "href": "labs/event-driven-state-machine-lab.html#generate-the-state-diagram",
+    "title": "Event Driven State Machine Lab",
+    "section": "Generate the State Diagram",
+    "text": "Generate the State Diagram\nFormally render your state diagram using one of the tools outlined on the State Diagram Tools page.\n\n\n\n\n\n\nTip\n\n\n\nFor PlantUML-generated digrams, if the diagram’s layout is difficult to follow using the automated layout, consider manually specifying relative positions and length of arrows using the following annotation: https://crashedmind.github.io/PlantUMLHitchhikersGuide/layout/layout.html#:~:text=6.,Tip."
+  },
+  {
+    "objectID": "labs/event-driven-state-machine-lab.html#canvas",
+    "href": "labs/event-driven-state-machine-lab.html#canvas",
+    "title": "Event Driven State Machine Lab",
+    "section": "Canvas",
+    "text": "Canvas\nUpload your rendered state diagram to the associated Canvas assignment."
   },
   {
     "objectID": "labs/hybrid_iii_6yo.html",
@@ -1544,88 +1536,145 @@
     ]
   },
   {
-    "objectID": "labs/event-driven-state-machine-lab.html",
-    "href": "labs/event-driven-state-machine-lab.html",
-    "title": "Event Driven State Machine Lab",
+    "objectID": "labs/software-install-tutorials.html",
+    "href": "labs/software-install-tutorials.html",
+    "title": "MedTech Prototyping Skills: Software Installation & Tutorials",
     "section": "",
-    "text": "Tip\n\n\n\nI would recommend doing this with pencil and paper first, not immediately jumping into a tool. Err on the side of more detail than not."
+    "text": "Please follow the instructions on this dedicated git page to:\n\nInstall git\nConfigure git\nSetup an SSH key\nProvide links to git tutorials to reinforce the concepts and mechanics of using git.",
+    "crumbs": [
+      "Labs",
+      "Software Installation Tutorials"
+    ]
   },
   {
-    "objectID": "labs/event-driven-state-machine-lab.html#digital-kitchen-timer",
-    "href": "labs/event-driven-state-machine-lab.html#digital-kitchen-timer",
-    "title": "Event Driven State Machine Lab",
-    "section": "Digital Kitchen Timer",
-    "text": "Digital Kitchen Timer\nGenerate a state diagram for a simple digital kitchen timer that has the following buttons:\n\nStart/Stop Button\nReset Button\nPause Button\nUp/Down/Left/Right Arrow Buttons (4)\n\nThe timer outputs time intervals in the format: HH:MM:SS"
-  },
-  {
-    "objectID": "labs/event-driven-state-machine-lab.html#functional-states",
-    "href": "labs/event-driven-state-machine-lab.html#functional-states",
-    "title": "Event Driven State Machine Lab",
-    "section": "Functional States",
-    "text": "Functional States\n\nThe kitchen timer has an “Idle” state when it isn’t actively counting down time. In this state:\n\nThe Up/Down buttons increment the time for the HH, MM or SS values.\nThe Left/Right buttons let you move between HH, MM and SS.\nTime intervals will wrap around to 00 when a reasonable max value is exceeded.\nThe Reset button sets all of the time values to 00.\nThe Pause button is inactive.\n\nStart/Stop will start the timer countdown when in Idle.\nIn the Countdown state:\n\nThe Start/Stop button will stop and reset the countdown interval.\nThe Pause button will pause, but not reset, the countdown time.\n\nWhen the countdown is done, the timer enters an Alarm state, where:\n\nThe Up/Down/Right/Left arrow buttons, Reset and Pause buttons are inactive.\nStart/Stop will stop the alarm and return the timer to Idle with the previously set countdown time.\n\n\n\n\n\n\n\n\nTip\n\n\n\nIf any functional state expectation isn’t explicitly described above, please implement something reasonable.\n\n\nMake sure that your state diagram:\n\nHas initialization (i.e., batteries put in) and termination (i.e., completely powered off) dots.\nIncludes all functional states, including (but not limited to):\n\nIdle\nCountdown\nPaused\nAlarm\n\nConsider if states should have entry and exit actions.\nMake sure all transitions between states are annotated with associated triggering events."
-  },
-  {
-    "objectID": "labs/event-driven-state-machine-lab.html#generate-the-state-diagram",
-    "href": "labs/event-driven-state-machine-lab.html#generate-the-state-diagram",
-    "title": "Event Driven State Machine Lab",
-    "section": "Generate the State Diagram",
-    "text": "Generate the State Diagram\nFormally render your state diagram using one of the tools outlined on the State Diagram Tools page.\n\n\n\n\n\n\nTip\n\n\n\nFor PlantUML-generated digrams, if the diagram’s layout is difficult to follow using the automated layout, consider manually specifying relative positions and length of arrows using the following annotation: https://crashedmind.github.io/PlantUMLHitchhikersGuide/layout/layout.html#:~:text=6.,Tip."
-  },
-  {
-    "objectID": "labs/event-driven-state-machine-lab.html#canvas",
-    "href": "labs/event-driven-state-machine-lab.html#canvas",
-    "title": "Event Driven State Machine Lab",
-    "section": "Canvas",
-    "text": "Canvas\nUpload your rendered state diagram to the associated Canvas assignment."
-  },
-  {
-    "objectID": "CLAUDE.html",
-    "href": "CLAUDE.html",
-    "title": "CLAUDE.md",
+    "objectID": "labs/software-install-tutorials.html#git-version-control",
+    "href": "labs/software-install-tutorials.html#git-version-control",
+    "title": "MedTech Prototyping Skills: Software Installation & Tutorials",
     "section": "",
-    "text": "This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.\n\n\nThis is the Duke BME 254L MedTech Prototyping Skills course website, built with Quarto. The site contains lecture materials, lab assignments, and resources for teaching medical device prototyping skills including CAD (Onshape), electronic design automation (KiCad), microcontroller firmware (Arduino), and version control (git).\n\n\n\n# Render all Quarto documents to HTML\nmake all\n# or directly:\nquarto render\n\n# Clean generated HTML and auxiliary files\nmake clean\n\n# Preview site locally with live reload\nquarto preview\n\n\n\n# Create conda environment with Python 3.11 and data science packages\nconda env create -f environment.yml\nconda activate medtech-prototyping-skills\n\n\n\n\n\n\nlectures/ - Learning modules as QMD files, rendered as both slides (RevealJS) and notes (HTML)\nlabs/ - Hands-on lab assignments with step-by-step instructions\nresources/ - Reference materials, PDFs, and guides\nkicad/ - Example KiCad projects (voltage divider, RC circuits, active LPF)\nmodules/ - Git submodules linking to external content repositories\n\n\n\n\n\n_quarto.yml - Main Quarto config: site navigation, theme, sidebar structure\nlectures/_metadata.yml - Lecture-specific metadata for dual output (slides + notes)\nenvironment.yml - Conda environment specification\n.github/workflows/publish.yml - GitHub Actions deployment to GitHub Pages\n\n\n\n\nSidebar navigation is controlled entirely via _quarto.yml. Content is organized into sections: Course Information, Learning Modules, Labs, and Resources.\n\n\n\n\nThe site auto-deploys to GitHub Pages via GitHub Actions on push to main. The workflow uses Quarto 1.7.31 with TinyTeX for PDF generation.\n\n\n\n\nQMD files use Quarto markdown with YAML front matter\nLectures use format: live-html for notes and format: live-revealjs for slides\nImages stored in lectures/images/ and labs/images/\nThe site uses Atkinson Hyperlegible font and a11y-light code theme for accessibility"
+    "text": "Please follow the instructions on this dedicated git page to:\n\nInstall git\nConfigure git\nSetup an SSH key\nProvide links to git tutorials to reinforce the concepts and mechanics of using git.",
+    "crumbs": [
+      "Labs",
+      "Software Installation Tutorials"
+    ]
   },
   {
-    "objectID": "CLAUDE.html#project-overview",
-    "href": "CLAUDE.html#project-overview",
-    "title": "CLAUDE.md",
-    "section": "",
-    "text": "This is the Duke BME 254L MedTech Prototyping Skills course website, built with Quarto. The site contains lecture materials, lab assignments, and resources for teaching medical device prototyping skills including CAD (Onshape), electronic design automation (KiCad), microcontroller firmware (Arduino), and version control (git)."
+    "objectID": "labs/software-install-tutorials.html#kicad-eda",
+    "href": "labs/software-install-tutorials.html#kicad-eda",
+    "title": "MedTech Prototyping Skills: Software Installation & Tutorials",
+    "section": "KiCad (EDA)",
+    "text": "KiCad (EDA)\n\nPlease install KiCad (v10.x): https://kicad.org\n\n\n\n\n\n\n\nNote\n\n\n\nThis installation file can be a bit large, so this may take a few minutes to download.",
+    "crumbs": [
+      "Labs",
+      "Software Installation Tutorials"
+    ]
   },
   {
-    "objectID": "CLAUDE.html#build-commands",
-    "href": "CLAUDE.html#build-commands",
-    "title": "CLAUDE.md",
-    "section": "",
-    "text": "# Render all Quarto documents to HTML\nmake all\n# or directly:\nquarto render\n\n# Clean generated HTML and auxiliary files\nmake clean\n\n# Preview site locally with live reload\nquarto preview"
+    "objectID": "labs/software-install-tutorials.html#onshape-cad",
+    "href": "labs/software-install-tutorials.html#onshape-cad",
+    "title": "MedTech Prototyping Skills: Software Installation & Tutorials",
+    "section": "Onshape (CAD)",
+    "text": "Onshape (CAD)\n\nPlease make sure to activate your invitation to Duke’s Onshape server (see email).\n\n\n\n\n\n\n\nNote\n\n\n\nIf you did not receive an email invitation, please send Dr. Palmeri and your TAs a private message on Ed.",
+    "crumbs": [
+      "Labs",
+      "Software Installation Tutorials"
+    ]
   },
   {
-    "objectID": "CLAUDE.html#environment-setup",
-    "href": "CLAUDE.html#environment-setup",
-    "title": "CLAUDE.md",
-    "section": "",
-    "text": "# Create conda environment with Python 3.11 and data science packages\nconda env create -f environment.yml\nconda activate medtech-prototyping-skills"
+    "objectID": "labs/software-install-tutorials.html#visual-studio-code-ide",
+    "href": "labs/software-install-tutorials.html#visual-studio-code-ide",
+    "title": "MedTech Prototyping Skills: Software Installation & Tutorials",
+    "section": "Visual Studio Code (IDE)",
+    "text": "Visual Studio Code (IDE)\nWe will be using Visual Studio Code as the IDE for all projects in this class. In addition to installing the base program, please install the following Extensions:\n\nPlantUML (generate state diagrams)\nGitLens (help with git operations / visualization)\nMicrosoft C/C++ Extension Pack\nPlatformIO\nGitHub CoPilot Chat (AI-assisted coding)\n\nSign up for free GitHub Education Student account to get access to this extension: https://github.com/education/students\nInstall the GitHub CoPilot Chat extension\n\n\n\n\n\n\n\n\nTip\n\n\n\nYou will need a document to verify your student status that includes your dates of enrollment, which your DukeCard does not contain. Instead, you can get an Enrollment Verification document through DukeHub (Academics Tab) and convert the downloaded PDF to a JPG or PNG file to upload to GitHub.\n\n\n\nPython & Jupyter extensions (for technical report preparation)\nConda to install a Python virtual environment for Jupyter notebooks.\n\n\n\n\n\n\n\nNote\n\n\n\nYou can use an existing Python installation on your laptop if you have one.",
+    "crumbs": [
+      "Labs",
+      "Software Installation Tutorials"
+    ]
   },
   {
-    "objectID": "CLAUDE.html#architecture",
-    "href": "CLAUDE.html#architecture",
-    "title": "CLAUDE.md",
-    "section": "",
-    "text": "lectures/ - Learning modules as QMD files, rendered as both slides (RevealJS) and notes (HTML)\nlabs/ - Hands-on lab assignments with step-by-step instructions\nresources/ - Reference materials, PDFs, and guides\nkicad/ - Example KiCad projects (voltage divider, RC circuits, active LPF)\nmodules/ - Git submodules linking to external content repositories\n\n\n\n\n\n_quarto.yml - Main Quarto config: site navigation, theme, sidebar structure\nlectures/_metadata.yml - Lecture-specific metadata for dual output (slides + notes)\nenvironment.yml - Conda environment specification\n.github/workflows/publish.yml - GitHub Actions deployment to GitHub Pages\n\n\n\n\nSidebar navigation is controlled entirely via _quarto.yml. Content is organized into sections: Course Information, Learning Modules, Labs, and Resources."
+    "objectID": "labs/software-install-tutorials.html#arduino-nano-every",
+    "href": "labs/software-install-tutorials.html#arduino-nano-every",
+    "title": "MedTech Prototyping Skills: Software Installation & Tutorials",
+    "section": "Arduino Nano Every",
+    "text": "Arduino Nano Every\n\nOrder yourself an Arduino Nano Every.\n\n\n\n\n\n\n\nNote\n\n\n\nYou do not have to order from the Arduino store if you can find this board elsewhere, but please make sure you get the “Every” version of the Nano. Other versions of the board use different logic voltages and even different chips!\n\n\n\nMake sure you have a data-cable USB cable to connect your Arduino Nano Every to your laptop.\nMake sure that you have a USB memory key that can be used to download data from an oscillopscope (ours use an older USB-A connection, so make sure you have a USB-A port on your laptop or a USB-C to USB-A adapter).",
+    "crumbs": [
+      "Labs",
+      "Software Installation Tutorials"
+    ]
   },
   {
-    "objectID": "CLAUDE.html#deployment",
-    "href": "CLAUDE.html#deployment",
-    "title": "CLAUDE.md",
-    "section": "",
-    "text": "The site auto-deploys to GitHub Pages via GitHub Actions on push to main. The workflow uses Quarto 1.7.31 with TinyTeX for PDF generation."
+    "objectID": "labs/software-install-tutorials.html#technical-report-preparation",
+    "href": "labs/software-install-tutorials.html#technical-report-preparation",
+    "title": "MedTech Prototyping Skills: Software Installation & Tutorials",
+    "section": "Technical Report Preparation",
+    "text": "Technical Report Preparation\nEach lab exercise will have an associated technical report submitted. These reports will be prepared and submitted using Python-based Jupyter notebooks that will be included as part of your assignment git repositories.\nYou will need to be able to perform the following tasks in your Jupyter notebooks:\n\nRead CSV text data saved from an oscilloscope.\nPerform simple statistics (e.g., mean, standard deviation, 95% CI) on the data.\nGenerate plots\n\nIf you need to install a Python environment on your laptop, then this is a good starting point: Getting Started with Python in VS Code.\nThis is a good tutorial on getting started with Jupyter notebooks in VS Code: Jupyter Notebooks in Visual Studio Code.",
+    "crumbs": [
+      "Labs",
+      "Software Installation Tutorials"
+    ]
   },
   {
-    "objectID": "CLAUDE.html#content-conventions",
-    "href": "CLAUDE.html#content-conventions",
-    "title": "CLAUDE.md",
+    "objectID": "labs/software-install-tutorials.html#lab-policies-safety",
+    "href": "labs/software-install-tutorials.html#lab-policies-safety",
+    "title": "MedTech Prototyping Skills: Software Installation & Tutorials",
+    "section": "Lab Policies & Safety",
+    "text": "Lab Policies & Safety\nPlease review the lab policies and safety guidelines for working in the lab.",
+    "crumbs": [
+      "Labs",
+      "Software Installation Tutorials"
+    ]
+  },
+  {
+    "objectID": "labs/software-install-tutorials.html#what-to-submit",
+    "href": "labs/software-install-tutorials.html#what-to-submit",
+    "title": "MedTech Prototyping Skills: Software Installation & Tutorials",
+    "section": "What to Submit",
+    "text": "What to Submit\nComplete the online Canvas “quiz” indicating completion of each of the main tasks above.",
+    "crumbs": [
+      "Labs",
+      "Software Installation Tutorials"
+    ]
+  },
+  {
+    "objectID": "labs/git-fundamentals-lab.html",
+    "href": "labs/git-fundamentals-lab.html",
+    "title": "Git Fundamentals Lab",
     "section": "",
-    "text": "QMD files use Quarto markdown with YAML front matter\nLectures use format: live-html for notes and format: live-revealjs for slides\nImages stored in lectures/images/ and labs/images/\nThe site uses Atkinson Hyperlegible font and a11y-light code theme for accessibility"
+    "text": "This week we will go through a very simple git workflow to get you familiar with the process and to confirm that your toolchain works for future assignments.\n\n\n\nMake sure that you have git installed, ssh keys configured, and your Duke GitLab account is setup, as detailed here\nBe sure to review the tutorials outlined on the git setup page, as needed, to complete the tasks below.\nCreate a fork–not a clone–of the git-fundamentals-lab in your userspace.\nAdd Dr. Palmeri (mlp6) as a Maintainer of your forked repository (Left Sidebar: Manage -&gt; Members -&gt; Invite members)\nClone your forked repository to your laptop using the URL available under the blue Code button: Clone with SSH.\n\n\n\n\n\n\n\nWarning\n\n\n\nYou want to clone your forked repository, not the parent repository you forked from!\n\n\n\n\n\n\nSwitch to the about_me branch.\nEdit AboutMe.md to replace all of the FILL_ME_IN placeholders with your own information.\nAdd and commit these text changes with a meaningful commit message.\nAdd and commit a new image file named fun_picture.png in a directory called images/ to complete that section of the AboutMe.md file.\nPush this updated branch to the remote of your GitLab repository.\n\nConfirm that you can see your latest commit on this branch on the GitLab website.\n\n\n\n\n\nCreate a new Merge Request on the GitLab to merge the about_me branch into the main branch.\n\nAssign the Merge Request to yourself.\nYou do not need a Reviewer.\nYou do not want to squash or rebase your branch commits\nYou do not want to delete the source branch.\n\nCheck that the check_image and check_about_me pipline jobs have passed.\n\nBuild -&gt; Pipelines\nClick on the latest pipeline (the colored rounded rectangle button in the status column).\nClick on the check_image or check_about_me job to see the output of the test if it Failed.\n\nIf the pipeline jobs for this branch have failed, you will need to fix the issue(s) and push the changes to your about_me branch.\n\nIf you are not sure what the issue is, click on the failed job to see the output of the test.\nIf you are not sure how to fix it, ask for help!\n\nOnce your CI jobs pass, approve your Merge Request on the GitLab website and Merge your about_me branch into main.\nCheckout the main branch on your laptop and pull the latest changes from the GitLab server.\nConfirm that you can see the updated AboutMe.md file in your main branch, along with its associated commit in your git commit history.\n\n\n\n\n\nOn main, create an annotated tag for this commit associated with your merged about_me branch called v1.0.0, with the message \"include the about me info\".\nPush this annotated tag to the GitLab server (origin).\nConfirm that you can see your latest commit and tag on the GitLab website.\nYou should see that the check_v1_0_0_tag pipeline job has passed if this was successful.\n\n\n\n\n\nInspect the contents of AboutDrPalmeri.md in main.\nSwitch to the about_dr_p branch, and look at the content (slightly different) of AboutDrPalmeri.md.\nSwitch back to the main branch, and merge the about_dr_p branch into main.\n\nYou will be told that there is a Merge Conflict:\n\n$ git merge about_dr_p\nCONFLICT (content): Merge conflict in AboutDrPalmeri.md\nAutomatic merge failed; fix conflicts and then commit the result.\n\ngit status will show you the files that are in conflict, and what your next likely steps will be to resolve this conflict:\n\n$ git status\nYour branch is up to date with 'origin/main'.\n\nYou have unmerged paths.\n(fix conflicts and run \"git commit\")\n(use \"git merge --abort\" to abort the merge)\n\nUnmerged paths:\n(use \"git add &lt;file&gt;...\" to mark resolution)\n        both modified:   AboutDrPalmeri.md\n\nno changes added to commit (use \"git add\" and/or \"git commit -a\") \nStaying on the main branch, open AboutDrPalmeri.md in your text editor, and inspect the &lt;&lt;&lt;&lt;&lt;&lt;&lt;, =======, and &gt;&gt;&gt;&gt;&gt;&gt;&gt; markers that indicate the conflicting lines.\nKeep the version of the conflicting line that is in main, and delete the line that was incoming from about_dr_p.\nBe sure to delete the &lt;&lt;&lt;&lt;&lt;&lt;&lt;, =======, and &gt;&gt;&gt;&gt;&gt;&gt;&gt; markers (lines).\nAdd and commit this merge conflict resolution.\nCreate an annotated tag called v1.0.1 with the message \"fix Dr. P's age\".\nPush your latest commits and tags to main on the GitLab server (origin).\nAll of your CI jobs should pass if everything was successful."
+  },
+  {
+    "objectID": "labs/git-fundamentals-lab.html#git-practice",
+    "href": "labs/git-fundamentals-lab.html#git-practice",
+    "title": "Git Fundamentals Lab",
+    "section": "",
+    "text": "This week we will go through a very simple git workflow to get you familiar with the process and to confirm that your toolchain works for future assignments.\n\n\n\nMake sure that you have git installed, ssh keys configured, and your Duke GitLab account is setup, as detailed here\nBe sure to review the tutorials outlined on the git setup page, as needed, to complete the tasks below.\nCreate a fork–not a clone–of the git-fundamentals-lab in your userspace.\nAdd Dr. Palmeri (mlp6) as a Maintainer of your forked repository (Left Sidebar: Manage -&gt; Members -&gt; Invite members)\nClone your forked repository to your laptop using the URL available under the blue Code button: Clone with SSH.\n\n\n\n\n\n\n\nWarning\n\n\n\nYou want to clone your forked repository, not the parent repository you forked from!\n\n\n\n\n\n\nSwitch to the about_me branch.\nEdit AboutMe.md to replace all of the FILL_ME_IN placeholders with your own information.\nAdd and commit these text changes with a meaningful commit message.\nAdd and commit a new image file named fun_picture.png in a directory called images/ to complete that section of the AboutMe.md file.\nPush this updated branch to the remote of your GitLab repository.\n\nConfirm that you can see your latest commit on this branch on the GitLab website.\n\n\n\n\n\nCreate a new Merge Request on the GitLab to merge the about_me branch into the main branch.\n\nAssign the Merge Request to yourself.\nYou do not need a Reviewer.\nYou do not want to squash or rebase your branch commits\nYou do not want to delete the source branch.\n\nCheck that the check_image and check_about_me pipline jobs have passed.\n\nBuild -&gt; Pipelines\nClick on the latest pipeline (the colored rounded rectangle button in the status column).\nClick on the check_image or check_about_me job to see the output of the test if it Failed.\n\nIf the pipeline jobs for this branch have failed, you will need to fix the issue(s) and push the changes to your about_me branch.\n\nIf you are not sure what the issue is, click on the failed job to see the output of the test.\nIf you are not sure how to fix it, ask for help!\n\nOnce your CI jobs pass, approve your Merge Request on the GitLab website and Merge your about_me branch into main.\nCheckout the main branch on your laptop and pull the latest changes from the GitLab server.\nConfirm that you can see the updated AboutMe.md file in your main branch, along with its associated commit in your git commit history.\n\n\n\n\n\nOn main, create an annotated tag for this commit associated with your merged about_me branch called v1.0.0, with the message \"include the about me info\".\nPush this annotated tag to the GitLab server (origin).\nConfirm that you can see your latest commit and tag on the GitLab website.\nYou should see that the check_v1_0_0_tag pipeline job has passed if this was successful.\n\n\n\n\n\nInspect the contents of AboutDrPalmeri.md in main.\nSwitch to the about_dr_p branch, and look at the content (slightly different) of AboutDrPalmeri.md.\nSwitch back to the main branch, and merge the about_dr_p branch into main.\n\nYou will be told that there is a Merge Conflict:\n\n$ git merge about_dr_p\nCONFLICT (content): Merge conflict in AboutDrPalmeri.md\nAutomatic merge failed; fix conflicts and then commit the result.\n\ngit status will show you the files that are in conflict, and what your next likely steps will be to resolve this conflict:\n\n$ git status\nYour branch is up to date with 'origin/main'.\n\nYou have unmerged paths.\n(fix conflicts and run \"git commit\")\n(use \"git merge --abort\" to abort the merge)\n\nUnmerged paths:\n(use \"git add &lt;file&gt;...\" to mark resolution)\n        both modified:   AboutDrPalmeri.md\n\nno changes added to commit (use \"git add\" and/or \"git commit -a\") \nStaying on the main branch, open AboutDrPalmeri.md in your text editor, and inspect the &lt;&lt;&lt;&lt;&lt;&lt;&lt;, =======, and &gt;&gt;&gt;&gt;&gt;&gt;&gt; markers that indicate the conflicting lines.\nKeep the version of the conflicting line that is in main, and delete the line that was incoming from about_dr_p.\nBe sure to delete the &lt;&lt;&lt;&lt;&lt;&lt;&lt;, =======, and &gt;&gt;&gt;&gt;&gt;&gt;&gt; markers (lines).\nAdd and commit this merge conflict resolution.\nCreate an annotated tag called v1.0.1 with the message \"fix Dr. P's age\".\nPush your latest commits and tags to main on the GitLab server (origin).\nAll of your CI jobs should pass if everything was successful."
+  },
+  {
+    "objectID": "labs/git-fundamentals-lab.html#how-to-ask-for-help",
+    "href": "labs/git-fundamentals-lab.html#how-to-ask-for-help",
+    "title": "Git Fundamentals Lab",
+    "section": "How to Ask for Help",
+    "text": "How to Ask for Help\n\nIf you have a general / non-coding question, you should ask your TAs / Dr. Palmeri on Ed to allow any of them to respond in a timely manner.\nPush you code to your GitLab repository, ideally with your active development on a non-main branch.\nCreate an Issue in your repository.\n\nAdd as much detail as possible as to your problem, and add links to specific lines / section of code when possible.\nAssign the label “Bug” or “Question”, as appropriate.\nBe sure to specify what branch you are working on.\nAssign the Issue to one of the TAs.\nIf your TA cannot solve your Issue, they can escalate the Issue to Dr. Palmeri.\n\nYou will get a response to your Issue, and maybe a new branch of code will be pushed to help you with some example syntax that you can use git diff to visualize."
+  },
+  {
+    "objectID": "labs/git-fundamentals-lab.html#what-to-submit",
+    "href": "labs/git-fundamentals-lab.html#what-to-submit",
+    "title": "Git Fundamentals Lab",
+    "section": "What to Submit",
+    "text": "What to Submit\nYour fork of this GitLab repository will be running this CI script: .gitlab-ci.yml\n\nGo to the Build -&gt; Pipelines page of your GitLab repository.\nTake a screenshot of the latest pipeline that shows all of the tests passing, along with your repository information, as shown below (except all of those Failed tests should report Passed).\n\n\n\n\nci_pipeline\n\n\n\nSubmit this screenshot to the Canvas assignment, along with completing the prompted questions."
+  },
+  {
+    "objectID": "TODO.html",
+    "href": "TODO.html",
+    "title": "TODOs",
+    "section": "",
+    "text": "Update schedule & syllabus\nPublish Canvas\n\nAdd TAs and lab staff\nLink syllabus\n\nAdd students to Duke’s Onshape\nOrder project parts\nSetup Pratt AV Panopto recording (https://it.pratt.duke.edu/av)"
+  },
+  {
+    "objectID": "TODO.html#new-semester-tasks",
+    "href": "TODO.html#new-semester-tasks",
+    "title": "TODOs",
+    "section": "",
+    "text": "Update schedule & syllabus\nPublish Canvas\n\nAdd TAs and lab staff\nLink syllabus\n\nAdd students to Duke’s Onshape\nOrder project parts\nSetup Pratt AV Panopto recording (https://it.pratt.duke.edu/av)"
   },
   {
     "objectID": "resources/3d_printing.html",

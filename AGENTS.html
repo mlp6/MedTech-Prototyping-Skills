@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>course-syllabus – MedTech Prototyping Skills</title>
+<title>agents – MedTech Prototyping Skills</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -80,7 +115,9 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./course-syllabus.html">Course Information</a></li><li class="breadcrumb-item"><a href="./course-syllabus.html">Course Syllabus</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
+      MedTech Prototyping Skills
+      </li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -108,7 +145,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./course-syllabus.html" class="sidebar-item-text sidebar-link active">
+  <a href="./course-syllabus.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Course Syllabus</span></a>
   </div>
 </li>
@@ -291,297 +328,95 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#medtech-prototyping-skills-bme254l-syllabus" id="toc-medtech-prototyping-skills-bme254l-syllabus" class="nav-link active" data-scroll-target="#medtech-prototyping-skills-bme254l-syllabus">MedTech Prototyping Skills (BME254L) Syllabus</a>
+  <li><a href="#agents.md" id="toc-agents.md" class="nav-link active" data-scroll-target="#agents.md">AGENTS.md</a>
   <ul class="collapse">
-  <li><a href="#personnel" id="toc-personnel" class="nav-link" data-scroll-target="#personnel">Personnel</a>
+  <li><a href="#project-overview" id="toc-project-overview" class="nav-link" data-scroll-target="#project-overview">Project Overview</a></li>
+  <li><a href="#build-commands" id="toc-build-commands" class="nav-link" data-scroll-target="#build-commands">Build Commands</a></li>
+  <li><a href="#environment-setup" id="toc-environment-setup" class="nav-link" data-scroll-target="#environment-setup">Environment Setup</a></li>
+  <li><a href="#architecture" id="toc-architecture" class="nav-link" data-scroll-target="#architecture">Architecture</a>
   <ul class="collapse">
-  <li><a href="#instructor" id="toc-instructor" class="nav-link" data-scroll-target="#instructor">Instructor</a></li>
-  <li><a href="#teaching-assistants" id="toc-teaching-assistants" class="nav-link" data-scroll-target="#teaching-assistants">Teaching Assistants</a></li>
+  <li><a href="#content-structure" id="toc-content-structure" class="nav-link" data-scroll-target="#content-structure">Content Structure</a></li>
+  <li><a href="#key-configuration-files" id="toc-key-configuration-files" class="nav-link" data-scroll-target="#key-configuration-files">Key Configuration Files</a></li>
+  <li><a href="#navigation" id="toc-navigation" class="nav-link" data-scroll-target="#navigation">Navigation</a></li>
   </ul></li>
-  <li><a href="#course-times-locations" id="toc-course-times-locations" class="nav-link" data-scroll-target="#course-times-locations">Course Times &amp; Locations</a></li>
-  <li><a href="#course-objectives" id="toc-course-objectives" class="nav-link" data-scroll-target="#course-objectives">Course Objectives</a></li>
-  <li><a href="#prerequisites" id="toc-prerequisites" class="nav-link" data-scroll-target="#prerequisites">Prerequisites</a>
-  <ul class="collapse">
-  <li><a href="#mandatory" id="toc-mandatory" class="nav-link" data-scroll-target="#mandatory">Mandatory</a></li>
-  </ul></li>
-  <li><a href="#learning-management-system" id="toc-learning-management-system" class="nav-link" data-scroll-target="#learning-management-system">Learning Management System</a></li>
-  <li><a href="#class-schedule" id="toc-class-schedule" class="nav-link" data-scroll-target="#class-schedule">Class Schedule</a>
-  <ul class="collapse">
-  <li><a href="#learning-modules" id="toc-learning-modules" class="nav-link" data-scroll-target="#learning-modules">Learning Modules</a></li>
-  </ul></li>
-  <li><a href="#attendance-participation" id="toc-attendance-participation" class="nav-link" data-scroll-target="#attendance-participation">Attendance &amp; Participation</a></li>
-  <li><a href="#assignments-grading" id="toc-assignments-grading" class="nav-link" data-scroll-target="#assignments-grading">Assignments &amp; Grading</a>
-  <ul class="collapse">
-  <li><a href="#grading" id="toc-grading" class="nav-link" data-scroll-target="#grading">Grading</a></li>
-  <li><a href="#course-grade" id="toc-course-grade" class="nav-link" data-scroll-target="#course-grade">Course Grade</a></li>
-  <li><a href="#regrades" id="toc-regrades" class="nav-link" data-scroll-target="#regrades">Regrades</a></li>
-  <li><a href="#late-policy-sdao-accomodations" id="toc-late-policy-sdao-accomodations" class="nav-link" data-scroll-target="#late-policy-sdao-accomodations">Late Policy / SDAO Accomodations</a></li>
-  </ul></li>
-  <li><a href="#duke-community-standard" id="toc-duke-community-standard" class="nav-link" data-scroll-target="#duke-community-standard">Duke Community Standard</a></li>
-  <li><a href="#faq" id="toc-faq" class="nav-link" data-scroll-target="#faq">FAQ</a>
-  <ul class="collapse">
-  <li><a href="#can-i-collaborate-with-other-students" id="toc-can-i-collaborate-with-other-students" class="nav-link" data-scroll-target="#can-i-collaborate-with-other-students">Can I collaborate with other students?</a></li>
-  <li><a href="#can-i-use-ai" id="toc-can-i-use-ai" class="nav-link" data-scroll-target="#can-i-use-ai">Can I use AI?</a></li>
-  </ul></li>
+  <li><a href="#deployment" id="toc-deployment" class="nav-link" data-scroll-target="#deployment">Deployment</a></li>
+  <li><a href="#content-conventions" id="toc-content-conventions" class="nav-link" data-scroll-target="#content-conventions">Content Conventions</a></li>
   </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/mlp6/MedTech-Prototyping-Skills/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div><div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="course-syllabus.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/mlp6/MedTech-Prototyping-Skills/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div><div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="AGENTS.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./course-syllabus.html">Course Information</a></li><li class="breadcrumb-item"><a href="./course-syllabus.html">Course Syllabus</a></li></ol></nav></header>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
 
-<section id="medtech-prototyping-skills-bme254l-syllabus" class="level1">
-<h1>MedTech Prototyping Skills (BME254L) Syllabus</h1>
-<section id="personnel" class="level2">
-<h2 class="anchored" data-anchor-id="personnel">Personnel</h2>
-<section id="instructor" class="level3">
-<h3 class="anchored" data-anchor-id="instructor">Instructor</h3>
-<p>Dr.&nbsp;Mark Palmeri (<code>mlp6</code>)</p>
+<section id="agents.md" class="level1">
+<h1>AGENTS.md</h1>
+<p>This file provides guidance to Codex (Codex.ai/code) when working with code in this repository.</p>
+<section id="project-overview" class="level2">
+<h2 class="anchored" data-anchor-id="project-overview">Project Overview</h2>
+<p>This is the Duke BME 254L MedTech Prototyping Skills course website, built with Quarto. The site contains lecture materials, lab assignments, and resources for teaching medical device prototyping skills including CAD (Onshape), electronic design automation (KiCad), microcontroller firmware (Arduino), and version control (git).</p>
+</section>
+<section id="build-commands" class="level2">
+<h2 class="anchored" data-anchor-id="build-commands">Build Commands</h2>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Render all Quarto documents to HTML</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">make</span> all</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># or directly:</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Clean generated HTML and auxiliary files</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">make</span> clean</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Preview site locally with live reload</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> preview</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="environment-setup" class="level2">
+<h2 class="anchored" data-anchor-id="environment-setup">Environment Setup</h2>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create conda environment with Python 3.11 and data science packages</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> env create <span class="at">-f</span> environment.yml</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> activate medtech-prototyping-skills</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="architecture" class="level2">
+<h2 class="anchored" data-anchor-id="architecture">Architecture</h2>
+<section id="content-structure" class="level3">
+<h3 class="anchored" data-anchor-id="content-structure">Content Structure</h3>
 <ul>
-<li><p><a href="https://teams.microsoft.com">Teams</a> (fastest response time)</p></li>
-<li><p><a href="mailto:mark.palmeri@duke.edu">Email</a> (24-48 hour response time)</p></li>
-<li><p><a href="https://calendly.com/mark-palmeri">Office Hours</a></p></li>
+<li><code>lectures/</code> - Learning modules as QMD files, rendered as both slides (RevealJS) and notes (HTML)</li>
+<li><code>labs/</code> - Hands-on lab assignments with step-by-step instructions</li>
+<li><code>resources/</code> - Reference materials, PDFs, and guides</li>
+<li><code>kicad/</code> - Example KiCad projects (voltage divider, RC circuits, active LPF)</li>
+<li><code>modules/</code> - Git submodules linking to external content repositories</li>
 </ul>
 </section>
-<section id="teaching-assistants" class="level3">
-<h3 class="anchored" data-anchor-id="teaching-assistants">Teaching Assistants</h3>
+<section id="key-configuration-files" class="level3">
+<h3 class="anchored" data-anchor-id="key-configuration-files">Key Configuration Files</h3>
 <ul>
-<li><a href="mailto:yasha.saxena@duke.edu">Yasha Saxena</a></li>
-</ul>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Questions that can be answered by Dr.&nbsp;Palmeri or a teaching assistant should be sent via Teams or email.</p>
-</div>
-</div>
-</section>
-</section>
-<section id="course-times-locations" class="level2">
-<h2 class="anchored" data-anchor-id="course-times-locations">Course Times &amp; Locations</h2>
-<p><strong>Lecture:</strong> Tuesday &amp; Thursday, 11:45-13:00, Hudson Hall 139 (Panopto recorded)</p>
-<p><strong>Lab:</strong> As needed, Teer 212 (Door Code: TBA)</p>
-<p>There are no formally scheduled lab sections, but you will need to use the lab equipment to perform testing of your devices. Sometimes lecture will be held in lab. Your TAs will announce times when they will hold lab hours. Lab is available whenever classes are not scheduled in the space (posted on the lab door).</p>
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Important
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Please review the <a href="./resources/bme-lab-policies.html">lab policies</a> before using the lab for the first time this semester.</p>
-</div>
-</div>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Warning
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>No food or drink is allowed in the lab! Failure to adhere to this policy will have consequences on your course participation grade.</p>
-</div>
-</div>
-</section>
-<section id="course-objectives" class="level2">
-<h2 class="anchored" data-anchor-id="course-objectives">Course Objectives</h2>
-<p>This course focuses on developing medical device prototyping skills that will be used in future project and design courses, with a focus on preparing our students for positions in the medtech industry. Students will work individually to complete design tasks that will be tested to quantitative specifications. Students will gain hands-on experience with device fabrication, debugging, testing and failure analysis.</p>
-<p>Upon completion of this course, students should be able to:</p>
-<ul>
-<li><p>Software version control (<code>git</code>)</p></li>
-<li><p>Perform functional decomposition and express as a stage diagram (UML)</p></li>
-<li><p>Utilize ECAD (<code>KiCad</code>) for:</p>
-<ul>
-<li><p>Electronic schematic capture</p></li>
-<li><p>Printed circuit board (PCB) layout</p></li>
-</ul></li>
-<li><p>Modular breadboarding of circuits to translation to testable PCBs</p></li>
-<li><p>Design a battery-powered device that:</p>
-<ul>
-<li><p>Accepts analog and digital user input</p></li>
-<li><p>Outputs analog and digital outputs</p></li>
-<li><p>Passes testable specifications to 95% CI</p></li>
-</ul></li>
-<li><p>Implement electronic logic on microcontroller (Arduino framework)</p>
-<ul>
-<li><p>Modular / testable code development in C</p></li>
-<li><p>Interupt Service Routines</p></li>
-<li><p>Pulse Width Modulation</p></li>
-<li><p>State Machine</p></li>
-</ul></li>
-<li><p>Utilize CAD (<code>Onshape</code>) for:</p>
-<ul>
-<li><p>Device enclosure design with UI/UX considerations</p></li>
-<li><p>Input / Output considerations</p></li>
-<li><p>Size / weight constraints</p></li>
-<li><p>Preparation of mechanical drawings</p></li>
-</ul></li>
-<li><p>3D printing of designs</p>
-<ul>
-<li><p>Assembly of discrete enclosure pieces</p></li>
-<li><p>Use of mechanical fasteners</p></li>
-</ul></li>
-<li><p>Write technical analysis reports in Jupyter notebook</p></li>
+<li><code>_quarto.yml</code> - Main Quarto config: site navigation, theme, sidebar structure</li>
+<li><code>lectures/_metadata.yml</code> - Lecture-specific metadata for dual output (slides + notes)</li>
+<li><code>environment.yml</code> - Conda environment specification</li>
+<li><code>.github/workflows/publish.yml</code> - GitHub Actions deployment to GitHub Pages</li>
 </ul>
 </section>
-<section id="prerequisites" class="level2">
-<h2 class="anchored" data-anchor-id="prerequisites">Prerequisites</h2>
-<section id="mandatory" class="level3">
-<h3 class="anchored" data-anchor-id="mandatory">Mandatory</h3>
+<section id="navigation" class="level3">
+<h3 class="anchored" data-anchor-id="navigation">Navigation</h3>
+<p>Sidebar navigation is controlled entirely via <code>_quarto.yml</code>. Content is organized into sections: Course Information, Learning Modules, Labs, and Resources.</p>
+</section>
+</section>
+<section id="deployment" class="level2">
+<h2 class="anchored" data-anchor-id="deployment">Deployment</h2>
+<p>The site auto-deploys to GitHub Pages via GitHub Actions on push to main. The workflow uses Quarto 1.7.31 with TinyTeX for PDF generation.</p>
+</section>
+<section id="content-conventions" class="level2">
+<h2 class="anchored" data-anchor-id="content-conventions">Content Conventions</h2>
 <ul>
-<li><p>Computational Methods in Engineering (EGR103) or equivalent</p></li>
-<li><p>Fundamentals of Electrical and Computer Engineering (ECE110L) / Biomedical Electronics Measurements (BME290L) or equivalent</p></li>
+<li>QMD files use Quarto markdown with YAML front matter</li>
+<li>Lectures use <code>format: live-html</code> for notes and <code>format: live-revealjs</code> for slides</li>
+<li>Images stored in <code>lectures/images/</code> and <code>labs/images/</code></li>
+<li>The site uses Atkinson Hyperlegible font and a11y-light code theme for accessibility</li>
 </ul>
-</section>
-</section>
-<section id="learning-management-system" class="level2">
-<h2 class="anchored" data-anchor-id="learning-management-system">Learning Management System</h2>
-<p>We will be using <a href="https://canvas.duke.edu">Canvas</a> as the learning management system for this course. It will host the syllabus, which will have hyperlinks to all lecture content and lab assignments.</p>
-<p>Duke’s <a href="https://gitlab.oit.duke.edu">GitLab</a> server will be used for most course lab exercises, and code-related questions will be submitted to Dr.&nbsp;Palmeri / TAs using GitLab Issues.</p>
-</section>
-<section id="class-schedule" class="level2">
-<h2 class="anchored" data-anchor-id="class-schedule">Class Schedule</h2>
-<p>This class is organized in a sequence of modules. Specific details surrounding dates for assignments associated with each module will be posted to Canvas.</p>
-<p>This course uses a version of <a href="https://en.wikipedia.org/wiki/Mastery_learning">Mastery Learning</a>, where “mastery” of a given module is necessary to progress onto the subsequent module. Quizzes are used to evaluate “knowledge”; lab exercises are used to demonstrate application of skills. In this course, assignments of later modules depends on the successful completion of earlier modules.</p>
-<section id="learning-modules" class="level3">
-<h3 class="anchored" data-anchor-id="learning-modules">Learning Modules</h3>
-<ul>
-<li><a href="./lectures/medtech-skills-overview-notes.html">MedTech Skill Overview</a></li>
-<li><a href="./lectures/event-driven-state-machine-notes.html">Event-Drive State Machines</a></li>
-<li><a href="./lectures/cad-onshape-notes.html">Computer Aided Design (CAD) (<code>Onshape</code>)</a></li>
-<li>Lightbox Project (Kanban Board) <!-- TODO: https://gitlab.oit.duke.edu/kits/BME-254L-001-Sp25/lightbox --></li>
-<li>ECAD (<code>KiCad</code>) <!-- TODO: kicad-schematic-spice-lab -->
-<ul>
-<li><a href="./lectures/eda-kicad-schematic-capture-notes.html">Schematic Capture</a></li>
-<li><a href="./lectures/EDA-KiCad-SPICE-notes.html">SPICE Modeling</a></li>
-<li><a href="./lectures/EDA-KiCad-PCB-Layout-notes.html">PCB Layout</a></li>
-</ul></li>
-<li><a href="./lectures/git-fundamentals-notes.html">Version Control (<code>git</code>)</a></li>
-<li>Firmware Development
-<ul>
-<li>C Programming Overview</li>
-<li>State Machines (<code>switch</code> / <code>case</code>)</li>
-<li>Button Event ISRs <!-- TODO: https://gitlab.oit.duke.edu/kits/BME-254L-001-Sp25/arduino_timing_gpio) --></li>
-<li>Analog-to-Digital Conversion (ADC) <!-- TODO: https://gitlab.oit.duke.edu/MedTechPrototyping/arduino_isr_adc) --></li>
-<li>Pulse Width Modulation (PWM) <!-- TODO: add some content on this! --></li>
-</ul></li>
-</ul>
-</section>
-</section>
-<section id="attendance-participation" class="level2">
-<h2 class="anchored" data-anchor-id="attendance-participation">Attendance &amp; Participation</h2>
-<p>Class participation in both lecture and lab time is strongly encouraged. Lecture will be used to provide skill overview and live demonstrations, many of which will kickstart your efforts for your project. Lab time will provide you access to equipment and the TAs for assistance.</p>
-<p>Students are responsible for obtaining missed lecture content from other students in the class. All lecture slides/presented content will be made availabe online (Canvas/Gitlab), and lectures will be recorded via Panopto and posted to Canvas.</p>
-</section>
-<section id="assignments-grading" class="level2">
-<h2 class="anchored" data-anchor-id="assignments-grading">Assignments &amp; Grading</h2>
-<section id="grading" class="level3">
-<h3 class="anchored" data-anchor-id="grading">Grading</h3>
-<p>There will be quizzes / completion surveys, and lab exercises associated with some of the learning modules (40%), all of which will be submitted through Canvas.</p>
-<p>The course project will have regular milestones throughout the semester, culminating in a final functional device that you will present and an associated technical report testing device function (50%).</p>
-<p>Class participation (10%) will be evaluated based on your engagement in the lecture/lab setting, demonstrating good lab practices and submitting assignments on time for feedback.</p>
-<p>All assignment grades will be posted to Canvas throughout the semester to track your performance.</p>
-<table class="caption-top table">
-<caption>Grade Distribution</caption>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Grade Category</th>
-<th style="text-align: left;">Relative Percentage</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">Quizzes / Lab Modules</td>
-<td style="text-align: left;">40%</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Project</td>
-<td style="text-align: left;">50%</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Participation</td>
-<td style="text-align: left;">10%</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="course-grade" class="level3">
-<h3 class="anchored" data-anchor-id="course-grade">Course Grade</h3>
-<p>This course is not “curved” (i.e., a distribution of grades will not be enforced), and a traditional grading scheme will be used (e.g., 90-93 = A-, 94-97 = A, 97-100 = A+). Participation throughout the semester will influence rounding up/down for fractional grades.</p>
-<p>Failing the course can happen with a cummulative score &lt; 60 (D-) or not completing all of the assignments.</p>
-</section>
-<section id="regrades" class="level3">
-<h3 class="anchored" data-anchor-id="regrades">Regrades</h3>
-<p>Any regrading requests need to be made <strong>within one week of grades for a given assignment being released</strong>. You must make the request via Canvas and provide a description of why you feel a regrade is appropriate. Requesting a regrade could lead to additional loss of credit when an assignment is re-evaluated.</p>
-<p>Some assignments will have an opportunity to be resubmitted based on grading feedback at the discretion of Dr.&nbsp;Palmeri.</p>
-</section>
-<section id="late-policy-sdao-accomodations" class="level3">
-<h3 class="anchored" data-anchor-id="late-policy-sdao-accomodations">Late Policy / SDAO Accomodations</h3>
-<p>Late submission windows will be available for some assignments and should be used to accomodate acute illness, travel, high workload from other classes and other unforeseen circumstances. This late submission window can be utilized without penalty and without prior approval.</p>
-<p>Students with SDAO accomodations for extended time on assignments can use this extended late submission window for all assignments.</p>
-<p>Any assignments submitted after the late submission window will only be accepted for partial credit at the discretion of Dr.&nbsp;Palmeri or if prior approval was sought <strong>before the original due date</strong>. Requests for late submission accomodation will be considered on a case-by-case basis and will result in a deduction in the course participation grade.</p>
-</section>
-</section>
-<section id="duke-community-standard" class="level2">
-<h2 class="anchored" data-anchor-id="duke-community-standard">Duke Community Standard</h2>
-<p>All students are expected to adhere to all principles of the <a href="https://trinity.duke.edu/undergraduate/academic-policies/community-standard-student-conduct">Duke Community Standard</a>. Violations of the Duke Community Standard will be referred immediately to the Office of Student Conduct. Please do not hesitate to talk with Dr.&nbsp;Palmeri about any situations involving academic honor, especially if it is ambiguous what should be done.</p>
-</section>
-<section id="faq" class="level2">
-<h2 class="anchored" data-anchor-id="faq">FAQ</h2>
-<section id="can-i-collaborate-with-other-students" class="level3">
-<h3 class="anchored" data-anchor-id="can-i-collaborate-with-other-students">Can I collaborate with other students?</h3>
-<p>Engineering is inherently a collaborative field, and in this class, you are encouraged to work collaboratively on your projects. That being said, all of the work that you submit must be generated by you and reflect your understanding of the material.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>All resources used in your projects that were developed by another person or company must be properly acknowledged using comments in your code / reports.</p>
-</div>
-</div>
-</section>
-<section id="can-i-use-ai" class="level3">
-<h3 class="anchored" data-anchor-id="can-i-use-ai">Can I use AI?</h3>
-<p>The use of artificial intelligence is a rapidly developing resource / tool in engineering. In software development, there are many levels of AI-assitance available. Such form of assistance include the <a href="https://visualstudio.microsoft.com/services/intellicode/">IntelliCode</a> tools and <a href="https://github.com/features/copilot">GitHub CoPilot</a> (free to students through the <a href="https://github.com/education/students">GitHub Education</a> program). These tools can be leveraged to help with syntax.</p>
-<div class="callout callout-style-default callout-caution callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Caution
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>You are strongly cautioned to not rely on these tools for logical implementation.</p>
-</div>
-</div>
-<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
-<a property="dct:title" rel="cc:attributionURL" href="https://github.com/mlp6/MedTech-Prototyping-Skills/">MedTech Prototyping Skills</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://bme.duke.edu/faculty/mark-palmeri">Mark L. Palmeri</a> is licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a>
-</p>
 
 
-</section>
 </section>
 </section>
 

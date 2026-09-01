@@ -14,7 +14,7 @@ Dr. Mark Palmeri (`mlp6`)
 
 ### Teaching Assistants
 
-- Yasha Saxena
+- [Yasha Saxena](mailto:yasha.saxena@duke.edu)
 
 ::: callout-tip
 Questions that can be answered by Dr. Palmeri or a teaching assistant should be

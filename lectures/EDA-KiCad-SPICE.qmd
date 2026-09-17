@@ -102,13 +102,13 @@ that you would like to plot.
 
 ## Examples
 
-- [Voltage Divider with Potentiometer (DC Sweep)](../kicad/voltage_divider/)
+- [Voltage Divider with Potentiometer (DC Sweep)](https://github.com/mlp6/MedTech-Prototyping-Skills/tree/main/kicad/voltage_divider)
 
-- [RC Filter (AC Sweep)](../kicad/active_lpf/)
+- [RC Filter (AC Sweep)](https://github.com/mlp6/MedTech-Prototyping-Skills/tree/main/kicad/active_lpf)
 
-- [RC Filter (Transient Analysis)](../kicad/RC_AC_Transient/)
+- [RC Filter (Transient Analysis)](https://github.com/mlp6/MedTech-Prototyping-Skills/tree/main/kicad/RC_AC_Transient)
 
-- [RC Filter (Switched, Transient Analysis)](../kicad/RC_Switched/)
+- [RC Filter (Switched, Transient Analysis)](https://github.com/mlp6/MedTech-Prototyping-Skills/tree/main/kicad/RC_Switched)
 
 ## Resources
 

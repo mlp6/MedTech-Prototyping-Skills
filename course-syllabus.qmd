@@ -253,13 +253,18 @@ company must be properly acknowledged using comments in your code / reports.
 The use of artificial intelligence is a rapidly developing resource / tool in
 engineering.  In software development, there are many levels of AI-assitance
 available.  Such form of assistance include the
-[IntelliCode](https://visualstudio.microsoft.com/services/intellicode/) tools
-and [GitHub CoPilot](https://github.com/features/copilot) (free to students
-through the [GitHub Education](https://github.com/education/students) program).
-These tools can be leveraged to help with syntax.
+[IntelliCode](https://visualstudio.microsoft.com/services/intellicode/) ,
+[GitHub CoPilot](https://github.com/features/copilot) (free to students through
+the [GitHub Education](https://github.com/education/students) program), and
+Codex/Claude Code.  These tools can be leveraged to help with syntax.  
 
 ::: callout-caution
-You are strongly cautioned to not rely on these tools for logical implementation.
+You are strongly cautioned to not rely on these tools for logical
+implementation, and they cannot be used during the in-person code reviews.  You
+should not "blindly" feed the assignments into these tools to have them attempt
+to perform all of the coding for you.  If Dr. Palmeri suspects that this has
+occurred, he reserves the right to question you about your understanding of your
+submission and will grade that submission based on that evaluation.
 :::
 
 <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/mlp6/MedTech-Prototyping-Skills/">MedTech Prototyping Skills</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://bme.duke.edu/faculty/mark-palmeri">Mark L. Palmeri</a> is licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p>

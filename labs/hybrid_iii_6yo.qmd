@@ -51,7 +51,7 @@ PDF file with all of the drawings.
 ![](images/MoldedNeckDrawing.png){ width="800"}
 
 ::: callout-tip
-Note that the this part has features that are dependent on the top and bottom plates.  To reduce the overhead of manually entering these dimensions from the other parts, you can use the `Derived` tool in Onshape to bring in the relevant faces from the other parts.
+Note that the this part has features that are dependent on the top and bottom plates.  To reduce the overhead of manually entering these dimensions from the other parts, you can use the `Derived` tool in Onshape to bring in the relevant faces from the other parts.  Those parts do have holes in them that might create challenges, so you might want to have a version of the part without holes, a derived version with holes, and then used the non-hole part to create this derived part.
 
 [https://cad.onshape.com/help/Content/derived.htm#StepsDesktop](https://cad.onshape.com/help/Content/derived.htm#StepsDesktop)
 :::
@@ -60,9 +60,17 @@ Note that the this part has features that are dependent on the top and bottom pl
 
 ![](images/LowerNeckBracketDrawing.png){ width="800"}
 
+::: callout-tip
+Note that some of the counterbore holes "start" at positions that are not on the physical part.  You can determine these positions by the lengths of the counterbores and the material under the counterbores.
+:::
+
 ## Load Cell
 
 ![](images/LoadCellDrawing.png){ width="800"}
+
+:::callout-tip
+The `Loft` tool can be used to create the material between two part surfaces.  In this case, the lofted material will need to be modified to create the curved surfaces.
+:::
 
 ## Assembly
 

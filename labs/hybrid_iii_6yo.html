@@ -40,7 +40,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-fced259a1985fd972ecb57c7cd45153f.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-9aa1f86de83a9fc2de41cf69667f5304.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-e7efdc2e9ac91303fbdff92f272c1253.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -386,7 +386,7 @@ Tip
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Note that the this part has features that are dependent on the top and bottom plates. To reduce the overhead of manually entering these dimensions from the other parts, you can use the <code>Derived</code> tool in Onshape to bring in the relevant faces from the other parts.</p>
+<p>Note that the this part has features that are dependent on the top and bottom plates. To reduce the overhead of manually entering these dimensions from the other parts, you can use the <code>Derived</code> tool in Onshape to bring in the relevant faces from the other parts. Those parts do have holes in them that might create challenges, so you might want to have a version of the part without holes, a derived version with holes, and then used the non-hole part to create this derived part.</p>
 <p><a href="https://cad.onshape.com/help/Content/derived.htm#StepsDesktop">https://cad.onshape.com/help/Content/derived.htm#StepsDesktop</a></p>
 </div>
 </div>
@@ -394,10 +394,36 @@ Tip
 <section id="lower-neck-bracket" class="level2">
 <h2 class="anchored" data-anchor-id="lower-neck-bracket">Lower Neck Bracket</h2>
 <p><img src="images/LowerNeckBracketDrawing.png" class="img-fluid" width="800"></p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Note that some of the counterbore holes “start” at positions that are not on the physical part. You can determine these positions by the lengths of the counterbores and the material under the counterbores.</p>
+</div>
+</div>
 </section>
 <section id="load-cell" class="level2">
 <h2 class="anchored" data-anchor-id="load-cell">Load Cell</h2>
 <p><img src="images/LoadCellDrawing.png" class="img-fluid" width="800"></p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The <code>Loft</code> tool can be used to create the material between two part surfaces. In this case, the lofted material will need to be modified to create the curved surfaces.</p>
+</div>
+</div>
 </section>
 <section id="assembly" class="level2">
 <h2 class="anchored" data-anchor-id="assembly">Assembly</h2>

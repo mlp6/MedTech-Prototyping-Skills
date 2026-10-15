@@ -57,7 +57,7 @@ For this example, assume the current time and alarm time are already set.
 The clock keeps displaying the time in every state. We leave out setting the
 time and using snooze to keep the diagram simple.
 
-```mermaid
+```{mermaid}
 stateDiagram-v2
     direction LR
 

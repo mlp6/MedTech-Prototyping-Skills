@@ -72,6 +72,9 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <script type="module" src="../site_libs/quarto-ojs/quarto-ojs-runtime.js"></script>
 <link href="../site_libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
+<script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 <link rel="stylesheet" href="styles.css">
@@ -395,7 +398,12 @@ ul.task-list li input[type="checkbox"] {
 <h1>State Diagram: A Simple Alarm Clock</h1>
 <p>A <strong>state diagram</strong> shows the different modes a system can be in and what causes it to move from one mode to another. This alarm clock has three top-level states. Only one top-level state is active at a time. The Ringing state also contains substates that show the steps within that mode.</p>
 <p>For this example, assume the current time and alarm time are already set. The clock keeps displaying the time in every state. We leave out setting the time and using snooze to keep the diagram simple.</p>
-<pre class="mermaid"><code>stateDiagram-v2
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">stateDiagram-v2
     direction LR
 
     state "Alarm off" as Off
@@ -415,7 +423,13 @@ ul.task-list li input[type="checkbox"] {
     Off --&gt; Armed : User turns alarm on
     Armed --&gt; Off : User turns alarm off
     Armed --&gt; Ringing : Clock reaches alarm time
-    Ringing --&gt; Off</code></pre>
+    Ringing --&gt; Off
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
 <section id="how-to-read-the-diagram" class="level2">
 <h2 class="anchored" data-anchor-id="how-to-read-the-diagram">How to read the diagram</h2>
 <ul>

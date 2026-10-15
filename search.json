@@ -1921,32 +1921,39 @@
     "text": "Introduction\n\nNested conditional logic main loops are hard to read and maintain.\nState machines are a common way to implement complex logic.\nStates have transitions that are triggered by events or conditions.\n\nStates can have entry / exit routines that are executed when the state is entered / exited.\nThe “run” status of a state is commonly referred to as the “state machine tick” and recurrently loops.\n\nState diagrams are used to visualize state machines.\nState structures are used to capture variables associated with describing the state."
   },
   {
-    "objectID": "lectures/event-driven-state-machine-slides.html#in-class-demo",
-    "href": "lectures/event-driven-state-machine-slides.html#in-class-demo",
+    "objectID": "lectures/event-driven-state-machine-slides.html#state-diagram",
+    "href": "lectures/event-driven-state-machine-slides.html#state-diagram",
     "title": "Event-Driven State Machine",
-    "section": "In-Class Demo",
-    "text": "In-Class Demo\n\nYou (and your daily routine)\n\nWhat are your “states”?\nWhat are your “events”?\n\nICD"
+    "section": "State Diagram",
+    "text": "State Diagram\n\nGenerating the state diagram is the first step in implementing a state machine.\nUsually start with “pencil and paper” to sketch out the states and transitions.\nConsider the following:\n\nWhat are the states?\nWhat are the transitions?\nWhat are the events that trigger transitions?\nWhat are the entry / exit routines for each state?\n\nUML (Universal Modeling Language) is a common way to represent state diagrams.\n\nState Diagram Example: A Simple Alarm Clock\nA state diagram shows the different modes a system can be in and what causes it to move from one mode to another. This alarm clock has three states. It can only be in one state at a time.\nFor this example, assume the current time and alarm time are already set. The clock keeps displaying the time in every state. We leave out setting the time and using snooze to keep the first diagram simple.\nstateDiagram-v2\n    direction TB\n\n    state \"Alarm off\" as Off\n    state \"Alarm armed\" as Armed\n    state \"Alarm ringing\" as Ringing {\n        state \"Entry: start the buzzer\" as RingingEntry\n        state \"Run: keep sounding\" as RingingRun\n        state \"Exit: stop the buzzer\" as RingingExit\n\n        [*] --&gt; RingingEntry\n        RingingEntry --&gt; RingingRun\n        RingingRun --&gt; RingingExit : User presses Stop\n    }\n\n    [*] --&gt; Off\n    Off --&gt; Armed : User turns alarm on\n    Armed --&gt; Off : User turns alarm off\n    Armed --&gt; Ringing : Clock reaches alarm time\n    RingingExit --&gt; Off"
   },
   {
-    "objectID": "lectures/event-driven-state-machine-slides.html#implementation",
-    "href": "lectures/event-driven-state-machine-slides.html#implementation",
+    "objectID": "lectures/event-driven-state-machine-slides.html#how-to-read-the-diagram",
+    "href": "lectures/event-driven-state-machine-slides.html#how-to-read-the-diagram",
     "title": "Event-Driven State Machine",
-    "section": "Implementation",
-    "text": "Implementation\nState Diagram\n\nGenerating the state diagram is the first step in implementing a state machine.\nUsually start with “pencil and paper” to sketch out the states and transitions.\nConsider the following:\n\nWhat are the states?\nWhat are the transitions?\nWhat are the events that trigger transitions?\nWhat are the entry / exit routines for each state?\n\nUML (Universal Modeling Language) is a common way to represent state diagrams.\n\nPlantUML Example\n@startuml\n\n[*] -&gt; Init\n\nstate Init {\n    init_run: Do Stuff\n}\n\nstate RhythmDetect {\n    rhythm_detect_run: Detect Rhythm\n}\n\nstate Sleep {\n    sleep_run: Save Power\n}\n\nstate Pace {\n    pace_run: Pace\n}\n\nstate OTA {\n    ota_init: Download Update\n    ota_init -&gt; ota_run\n    ota_run: Over The Air Update\n    ota_run -&gt; ota_exit\n    ota_exit: Post Successful OTA\n}\n\nstate Error {\n    error_run: Put device into safe mode\n}\n\nInit -&gt; RhythmDetect : Successful Init\nInit -d-&gt; Error : Init Fault Error Code\nRhythmDetect -&gt; Pace : Arrhythmia Detected\nPace -&gt; RhythmDetect : Pacing Timer Expired\nRhythmDetect -d-&gt; Sleep : NSR\nSleep -&gt; RhythmDetect: Sleep Timer Expired\nSleep -&gt; OTA : OTA Button Pressed\nOTA -&gt; RhythmDetect : OTA Success Kernel Event Posted\nError -&gt; [*]\n\n@enduml"
+    "section": "How to read the diagram",
+    "text": "How to read the diagram\n\nEach box is a state: what the alarm clock is doing right now.\nEach arrow is a transition: a change from one state to another.\nThe text on an arrow tells you what causes the change.\nThe filled circle marks the starting point. Here, the alarm starts off.\n\nInside Alarm ringing, the entry substate starts the buzzer, the run substate keeps it sounding, and the exit substate stops it before returning to Alarm off. The entry and exit actions happen once per visit to Alarm ringing.\n\n\n\nState\nWhat happens while the clock is in this state?\n\n\n\n\nAlarm off\nThe alarm is disabled and makes no sound.\n\n\nAlarm armed\nThe alarm is enabled and waits for the alarm time.\n\n\nAlarm ringing\nThe alarm sounds until the user presses Stop.\n\n\n\nIn this simplified clock, pressing Stop also disables the alarm. The user must turn it on again for another alarm. If no event shown on an outgoing arrow occurs, the clock stays in its current state. For example, reaching the alarm time while the alarm is off does not make it ring."
   },
   {
-    "objectID": "lectures/event-driven-state-machine-slides.html#in-class-lab-exercise",
-    "href": "lectures/event-driven-state-machine-slides.html#in-class-lab-exercise",
+    "objectID": "lectures/event-driven-state-machine-slides.html#follow-one-example",
+    "href": "lectures/event-driven-state-machine-slides.html#follow-one-example",
     "title": "Event-Driven State Machine",
-    "section": "In-Class / Lab Exercise",
-    "text": "In-Class / Lab Exercise\nEvent-Driven State Machine Lab Exercise (Kitchen Timer)"
+    "section": "Follow one example",
+    "text": "Follow one example\n\nThe clock starts in Alarm off.\nThe user turns the alarm on. Follow the arrow to Alarm armed.\nThe clock reaches the alarm time. Follow the arrow to Alarm ringing.\nThe user presses Stop. Follow the arrow back to Alarm off."
+  },
+  {
+    "objectID": "lectures/event-driven-state-machine-slides.html#how-to-build-your-own-state-diagram",
+    "href": "lectures/event-driven-state-machine-slides.html#how-to-build-your-own-state-diagram",
+    "title": "Event-Driven State Machine",
+    "section": "How to build your own state diagram",
+    "text": "How to build your own state diagram\n\nList the states. Ask, “What modes can the system stay in?” For this clock: off, armed, and ringing.\nChoose the starting state. Draw a starting marker pointing to it.\nConnect the states. Add an arrow wherever a change can happen.\nLabel each arrow. Say what event causes that change.\nWalk through an example. Check that you can follow the arrows from beginning to end.\n\nKeep states and events separate: Alarm ringing is a state the clock stays in; User presses Stop is an event that makes it leave that state."
   },
   {
     "objectID": "lectures/event-driven-state-machine-notes.html",
     "href": "lectures/event-driven-state-machine-notes.html",
     "title": "Event-Driven State Machine",
     "section": "",
-    "text": "Nested conditional logic main loops are hard to read and maintain.\nState machines are a common way to implement complex logic.\nStates have transitions that are triggered by events or conditions.\n\nStates can have entry / exit routines that are executed when the state is entered / exited.\nThe “run” status of a state is commonly referred to as the “state machine tick” and recurrently loops.\n\nState diagrams are used to visualize state machines.\nState structures are used to capture variables associated with describing the state.\n\n\n\n\n\nYou (and your daily routine)\n\nWhat are your “states”?\nWhat are your “events”?\n\nICD\n\n\n\n\n\n\n\n\nGenerating the state diagram is the first step in implementing a state machine.\nUsually start with “pencil and paper” to sketch out the states and transitions.\nConsider the following:\n\nWhat are the states?\nWhat are the transitions?\nWhat are the events that trigger transitions?\nWhat are the entry / exit routines for each state?\n\nUML (Universal Modeling Language) is a common way to represent state diagrams.\n\n\n\n@startuml\n\n[*] -&gt; Init\n\nstate Init {\n    init_run: Do Stuff\n}\n\nstate RhythmDetect {\n    rhythm_detect_run: Detect Rhythm\n}\n\nstate Sleep {\n    sleep_run: Save Power\n}\n\nstate Pace {\n    pace_run: Pace\n}\n\nstate OTA {\n    ota_init: Download Update\n    ota_init -&gt; ota_run\n    ota_run: Over The Air Update\n    ota_run -&gt; ota_exit\n    ota_exit: Post Successful OTA\n}\n\nstate Error {\n    error_run: Put device into safe mode\n}\n\nInit -&gt; RhythmDetect : Successful Init\nInit -d-&gt; Error : Init Fault Error Code\nRhythmDetect -&gt; Pace : Arrhythmia Detected\nPace -&gt; RhythmDetect : Pacing Timer Expired\nRhythmDetect -d-&gt; Sleep : NSR\nSleep -&gt; RhythmDetect: Sleep Timer Expired\nSleep -&gt; OTA : OTA Button Pressed\nOTA -&gt; RhythmDetect : OTA Success Kernel Event Posted\nError -&gt; [*]\n\n@enduml\n\n\n\n\n\nEvent-Driven State Machine Lab Exercise (Kitchen Timer)",
+    "text": "Nested conditional logic main loops are hard to read and maintain.\nState machines are a common way to implement complex logic.\nStates have transitions that are triggered by events or conditions.\n\nStates can have entry / exit routines that are executed when the state is entered / exited.\nThe “run” status of a state is commonly referred to as the “state machine tick” and recurrently loops.\n\nState diagrams are used to visualize state machines.\nState structures are used to capture variables associated with describing the state.\n\n\n\n\n\nGenerating the state diagram is the first step in implementing a state machine.\nUsually start with “pencil and paper” to sketch out the states and transitions.\nConsider the following:\n\nWhat are the states?\nWhat are the transitions?\nWhat are the events that trigger transitions?\nWhat are the entry / exit routines for each state?\n\nUML (Universal Modeling Language) is a common way to represent state diagrams.\n\n\n\nA state diagram shows the different modes a system can be in and what causes it to move from one mode to another. This alarm clock has three states. It can only be in one state at a time.\nFor this example, assume the current time and alarm time are already set. The clock keeps displaying the time in every state. We leave out setting the time and using snooze to keep the first diagram simple.\nstateDiagram-v2\n    direction TB\n\n    state \"Alarm off\" as Off\n    state \"Alarm armed\" as Armed\n    state \"Alarm ringing\" as Ringing {\n        state \"Entry: start the buzzer\" as RingingEntry\n        state \"Run: keep sounding\" as RingingRun\n        state \"Exit: stop the buzzer\" as RingingExit\n\n        [*] --&gt; RingingEntry\n        RingingEntry --&gt; RingingRun\n        RingingRun --&gt; RingingExit : User presses Stop\n    }\n\n    [*] --&gt; Off\n    Off --&gt; Armed : User turns alarm on\n    Armed --&gt; Off : User turns alarm off\n    Armed --&gt; Ringing : Clock reaches alarm time\n    RingingExit --&gt; Off\n\n\n\n\n\nEach box is a state: what the alarm clock is doing right now.\nEach arrow is a transition: a change from one state to another.\nThe text on an arrow tells you what causes the change.\nThe filled circle marks the starting point. Here, the alarm starts off.\n\nInside Alarm ringing, the entry substate starts the buzzer, the run substate keeps it sounding, and the exit substate stops it before returning to Alarm off. The entry and exit actions happen once per visit to Alarm ringing.\n\n\n\nState\nWhat happens while the clock is in this state?\n\n\n\n\nAlarm off\nThe alarm is disabled and makes no sound.\n\n\nAlarm armed\nThe alarm is enabled and waits for the alarm time.\n\n\nAlarm ringing\nThe alarm sounds until the user presses Stop.\n\n\n\nIn this simplified clock, pressing Stop also disables the alarm. The user must turn it on again for another alarm. If no event shown on an outgoing arrow occurs, the clock stays in its current state. For example, reaching the alarm time while the alarm is off does not make it ring.\n\n\n\n\nThe clock starts in Alarm off.\nThe user turns the alarm on. Follow the arrow to Alarm armed.\nThe clock reaches the alarm time. Follow the arrow to Alarm ringing.\nThe user presses Stop. Follow the arrow back to Alarm off.\n\n\n\n\n\nList the states. Ask, “What modes can the system stay in?” For this clock: off, armed, and ringing.\nChoose the starting state. Draw a starting marker pointing to it.\nConnect the states. Add an arrow wherever a change can happen.\nLabel each arrow. Say what event causes that change.\nWalk through an example. Check that you can follow the arrows from beginning to end.\n\nKeep states and events separate: Alarm ringing is a state the clock stays in; User presses Stop is an event that makes it leave that state.",
     "crumbs": [
       "Learning Modules",
       "Event-Driven State Machines"
@@ -1964,33 +1971,44 @@
     ]
   },
   {
-    "objectID": "lectures/event-driven-state-machine-notes.html#in-class-demo",
-    "href": "lectures/event-driven-state-machine-notes.html#in-class-demo",
+    "objectID": "lectures/event-driven-state-machine-notes.html#state-diagram",
+    "href": "lectures/event-driven-state-machine-notes.html#state-diagram",
     "title": "Event-Driven State Machine",
     "section": "",
-    "text": "You (and your daily routine)\n\nWhat are your “states”?\nWhat are your “events”?\n\nICD",
+    "text": "Generating the state diagram is the first step in implementing a state machine.\nUsually start with “pencil and paper” to sketch out the states and transitions.\nConsider the following:\n\nWhat are the states?\nWhat are the transitions?\nWhat are the events that trigger transitions?\nWhat are the entry / exit routines for each state?\n\nUML (Universal Modeling Language) is a common way to represent state diagrams.\n\n\n\nA state diagram shows the different modes a system can be in and what causes it to move from one mode to another. This alarm clock has three states. It can only be in one state at a time.\nFor this example, assume the current time and alarm time are already set. The clock keeps displaying the time in every state. We leave out setting the time and using snooze to keep the first diagram simple.\nstateDiagram-v2\n    direction TB\n\n    state \"Alarm off\" as Off\n    state \"Alarm armed\" as Armed\n    state \"Alarm ringing\" as Ringing {\n        state \"Entry: start the buzzer\" as RingingEntry\n        state \"Run: keep sounding\" as RingingRun\n        state \"Exit: stop the buzzer\" as RingingExit\n\n        [*] --&gt; RingingEntry\n        RingingEntry --&gt; RingingRun\n        RingingRun --&gt; RingingExit : User presses Stop\n    }\n\n    [*] --&gt; Off\n    Off --&gt; Armed : User turns alarm on\n    Armed --&gt; Off : User turns alarm off\n    Armed --&gt; Ringing : Clock reaches alarm time\n    RingingExit --&gt; Off",
     "crumbs": [
       "Learning Modules",
       "Event-Driven State Machines"
     ]
   },
   {
-    "objectID": "lectures/event-driven-state-machine-notes.html#implementation",
-    "href": "lectures/event-driven-state-machine-notes.html#implementation",
+    "objectID": "lectures/event-driven-state-machine-notes.html#how-to-read-the-diagram",
+    "href": "lectures/event-driven-state-machine-notes.html#how-to-read-the-diagram",
     "title": "Event-Driven State Machine",
     "section": "",
-    "text": "Generating the state diagram is the first step in implementing a state machine.\nUsually start with “pencil and paper” to sketch out the states and transitions.\nConsider the following:\n\nWhat are the states?\nWhat are the transitions?\nWhat are the events that trigger transitions?\nWhat are the entry / exit routines for each state?\n\nUML (Universal Modeling Language) is a common way to represent state diagrams.\n\n\n\n@startuml\n\n[*] -&gt; Init\n\nstate Init {\n    init_run: Do Stuff\n}\n\nstate RhythmDetect {\n    rhythm_detect_run: Detect Rhythm\n}\n\nstate Sleep {\n    sleep_run: Save Power\n}\n\nstate Pace {\n    pace_run: Pace\n}\n\nstate OTA {\n    ota_init: Download Update\n    ota_init -&gt; ota_run\n    ota_run: Over The Air Update\n    ota_run -&gt; ota_exit\n    ota_exit: Post Successful OTA\n}\n\nstate Error {\n    error_run: Put device into safe mode\n}\n\nInit -&gt; RhythmDetect : Successful Init\nInit -d-&gt; Error : Init Fault Error Code\nRhythmDetect -&gt; Pace : Arrhythmia Detected\nPace -&gt; RhythmDetect : Pacing Timer Expired\nRhythmDetect -d-&gt; Sleep : NSR\nSleep -&gt; RhythmDetect: Sleep Timer Expired\nSleep -&gt; OTA : OTA Button Pressed\nOTA -&gt; RhythmDetect : OTA Success Kernel Event Posted\nError -&gt; [*]\n\n@enduml",
+    "text": "Each box is a state: what the alarm clock is doing right now.\nEach arrow is a transition: a change from one state to another.\nThe text on an arrow tells you what causes the change.\nThe filled circle marks the starting point. Here, the alarm starts off.\n\nInside Alarm ringing, the entry substate starts the buzzer, the run substate keeps it sounding, and the exit substate stops it before returning to Alarm off. The entry and exit actions happen once per visit to Alarm ringing.\n\n\n\nState\nWhat happens while the clock is in this state?\n\n\n\n\nAlarm off\nThe alarm is disabled and makes no sound.\n\n\nAlarm armed\nThe alarm is enabled and waits for the alarm time.\n\n\nAlarm ringing\nThe alarm sounds until the user presses Stop.\n\n\n\nIn this simplified clock, pressing Stop also disables the alarm. The user must turn it on again for another alarm. If no event shown on an outgoing arrow occurs, the clock stays in its current state. For example, reaching the alarm time while the alarm is off does not make it ring.",
     "crumbs": [
       "Learning Modules",
       "Event-Driven State Machines"
     ]
   },
   {
-    "objectID": "lectures/event-driven-state-machine-notes.html#in-class-lab-exercise",
-    "href": "lectures/event-driven-state-machine-notes.html#in-class-lab-exercise",
+    "objectID": "lectures/event-driven-state-machine-notes.html#follow-one-example",
+    "href": "lectures/event-driven-state-machine-notes.html#follow-one-example",
     "title": "Event-Driven State Machine",
     "section": "",
-    "text": "Event-Driven State Machine Lab Exercise (Kitchen Timer)",
+    "text": "The clock starts in Alarm off.\nThe user turns the alarm on. Follow the arrow to Alarm armed.\nThe clock reaches the alarm time. Follow the arrow to Alarm ringing.\nThe user presses Stop. Follow the arrow back to Alarm off.",
+    "crumbs": [
+      "Learning Modules",
+      "Event-Driven State Machines"
+    ]
+  },
+  {
+    "objectID": "lectures/event-driven-state-machine-notes.html#how-to-build-your-own-state-diagram",
+    "href": "lectures/event-driven-state-machine-notes.html#how-to-build-your-own-state-diagram",
+    "title": "Event-Driven State Machine",
+    "section": "",
+    "text": "List the states. Ask, “What modes can the system stay in?” For this clock: off, armed, and ringing.\nChoose the starting state. Draw a starting marker pointing to it.\nConnect the states. Add an arrow wherever a change can happen.\nLabel each arrow. Say what event causes that change.\nWalk through an example. Check that you can follow the arrows from beginning to end.\n\nKeep states and events separate: Alarm ringing is a state the clock stays in; User presses Stop is an event that makes it leave that state.",
     "crumbs": [
       "Learning Modules",
       "Event-Driven State Machines"

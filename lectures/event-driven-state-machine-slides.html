@@ -233,21 +233,8 @@ Dr.&nbsp;Mark Palmeri, M.D., Ph.D.
 <li><p>State structures are used to capture variables associated with describing the state.</p></li>
 </ul>
 </section>
-<section id="in-class-demo" class="slide level2">
-<h2>In-Class Demo</h2>
-<ul>
-<li>You (and your daily routine)
-<ul>
-<li>What are your “states”?</li>
-<li>What are your “events”?</li>
-</ul></li>
-<li>ICD</li>
-</ul>
-
-<img data-src="images/icd_state_diagram.png" class="r-stretch"></section>
-<section id="implementation" class="slide level2">
-<h2>Implementation</h2>
-<h3 id="state-diagram">State Diagram</h3>
+<section id="state-diagram" class="slide level2">
+<h2>State Diagram</h2>
 <ul>
 <li><p>Generating the state diagram is the first step in implementing a state machine.</p></li>
 <li><p>Usually start with “pencil and paper” to sketch out the states and transitions.</p></li>
@@ -260,54 +247,82 @@ Dr.&nbsp;Mark Palmeri, M.D., Ph.D.
 </ul></li>
 <li><p>UML (Universal Modeling Language) is a common way to represent state diagrams.</p></li>
 </ul>
-<h4 id="plantuml-example">PlantUML Example</h4>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource plantuml number-lines code-with-copy"><code class="sourceCode"><span id="cb1-1"><a></a>@startuml</span>
-<span id="cb1-2"><a></a></span>
-<span id="cb1-3"><a></a>[*] -&gt; Init</span>
-<span id="cb1-4"><a></a></span>
-<span id="cb1-5"><a></a>state Init {</span>
-<span id="cb1-6"><a></a>    init_run: Do Stuff</span>
-<span id="cb1-7"><a></a>}</span>
-<span id="cb1-8"><a></a></span>
-<span id="cb1-9"><a></a>state RhythmDetect {</span>
-<span id="cb1-10"><a></a>    rhythm_detect_run: Detect Rhythm</span>
-<span id="cb1-11"><a></a>}</span>
-<span id="cb1-12"><a></a></span>
-<span id="cb1-13"><a></a>state Sleep {</span>
-<span id="cb1-14"><a></a>    sleep_run: Save Power</span>
-<span id="cb1-15"><a></a>}</span>
-<span id="cb1-16"><a></a></span>
-<span id="cb1-17"><a></a>state Pace {</span>
-<span id="cb1-18"><a></a>    pace_run: Pace</span>
-<span id="cb1-19"><a></a>}</span>
-<span id="cb1-20"><a></a></span>
-<span id="cb1-21"><a></a>state OTA {</span>
-<span id="cb1-22"><a></a>    ota_init: Download Update</span>
-<span id="cb1-23"><a></a>    ota_init -&gt; ota_run</span>
-<span id="cb1-24"><a></a>    ota_run: Over The Air Update</span>
-<span id="cb1-25"><a></a>    ota_run -&gt; ota_exit</span>
-<span id="cb1-26"><a></a>    ota_exit: Post Successful OTA</span>
-<span id="cb1-27"><a></a>}</span>
-<span id="cb1-28"><a></a></span>
-<span id="cb1-29"><a></a>state Error {</span>
-<span id="cb1-30"><a></a>    error_run: Put device into safe mode</span>
-<span id="cb1-31"><a></a>}</span>
-<span id="cb1-32"><a></a></span>
-<span id="cb1-33"><a></a>Init -&gt; RhythmDetect : Successful Init</span>
-<span id="cb1-34"><a></a>Init -d-&gt; Error : Init Fault Error Code</span>
-<span id="cb1-35"><a></a>RhythmDetect -&gt; Pace : Arrhythmia Detected</span>
-<span id="cb1-36"><a></a>Pace -&gt; RhythmDetect : Pacing Timer Expired</span>
-<span id="cb1-37"><a></a>RhythmDetect -d-&gt; Sleep : NSR</span>
-<span id="cb1-38"><a></a>Sleep -&gt; RhythmDetect: Sleep Timer Expired</span>
-<span id="cb1-39"><a></a>Sleep -&gt; OTA : OTA Button Pressed</span>
-<span id="cb1-40"><a></a>OTA -&gt; RhythmDetect : OTA Success Kernel Event Posted</span>
-<span id="cb1-41"><a></a>Error -&gt; [*]</span>
-<span id="cb1-42"><a></a></span>
-<span id="cb1-43"><a></a>@enduml</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<h3 id="state-diagram-example-a-simple-alarm-clock">State Diagram Example: A Simple Alarm Clock</h3>
+<p>A <strong>state diagram</strong> shows the different modes a system can be in and what causes it to move from one mode to another. This alarm clock has three states. It can only be in one state at a time.</p>
+<p>For this example, assume the current time and alarm time are already set. The clock keeps displaying the time in every state. We leave out setting the time and using snooze to keep the first diagram simple.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource mermaid number-lines code-with-copy"><code class="sourceCode"><span id="cb1-1"><a></a>stateDiagram-v2</span>
+<span id="cb1-2"><a></a>    direction TB</span>
+<span id="cb1-3"><a></a></span>
+<span id="cb1-4"><a></a>    state "Alarm off" as Off</span>
+<span id="cb1-5"><a></a>    state "Alarm armed" as Armed</span>
+<span id="cb1-6"><a></a>    state "Alarm ringing" as Ringing {</span>
+<span id="cb1-7"><a></a>        state "Entry: start the buzzer" as RingingEntry</span>
+<span id="cb1-8"><a></a>        state "Run: keep sounding" as RingingRun</span>
+<span id="cb1-9"><a></a>        state "Exit: stop the buzzer" as RingingExit</span>
+<span id="cb1-10"><a></a></span>
+<span id="cb1-11"><a></a>        [*] --&gt; RingingEntry</span>
+<span id="cb1-12"><a></a>        RingingEntry --&gt; RingingRun</span>
+<span id="cb1-13"><a></a>        RingingRun --&gt; RingingExit : User presses Stop</span>
+<span id="cb1-14"><a></a>    }</span>
+<span id="cb1-15"><a></a></span>
+<span id="cb1-16"><a></a>    [*] --&gt; Off</span>
+<span id="cb1-17"><a></a>    Off --&gt; Armed : User turns alarm on</span>
+<span id="cb1-18"><a></a>    Armed --&gt; Off : User turns alarm off</span>
+<span id="cb1-19"><a></a>    Armed --&gt; Ringing : Clock reaches alarm time</span>
+<span id="cb1-20"><a></a>    RingingExit --&gt; Off</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="in-class-lab-exercise" class="slide level2">
-<h2>In-Class / Lab Exercise</h2>
-<p><a href="../labs/event-driven-state-machine-lab.html">Event-Driven State Machine Lab Exercise (Kitchen Timer)</a></p>
+<section id="how-to-read-the-diagram" class="slide level2">
+<h2>How to read the diagram</h2>
+<ul>
+<li>Each <strong>box</strong> is a state: what the alarm clock is doing right now.</li>
+<li>Each <strong>arrow</strong> is a transition: a change from one state to another.</li>
+<li>The <strong>text on an arrow</strong> tells you what causes the change.</li>
+<li>The <strong>filled circle</strong> marks the starting point. Here, the alarm starts off.</li>
+</ul>
+<p>Inside <strong>Alarm ringing</strong>, the entry substate starts the buzzer, the run substate keeps it sounding, and the exit substate stops it before returning to <strong>Alarm off</strong>. The entry and exit actions happen once per visit to <strong>Alarm ringing</strong>.</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>State</th>
+<th>What happens while the clock is in this state?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Alarm off</td>
+<td>The alarm is disabled and makes no sound.</td>
+</tr>
+<tr class="even">
+<td>Alarm armed</td>
+<td>The alarm is enabled and waits for the alarm time.</td>
+</tr>
+<tr class="odd">
+<td>Alarm ringing</td>
+<td>The alarm sounds until the user presses Stop.</td>
+</tr>
+</tbody>
+</table>
+<p>In this simplified clock, pressing Stop also disables the alarm. The user must turn it on again for another alarm. If no event shown on an outgoing arrow occurs, the clock stays in its current state. For example, reaching the alarm time while the alarm is off does not make it ring.</p>
+</section>
+<section id="follow-one-example" class="slide level2">
+<h2>Follow one example</h2>
+<ol type="1">
+<li>The clock starts in <strong>Alarm off</strong>.</li>
+<li>The user turns the alarm on. Follow the arrow to <strong>Alarm armed</strong>.</li>
+<li>The clock reaches the alarm time. Follow the arrow to <strong>Alarm ringing</strong>.</li>
+<li>The user presses Stop. Follow the arrow back to <strong>Alarm off</strong>.</li>
+</ol>
+</section>
+<section id="how-to-build-your-own-state-diagram" class="slide level2">
+<h2>How to build your own state diagram</h2>
+<ol type="1">
+<li><strong>List the states.</strong> Ask, “What modes can the system stay in?” For this clock: off, armed, and ringing.</li>
+<li><strong>Choose the starting state.</strong> Draw a starting marker pointing to it.</li>
+<li><strong>Connect the states.</strong> Add an arrow wherever a change can happen.</li>
+<li><strong>Label each arrow.</strong> Say what event causes that change.</li>
+<li><strong>Walk through an example.</strong> Check that you can follow the arrows from beginning to end.</li>
+</ol>
+<p>Keep states and events separate: <strong>Alarm ringing</strong> is a state the clock stays in; <strong>User presses Stop</strong> is an event that makes it leave that state.</p>
 
 
 <script type="ojs-module-contents">

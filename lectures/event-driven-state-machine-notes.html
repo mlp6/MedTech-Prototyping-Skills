@@ -300,12 +300,13 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#event-driven-state-machine" id="toc-event-driven-state-machine" class="nav-link active" data-scroll-target="#event-driven-state-machine">Event-Driven State Machine</a>
   <ul class="collapse">
   <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a></li>
-  <li><a href="#in-class-demo" id="toc-in-class-demo" class="nav-link" data-scroll-target="#in-class-demo">In-Class Demo</a></li>
-  <li><a href="#implementation" id="toc-implementation" class="nav-link" data-scroll-target="#implementation">Implementation</a>
+  <li><a href="#state-diagram" id="toc-state-diagram" class="nav-link" data-scroll-target="#state-diagram">State Diagram</a>
   <ul class="collapse">
-  <li><a href="#state-diagram" id="toc-state-diagram" class="nav-link" data-scroll-target="#state-diagram">State Diagram</a></li>
+  <li><a href="#state-diagram-example-a-simple-alarm-clock" id="toc-state-diagram-example-a-simple-alarm-clock" class="nav-link" data-scroll-target="#state-diagram-example-a-simple-alarm-clock">State Diagram Example: A Simple Alarm Clock</a></li>
   </ul></li>
-  <li><a href="#in-class-lab-exercise" id="toc-in-class-lab-exercise" class="nav-link" data-scroll-target="#in-class-lab-exercise">In-Class / Lab Exercise</a></li>
+  <li><a href="#how-to-read-the-diagram" id="toc-how-to-read-the-diagram" class="nav-link" data-scroll-target="#how-to-read-the-diagram">How to read the diagram</a></li>
+  <li><a href="#follow-one-example" id="toc-follow-one-example" class="nav-link" data-scroll-target="#follow-one-example">Follow one example</a></li>
+  <li><a href="#how-to-build-your-own-state-diagram" id="toc-how-to-build-your-own-state-diagram" class="nav-link" data-scroll-target="#how-to-build-your-own-state-diagram">How to build your own state diagram</a></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/mlp6/MedTech-Prototyping-Skills/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div><div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="event-driven-state-machine-slides.html"><i class="bi bi-file-slides"></i>RevealJS (live)</a></li></ul></div></nav>
@@ -368,22 +369,8 @@ ul.task-list li input[type="checkbox"] {
 <li><p>State structures are used to capture variables associated with describing the state.</p></li>
 </ul>
 </section>
-<section id="in-class-demo" class="level2">
-<h2 class="anchored" data-anchor-id="in-class-demo">In-Class Demo</h2>
-<ul>
-<li>You (and your daily routine)
-<ul>
-<li>What are your “states”?</li>
-<li>What are your “events”?</li>
-</ul></li>
-<li>ICD</li>
-</ul>
-<p><img src="images/icd_state_diagram.png" class="img-fluid"></p>
-</section>
-<section id="implementation" class="level2">
-<h2 class="anchored" data-anchor-id="implementation">Implementation</h2>
-<section id="state-diagram" class="level3">
-<h3 class="anchored" data-anchor-id="state-diagram">State Diagram</h3>
+<section id="state-diagram" class="level2">
+<h2 class="anchored" data-anchor-id="state-diagram">State Diagram</h2>
 <ul>
 <li><p>Generating the state diagram is the first step in implementing a state machine.</p></li>
 <li><p>Usually start with “pencil and paper” to sketch out the states and transitions.</p></li>
@@ -396,57 +383,84 @@ ul.task-list li input[type="checkbox"] {
 </ul></li>
 <li><p>UML (Universal Modeling Language) is a common way to represent state diagrams.</p></li>
 </ul>
-<section id="plantuml-example" class="level4">
-<h4 class="anchored" data-anchor-id="plantuml-example">PlantUML Example</h4>
-<pre class="plantuml"><code>@startuml
+<section id="state-diagram-example-a-simple-alarm-clock" class="level3">
+<h3 class="anchored" data-anchor-id="state-diagram-example-a-simple-alarm-clock">State Diagram Example: A Simple Alarm Clock</h3>
+<p>A <strong>state diagram</strong> shows the different modes a system can be in and what causes it to move from one mode to another. This alarm clock has three states. It can only be in one state at a time.</p>
+<p>For this example, assume the current time and alarm time are already set. The clock keeps displaying the time in every state. We leave out setting the time and using snooze to keep the first diagram simple.</p>
+<pre class="mermaid"><code>stateDiagram-v2
+    direction TB
 
-[*] -&gt; Init
+    state "Alarm off" as Off
+    state "Alarm armed" as Armed
+    state "Alarm ringing" as Ringing {
+        state "Entry: start the buzzer" as RingingEntry
+        state "Run: keep sounding" as RingingRun
+        state "Exit: stop the buzzer" as RingingExit
 
-state Init {
-    init_run: Do Stuff
-}
+        [*] --&gt; RingingEntry
+        RingingEntry --&gt; RingingRun
+        RingingRun --&gt; RingingExit : User presses Stop
+    }
 
-state RhythmDetect {
-    rhythm_detect_run: Detect Rhythm
-}
-
-state Sleep {
-    sleep_run: Save Power
-}
-
-state Pace {
-    pace_run: Pace
-}
-
-state OTA {
-    ota_init: Download Update
-    ota_init -&gt; ota_run
-    ota_run: Over The Air Update
-    ota_run -&gt; ota_exit
-    ota_exit: Post Successful OTA
-}
-
-state Error {
-    error_run: Put device into safe mode
-}
-
-Init -&gt; RhythmDetect : Successful Init
-Init -d-&gt; Error : Init Fault Error Code
-RhythmDetect -&gt; Pace : Arrhythmia Detected
-Pace -&gt; RhythmDetect : Pacing Timer Expired
-RhythmDetect -d-&gt; Sleep : NSR
-Sleep -&gt; RhythmDetect: Sleep Timer Expired
-Sleep -&gt; OTA : OTA Button Pressed
-OTA -&gt; RhythmDetect : OTA Success Kernel Event Posted
-Error -&gt; [*]
-
-@enduml</code></pre>
+    [*] --&gt; Off
+    Off --&gt; Armed : User turns alarm on
+    Armed --&gt; Off : User turns alarm off
+    Armed --&gt; Ringing : Clock reaches alarm time
+    RingingExit --&gt; Off</code></pre>
 </section>
 </section>
+<section id="how-to-read-the-diagram" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-read-the-diagram">How to read the diagram</h2>
+<ul>
+<li>Each <strong>box</strong> is a state: what the alarm clock is doing right now.</li>
+<li>Each <strong>arrow</strong> is a transition: a change from one state to another.</li>
+<li>The <strong>text on an arrow</strong> tells you what causes the change.</li>
+<li>The <strong>filled circle</strong> marks the starting point. Here, the alarm starts off.</li>
+</ul>
+<p>Inside <strong>Alarm ringing</strong>, the entry substate starts the buzzer, the run substate keeps it sounding, and the exit substate stops it before returning to <strong>Alarm off</strong>. The entry and exit actions happen once per visit to <strong>Alarm ringing</strong>.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>State</th>
+<th>What happens while the clock is in this state?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Alarm off</td>
+<td>The alarm is disabled and makes no sound.</td>
+</tr>
+<tr class="even">
+<td>Alarm armed</td>
+<td>The alarm is enabled and waits for the alarm time.</td>
+</tr>
+<tr class="odd">
+<td>Alarm ringing</td>
+<td>The alarm sounds until the user presses Stop.</td>
+</tr>
+</tbody>
+</table>
+<p>In this simplified clock, pressing Stop also disables the alarm. The user must turn it on again for another alarm. If no event shown on an outgoing arrow occurs, the clock stays in its current state. For example, reaching the alarm time while the alarm is off does not make it ring.</p>
 </section>
-<section id="in-class-lab-exercise" class="level2">
-<h2 class="anchored" data-anchor-id="in-class-lab-exercise">In-Class / Lab Exercise</h2>
-<p><a href="../labs/event-driven-state-machine-lab.html">Event-Driven State Machine Lab Exercise (Kitchen Timer)</a></p>
+<section id="follow-one-example" class="level2">
+<h2 class="anchored" data-anchor-id="follow-one-example">Follow one example</h2>
+<ol type="1">
+<li>The clock starts in <strong>Alarm off</strong>.</li>
+<li>The user turns the alarm on. Follow the arrow to <strong>Alarm armed</strong>.</li>
+<li>The clock reaches the alarm time. Follow the arrow to <strong>Alarm ringing</strong>.</li>
+<li>The user presses Stop. Follow the arrow back to <strong>Alarm off</strong>.</li>
+</ol>
+</section>
+<section id="how-to-build-your-own-state-diagram" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-build-your-own-state-diagram">How to build your own state diagram</h2>
+<ol type="1">
+<li><strong>List the states.</strong> Ask, “What modes can the system stay in?” For this clock: off, armed, and ringing.</li>
+<li><strong>Choose the starting state.</strong> Draw a starting marker pointing to it.</li>
+<li><strong>Connect the states.</strong> Add an arrow wherever a change can happen.</li>
+<li><strong>Label each arrow.</strong> Say what event causes that change.</li>
+<li><strong>Walk through an example.</strong> Check that you can follow the arrows from beginning to end.</li>
+</ol>
+<p>Keep states and events separate: <strong>Alarm ringing</strong> is a state the clock stays in; <strong>User presses Stop</strong> is an event that makes it leave that state.</p>
 
 
 <script type="ojs-module-contents">

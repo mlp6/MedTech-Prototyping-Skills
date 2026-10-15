@@ -248,39 +248,48 @@ Dr.&nbsp;Mark Palmeri, M.D., Ph.D.
 <li><p>UML (Universal Modeling Language) is a common way to represent state diagrams.</p></li>
 </ul>
 <h3 id="state-diagram-example-a-simple-alarm-clock">State Diagram Example: A Simple Alarm Clock</h3>
-<p>A <strong>state diagram</strong> shows the different modes a system can be in and what causes it to move from one mode to another. This alarm clock has three states. It can only be in one state at a time.</p>
-<p>For this example, assume the current time and alarm time are already set. The clock keeps displaying the time in every state. We leave out setting the time and using snooze to keep the first diagram simple.</p>
+</section></section>
+<section>
+<section id="state-diagram-a-simple-alarm-clock" class="title-slide slide level1 center">
+<h1>State Diagram: A Simple Alarm Clock</h1>
+<p>A <strong>state diagram</strong> shows the different modes a system can be in and what causes it to move from one mode to another. This alarm clock has three top-level states. Only one top-level state is active at a time. The Ringing state also contains substates that show the steps within that mode.</p>
+<p>For this example, assume the current time and alarm time are already set. The clock keeps displaying the time in every state. We leave out setting the time and using snooze to keep the diagram simple.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode numberSource mermaid number-lines code-with-copy"><code class="sourceCode"><span id="cb1-1"><a></a>stateDiagram-v2</span>
-<span id="cb1-2"><a></a>    direction TB</span>
+<span id="cb1-2"><a></a>    direction LR</span>
 <span id="cb1-3"><a></a></span>
 <span id="cb1-4"><a></a>    state "Alarm off" as Off</span>
 <span id="cb1-5"><a></a>    state "Alarm armed" as Armed</span>
 <span id="cb1-6"><a></a>    state "Alarm ringing" as Ringing {</span>
-<span id="cb1-7"><a></a>        state "Entry: start the buzzer" as RingingEntry</span>
-<span id="cb1-8"><a></a>        state "Run: keep sounding" as RingingRun</span>
-<span id="cb1-9"><a></a>        state "Exit: stop the buzzer" as RingingExit</span>
+<span id="cb1-7"><a></a>        state "Entry: start the sound" as RingingEntry</span>
+<span id="cb1-8"><a></a>        state "Sounding" as Sounding</span>
+<span id="cb1-9"><a></a>        state "Exit: stop the sound" as RingingExit</span>
 <span id="cb1-10"><a></a></span>
 <span id="cb1-11"><a></a>        [*] --&gt; RingingEntry</span>
-<span id="cb1-12"><a></a>        RingingEntry --&gt; RingingRun</span>
-<span id="cb1-13"><a></a>        RingingRun --&gt; RingingExit : User presses Stop</span>
-<span id="cb1-14"><a></a>    }</span>
-<span id="cb1-15"><a></a></span>
-<span id="cb1-16"><a></a>    [*] --&gt; Off</span>
-<span id="cb1-17"><a></a>    Off --&gt; Armed : User turns alarm on</span>
-<span id="cb1-18"><a></a>    Armed --&gt; Off : User turns alarm off</span>
-<span id="cb1-19"><a></a>    Armed --&gt; Ringing : Clock reaches alarm time</span>
-<span id="cb1-20"><a></a>    RingingExit --&gt; Off</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-12"><a></a>        RingingEntry --&gt; Sounding</span>
+<span id="cb1-13"><a></a>        Sounding --&gt; RingingExit : User presses Stop</span>
+<span id="cb1-14"><a></a>        RingingExit --&gt; [*]</span>
+<span id="cb1-15"><a></a>    }</span>
+<span id="cb1-16"><a></a></span>
+<span id="cb1-17"><a></a>    [*] --&gt; Off</span>
+<span id="cb1-18"><a></a>    Off --&gt; Armed : User turns alarm on</span>
+<span id="cb1-19"><a></a>    Armed --&gt; Off : User turns alarm off</span>
+<span id="cb1-20"><a></a>    Armed --&gt; Ringing : Clock reaches alarm time</span>
+<span id="cb1-21"><a></a>    Ringing --&gt; Off</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="how-to-read-the-diagram" class="slide level2">
 <h2>How to read the diagram</h2>
 <ul>
-<li>Each <strong>box</strong> is a state: what the alarm clock is doing right now.</li>
+<li>Each <strong>box</strong> is a state: what the alarm clock is doing right now. Boxes inside <strong>Alarm ringing</strong> are substates. While one of those substates is active, the enclosing Ringing state is also active.</li>
 <li>Each <strong>arrow</strong> is a transition: a change from one state to another.</li>
-<li>The <strong>text on an arrow</strong> tells you what causes the change.</li>
-<li>The <strong>filled circle</strong> marks the starting point. Here, the alarm starts off.</li>
+<li>The <strong>text on an arrow</strong> tells you what event causes the change. Unlabeled arrows advance automatically when the preceding step finishes.</li>
+<li>A <strong>filled circle</strong> marks a starting point. The outer one starts the clock in <strong>Alarm off</strong>; the inner one starts Ringing in its <strong>Entry</strong> substate.</li>
+<li>The <strong>circle with a ring around it</strong> marks completion of the Ringing sequence. It leads to the automatic transition from <strong>Alarm ringing</strong> to <strong>Alarm off</strong>; it does not stop the clock itself.</li>
 </ul>
-<p>Inside <strong>Alarm ringing</strong>, the entry substate starts the buzzer, the run substate keeps it sounding, and the exit substate stops it before returning to <strong>Alarm off</strong>. The entry and exit actions happen once per visit to <strong>Alarm ringing</strong>.</p>
 <table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
 <thead>
 <tr class="header">
 <th>State</th>
@@ -298,31 +307,60 @@ Dr.&nbsp;Mark Palmeri, M.D., Ph.D.
 </tr>
 <tr class="odd">
 <td>Alarm ringing</td>
-<td>The alarm sounds until the user presses Stop.</td>
+<td>The clock runs the Entry, Sounding, and Exit substates in order.</td>
 </tr>
 </tbody>
 </table>
-<p>In this simplified clock, pressing Stop also disables the alarm. The user must turn it on again for another alarm. If no event shown on an outgoing arrow occurs, the clock stays in its current state. For example, reaching the alarm time while the alarm is off does not make it ring.</p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Substate inside Alarm ringing</th>
+<th>What happens in this step?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Entry: start the sound</td>
+<td>The clock starts the alarm sound, then automatically moves to Sounding.</td>
+</tr>
+<tr class="even">
+<td>Sounding</td>
+<td>The alarm keeps sounding until the user presses Stop.</td>
+</tr>
+<tr class="odd">
+<td>Exit: stop the sound</td>
+<td>The clock silences the alarm, then completes Ringing and automatically moves to Alarm off.</td>
+</tr>
+</tbody>
+</table>
+<p>Entry and Exit are brief setup and cleanup substates in this example; Sounding is the substate that waits for a user event. These substates make the steps explicit. In other state diagrams, the same setup and cleanup may be written as entry and exit actions on Ringing instead of separate substates.</p>
+<p>In this simplified clock, pressing Stop also disables the alarm. The user must turn it on again for another alarm. In a state that waits for an event (Alarm off, Alarm armed, or Sounding), the clock stays there until an event shown on an outgoing arrow occurs. For example, reaching the alarm time while the alarm is off does not make it ring. Entry and Exit advance automatically when their work is done.</p>
 </section>
 <section id="follow-one-example" class="slide level2">
 <h2>Follow one example</h2>
 <ol type="1">
 <li>The clock starts in <strong>Alarm off</strong>.</li>
 <li>The user turns the alarm on. Follow the arrow to <strong>Alarm armed</strong>.</li>
-<li>The clock reaches the alarm time. Follow the arrow to <strong>Alarm ringing</strong>.</li>
-<li>The user presses Stop. Follow the arrow back to <strong>Alarm off</strong>.</li>
+<li>The clock reaches the alarm time. Follow the arrow to <strong>Alarm ringing</strong>, then its inner starting marker to <strong>Entry: start the sound</strong>.</li>
+<li>The clock starts the sound and automatically moves to <strong>Sounding</strong>.</li>
+<li>The user presses Stop. Follow the arrow to <strong>Exit: stop the sound</strong>.</li>
+<li>The clock silences the alarm and reaches the inner completion marker. Ringing is complete, so follow the automatic arrow back to <strong>Alarm off</strong>.</li>
 </ol>
 </section>
 <section id="how-to-build-your-own-state-diagram" class="slide level2">
 <h2>How to build your own state diagram</h2>
 <ol type="1">
-<li><strong>List the states.</strong> Ask, “What modes can the system stay in?” For this clock: off, armed, and ringing.</li>
-<li><strong>Choose the starting state.</strong> Draw a starting marker pointing to it.</li>
-<li><strong>Connect the states.</strong> Add an arrow wherever a change can happen.</li>
-<li><strong>Label each arrow.</strong> Say what event causes that change.</li>
-<li><strong>Walk through an example.</strong> Check that you can follow the arrows from beginning to end.</li>
+<li><strong>List the states.</strong> Ask, “What modes can the system stay in?” For this clock: off, armed, and ringing. If a mode has internal steps, draw those substates inside it: Ringing contains Entry, Sounding, and Exit.</li>
+<li><strong>Choose the starting states.</strong> Draw the outer starting marker pointing to Alarm off and an inner starting marker pointing to Ringing’s Entry.</li>
+<li><strong>Connect the states.</strong> Add an arrow wherever a change can happen. Connect Exit to an inner completion marker, then connect Ringing to Off so completing the internal sequence returns the clock to Alarm off.</li>
+<li><strong>Label event-driven arrows.</strong> Say what event causes each change, such as pressing Stop. Leave automatic transitions unlabeled and explain when they occur.</li>
+<li><strong>Walk through an example.</strong> Check that you can follow the outer and inner arrows, including setup and cleanup, from beginning to end.</li>
 </ol>
-<p>Keep states and events separate: <strong>Alarm ringing</strong> is a state the clock stays in; <strong>User presses Stop</strong> is an event that makes it leave that state.</p>
+<p>Keep states and events separate: <strong>Alarm ringing</strong> is the enclosing state, and <strong>Sounding</strong> is the substate that waits. <strong>User presses Stop</strong> is an event that moves the clock from Sounding to Exit; after cleanup, the clock leaves Ringing and returns to Alarm off.</p>
 
 
 <script type="ojs-module-contents">
